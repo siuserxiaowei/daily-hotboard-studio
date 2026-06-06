@@ -1,6 +1,6 @@
 {
   "source": "https://uapis.cn/api/v1/misc/hotboard",
-  "generatedAt": "2026-06-06T16:57:16.744Z",
+  "generatedAt": "2026-06-06T17:18:43.662Z",
   "topic": "ai",
   "filter": {
     "mode": "ai-keyword-match",
@@ -49,9 +49,41 @@
       "推理成本",
       "端侧AI",
       "AI应用",
+      "AI产品",
+      "AI工具",
+      "AI绘画",
+      "AI音乐",
+      "AI办公",
+      "AI教育",
+      "AI手机",
+      "AI眼镜",
+      "AI玩具",
+      "语音模型",
+      "视频模型",
+      "世界模型",
       "AI视频",
+      "AI短视频",
+      "AI剪辑",
+      "文生图",
+      "文生视频",
+      "数字人",
       "AI搜索",
-      "AI编程"
+      "AI编程",
+      "开源模型",
+      "模型微调",
+      "模型部署",
+      "上下文窗口",
+      "RAG",
+      "向量数据库",
+      "Token",
+      "Dify",
+      "Coze",
+      "LangChain",
+      "LlamaIndex",
+      "Perplexity",
+      "具身智能",
+      "人形机器人",
+      "机器狗"
     ]
   },
   "platforms": [
@@ -72,17 +104,17 @@
   ],
   "okCount": 14,
   "errorCount": 0,
-  "itemCount": 33,
+  "itemCount": 34,
   "boards": [
     {
       "type": "weibo",
-      "update_time": "2026-06-07 00:51:49",
+      "update_time": "2026-06-07 01:12:45",
       "list": [
         {
           "index": 8,
           "title": "高考新增AI监考员",
           "url": "https://s.weibo.com/weibo?q=%23%E9%AB%98%E8%80%83%E6%96%B0%E5%A2%9EAI%E7%9B%91%E8%80%83%E5%91%98%23",
-          "hot_value": "657320",
+          "hot_value": "550123",
           "extra": {
             "aiMatchedKeywords": [
               "AI"
@@ -90,10 +122,10 @@
           }
         },
         {
-          "index": 18,
+          "index": 29,
           "title": "宇树回应联手英伟达",
           "url": "https://s.weibo.com/weibo?q=%23%E5%AE%87%E6%A0%91%E5%9B%9E%E5%BA%94%E8%81%94%E6%89%8B%E8%8B%B1%E4%BC%9F%E8%BE%BE%23",
-          "hot_value": "557533",
+          "hot_value": "487955",
           "extra": {
             "aiMatchedKeywords": [
               "英伟达"
@@ -101,23 +133,30 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 50,
-      "total_after_filter": 2
+      "total_after_filter": 2,
+      "ai_filter_summary": {
+        "matched": 2,
+        "total": 50,
+        "keywords": [
+          "AI",
+          "英伟达"
+        ]
+      }
     },
     {
       "type": "zhihu",
-      "update_time": "2026-06-07 00:52:09",
+      "update_time": "2026-06-07 01:12:46",
       "list": [
         {
-          "index": 17,
+          "index": 14,
           "title": "为什么现在 AI 生成到了人人喊打的境遇？大量劣质一眼假的东西泛滥成灾？",
           "url": "https://www.zhihu.com/question/2044941270087463980",
-          "hot_value": "123 万热度",
+          "hot_value": "126 万热度",
           "extra": {
             "desc": "前两年（2024 年）AI 初兴时期，各个赛道领域的媒体创作者争先恐后一句 AI 加持自己的创作 例如： 历史博主用 AI 让老照片变成动态视频…实在不堪入目，看着尴尬癌犯了，还不如静态照片本身有价值",
             "image": "short-lived/2026/06/zhihu/b6a5f4c50c28d4af175e5372cb5154e3.webp",
-            "label": "新",
             "aiMatchedKeywords": [
               "AI"
             ]
@@ -127,7 +166,7 @@
           "index": 21,
           "title": "施一公在人民日报发文《人工智能时代，教育何为》，如何理解他的这篇文章？",
           "url": "https://www.zhihu.com/question/2046182456277956497",
-          "hot_value": "105 万热度",
+          "hot_value": "107 万热度",
           "extra": {
             "desc": "施一公人民日报撰文：AI 时代，教育要在这三方面发力 人工智能时代，推动智能技术与教育融合发展，既是全球教育发展的重要机遇，也是各国面临的共同课题。我国先贤讲「君子役物」，说的是君子之所以为君子，就在",
             "image": "short-lived/2026/06/zhihu/cf21aea85be1866e452fc240ed9c2336.jpg",
@@ -138,9 +177,17 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 30,
-      "total_after_filter": 2
+      "total_after_filter": 2,
+      "ai_filter_summary": {
+        "matched": 2,
+        "total": 30,
+        "keywords": [
+          "AI",
+          "人工智能"
+        ]
+      }
     },
     {
       "type": "bilibili",
@@ -317,29 +364,48 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 100,
-      "total_after_filter": 5
+      "total_after_filter": 5,
+      "ai_filter_summary": {
+        "matched": 5,
+        "total": 100,
+        "keywords": [
+          "AI",
+          "机器人",
+          "豆包"
+        ]
+      }
     },
     {
       "type": "douyin",
       "update_time": "2026-06-06T14:09:20.929Z",
       "list": [],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 50,
-      "total_after_filter": 0
+      "total_after_filter": 0,
+      "ai_filter_summary": {
+        "matched": 0,
+        "total": 50,
+        "keywords": []
+      }
     },
     {
       "type": "baidu",
       "update_time": "2026-06-06T14:09:23.437Z",
       "list": [],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 51,
-      "total_after_filter": 0
+      "total_after_filter": 0,
+      "ai_filter_summary": {
+        "matched": 0,
+        "total": 51,
+        "keywords": []
+      }
     },
     {
       "type": "toutiao",
-      "update_time": "2026-06-07 00:55:21",
+      "update_time": "2026-06-07 01:15:30",
       "list": [
         {
           "index": 6,
@@ -353,27 +419,37 @@
           }
         },
         {
-          "index": 33,
+          "index": 27,
           "title": "全球首款全尺寸超仿生人形机器人来了",
           "url": "https://www.toutiao.com/trending/7647117592154882091/",
           "hot_value": "",
           "extra": {
             "aiMatchedKeywords": [
-              "机器人"
+              "机器人",
+              "人形机器人"
             ]
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 50,
-      "total_after_filter": 2
+      "total_after_filter": 2,
+      "ai_filter_summary": {
+        "matched": 2,
+        "total": 50,
+        "keywords": [
+          "AI",
+          "机器人",
+          "人形机器人"
+        ]
+      }
     },
     {
       "type": "thepaper",
-      "update_time": "2026-06-06T14:08:46.067Z",
+      "update_time": "2026-06-06T16:54:04.675Z",
       "list": [
         {
-          "index": 20,
+          "index": 21,
           "title": "AI时代，为什么文科商科依然重要",
           "url": "https://www.thepaper.cn/newsDetail_forward_33299528",
           "hot_value": "",
@@ -388,7 +464,7 @@
           }
         },
         {
-          "index": 42,
+          "index": 40,
           "title": "黄仁勋笑称：63岁了还要和父亲“开会”，亚洲父母表达爱的方式就是批评你",
           "url": "https://www.thepaper.cn/newsDetail_forward_33323394",
           "hot_value": "",
@@ -403,9 +479,17 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
-      "total_before_filter": 45,
-      "total_after_filter": 2
+      "fetched_at": "2026-06-06T17:18:43.662Z",
+      "total_before_filter": 43,
+      "total_after_filter": 2,
+      "ai_filter_summary": {
+        "matched": 2,
+        "total": 43,
+        "keywords": [
+          "AI",
+          "黄仁勋"
+        ]
+      }
     },
     {
       "type": "ithome",
@@ -436,9 +520,18 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 12,
-      "total_after_filter": 2
+      "total_after_filter": 2,
+      "ai_filter_summary": {
+        "matched": 2,
+        "total": 12,
+        "keywords": [
+          "AI",
+          "英伟达",
+          "黄仁勋"
+        ]
+      }
     },
     {
       "type": "36kr",
@@ -451,7 +544,8 @@
           "hot_value": "",
           "extra": {
             "aiMatchedKeywords": [
-              "算力"
+              "算力",
+              "Token"
             ]
           }
         },
@@ -475,6 +569,17 @@
             "aiMatchedKeywords": [
               "AI",
               "豆包"
+            ]
+          }
+        },
+        {
+          "index": 23,
+          "title": "Token大战中，华为云选择了第三条路｜最前线",
+          "url": "https://36kr.com/p/3840016255126016?f=rss",
+          "hot_value": "",
+          "extra": {
+            "aiMatchedKeywords": [
+              "Token"
             ]
           }
         },
@@ -512,9 +617,21 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 30,
-      "total_after_filter": 6
+      "total_after_filter": 7,
+      "ai_filter_summary": {
+        "matched": 7,
+        "total": 30,
+        "keywords": [
+          "算力",
+          "Token",
+          "大模型",
+          "AI",
+          "豆包",
+          "机器人"
+        ]
+      }
     },
     {
       "type": "huxiu",
@@ -541,9 +658,16 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 15,
-      "total_after_filter": 1
+      "total_after_filter": 1,
+      "ai_filter_summary": {
+        "matched": 1,
+        "total": 15,
+        "keywords": [
+          "AI"
+        ]
+      }
     },
     {
       "type": "sspai",
@@ -566,9 +690,16 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 10,
-      "total_after_filter": 1
+      "total_after_filter": 1,
+      "ai_filter_summary": {
+        "matched": 1,
+        "total": 10,
+        "keywords": [
+          "AI"
+        ]
+      }
     },
     {
       "type": "v2ex",
@@ -589,27 +720,39 @@
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 10,
-      "total_after_filter": 1
+      "total_after_filter": 1,
+      "ai_filter_summary": {
+        "matched": 1,
+        "total": 10,
+        "keywords": [
+          "GPT"
+        ]
+      }
     },
     {
       "type": "weread",
       "update_time": "2026-06-06T12:17:56.071Z",
       "list": [],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 20,
-      "total_after_filter": 0
+      "total_after_filter": 0,
+      "ai_filter_summary": {
+        "matched": 0,
+        "total": 20,
+        "keywords": []
+      }
     },
     {
       "type": "hellogithub",
-      "update_time": "2026-06-07 00:49:42",
+      "update_time": "2026-06-07 01:15:40",
       "list": [
         {
           "index": 2,
           "title": "帮你找到本地能跑的最佳大模型",
           "url": "https://github.com/Andyyyy64/whichllm",
-          "hot_value": "2232",
+          "hot_value": "2234",
           "extra": {
             "author": "Andyyyy64",
             "full_name": "Andyyyy64/whichllm",
@@ -643,7 +786,7 @@
           "index": 6,
           "title": "所有 AI 编程工具用量一目了然",
           "url": "https://github.com/steipete/CodexBar",
-          "hot_value": "1700",
+          "hot_value": "1701",
           "extra": {
             "author": "steipete",
             "full_name": "steipete/CodexBar",
@@ -652,7 +795,8 @@
             "summary": "这是一款集中显示 Codex、Claude、Cursor、Gemini、Copilot、Grok 等 40 多个 AI 工具的配额用量与重置倒计时的 macOS",
             "updated_at": "2026-05-28T08:07:51",
             "aiMatchedKeywords": [
-              "AI"
+              "AI",
+              "AI编程"
             ]
           }
         },
@@ -669,7 +813,8 @@
             "summary": "这是一款由资深开发者 Matt Pocock 打造的 AI 编码工具技能包，适用于 Claude Code、Codex 等，通过一行命令即可安装。它包含需求对齐",
             "updated_at": "2026-05-28T08:07:51",
             "aiMatchedKeywords": [
-              "AI"
+              "AI",
+              "AI编程"
             ]
           }
         },
@@ -712,7 +857,7 @@
           "index": 15,
           "title": "Claude Design 的开源替代品",
           "url": "https://github.com/nexu-io/open-design",
-          "hot_value": "656",
+          "hot_value": "657",
           "extra": {
             "author": "nexu-io",
             "full_name": "nexu-io/open-design",
@@ -746,7 +891,7 @@
           "index": 18,
           "title": "AI 编程助手跨会话记忆系统",
           "url": "https://github.com/rohitg00/agentmemory",
-          "hot_value": "487",
+          "hot_value": "488",
           "extra": {
             "author": "rohitg00",
             "full_name": "rohitg00/agentmemory",
@@ -755,14 +900,26 @@
             "summary": "这是一个基于 iii 引擎构建的 AI 编程 Agent 持久记忆服务，通过自动获取 Agent 的操作行为并压缩为可检索的记忆，在后续开启新会话时注入相关上下",
             "updated_at": "2026-05-28T08:07:51",
             "aiMatchedKeywords": [
-              "AI"
+              "AI",
+              "AI编程"
             ]
           }
         }
       ],
-      "fetched_at": "2026-06-06T16:57:16.744Z",
+      "fetched_at": "2026-06-06T17:18:43.662Z",
       "total_before_filter": 20,
-      "total_after_filter": 9
+      "total_after_filter": 9,
+      "ai_filter_summary": {
+        "matched": 9,
+        "total": 20,
+        "keywords": [
+          "大模型",
+          "AI",
+          "AI编程",
+          "DeepSeek",
+          "Claude"
+        ]
+      }
     }
   ]
 }

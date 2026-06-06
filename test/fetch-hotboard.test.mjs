@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  AI_KEYWORDS,
   buildSnapshot,
   failedBoard,
   fetchBoard,
@@ -15,6 +16,7 @@ import {
   updateArchiveIndex,
   upsertArchiveSnapshot
 } from "../scripts/fetch-hotboard.mjs";
+import { DEFAULT_PLATFORMS, PLATFORM_META } from "../src/platforms.js";
 
 const fetchedAt = "2026-06-06T16:06:31.415Z";
 
@@ -72,7 +74,7 @@ test("builds snapshot counts and board provenance fields", () => {
   });
 });
 
-test("filters boards to AI-matching hotboard items", () => {
+test("filters boards to AI-matching hotboard items with board summary", () => {
   const boards = [
     normalizeSuccessBoard(
       {
@@ -89,18 +91,77 @@ test("filters boards to AI-matching hotboard items", () => {
     )
   ];
 
-  const filtered = filterBoardsForAi(boards, ["OpenAI", "英伟达"]);
+  const filtered = filterBoardsForAi(boards, ["OpenAI", "AI芯片"]);
 
   assert.equal(filtered[0].total_before_filter, 3);
   assert.equal(filtered[0].total_after_filter, 2);
+  assert.deepEqual(filtered[0].ai_filter_summary, {
+    matched: 2,
+    total: 3,
+    keywords: ["OpenAI", "AI芯片"]
+  });
   assert.deepEqual(filtered[0].list.map((item) => item.title), ["OpenAI 发布新模型", "英伟达 AI 芯片供不应求"]);
   assert.deepEqual(filtered[0].list[0].extra.aiMatchedKeywords, ["OpenAI"]);
+});
+
+test("records empty AI filter summaries for successful boards with no matches", () => {
+  const boards = [
+    normalizeSuccessBoard(
+      {
+        type: "weibo",
+        update_time: "now",
+        list: [{ index: 1, title: "普通社会新闻", hot_value: "", url: "https://example.com/news", extra: {} }]
+      },
+      "weibo",
+      fetchedAt
+    )
+  ];
+
+  const filtered = filterBoardsForAi(boards, ["OpenAI"]);
+
+  assert.deepEqual(filtered[0].list, []);
+  assert.deepEqual(filtered[0].ai_filter_summary, {
+    matched: 0,
+    total: 1,
+    keywords: []
+  });
 });
 
 test("matches short Latin AI keywords with boundaries", () => {
   assert.equal(keywordMatches("AI", "AI应用爆发"), true);
   assert.equal(keywordMatches("AI", "OpenAI 发布"), false);
   assert.equal(keywordMatches("OpenAI", "OpenAI 发布"), true);
+});
+
+test("ships conservative AI keyword coverage for product, model, agent, chip, robotics, and RAG terms", () => {
+  for (const keyword of [
+    "AI产品",
+    "AI工具",
+    "语音模型",
+    "视频模型",
+    "世界模型",
+    "具身智能",
+    "人形机器人",
+    "RAG",
+    "向量数据库",
+    "模型微调",
+    "模型部署",
+    "Token",
+    "上下文窗口"
+  ]) {
+    assert.equal(AI_KEYWORDS.includes(keyword), true, `${keyword} should be in AI_KEYWORDS`);
+  }
+
+  assert.equal(keywordMatches("RAG", "RAG 检索增强生成方案更新"), true);
+  assert.equal(keywordMatches("Token", "上下文 Token 成本下降"), true);
+  assert.equal(keywordMatches("Token", "tokenization library"), false);
+});
+
+test("keeps Douyin enabled and Xiaohongshu disabled until UAPI returns a valid board", () => {
+  assert.equal(DEFAULT_PLATFORMS.includes("douyin"), true);
+  assert.equal(Boolean(PLATFORM_META.douyin), true);
+  assert.equal(DEFAULT_PLATFORMS.includes("xiaohongshu"), false);
+  assert.equal(DEFAULT_PLATFORMS.includes("xhs"), false);
 });
 
 test("deduplicates archive snapshots by generated minute", () => {

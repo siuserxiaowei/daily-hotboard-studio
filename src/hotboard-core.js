@@ -1,5 +1,10 @@
 import { PLATFORM_META } from "./platforms.js";
 
+const HOOK_ORIENTED_PLATFORMS = new Set(["douyin", "kuaishou", "bilibili", "acfun", "weibo", "zhihu", "tieba", "hupu", "douban-group"]);
+const TECH_PRODUCT_PLATFORMS = new Set(["ithome", "36kr", "huxiu", "hellogithub", "v2ex", "juejin", "csdn", "sspai", "ifanr"]);
+const NEWS_PLATFORMS = new Set(["baidu", "toutiao", "thepaper", "qq-news", "sina-news", "netease-news"]);
+const AI_SIGNAL_PATTERN = /AI|人工智能|大模型|模型|OpenAI|Claude|Gemini|GPT|AIGC|LLM|Agent|RAG|Token|机器人|芯片|算力|推理|自动化/i;
+
 export function parseHeat(value) {
   if (value === null || value === undefined) return 0;
   const text = String(value).replace(/,/g, "").trim();
@@ -41,7 +46,17 @@ export function normalizeBoard(board) {
     platform,
     platformLabel: PLATFORM_META[platform]?.label || platform,
     updateTime,
+    aiFilterSummary: normalizeAiFilterSummary(board.ai_filter_summary),
     items: list.map((item) => normalizeItem(item, platform, updateTime)).filter((item) => item.title)
+  };
+}
+
+function normalizeAiFilterSummary(summary) {
+  const source = summary && typeof summary === "object" ? summary : {};
+  return {
+    matched: Number.isFinite(Number(source.matched)) ? Number(source.matched) : null,
+    total: Number.isFinite(Number(source.total)) ? Number(source.total) : null,
+    keywords: Array.isArray(source.keywords) ? source.keywords.map((keyword) => String(keyword)).filter(Boolean) : []
   };
 }
 
@@ -73,12 +88,14 @@ export function buildVoiceover(digestItems, generatedAt = new Date().toISOString
     sixtySecond: buildSixtySecondVariant(date, top, bullets),
     bulletOutline: buildBulletOutlineVariant(date, top, bullets)
   };
+  const assets = buildPublishingAssets(top);
   return {
     title: `${date} AI 热榜口播`,
     short: variants.thirtySecond.short,
     script: variants.sixtySecond.script,
     bullets,
-    variants
+    variants,
+    assets
   };
 }
 
@@ -87,10 +104,24 @@ export function makeAngle(item) {
   const hotValue = String(item.hotValue || "");
   const hotScore = Number(item.hotScore || 0);
   const matchedKeywords = Array.isArray(item.matchedKeywords) ? item.matchedKeywords.slice(0, 3) : [];
-  if (description) return description.slice(0, 80);
+  if (description) return ensureAiAngle(description.slice(0, 80));
   if (matchedKeywords.length) return `围绕 ${matchedKeywords.join("、")} 的 AI 话题，适合做技术影响、产品机会或商业化角度拆解。`;
-  if (hotScore > 1000000 || hotValue.includes("万")) return "高热度话题，适合做快速解读、观点对撞或评论区互动。";
+  if (hotScore > 1000000 || hotValue.includes("万")) return "高热度 AI 话题，适合做快速解读、观点对撞或评论区互动。";
   return "AI 相关话题排名靠前，适合做轻量资讯播报或选题观察。";
+}
+
+export function buildPublishingAssets(top) {
+  const items = top.slice(0, 5);
+  return {
+    hooks: items.map((item) => `今天 AI 圈这条最值得盯：${item.title}`),
+    captions: items.map((item) => `${item.title}｜${item.platformLabel}｜AI 角度：${stripSentenceEnd(makeAngle(item))}`),
+    platformAngles: items.map((item) => ({
+      platform: item.platformLabel,
+      title: item.title,
+      angle: makeAngle(item),
+      keywords: Array.isArray(item.matchedKeywords) ? item.matchedKeywords : []
+    }))
+  };
 }
 
 function buildThirtySecondVariant(date, top, bullets) {
@@ -101,7 +132,7 @@ function buildThirtySecondVariant(date, top, bullets) {
         "大家好，这里是今日 AI 热榜 30 秒速览。",
         `截至 ${date}，今天 AI 圈先看 ${joinTitles(leadItems)}。`,
         `第一条来自${focus.platformLabel}，「${focus.title}」${heatPhrase(focus)}，重点看${stripSentenceEnd(makeAngle(focus))}。`,
-        "适合先做快讯、技术解读、产品机会和后续选题跟踪。"
+        `创作方向：${platformGuidance(focus)}`
       ].join("\n")
     : [
         "大家好，这里是今日 AI 热榜 30 秒速览。",
@@ -128,7 +159,7 @@ function buildSixtySecondVariant(date, top, bullets) {
         "",
         body,
         "",
-        `如果你只看一条，我建议先看「${top[0].title}」。它在 AI 领域同时具备讨论度和传播性，适合继续做技术、产品或商业化拆解。`,
+        `如果你只看一条，我建议先看「${top[0].title}」。它在 AI 领域同时具备讨论度和传播性，${platformGuidance(top[0])}`,
         "",
         "以上就是今天的 AI 热点更新。"
       ].join("\n")
@@ -185,7 +216,7 @@ function buildOutlineBullet(item, index) {
 }
 
 function formatScriptLine(item, index) {
-  return `${index + 1}. ${item.platformLabel}：${item.title}${heatPhrase(item)}。看点是${stripSentenceEnd(makeAngle(item))}。`;
+  return `${index + 1}. ${item.platformLabel}：${item.title}${heatPhrase(item)}。看点是${stripSentenceEnd(makeAngle(item))}。${platformGuidance(item)}`;
 }
 
 function normalizeVoiceoverItem(item) {
@@ -195,8 +226,28 @@ function normalizeVoiceoverItem(item) {
     platformLabel: String(item.platformLabel || item.platform || "热榜").trim(),
     hotValue: String(item.hotValue || "").trim(),
     description: String(item.description || "").trim(),
-    hotScore: Number(item.hotScore || 0)
+    hotScore: Number(item.hotScore || 0),
+    matchedKeywords: Array.isArray(item.matchedKeywords) ? item.matchedKeywords : []
   };
+}
+
+function platformGuidance(item) {
+  const platform = String(item?.platform || "").toLowerCase();
+  if (HOOK_ORIENTED_PLATFORMS.has(platform)) {
+    return "更适合做短视频开场钩子：先抛出 AI 变化，再用一个用户场景承接讨论。";
+  }
+  if (TECH_PRODUCT_PLATFORMS.has(platform)) {
+    return "更适合做技术/产品解读：先讲 AI 能力或架构变化，再落到产品机会和落地限制。";
+  }
+  if (NEWS_PLATFORMS.has(platform)) {
+    return "更适合做 AI 新闻快评：先核实事实和时间线，再解释它会影响哪些用户或行业。";
+  }
+  return "适合做 AI 选题观察：先提炼变化，再补充技术、产品或商业化影响。";
+}
+
+function ensureAiAngle(text) {
+  if (!text) return "AI 相关话题排名靠前，适合做轻量资讯播报或选题观察。";
+  return AI_SIGNAL_PATTERN.test(text) ? text : `AI 角度：${text}`;
 }
 
 function formatVoiceoverDate(generatedAt) {

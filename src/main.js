@@ -36,6 +36,8 @@ function render() {
   const boards = filterBoards();
   const digest = buildDigest(boards, 14);
   const voiceover = buildVoiceover(digest, state.snapshot.generatedAt);
+  const filterProvenance = getFilterProvenance(state.snapshot);
+  const publishingAssets = normalizePublishingAssets(voiceover.assets);
   const totalTopics = countItems(state.boards);
   const visibleTopics = countItems(boards);
   const activeDescriptionCount = boards.flatMap((board) => board.items).filter((item) => item.description).length;
@@ -85,6 +87,8 @@ function render() {
             <p class="eyebrow">更新于 ${formatDate(state.snapshot.generatedAt)}</p>
             <h1>AI 热榜工作台</h1>
             <div class="scope-line">
+              <span class="filter-provenance">${escapeHtml(filterProvenance.mode)} · ${escapeHtml(filterProvenance.keywordLabel)}</span>
+              <span>抖音/社交平台随 UAPI 可用性展示</span>
               <span>${escapeHtml(getSelectedGroupLabel())}</span>
               <span>${escapeHtml(getSelectedPlatformLabel())}</span>
               ${state.query ? `<span>搜索：${escapeHtml(state.query)}</span>` : "<span>未输入关键词</span>"}
@@ -128,6 +132,8 @@ function render() {
           </article>
         </section>
 
+        ${renderPublishingPanel(publishingAssets)}
+
         <section class="board-tools" aria-label="平台筛选">
           <div>
             <p class="eyebrow">平台卡片</p>
@@ -145,7 +151,7 @@ function render() {
       </main>
     </div>
   `;
-  bindEvents(voiceover, digest);
+  bindEvents(voiceover, digest, publishingAssets);
 }
 
 function filterBoards() {
@@ -171,7 +177,7 @@ function getGroupPlatformSet() {
   return group ? new Set(group.platforms) : null;
 }
 
-function bindEvents(voiceover, digest) {
+function bindEvents(voiceover, digest, publishingAssets) {
   document.querySelector("#search-input")?.addEventListener("input", (event) => {
     state.query = event.target.value;
     render();
@@ -203,10 +209,88 @@ function bindEvents(voiceover, digest) {
 
   document.querySelector("#copy-script")?.addEventListener("click", (event) => copyText(voiceover.script, event.currentTarget));
   document.querySelector("#copy-digest")?.addEventListener("click", (event) => copyText(buildDigestCopy(digest), event.currentTarget));
+  document
+    .querySelector("#copy-assets")
+    ?.addEventListener("click", (event) => copyText(buildPublishingAssetsCopy(publishingAssets), event.currentTarget));
 
   document.querySelectorAll("img[data-fallback]").forEach((image) => {
     image.addEventListener("error", () => image.remove());
   });
+}
+
+function renderPublishingPanel(assets) {
+  const hasAssets = hasPublishingAssets(assets);
+  return `
+    <article class="panel publishing-panel" aria-label="AI-only 发布素材">
+      <div class="panel-head">
+          <div>
+          <p class="eyebrow">AI 发布素材</p>
+          <h2>开头钩子、短视频文案、分平台角度</h2>
+        </div>
+        ${hasAssets ? '<button class="ghost copy-action" id="copy-assets" type="button" data-default-label="复制素材">复制素材</button>' : ""}
+      </div>
+      <p class="panel-note">
+        ${escapeHtml(
+          "Publishing material is generated only from AI-filtered topics. Douyin/social platform extraction appears when UAPI data and rate limits allow those boards."
+        )}
+      </p>
+      ${
+        hasAssets
+          ? `<div class="material-grid">
+              ${renderMaterialColumn("开头钩子", "短视频开场", assets.hooks, renderTextMaterial)}
+              ${renderMaterialColumn("短视频文案", "可直接改写", assets.captions, renderTextMaterial)}
+              ${renderMaterialColumn("分平台角度", "来源视角", assets.platformAngles, renderPlatformAngle)}
+            </div>`
+          : renderQuietEmptyState(
+              "等待 AI 发布素材",
+              "当前 buildVoiceover() 尚未提供 hooks、captions 或 platformAngles；AI-only 摘要和口播脚本仍可复制。"
+            )
+      }
+    </article>
+  `;
+}
+
+function renderMaterialColumn(title, hint, items, renderItem) {
+  return `
+    <section class="material-lane" aria-label="${escapeHtml(title)}">
+      <header>
+        <strong>${escapeHtml(title)}</strong>
+        <span>${escapeHtml(hint)} · ${formatNumber(items.length)}</span>
+      </header>
+      ${
+        items.length
+          ? `<ol class="material-list">${items.map((item, index) => renderItem(item, index)).join("")}</ol>`
+          : `<p class="inline-empty">暂无${escapeHtml(hint)}</p>`
+      }
+    </section>
+  `;
+}
+
+function renderTextMaterial(text, index) {
+  return `
+    <li>
+      <span class="material-index">${formatRank(index + 1)}</span>
+      <p class="material-text">${escapeHtml(text)}</p>
+    </li>
+  `;
+}
+
+function renderPlatformAngle(item, index) {
+  if (typeof item === "string") return renderTextMaterial(item, index);
+  const platform = item?.platform || "AI platform";
+  const title = item?.title || "未命名 AI 选题";
+  const angle = item?.angle || "暂无平台角度。";
+  const keywords = Array.isArray(item?.keywords) ? item.keywords.filter(Boolean).slice(0, 4) : [];
+  return `
+    <li>
+      <span class="material-index">${formatRank(index + 1)}</span>
+      <div class="angle-copy">
+        <strong>${escapeHtml(platform)}</strong>
+        <p class="angle-title">${escapeHtml(title)}</p>
+        <small>${escapeHtml(angle)}${keywords.length ? ` · ${escapeHtml(keywords.join(" / "))}` : ""}</small>
+      </div>
+    </li>
+  `;
 }
 
 function renderDigestItem(item, index) {
@@ -226,6 +310,7 @@ function renderDigestItem(item, index) {
 
 function renderBoard(board) {
   const accent = PLATFORM_META[board.platform]?.accent || "#1f2933";
+  const summary = formatBoardFilterSummary(board);
   return `
     <article class="board-card" style="--accent:${escapeHtml(accent)}">
       <header>
@@ -233,7 +318,7 @@ function renderBoard(board) {
           <p class="eyebrow">${escapeHtml(board.updateTime || "实时")}</p>
           <h3>${escapeHtml(board.platformLabel)}</h3>
         </div>
-        <span>${board.items.length} 条</span>
+        <span>${escapeHtml(summary)}</span>
       </header>
       <ol class="topic-list">
         ${board.items.slice(0, 12).map(renderBoardItem).join("")}
@@ -281,6 +366,15 @@ function renderEmptyState(title, message) {
       <strong>${escapeHtml(title)}</strong>
       <p>${escapeHtml(message)}</p>
       ${hasActiveFilters() ? '<button class="ghost" type="button" data-reset-filters>清除筛选</button>' : ""}
+    </div>
+  `;
+}
+
+function renderQuietEmptyState(title, message) {
+  return `
+    <div class="empty-state quiet-empty" role="status">
+      <strong>${escapeHtml(title)}</strong>
+      <p>${escapeHtml(message)}</p>
     </div>
   `;
 }
@@ -373,6 +467,29 @@ function buildDigestCopy(digest) {
     .join("\n");
 }
 
+function buildPublishingAssetsCopy(assets) {
+  const sections = [];
+  if (assets.hooks.length) sections.push(formatCopySection("开头钩子", assets.hooks));
+  if (assets.captions.length) sections.push(formatCopySection("短视频文案", assets.captions));
+  if (assets.platformAngles.length) {
+    sections.push(
+      [
+        "分平台角度",
+        ...assets.platformAngles.map((item, index) => {
+          if (typeof item === "string") return `${index + 1}. ${item}`;
+          const keywords = Array.isArray(item?.keywords) && item.keywords.length ? ` | ${item.keywords.slice(0, 4).join(" / ")}` : "";
+          return `${index + 1}. [${item?.platform || "AI 平台"}] ${item?.title || "未命名 AI 选题"}\n   ${item?.angle || "暂无平台角度。"}${keywords}`;
+        })
+      ].join("\n")
+    );
+  }
+  return sections.join("\n\n");
+}
+
+function formatCopySection(title, items) {
+  return [title, ...items.map((item, index) => `${index + 1}. ${item}`)].join("\n");
+}
+
 function renderExternalLink(url, label, className) {
   if (!url) return `<span class="${className} is-disabled">暂无链接</span>`;
   return `<a class="${className}" href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(label)}</a>`;
@@ -401,6 +518,49 @@ function getSelectedGroupLabel() {
 function getSelectedPlatformLabel() {
   if (state.selectedPlatform === "all") return "全部平台";
   return state.boards.find((board) => board.platform === state.selectedPlatform)?.platformLabel || "全部平台";
+}
+
+function getFilterProvenance(snapshot) {
+  const filter = snapshot?.filter || {};
+  const mode = filter.mode ? formatFilterMode(filter.mode) : "AI-only keyword filter";
+  const keywordCount = Array.isArray(filter.keywords) ? filter.keywords.length : 0;
+  return {
+    mode,
+    keywordLabel: keywordCount ? `${formatNumber(keywordCount)} 个关键词` : "关键词不可用"
+  };
+}
+
+function formatFilterMode(mode) {
+  const normalized = String(mode || "").trim();
+  if (normalized === "ai-keyword-match") return "AI-only 关键词过滤";
+  return normalized ? `${normalized.replace(/[-_]+/g, " ")} 过滤` : "AI-only 关键词过滤";
+}
+
+function normalizePublishingAssets(assets) {
+  const source = assets && typeof assets === "object" ? assets : {};
+  return {
+    hooks: normalizeTextList(source.hooks).slice(0, 5),
+    captions: normalizeTextList(source.captions).slice(0, 5),
+    platformAngles: Array.isArray(source.platformAngles) ? source.platformAngles.filter(Boolean).slice(0, 5) : []
+  };
+}
+
+function normalizeTextList(value) {
+  return Array.isArray(value) ? value.map((item) => String(item || "").trim()).filter(Boolean) : [];
+}
+
+function hasPublishingAssets(assets) {
+  return assets.hooks.length || assets.captions.length || assets.platformAngles.length;
+}
+
+function formatBoardFilterSummary(board) {
+  const summary = board.aiFilterSummary || {};
+  const matched = Number(summary.matched);
+  const total = Number(summary.total);
+  if (Number.isFinite(matched) && Number.isFinite(total) && total > 0) {
+    return `AI ${formatNumber(matched)} / ${formatNumber(total)}`;
+  }
+  return `${formatNumber(board.items.length)} 条`;
 }
 
 function countItems(boards) {

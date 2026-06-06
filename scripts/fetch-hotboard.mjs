@@ -56,9 +56,41 @@ export const AI_KEYWORDS = [
   "推理成本",
   "端侧AI",
   "AI应用",
+  "AI产品",
+  "AI工具",
+  "AI绘画",
+  "AI音乐",
+  "AI办公",
+  "AI教育",
+  "AI手机",
+  "AI眼镜",
+  "AI玩具",
+  "语音模型",
+  "视频模型",
+  "世界模型",
   "AI视频",
+  "AI短视频",
+  "AI剪辑",
+  "文生图",
+  "文生视频",
+  "数字人",
   "AI搜索",
-  "AI编程"
+  "AI编程",
+  "开源模型",
+  "模型微调",
+  "模型部署",
+  "上下文窗口",
+  "RAG",
+  "向量数据库",
+  "Token",
+  "Dify",
+  "Coze",
+  "LangChain",
+  "LlamaIndex",
+  "Perplexity",
+  "具身智能",
+  "人形机器人",
+  "机器狗"
 ];
 
 if (isDirectExecution(import.meta.url, process.argv[1])) {
@@ -223,7 +255,12 @@ export function filterBoardsForAi(boards, keywords = AI_KEYWORDS) {
       ...board,
       list,
       total_before_filter: board.list.length,
-      total_after_filter: list.length
+      total_after_filter: list.length,
+      ai_filter_summary: {
+        matched: list.length,
+        total: board.list.length,
+        keywords: [...new Set(list.flatMap((item) => item.extra.aiMatchedKeywords))].slice(0, 12)
+      }
     };
   });
 }
@@ -249,7 +286,12 @@ export function keywordMatches(keyword, text) {
     const escaped = normalizedKeyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(normalizedText);
   }
-  return normalizedText.toLowerCase().includes(normalizedKeyword.toLowerCase());
+  const lowercaseText = normalizedText.toLowerCase();
+  const lowercaseKeyword = normalizedKeyword.toLowerCase();
+  return (
+    lowercaseText.includes(lowercaseKeyword) ||
+    lowercaseText.replace(/\s+/g, "").includes(lowercaseKeyword.replace(/\s+/g, ""))
+  );
 }
 
 function collectSearchText(item, extra) {
