@@ -4,8 +4,11 @@ import {
   buildSnapshot,
   failedBoard,
   fetchBoard,
+  filterBoardsForAi,
   HOTBOARD_SOURCE,
+  keywordMatches,
   normalizeSuccessBoard,
+  parseKeywordList,
   parsePlatformList,
   parseRetryAfterMs,
   retryDelayMs,
@@ -19,6 +22,10 @@ test("parses platform override lists without duplicates", () => {
   assert.deepEqual(parsePlatformList(" weibo, zhihu,weibo,,bilibili "), ["weibo", "zhihu", "bilibili"]);
   assert.deepEqual(parsePlatformList("", ["weibo", "zhihu"]), ["weibo", "zhihu"]);
   assert.deepEqual(parsePlatformList(",", ["weibo", "zhihu"]), ["weibo", "zhihu"]);
+});
+
+test("parses AI keyword override lists without duplicates", () => {
+  assert.deepEqual(parseKeywordList(" OpenAI, Claude,OpenAI,,DeepSeek "), ["OpenAI", "Claude", "DeepSeek"]);
 });
 
 test("builds snapshot counts and board provenance fields", () => {
@@ -39,9 +46,22 @@ test("builds snapshot counts and board provenance fields", () => {
     boards: [okBoard, errorBoard]
   });
 
-  assert.deepEqual(Object.keys(snapshot), ["source", "generatedAt", "platforms", "okCount", "errorCount", "boards"]);
+  assert.deepEqual(Object.keys(snapshot), [
+    "source",
+    "generatedAt",
+    "topic",
+    "filter",
+    "platforms",
+    "okCount",
+    "errorCount",
+    "itemCount",
+    "boards"
+  ]);
+  assert.equal(snapshot.topic, "ai");
+  assert.equal(snapshot.filter.mode, "ai-keyword-match");
   assert.equal(snapshot.okCount, 1);
   assert.equal(snapshot.errorCount, 1);
+  assert.equal(snapshot.itemCount, 1);
   assert.equal(snapshot.boards[0].fetched_at, fetchedAt);
   assert.deepEqual(snapshot.boards[1], {
     type: "zhihu",
@@ -50,6 +70,37 @@ test("builds snapshot counts and board provenance fields", () => {
     error: "HTTP 429 Too Many Requests",
     fetched_at: fetchedAt
   });
+});
+
+test("filters boards to AI-matching hotboard items", () => {
+  const boards = [
+    normalizeSuccessBoard(
+      {
+        type: "ithome",
+        update_time: "now",
+        list: [
+          { index: 1, title: "OpenAI 发布新模型", hot_value: "", url: "https://example.com/ai", extra: {} },
+          { index: 2, title: "普通社会新闻", hot_value: "", url: "https://example.com/news", extra: {} },
+          { index: 3, title: "英伟达 AI 芯片供不应求", hot_value: "", url: "https://example.com/gpu", extra: {} }
+        ]
+      },
+      "ithome",
+      fetchedAt
+    )
+  ];
+
+  const filtered = filterBoardsForAi(boards, ["OpenAI", "英伟达"]);
+
+  assert.equal(filtered[0].total_before_filter, 3);
+  assert.equal(filtered[0].total_after_filter, 2);
+  assert.deepEqual(filtered[0].list.map((item) => item.title), ["OpenAI 发布新模型", "英伟达 AI 芯片供不应求"]);
+  assert.deepEqual(filtered[0].list[0].extra.aiMatchedKeywords, ["OpenAI"]);
+});
+
+test("matches short Latin AI keywords with boundaries", () => {
+  assert.equal(keywordMatches("AI", "AI应用爆发"), true);
+  assert.equal(keywordMatches("AI", "OpenAI 发布"), false);
+  assert.equal(keywordMatches("OpenAI", "OpenAI 发布"), true);
 });
 
 test("deduplicates archive snapshots by generated minute", () => {

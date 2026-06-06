@@ -10,6 +10,56 @@ export const DEFAULT_FETCH_DELAY_MS = 900;
 export const DEFAULT_FETCH_TIMEOUT_MS = 12000;
 export const MAX_FETCH_RETRIES = 3;
 export const ARCHIVE_RETENTION_DAYS = 60;
+export const DEFAULT_TOPIC = "ai";
+export const AI_KEYWORDS = [
+  "AI",
+  "AIGC",
+  "AGI",
+  "ChatGPT",
+  "OpenAI",
+  "GPT",
+  "Claude",
+  "Gemini",
+  "DeepSeek",
+  "Kimi",
+  "豆包",
+  "通义",
+  "千问",
+  "文心",
+  "讯飞星火",
+  "混元",
+  "月之暗面",
+  "大模型",
+  "人工智能",
+  "生成式",
+  "智能体",
+  "Agent",
+  "MCP",
+  "多模态",
+  "Sora",
+  "Runway",
+  "Midjourney",
+  "可灵",
+  "即梦",
+  "Cursor",
+  "Copilot",
+  "Manus",
+  "机器人",
+  "自动驾驶",
+  "英伟达",
+  "NVIDIA",
+  "黄仁勋",
+  "GPU",
+  "算力",
+  "AI芯片",
+  "模型训练",
+  "推理成本",
+  "端侧AI",
+  "AI应用",
+  "AI视频",
+  "AI搜索",
+  "AI编程"
+];
 
 if (isDirectExecution(import.meta.url, process.argv[1])) {
   await runFetchHotboard();
@@ -31,6 +81,8 @@ export async function runFetchHotboard(options = {}) {
   const fetchImpl = options.fetchImpl || globalThis.fetch;
   const sleepImpl = options.sleep || sleep;
   const apiKey = options.apiKey ?? process.env.UAPI_API_KEY ?? "";
+  const topic = options.topic || process.env.HOTBOARD_TOPIC || DEFAULT_TOPIC;
+  const keywords = parseKeywordList(process.env.HOTBOARD_AI_KEYWORDS, options.keywords || AI_KEYWORDS);
 
   if (typeof fetchImpl !== "function") {
     throw new TypeError("fetch is not available in this Node runtime");
@@ -54,7 +106,8 @@ export async function runFetchHotboard(options = {}) {
     }
   }
 
-  const snapshot = buildSnapshot({ source, generatedAt, platforms, boards });
+  const filteredBoards = topic === "ai" ? filterBoardsForAi(boards, keywords) : boards;
+  const snapshot = buildSnapshot({ source, generatedAt, platforms, boards: filteredBoards, topic, keywords });
   await writeJson(join(dataDir, "snapshot.json"), snapshot);
   await writeArchive(snapshot, { dataDir });
   return snapshot;
@@ -112,14 +165,27 @@ export function parsePlatformList(value, fallback = DEFAULT_PLATFORMS) {
   return platforms.length ? [...new Set(platforms)] : [...fallback];
 }
 
-export function buildSnapshot({ source = HOTBOARD_SOURCE, generatedAt, platforms, boards }) {
+export function parseKeywordList(value, fallback = AI_KEYWORDS) {
+  const source = typeof value === "string" && value.trim() ? value.split(",") : fallback;
+  const keywords = source.map((keyword) => String(keyword).trim()).filter(Boolean);
+  return keywords.length ? [...new Set(keywords)] : [...fallback];
+}
+
+export function buildSnapshot({ source = HOTBOARD_SOURCE, generatedAt, platforms, boards, topic = DEFAULT_TOPIC, keywords = AI_KEYWORDS }) {
   const okCount = boards.filter((board) => !board.error).length;
+  const itemCount = boards.reduce((sum, board) => sum + (Array.isArray(board.list) ? board.list.length : 0), 0);
   return {
     source,
     generatedAt,
+    topic,
+    filter: {
+      mode: topic === "ai" ? "ai-keyword-match" : "none",
+      keywords
+    },
     platforms: [...platforms],
     okCount,
     errorCount: boards.length - okCount,
+    itemCount,
     boards
   };
 }
@@ -145,6 +211,59 @@ export function failedBoard(platform, message, fetchedAt) {
     error: message,
     fetched_at: fetchedAt
   };
+}
+
+export function filterBoardsForAi(boards, keywords = AI_KEYWORDS) {
+  return boards.map((board) => {
+    if (board.error || !Array.isArray(board.list)) return board;
+    const list = board.list
+      .map((item) => annotateAiItem(item, keywords))
+      .filter((item) => item.extra.aiMatchedKeywords.length > 0);
+    return {
+      ...board,
+      list,
+      total_before_filter: board.list.length,
+      total_after_filter: list.length
+    };
+  });
+}
+
+export function annotateAiItem(item, keywords = AI_KEYWORDS) {
+  const extra = item && typeof item.extra === "object" ? item.extra || {} : {};
+  const text = collectSearchText(item, extra);
+  const matchedKeywords = keywords.filter((keyword) => keywordMatches(keyword, text));
+  return {
+    ...item,
+    extra: {
+      ...extra,
+      aiMatchedKeywords: matchedKeywords
+    }
+  };
+}
+
+export function keywordMatches(keyword, text) {
+  const normalizedKeyword = String(keyword || "").trim();
+  const normalizedText = String(text || "");
+  if (!normalizedKeyword || !normalizedText) return false;
+  if (/^[a-z0-9.+#-]+$/i.test(normalizedKeyword)) {
+    const escaped = normalizedKeyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(normalizedText);
+  }
+  return normalizedText.toLowerCase().includes(normalizedKeyword.toLowerCase());
+}
+
+function collectSearchText(item, extra) {
+  const parts = [
+    item?.title,
+    item?.hot_value,
+    extra?.desc,
+    extra?.description,
+    extra?.tname,
+    extra?.rcmd_reason,
+    extra?.tag,
+    extra?.label
+  ];
+  return parts.filter(Boolean).join(" ");
 }
 
 export function minuteKey(value) {

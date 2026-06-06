@@ -14,28 +14,29 @@ test("normalizes boards and builds a ranked digest", () => {
     type: "weibo",
     update_time: "2026-06-06 23:51:22",
     list: [
-      { index: 1, title: "浪姐排名", hot_value: "1279491", url: "https://example.com/a", extra: {} },
-      { index: 2, title: "高考期间这些地区雨势较大", hot_value: "69万热度", url: "https://example.com/b", extra: {} }
+      { index: 1, title: "OpenAI 发布新模型", hot_value: "1279491", url: "https://example.com/a", extra: { aiMatchedKeywords: ["OpenAI"] } },
+      { index: 2, title: "英伟达 AI 芯片供不应求", hot_value: "69万热度", url: "https://example.com/b", extra: { aiMatchedKeywords: ["AI芯片"] } }
     ]
   });
   const digest = buildDigest([board], 1);
   assert.equal(board.items[0].platformLabel, "微博热搜");
   assert.equal(digest.length, 1);
-  assert.equal(digest[0].title, "浪姐排名");
+  assert.equal(digest[0].title, "OpenAI 发布新模型");
+  assert.deepEqual(digest[0].matchedKeywords, ["OpenAI"]);
 });
 
 test("voiceover creates reusable script text", () => {
   const script = buildVoiceover([
     {
-      title: "热点 A",
+      title: "OpenAI 发布新模型",
       platformLabel: "微博热搜",
       hotValue: "100万热度",
       description: "",
-      hotScore: 1000000
+      hotScore: 1000000,
+      matchedKeywords: ["OpenAI"]
     }
   ], "2026-06-06T12:00:00Z");
-  assert.match(script.script, /今日热榜速览/);
-  assert.match(script.short, /热点 A/);
+  assert.match(script.script, /今日 AI 热榜速览/);
+  assert.match(script.short, /OpenAI 发布新模型/);
   assert.equal(script.bullets.length, 1);
 });
-

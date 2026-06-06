@@ -27,6 +27,7 @@ export function normalizeItem(item, platform, updateTime) {
     hotValue: String(item.hot_value || ""),
     hotScore: parseHeat(item.hot_value),
     description: String(extra.desc || extra.description || "").trim(),
+    matchedKeywords: Array.isArray(extra.aiMatchedKeywords) ? extra.aiMatchedKeywords : [],
     cover,
     updateTime
   };
@@ -73,7 +74,7 @@ export function buildVoiceover(digestItems, generatedAt = new Date().toISOString
     bulletOutline: buildBulletOutlineVariant(date, top, bullets)
   };
   return {
-    title: `${date} 每日热榜口播`,
+    title: `${date} AI 热榜口播`,
     short: variants.thirtySecond.short,
     script: variants.sixtySecond.script,
     bullets,
@@ -85,9 +86,11 @@ export function makeAngle(item) {
   const description = String(item.description || "").trim();
   const hotValue = String(item.hotValue || "");
   const hotScore = Number(item.hotScore || 0);
+  const matchedKeywords = Array.isArray(item.matchedKeywords) ? item.matchedKeywords.slice(0, 3) : [];
   if (description) return description.slice(0, 80);
+  if (matchedKeywords.length) return `围绕 ${matchedKeywords.join("、")} 的 AI 话题，适合做技术影响、产品机会或商业化角度拆解。`;
   if (hotScore > 1000000 || hotValue.includes("万")) return "高热度话题，适合做快速解读、观点对撞或评论区互动。";
-  return "平台排名靠前，适合做轻量资讯播报或选题观察。";
+  return "AI 相关话题排名靠前，适合做轻量资讯播报或选题观察。";
 }
 
 function buildThirtySecondVariant(date, top, bullets) {
@@ -95,14 +98,14 @@ function buildThirtySecondVariant(date, top, bullets) {
   const focus = top[0];
   const script = top.length
     ? [
-        "大家好，这里是今日热榜 30 秒速览。",
-        `截至 ${date}，今天先看 ${joinTitles(leadItems)}。`,
+        "大家好，这里是今日 AI 热榜 30 秒速览。",
+        `截至 ${date}，今天 AI 圈先看 ${joinTitles(leadItems)}。`,
         `第一条来自${focus.platformLabel}，「${focus.title}」${heatPhrase(focus)}，重点看${stripSentenceEnd(makeAngle(focus))}。`,
-        "适合先做快讯、评论区互动和后续选题跟踪。"
+        "适合先做快讯、技术解读、产品机会和后续选题跟踪。"
       ].join("\n")
     : [
-        "大家好，这里是今日热榜 30 秒速览。",
-        `截至 ${date}，当前暂无可播报热点。`,
+        "大家好，这里是今日 AI 热榜 30 秒速览。",
+        `截至 ${date}，当前暂无可播报 AI 热点。`,
         "建议稍后刷新数据，再安排选题和口播。"
       ].join("\n");
 
@@ -110,8 +113,8 @@ function buildThirtySecondVariant(date, top, bullets) {
     id: "30s",
     label: "30 秒口播",
     durationSeconds: 30,
-    title: `${date} 30 秒热榜口播`,
-    short: top.length ? `今天最值得看的 ${top.length} 条热点：${joinTitles(top)}。` : "当前暂无可播报热点，建议稍后刷新数据。",
+    title: `${date} 30 秒 AI 热榜口播`,
+    short: top.length ? `今天最值得看的 ${top.length} 条 AI 热点：${joinTitles(top)}。` : "当前暂无可播报 AI 热点，建议稍后刷新数据。",
     script,
     bullets: bullets.slice(0, 3)
   };
@@ -121,28 +124,28 @@ function buildSixtySecondVariant(date, top, bullets) {
   const body = top.map((item, index) => formatScriptLine(item, index)).join("\n");
   const script = top.length
     ? [
-        "大家好，这里是今日热榜速览。",
+        "大家好，这里是今日 AI 热榜速览。",
         "",
         body,
         "",
-        `如果你只看一条，我建议先看「${top[0].title}」。它同时具备高讨论度和强传播性，适合继续做选题拆解。`,
+        `如果你只看一条，我建议先看「${top[0].title}」。它在 AI 领域同时具备讨论度和传播性，适合继续做技术、产品或商业化拆解。`,
         "",
-        "以上就是今天的热点更新。"
+        "以上就是今天的 AI 热点更新。"
       ].join("\n")
     : [
-        "大家好，这里是今日热榜速览。",
+        "大家好，这里是今日 AI 热榜速览。",
         "",
-        "当前暂无可播报热点。建议稍后刷新数据，再整理今天的选题清单。",
+        "当前暂无可播报 AI 热点。建议稍后刷新数据，再整理今天的 AI 选题清单。",
         "",
-        "以上就是今天的热点更新。"
+        "以上就是今天的 AI 热点更新。"
       ].join("\n");
 
   return {
     id: "60s",
     label: "60 秒口播",
     durationSeconds: 60,
-    title: `${date} 60 秒热榜口播`,
-    short: top.length ? `60 秒看完 ${top.length} 条热榜重点：${joinTitles(top)}。` : "当前暂无可播报热点，建议稍后刷新数据。",
+    title: `${date} 60 秒 AI 热榜口播`,
+    short: top.length ? `60 秒看完 ${top.length} 条 AI 热榜重点：${joinTitles(top)}。` : "当前暂无可播报 AI 热点，建议稍后刷新数据。",
     script,
     bullets
   };
@@ -151,20 +154,20 @@ function buildSixtySecondVariant(date, top, bullets) {
 function buildBulletOutlineVariant(date, top, bullets) {
   const script = bullets.length
     ? [
-        `${date} 热榜 bullet outline`,
+        `${date} AI 热榜 bullet outline`,
         ...bullets.map(
           (bullet) =>
             `${bullet.order}. [${bullet.platform}] ${bullet.title}\n   - 热度：${bullet.hotValue || "未标注"}\n   - 角度：${bullet.angle}\n   - 转场：${bullet.cue}`
         )
       ].join("\n")
-    : `${date} 热榜 bullet outline\n1. 当前暂无可播报热点，先刷新数据再输出提纲。`;
+    : `${date} AI 热榜 bullet outline\n1. 当前暂无可播报 AI 热点，先刷新数据再输出提纲。`;
 
   return {
     id: "bullet-outline",
     label: "Bullet outline",
     format: "outline",
-    title: `${date} 热榜口播提纲`,
-    short: top.length ? `按平台、热度和选题角度整理 ${top.length} 条热点。` : "当前暂无可播报热点，建议稍后刷新数据。",
+    title: `${date} AI 热榜口播提纲`,
+    short: top.length ? `按平台、热度和选题角度整理 ${top.length} 条 AI 热点。` : "当前暂无可播报 AI 热点，建议稍后刷新数据。",
     script,
     bullets
   };

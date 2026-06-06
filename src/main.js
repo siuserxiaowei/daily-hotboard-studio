@@ -46,14 +46,14 @@ function render() {
         <div class="brand">
           <span class="mark" aria-hidden="true"></span>
           <div>
-            <strong>每日热榜</strong>
-            <small>Hotboard Studio</small>
+            <strong>AI 每日热榜</strong>
+            <small>AI Hotboard Studio</small>
           </div>
         </div>
 
         <label class="search">
-          <span class="field-label">搜索热榜</span>
-          <input id="search-input" value="${escapeHtml(state.query)}" placeholder="关键词 / 平台 / 话题" autocomplete="off" />
+          <span class="field-label">搜索 AI 热点</span>
+          <input id="search-input" value="${escapeHtml(state.query)}" placeholder="模型 / 公司 / 产品 / 技术" autocomplete="off" />
         </label>
 
         <section class="sidebar-block">
@@ -73,7 +73,7 @@ function render() {
             <strong>${formatNumber(visibleTopics)}</strong>
           </div>
           <div>
-            <span>全部热点</span>
+            <span>AI 热点</span>
             <strong>${formatNumber(totalTopics)}</strong>
           </div>
         </section>
@@ -83,7 +83,7 @@ function render() {
         <section class="top-strip" aria-label="工作台概览">
           <div class="top-copy">
             <p class="eyebrow">更新于 ${formatDate(state.snapshot.generatedAt)}</p>
-            <h1>热榜工作台</h1>
+            <h1>AI 热榜工作台</h1>
             <div class="scope-line">
               <span>${escapeHtml(getSelectedGroupLabel())}</span>
               <span>${escapeHtml(getSelectedPlatformLabel())}</span>
@@ -92,9 +92,9 @@ function render() {
           </div>
           <div class="stats" aria-label="筛选统计">
             ${statCard("平台", groupBoards.length, "当前分类")}
-            ${statCard("匹配", visibleTopics, "筛选后热点")}
+            ${statCard("匹配", visibleTopics, "筛选后 AI 热点")}
             ${statCard("描述", activeDescriptionCount, "可展开条目")}
-            ${statCard("最高信号", digest[0]?.signalScore || 0, "今日重点")}
+            ${statCard("最高信号", digest[0]?.signalScore || 0, "AI 重点")}
           </div>
         </section>
 
@@ -102,13 +102,13 @@ function render() {
           <article class="panel main-digest">
             <div class="panel-head">
               <div>
-                <p class="eyebrow">今日重点</p>
-                <h2>高信号热点</h2>
+                <p class="eyebrow">AI 今日重点</p>
+                <h2>高信号 AI 热点</h2>
               </div>
               <button class="ghost copy-action" id="copy-digest" type="button" data-default-label="复制摘要">复制摘要</button>
             </div>
             <div class="digest-list">
-              ${digest.length ? digest.slice(0, 8).map(renderDigestItem).join("") : renderEmptyState("没有匹配的重点", "当前搜索或筛选没有命中热点。清除条件后可恢复今日重点。")}
+              ${digest.length ? digest.slice(0, 8).map(renderDigestItem).join("") : renderEmptyState("没有匹配的 AI 重点", "当前搜索或筛选没有命中 AI 热点。清除条件后可恢复 AI 今日重点。")}
             </div>
           </article>
 
@@ -123,7 +123,7 @@ function render() {
             ${
               digest.length
                 ? `<p>${escapeHtml(voiceover.short)}</p><pre>${escapeHtml(voiceover.script)}</pre>`
-                : renderEmptyState("暂无口播素材", "没有可用热点时不会生成有效口播，请调整分类或关键词。")
+                : renderEmptyState("暂无 AI 口播素材", "没有可用 AI 热点时不会生成有效口播，请调整分类或关键词。")
             }
           </article>
         </section>
@@ -131,7 +131,7 @@ function render() {
         <section class="board-tools" aria-label="平台筛选">
           <div>
             <p class="eyebrow">平台卡片</p>
-            <h2>分平台热榜</h2>
+            <h2>分平台 AI 热榜</h2>
           </div>
           <div class="platform-tabs" role="list" aria-label="平台切换">
             ${platformTab("all", "全部", countItems(groupBoards))}
@@ -140,7 +140,7 @@ function render() {
         </section>
 
         <section class="boards" aria-live="polite">
-          ${boards.length ? boards.map(renderBoard).join("") : renderEmptyState("没有匹配的热点", "换个关键词，或切回全部平台查看当前快照中的热点。")}
+          ${boards.length ? boards.map(renderBoard).join("") : renderEmptyState("没有匹配的 AI 热点", "换个 AI 公司、模型、产品或技术关键词，或切回全部平台查看当前快照。")}
         </section>
       </main>
     </div>
@@ -243,7 +243,7 @@ function renderBoard(board) {
 }
 
 function renderBoardItem(item) {
-  const description = item.description || "该条目没有提供描述，当前保留原始标题、排名、热度和来源链接。";
+  const description = item.description || "该 AI 条目没有提供描述，当前保留原始标题、排名、热度和来源链接。";
   const cover = item.cover ? `<img class="topic-cover" src="${escapeHtml(resolveAssetUrl(item.cover))}" alt="" loading="lazy" data-fallback />` : "";
   return `
     <li class="topic-row">
@@ -265,6 +265,7 @@ function renderBoardItem(item) {
               <div><dt>平台</dt><dd>${escapeHtml(item.platformLabel)}</dd></div>
               <div><dt>排名</dt><dd>${formatRank(item.rank)}</dd></div>
               <div><dt>热度</dt><dd>${item.hotValue ? escapeHtml(item.hotValue) : "未提供"}</dd></div>
+              <div><dt>AI 命中</dt><dd>${item.matchedKeywords?.length ? escapeHtml(item.matchedKeywords.slice(0, 3).join(" / ")) : "AI"}</dd></div>
             </dl>
             ${renderExternalLink(item.url, "打开原链接", "detail-link")}
           </div>

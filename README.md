@@ -1,6 +1,6 @@
-# Daily Hotboard Studio
+# AI Daily Hotboard Studio
 
-Daily Hotboard Studio is a static workbench for tracking daily Chinese hotboard topics and preparing short voiceover material. It combines generated hotboard snapshots with a Vite frontend so editors can scan topics, copy a digest, and reuse deterministic 30-second, 60-second, and bullet-outline scripts.
+AI Daily Hotboard Studio is a static workbench for tracking AI-related Chinese hotboard topics and preparing short voiceover material. It fetches broad hotboard snapshots, keeps only entries that match AI keywords, and renders a focused dashboard for AI products, models, companies, chips, agents, robotics, and AI creator tools.
 
 ## References
 
@@ -10,7 +10,8 @@ Daily Hotboard Studio is a static workbench for tracking daily Chinese hotboard 
 
 ## Features
 
-- Multi-platform hotboard snapshot rendered as a dense editorial dashboard.
+- AI-only multi-platform hotboard snapshot rendered as a dense editorial dashboard.
+- Keyword filter for AI terms such as OpenAI, ChatGPT, Claude, Gemini, DeepSeek, Kimi, 豆包, 大模型, 智能体, MCP, Sora, Cursor, Copilot, 英伟达, GPU, 算力, 机器人, 自动驾驶, and AI应用.
 - Ranked digest based on heat, rank, cover, and description signals.
 - Voiceover material from `buildVoiceover` with compatible `title`, `short`, `script`, and `bullets` fields.
 - Additional `variants` output for `30s`, `60s`, and `bullet-outline` publishing formats.
@@ -57,7 +58,13 @@ Refresh hotboard data locally:
 npm run fetch
 ```
 
-The fetch command writes `data/snapshot.json` and appends an archive entry under `data/archive/`. The app reads `data/snapshot.json` at runtime, so run `npm run build` after refreshing data when preparing a static deploy.
+The fetch command writes AI-filtered `data/snapshot.json` and appends an archive entry under `data/archive/`. The app reads `data/snapshot.json` at runtime, so run `npm run build` after refreshing data when preparing a static deploy.
+
+Override AI keywords when needed:
+
+```bash
+HOTBOARD_AI_KEYWORDS="OpenAI,Claude,DeepSeek,AI搜索,智能体" npm run fetch
+```
 
 `UAPI_API_KEY` is optional. The current public endpoint can run without it, but the GitHub Actions workflow passes `${{ secrets.UAPI_API_KEY }}` into the environment so a future authenticated UAPI setup can use the same workflow without changing repository settings.
 
@@ -78,4 +85,4 @@ The scheduled workflow runs `npm ci`, `npm run fetch`, `npm test`, and `npm run 
 
 ## Disclaimer
 
-This project summarizes third-party hotboard data for editorial planning. Topic rankings, heat values, titles, links, and availability depend on upstream platforms and UAPI responses. Always verify sensitive, legal, financial, medical, or breaking-news claims against primary sources before publishing.
+This project summarizes third-party hotboard data for AI editorial planning. Topic rankings, heat values, titles, links, and availability depend on upstream platforms and UAPI responses. Always verify AI product launches, model claims, benchmarks, investments, legal claims, or breaking news against primary sources before publishing.
