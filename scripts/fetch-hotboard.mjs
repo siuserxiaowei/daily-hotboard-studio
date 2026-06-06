@@ -1,73 +1,259 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { DEFAULT_PLATFORMS } from "../src/platforms.js";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
-const endpoint = "https://uapis.cn/api/v1/misc/hotboard";
-const generatedAt = new Date().toISOString();
-const delayMs = Number(process.env.HOTBOARD_FETCH_DELAY_MS || 900);
 
-const boards = [];
-for (const platform of DEFAULT_PLATFORMS) {
-  boards.push(await fetchBoard(platform));
-  await sleep(delayMs);
+export const HOTBOARD_SOURCE = "https://uapis.cn/api/v1/misc/hotboard";
+export const DEFAULT_FETCH_DELAY_MS = 900;
+export const DEFAULT_FETCH_TIMEOUT_MS = 12000;
+export const MAX_FETCH_RETRIES = 3;
+export const ARCHIVE_RETENTION_DAYS = 60;
+
+if (isDirectExecution(import.meta.url, process.argv[1])) {
+  await runFetchHotboard();
 }
 
-const snapshot = {
-  source: "https://uapis.cn/api/v1/misc/hotboard",
-  generatedAt,
-  platforms: DEFAULT_PLATFORMS,
-  boards
-};
+export async function runFetchHotboard(options = {}) {
+  const generatedAt = options.generatedAt || new Date().toISOString();
+  const source = options.source || HOTBOARD_SOURCE;
+  const platforms = options.platforms || parsePlatformList(process.env.HOTBOARD_PLATFORMS, DEFAULT_PLATFORMS);
+  const delayMs = normalizeNonNegativeInteger(
+    options.delayMs ?? process.env.HOTBOARD_FETCH_DELAY_MS,
+    DEFAULT_FETCH_DELAY_MS
+  );
+  const timeoutMs = normalizePositiveInteger(
+    options.timeoutMs ?? process.env.HOTBOARD_FETCH_TIMEOUT_MS,
+    DEFAULT_FETCH_TIMEOUT_MS
+  );
+  const dataDir = options.dataDir || process.env.HOTBOARD_DATA_DIR || join(root, "data");
+  const fetchImpl = options.fetchImpl || globalThis.fetch;
+  const sleepImpl = options.sleep || sleep;
 
-await writeJson(join(root, "data", "snapshot.json"), snapshot);
-await appendArchive(snapshot);
+  if (typeof fetchImpl !== "function") {
+    throw new TypeError("fetch is not available in this Node runtime");
+  }
 
-async function fetchBoard(platform) {
-  const url = `${endpoint}?type=${encodeURIComponent(platform)}`;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
-    try {
-      const response = await fetch(url, { headers: { accept: "application/json" } });
-      if (response.ok) return response.json();
-      const retryAfter = Number(response.headers.get("retry-after") || 0);
-      if (response.status === 429 && attempt < 3) {
-        await sleep(Math.max(retryAfter * 1000, delayMs * attempt * 2));
-        continue;
-      }
-      return failedBoard(platform, `HTTP ${response.status}`);
-    } catch (error) {
-      if (attempt === 3) return failedBoard(platform, error.message);
-      await sleep(delayMs * attempt * 2);
+  const boards = [];
+  for (const [index, platform] of platforms.entries()) {
+    boards.push(
+      await fetchBoard(platform, {
+        source,
+        generatedAt,
+        delayMs,
+        timeoutMs,
+        fetchImpl,
+        sleep: sleepImpl
+      })
+    );
+    if (index < platforms.length - 1 && delayMs > 0) {
+      await sleepImpl(delayMs);
     }
   }
-  return failedBoard(platform, "Unknown fetch failure");
+
+  const snapshot = buildSnapshot({ source, generatedAt, platforms, boards });
+  await writeJson(join(dataDir, "snapshot.json"), snapshot);
+  await writeArchive(snapshot, { dataDir });
+  return snapshot;
 }
 
-function failedBoard(platform, message) {
+export async function fetchBoard(platform, options = {}) {
+  const source = options.source || HOTBOARD_SOURCE;
+  const generatedAt = options.generatedAt || new Date().toISOString();
+  const delayMs = normalizeNonNegativeInteger(options.delayMs, DEFAULT_FETCH_DELAY_MS);
+  const timeoutMs = normalizePositiveInteger(options.timeoutMs, DEFAULT_FETCH_TIMEOUT_MS);
+  const maxRetries = Math.min(
+    MAX_FETCH_RETRIES,
+    normalizeNonNegativeInteger(options.maxRetries, MAX_FETCH_RETRIES)
+  );
+  const fetchImpl = options.fetchImpl || globalThis.fetch;
+  const sleepImpl = options.sleep || sleep;
+  const url = `${source}?type=${encodeURIComponent(platform)}`;
+
+  for (let attempt = 1; attempt <= maxRetries + 1; attempt += 1) {
+    try {
+      const response = await fetchWithTimeout(url, { fetchImpl, timeoutMs });
+      if (response.ok) {
+        const payload = await response.json();
+        return normalizeSuccessBoard(payload, platform, generatedAt);
+      }
+      const message = httpErrorMessage(response);
+      if (attempt <= maxRetries && shouldRetryStatus(response.status)) {
+        await sleepImpl(
+          retryDelayMs({
+            status: response.status,
+            retryAfter: response.headers?.get?.("retry-after"),
+            attempt,
+            delayMs
+          })
+        );
+        continue;
+      }
+      return failedBoard(platform, message, generatedAt);
+    } catch (error) {
+      if (attempt <= maxRetries) {
+        await sleepImpl(backoffDelayMs(attempt, delayMs));
+        continue;
+      }
+      return failedBoard(platform, formatFetchError(error), generatedAt);
+    }
+  }
+
+  return failedBoard(platform, "Unknown fetch failure", generatedAt);
+}
+
+export function parsePlatformList(value, fallback = DEFAULT_PLATFORMS) {
+  const source = typeof value === "string" && value.trim() ? value.split(",") : fallback;
+  const platforms = source.map((platform) => String(platform).trim()).filter(Boolean);
+  return platforms.length ? [...new Set(platforms)] : [...fallback];
+}
+
+export function buildSnapshot({ source = HOTBOARD_SOURCE, generatedAt, platforms, boards }) {
+  const okCount = boards.filter((board) => !board.error).length;
+  return {
+    source,
+    generatedAt,
+    platforms: [...platforms],
+    okCount,
+    errorCount: boards.length - okCount,
+    boards
+  };
+}
+
+export function normalizeSuccessBoard(payload, platform, fetchedAt) {
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    return failedBoard(platform, "Invalid JSON payload", fetchedAt);
+  }
+  return {
+    ...payload,
+    type: String(payload.type || platform),
+    update_time: String(payload.update_time || ""),
+    list: Array.isArray(payload.list) ? payload.list : [],
+    fetched_at: fetchedAt
+  };
+}
+
+export function failedBoard(platform, message, fetchedAt) {
   return {
     type: platform,
     update_time: "",
     list: [],
     error: message,
-    fetched_at: generatedAt
+    fetched_at: fetchedAt
   };
 }
 
-async function appendArchive(snapshotData) {
-  const date = generatedAt.slice(0, 10);
-  const archiveFile = join(root, "data", "archive", `${date}.json`);
-  const indexFile = join(root, "data", "archive", "index.json");
-  const archived = await readJson(archiveFile, { date, snapshots: [] });
-  archived.snapshots.push(snapshotData);
+export function minuteKey(value) {
+  return String(value || "").slice(0, 16);
+}
+
+export function upsertArchiveSnapshot(archive, snapshotData) {
+  const date = snapshotData.generatedAt.slice(0, 10);
+  const snapshots = Array.isArray(archive?.snapshots) ? [...archive.snapshots] : [];
+  const targetMinuteKey = minuteKey(snapshotData.generatedAt);
+  const existingIndex = snapshots.findIndex((snapshot) => minuteKey(snapshot?.generatedAt) === targetMinuteKey);
+
+  if (existingIndex >= 0) {
+    snapshots[existingIndex] = snapshotData;
+  } else {
+    snapshots.push(snapshotData);
+  }
+
+  snapshots.sort((left, right) => String(left.generatedAt).localeCompare(String(right.generatedAt)));
+  return { date, snapshots };
+}
+
+export function updateArchiveIndex(index, date, retentionDays = ARCHIVE_RETENTION_DAYS) {
+  const dates = Array.isArray(index?.dates) ? index.dates : [];
+  return {
+    dates: [date, ...dates.filter((item) => item !== date)]
+      .filter(Boolean)
+      .sort((left, right) => String(right).localeCompare(String(left)))
+      .slice(0, retentionDays)
+  };
+}
+
+export function parseRetryAfterMs(value, nowMs = Date.now()) {
+  if (!value) return null;
+  const trimmed = String(value).trim();
+  const seconds = Number(trimmed);
+  if (Number.isFinite(seconds) && seconds >= 0) {
+    return Math.ceil(seconds * 1000);
+  }
+  const dateMs = Date.parse(trimmed);
+  if (Number.isFinite(dateMs)) {
+    return Math.max(0, dateMs - nowMs);
+  }
+  return null;
+}
+
+export function retryDelayMs({ status, retryAfter, attempt, delayMs, nowMs = Date.now() }) {
+  if (status === 429) {
+    const retryAfterMs = parseRetryAfterMs(retryAfter, nowMs);
+    if (retryAfterMs !== null) return retryAfterMs;
+  }
+  return backoffDelayMs(attempt, delayMs);
+}
+
+async function writeArchive(snapshotData, { dataDir }) {
+  const date = snapshotData.generatedAt.slice(0, 10);
+  const archiveFile = join(dataDir, "archive", `${date}.json`);
+  const indexFile = join(dataDir, "archive", "index.json");
+  const archived = upsertArchiveSnapshot(await readJson(archiveFile, { date, snapshots: [] }), snapshotData);
   await writeJson(archiveFile, archived);
 
-  const index = await readJson(indexFile, { dates: [] });
-  if (!index.dates.includes(date)) {
-    index.dates.unshift(date);
-  }
-  index.dates = index.dates.slice(0, 60);
+  const index = updateArchiveIndex(await readJson(indexFile, { dates: [] }), date);
   await writeJson(indexFile, index);
+}
+
+async function fetchWithTimeout(url, { fetchImpl, timeoutMs }) {
+  const controller = new AbortController();
+  let timedOut = false;
+  const timeoutId = setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, timeoutMs);
+
+  try {
+    return await fetchImpl(url, {
+      headers: { accept: "application/json" },
+      signal: controller.signal
+    });
+  } catch (error) {
+    if (timedOut) {
+      throw new Error(`Request timed out after ${timeoutMs}ms`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+function shouldRetryStatus(status) {
+  return status === 408 || status === 425 || status === 429 || status >= 500;
+}
+
+function httpErrorMessage(response) {
+  return `HTTP ${response.status}${response.statusText ? ` ${response.statusText}` : ""}`;
+}
+
+function formatFetchError(error) {
+  return error?.message || String(error);
+}
+
+function backoffDelayMs(attempt, delayMs) {
+  return delayMs * attempt * 2;
+}
+
+function normalizePositiveInteger(value, fallback) {
+  const number = Number(value);
+  return Number.isFinite(number) && number > 0 ? Math.round(number) : fallback;
+}
+
+function normalizeNonNegativeInteger(value, fallback) {
+  const number = Number(value);
+  return Number.isFinite(number) && number >= 0 ? Math.round(number) : fallback;
 }
 
 async function readJson(path, fallback) {
@@ -85,4 +271,8 @@ async function writeJson(path, value) {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isDirectExecution(moduleUrl, argvPath) {
+  return Boolean(argvPath) && moduleUrl === pathToFileURL(argvPath).href;
 }
