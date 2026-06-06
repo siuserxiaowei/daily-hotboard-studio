@@ -6,7 +6,7 @@
   "description": "Daily hotboard dashboard and voiceover material generator powered by UApiPro hotboard data.",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
+    "build": "vite build --base=./ && node scripts/copy-data.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "fetch": "node scripts/fetch-hotboard.mjs",
     "test": "node --test"

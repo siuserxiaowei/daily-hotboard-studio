@@ -30,6 +30,7 @@ export async function runFetchHotboard(options = {}) {
   const dataDir = options.dataDir || process.env.HOTBOARD_DATA_DIR || join(root, "data");
   const fetchImpl = options.fetchImpl || globalThis.fetch;
   const sleepImpl = options.sleep || sleep;
+  const apiKey = options.apiKey ?? process.env.UAPI_API_KEY ?? "";
 
   if (typeof fetchImpl !== "function") {
     throw new TypeError("fetch is not available in this Node runtime");
@@ -43,6 +44,7 @@ export async function runFetchHotboard(options = {}) {
         generatedAt,
         delayMs,
         timeoutMs,
+        apiKey,
         fetchImpl,
         sleep: sleepImpl
       })
@@ -63,6 +65,7 @@ export async function fetchBoard(platform, options = {}) {
   const generatedAt = options.generatedAt || new Date().toISOString();
   const delayMs = normalizeNonNegativeInteger(options.delayMs, DEFAULT_FETCH_DELAY_MS);
   const timeoutMs = normalizePositiveInteger(options.timeoutMs, DEFAULT_FETCH_TIMEOUT_MS);
+  const apiKey = String(options.apiKey || "");
   const maxRetries = Math.min(
     MAX_FETCH_RETRIES,
     normalizeNonNegativeInteger(options.maxRetries, MAX_FETCH_RETRIES)
@@ -73,7 +76,7 @@ export async function fetchBoard(platform, options = {}) {
 
   for (let attempt = 1; attempt <= maxRetries + 1; attempt += 1) {
     try {
-      const response = await fetchWithTimeout(url, { fetchImpl, timeoutMs });
+      const response = await fetchWithTimeout(url, { fetchImpl, timeoutMs, apiKey });
       if (response.ok) {
         const payload = await response.json();
         return normalizeSuccessBoard(payload, platform, generatedAt);
@@ -207,7 +210,7 @@ async function writeArchive(snapshotData, { dataDir }) {
   await writeJson(indexFile, index);
 }
 
-async function fetchWithTimeout(url, { fetchImpl, timeoutMs }) {
+async function fetchWithTimeout(url, { fetchImpl, timeoutMs, apiKey }) {
   const controller = new AbortController();
   let timedOut = false;
   const timeoutId = setTimeout(() => {
@@ -216,8 +219,10 @@ async function fetchWithTimeout(url, { fetchImpl, timeoutMs }) {
   }, timeoutMs);
 
   try {
+    const headers = { accept: "application/json" };
+    if (apiKey) headers["X-API-Key"] = apiKey;
     return await fetchImpl(url, {
-      headers: { accept: "application/json" },
+      headers,
       signal: controller.signal
     });
   } catch (error) {

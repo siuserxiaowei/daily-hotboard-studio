@@ -163,3 +163,21 @@ test("fetchBoard records one platform error instead of throwing", async () => {
     fetched_at: fetchedAt
   });
 });
+
+test("fetchBoard sends optional UAPI API key header", async () => {
+  let observedHeaders;
+  await fetchBoard("weibo", {
+    generatedAt: fetchedAt,
+    delayMs: 0,
+    timeoutMs: 1000,
+    apiKey: "test-key",
+    fetchImpl: async (_url, init) => {
+      observedHeaders = init.headers;
+      return new Response(JSON.stringify({ type: "weibo", update_time: "now", list: [] }), { status: 200 });
+    },
+    sleep: async () => {}
+  });
+
+  assert.equal(observedHeaders.accept, "application/json");
+  assert.equal(observedHeaders["X-API-Key"], "test-key");
+});
