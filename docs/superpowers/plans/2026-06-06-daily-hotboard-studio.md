@@ -33,11 +33,11 @@
 - Modify: `src/main.js`
 - Modify: `src/styles.css`
 
-- [ ] Refine desktop and mobile layout as an information-dense workbench.
-- [ ] Add empty states for no matching search results.
-- [ ] Add per-topic detail affordances using existing data fields only.
-- [ ] Ensure buttons, tabs, cards, and long text do not resize or overlap.
-- [ ] Run `npm run build`.
+- [x] Refine desktop and mobile layout as an information-dense workbench.
+- [x] Add empty states for no matching search results.
+- [x] Add per-topic detail affordances using existing data fields only.
+- [x] Ensure buttons, tabs, cards, and long text do not resize or overlap.
+- [x] Run `npm run build`.
 
 ### Task 3: Voiceover And Publishing
 

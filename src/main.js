@@ -11,6 +11,7 @@ const state = {
 };
 
 const app = document.querySelector("#app");
+const numberFormatter = new Intl.NumberFormat("zh-CN");
 
 init();
 
@@ -22,79 +23,124 @@ async function init() {
     state.boards = (state.snapshot.boards || []).map(normalizeBoard);
     render();
   } catch (error) {
-    app.innerHTML = `<main class="boot error"><p>热榜数据暂时不可用：${escapeHtml(error.message)}</p></main>`;
+    app.innerHTML = `
+      <main class="boot error">
+        <p>热榜数据暂时不可用：${escapeHtml(error.message)}</p>
+      </main>
+    `;
   }
 }
 
 function render() {
+  const groupBoards = getGroupBoards();
   const boards = filterBoards();
   const digest = buildDigest(boards, 14);
   const voiceover = buildVoiceover(digest, state.snapshot.generatedAt);
+  const totalTopics = countItems(state.boards);
+  const visibleTopics = countItems(boards);
+  const activeDescriptionCount = boards.flatMap((board) => board.items).filter((item) => item.description).length;
+
   app.innerHTML = `
     <div class="shell">
-      <aside class="sidebar">
+      <aside class="sidebar" aria-label="热榜筛选">
         <div class="brand">
-          <span class="mark"></span>
+          <span class="mark" aria-hidden="true"></span>
           <div>
             <strong>每日热榜</strong>
             <small>Hotboard Studio</small>
           </div>
         </div>
+
         <label class="search">
-          <span>搜索</span>
-          <input id="search-input" value="${escapeHtml(state.query)}" placeholder="关键词 / 平台 / 话题" />
+          <span class="field-label">搜索热榜</span>
+          <input id="search-input" value="${escapeHtml(state.query)}" placeholder="关键词 / 平台 / 话题" autocomplete="off" />
         </label>
-        <nav class="group-list">
-          ${groupButton("all", "全部平台")}
-          ${PLATFORM_GROUPS.map((group) => groupButton(group.id, group.label)).join("")}
-        </nav>
-      </aside>
-      <main class="workspace">
-        <section class="hero-panel">
-          <div>
-            <p class="eyebrow">更新于 ${formatDate(state.snapshot.generatedAt)}</p>
-            <h1>今天的注意力流向</h1>
-            <p class="lede">把微博、知乎、B站、新闻和科技社区的热榜合并成一个可播报、可复制、可跟踪的工作台。</p>
+
+        <section class="sidebar-block">
+          <div class="sidebar-title">
+            <span>分类</span>
+            <small>${groupBoards.length} / ${state.boards.length} 平台</small>
           </div>
-          <div class="stats">
-            <div><strong>${state.boards.length}</strong><span>平台</span></div>
-            <div><strong>${state.boards.reduce((sum, board) => sum + board.items.length, 0)}</strong><span>条热点</span></div>
-            <div><strong>${digest[0]?.signalScore || 0}</strong><span>最高信号</span></div>
+          <nav class="group-list" aria-label="分类筛选">
+            ${groupButton("all", "全部平台")}
+            ${PLATFORM_GROUPS.map((group) => groupButton(group.id, group.label)).join("")}
+          </nav>
+        </section>
+
+        <section class="sidebar-block side-summary" aria-label="当前数据概览">
+          <div>
+            <span>当前匹配</span>
+            <strong>${formatNumber(visibleTopics)}</strong>
+          </div>
+          <div>
+            <span>全部热点</span>
+            <strong>${formatNumber(totalTopics)}</strong>
           </div>
         </section>
-        <section class="digest-grid">
+      </aside>
+
+      <main class="workspace">
+        <section class="top-strip" aria-label="工作台概览">
+          <div class="top-copy">
+            <p class="eyebrow">更新于 ${formatDate(state.snapshot.generatedAt)}</p>
+            <h1>热榜工作台</h1>
+            <div class="scope-line">
+              <span>${escapeHtml(getSelectedGroupLabel())}</span>
+              <span>${escapeHtml(getSelectedPlatformLabel())}</span>
+              ${state.query ? `<span>搜索：${escapeHtml(state.query)}</span>` : "<span>未输入关键词</span>"}
+            </div>
+          </div>
+          <div class="stats" aria-label="筛选统计">
+            ${statCard("平台", groupBoards.length, "当前分类")}
+            ${statCard("匹配", visibleTopics, "筛选后热点")}
+            ${statCard("描述", activeDescriptionCount, "可展开条目")}
+            ${statCard("最高信号", digest[0]?.signalScore || 0, "今日重点")}
+          </div>
+        </section>
+
+        <section class="focus-grid" aria-label="今日重点和口播">
           <article class="panel main-digest">
             <div class="panel-head">
               <div>
-                <p class="eyebrow">精选</p>
-                <h2>今日重点</h2>
+                <p class="eyebrow">今日重点</p>
+                <h2>高信号热点</h2>
               </div>
-              <button class="ghost" id="copy-digest">复制摘要</button>
+              <button class="ghost copy-action" id="copy-digest" type="button" data-default-label="复制摘要">复制摘要</button>
             </div>
             <div class="digest-list">
-              ${digest.slice(0, 8).map(renderDigestItem).join("")}
+              ${digest.length ? digest.slice(0, 8).map(renderDigestItem).join("") : renderEmptyState("没有匹配的重点", "当前搜索或筛选没有命中热点。清除条件后可恢复今日重点。")}
             </div>
           </article>
+
           <article class="panel voice-card">
             <div class="panel-head">
               <div>
                 <p class="eyebrow">口播</p>
                 <h2>${escapeHtml(voiceover.title)}</h2>
               </div>
-              <button class="ghost" id="copy-script">复制脚本</button>
+              <button class="ghost copy-action" id="copy-script" type="button" data-default-label="复制脚本">复制脚本</button>
             </div>
-            <p>${escapeHtml(voiceover.short)}</p>
-            <pre>${escapeHtml(voiceover.script)}</pre>
+            ${
+              digest.length
+                ? `<p>${escapeHtml(voiceover.short)}</p><pre>${escapeHtml(voiceover.script)}</pre>`
+                : renderEmptyState("暂无口播素材", "没有可用热点时不会生成有效口播，请调整分类或关键词。")
+            }
           </article>
         </section>
-        <section class="board-tools">
-          <div class="platform-tabs">
-            ${platformTab("all", "全部")}
-            ${state.boards.map((board) => platformTab(board.platform, board.platformLabel)).join("")}
+
+        <section class="board-tools" aria-label="平台筛选">
+          <div>
+            <p class="eyebrow">平台卡片</p>
+            <h2>分平台热榜</h2>
+          </div>
+          <div class="platform-tabs" role="list" aria-label="平台切换">
+            ${platformTab("all", "全部", countItems(groupBoards))}
+            ${groupBoards.map((board) => platformTab(board.platform, board.platformLabel, board.items.length)).join("")}
           </div>
         </section>
-        <section class="boards">
-          ${boards.map(renderBoard).join("")}
+
+        <section class="boards" aria-live="polite">
+          ${boards.length ? boards.map(renderBoard).join("") : renderEmptyState("没有匹配的热点", "换个关键词，或切回全部平台查看当前快照中的热点。")}
         </section>
       </main>
     </div>
@@ -103,20 +149,26 @@ function render() {
 }
 
 function filterBoards() {
-  const group = PLATFORM_GROUPS.find((item) => item.id === state.selectedGroup);
-  const groupPlatforms = group ? new Set(group.platforms) : null;
-  const query = state.query.trim().toLowerCase();
+  const groupPlatforms = getGroupPlatformSet();
+  const query = normalizeQuery(state.query);
   return state.boards
     .filter((board) => !groupPlatforms || groupPlatforms.has(board.platform))
     .filter((board) => state.selectedPlatform === "all" || board.platform === state.selectedPlatform)
     .map((board) => ({
       ...board,
-      items: board.items.filter((item) => {
-        if (!query) return true;
-        return [item.title, item.description, item.platformLabel].some((value) => value.toLowerCase().includes(query));
-      })
+      items: board.items.filter((item) => itemMatchesQuery(item, query))
     }))
     .filter((board) => board.items.length);
+}
+
+function getGroupBoards() {
+  const groupPlatforms = getGroupPlatformSet();
+  return state.boards.filter((board) => !groupPlatforms || groupPlatforms.has(board.platform));
+}
+
+function getGroupPlatformSet() {
+  const group = PLATFORM_GROUPS.find((item) => item.id === state.selectedGroup);
+  return group ? new Set(group.platforms) : null;
 }
 
 function bindEvents(voiceover, digest) {
@@ -124,6 +176,7 @@ function bindEvents(voiceover, digest) {
     state.query = event.target.value;
     render();
   });
+
   document.querySelectorAll("[data-group]").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedGroup = button.dataset.group;
@@ -131,33 +184,50 @@ function bindEvents(voiceover, digest) {
       render();
     });
   });
+
   document.querySelectorAll("[data-platform]").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedPlatform = button.dataset.platform;
       render();
     });
   });
-  document.querySelector("#copy-script")?.addEventListener("click", () => copyText(voiceover.script));
-  document.querySelector("#copy-digest")?.addEventListener("click", () => {
-    copyText(digest.slice(0, 10).map((item, index) => `${index + 1}. [${item.platformLabel}] ${item.title} ${item.url}`).join("\n"));
+
+  document.querySelectorAll("[data-reset-filters]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.selectedGroup = "all";
+      state.selectedPlatform = "all";
+      state.query = "";
+      render();
+    });
+  });
+
+  document.querySelector("#copy-script")?.addEventListener("click", (event) => copyText(voiceover.script, event.currentTarget));
+  document.querySelector("#copy-digest")?.addEventListener("click", (event) => copyText(buildDigestCopy(digest), event.currentTarget));
+
+  document.querySelectorAll("img[data-fallback]").forEach((image) => {
+    image.addEventListener("error", () => image.remove());
   });
 }
 
 function renderDigestItem(item, index) {
+  const accent = PLATFORM_META[item.platform]?.accent || "#1f2933";
+  const description = item.description ? `<p class="digest-description">${escapeHtml(item.description)}</p>` : "";
   return `
-    <a class="digest-item" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">
+    <article class="digest-item" style="--accent:${escapeHtml(accent)}">
       <span class="rank">${index + 1}</span>
-      <div>
-        <strong>${escapeHtml(item.title)}</strong>
-        <small>${escapeHtml(item.platformLabel)} · 信号 ${item.signalScore}${item.hotValue ? ` · ${escapeHtml(item.hotValue)}` : ""}</small>
+      <div class="digest-copy">
+        ${renderExternalLink(item.url, item.title, "digest-title")}
+        <small>${escapeHtml(item.platformLabel)} · 信号 ${item.signalScore}${item.hotValue ? ` · 热度 ${escapeHtml(item.hotValue)}` : " · 热度未提供"}</small>
+        ${description}
       </div>
-    </a>
+    </article>
   `;
 }
 
 function renderBoard(board) {
+  const accent = PLATFORM_META[board.platform]?.accent || "#1f2933";
   return `
-    <article class="board-card">
+    <article class="board-card" style="--accent:${escapeHtml(accent)}">
       <header>
         <div>
           <p class="eyebrow">${escapeHtml(board.updateTime || "实时")}</p>
@@ -165,7 +235,7 @@ function renderBoard(board) {
         </div>
         <span>${board.items.length} 条</span>
       </header>
-      <ol>
+      <ol class="topic-list">
         ${board.items.slice(0, 12).map(renderBoardItem).join("")}
       </ol>
     </article>
@@ -173,28 +243,186 @@ function renderBoard(board) {
 }
 
 function renderBoardItem(item) {
-  const accent = PLATFORM_META[item.platform]?.accent || "#111827";
+  const description = item.description || "该条目没有提供描述，当前保留原始标题、排名、热度和来源链接。";
+  const cover = item.cover ? `<img class="topic-cover" src="${escapeHtml(resolveAssetUrl(item.cover))}" alt="" loading="lazy" data-fallback />` : "";
   return `
-    <li style="--accent:${accent}">
-      <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">
-        <span class="mini-rank">${item.rank}</span>
-        <span class="topic">${escapeHtml(item.title)}</span>
-        <span class="heat">${escapeHtml(item.hotValue)}</span>
-      </a>
+    <li class="topic-row">
+      <details>
+        <summary>
+          <span class="mini-rank">${formatRank(item.rank)}</span>
+          <span class="topic-main">
+            <span class="topic">${escapeHtml(item.title)}</span>
+            <span class="topic-flags">${item.description ? "有描述" : "无描述"} · ${item.hotValue ? `热度 ${escapeHtml(item.hotValue)}` : "热度未提供"}</span>
+          </span>
+          <span class="heat">${item.hotValue ? escapeHtml(item.hotValue) : "无热度"}</span>
+          <span class="detail-cue" aria-hidden="true">详情</span>
+        </summary>
+        <div class="detail-body">
+          ${cover}
+          <div class="detail-copy">
+            <p>${escapeHtml(description)}</p>
+            <dl class="detail-metrics">
+              <div><dt>平台</dt><dd>${escapeHtml(item.platformLabel)}</dd></div>
+              <div><dt>排名</dt><dd>${formatRank(item.rank)}</dd></div>
+              <div><dt>热度</dt><dd>${item.hotValue ? escapeHtml(item.hotValue) : "未提供"}</dd></div>
+            </dl>
+            ${renderExternalLink(item.url, "打开原链接", "detail-link")}
+          </div>
+        </div>
+      </details>
     </li>
   `;
 }
 
+function renderEmptyState(title, message) {
+  return `
+    <div class="empty-state" role="status">
+      <strong>${escapeHtml(title)}</strong>
+      <p>${escapeHtml(message)}</p>
+      ${hasActiveFilters() ? '<button class="ghost" type="button" data-reset-filters>清除筛选</button>' : ""}
+    </div>
+  `;
+}
+
 function groupButton(id, label) {
-  return `<button data-group="${id}" class="${state.selectedGroup === id ? "active" : ""}">${label}</button>`;
+  const count = countItems(getBoardsForGroup(id));
+  return `
+    <button type="button" data-group="${escapeHtml(id)}" class="${state.selectedGroup === id ? "active" : ""}">
+      <span>${escapeHtml(label)}</span>
+      <small>${formatNumber(count)}</small>
+    </button>
+  `;
 }
 
-function platformTab(id, label) {
-  return `<button data-platform="${id}" class="${state.selectedPlatform === id ? "active" : ""}">${escapeHtml(label)}</button>`;
+function platformTab(id, label, count) {
+  return `
+    <button type="button" data-platform="${escapeHtml(id)}" class="${state.selectedPlatform === id ? "active" : ""}" role="listitem">
+      <span>${escapeHtml(label)}</span>
+      <small>${formatNumber(count)}</small>
+    </button>
+  `;
 }
 
-function copyText(text) {
-  navigator.clipboard?.writeText(text);
+function statCard(label, value, hint) {
+  return `
+    <div class="stat-card">
+      <span>${escapeHtml(label)}</span>
+      <strong>${formatNumber(value)}</strong>
+      <small>${escapeHtml(hint)}</small>
+    </div>
+  `;
+}
+
+async function copyText(text, button) {
+  const ok = text.trim() ? await writeClipboard(text) : false;
+  showCopyFeedback(button, ok);
+}
+
+async function writeClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch {
+      return fallbackCopy(text);
+    }
+  }
+  return fallbackCopy(text);
+}
+
+function fallbackCopy(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.inset = "0 auto auto 0";
+  textarea.style.opacity = "0";
+  document.body.append(textarea);
+  textarea.select();
+  try {
+    return document.execCommand("copy");
+  } catch {
+    return false;
+  } finally {
+    textarea.remove();
+  }
+}
+
+function showCopyFeedback(button, ok) {
+  if (!button) return;
+  const defaultLabel = button.dataset.defaultLabel || button.textContent;
+  button.textContent = ok ? "已复制" : "复制失败";
+  button.classList.toggle("copied", ok);
+  button.classList.toggle("copy-failed", !ok);
+  window.clearTimeout(button.copyTimer);
+  button.copyTimer = window.setTimeout(() => {
+    button.textContent = defaultLabel;
+    button.classList.remove("copied", "copy-failed");
+  }, 1400);
+}
+
+function buildDigestCopy(digest) {
+  return digest
+    .slice(0, 10)
+    .map((item, index) => {
+      const heat = item.hotValue ? ` | 热度 ${item.hotValue}` : "";
+      const description = item.description ? `\n   ${item.description}` : "";
+      return `${index + 1}. [${item.platformLabel}] ${item.title}${heat}${description}\n   ${item.url}`;
+    })
+    .join("\n");
+}
+
+function renderExternalLink(url, label, className) {
+  if (!url) return `<span class="${className} is-disabled">暂无链接</span>`;
+  return `<a class="${className}" href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(label)}</a>`;
+}
+
+function itemMatchesQuery(item, query) {
+  if (!query) return true;
+  return [item.title, item.description, item.platformLabel, item.hotValue].some((value) => normalizeQuery(value).includes(query));
+}
+
+function normalizeQuery(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function getBoardsForGroup(groupId) {
+  const group = PLATFORM_GROUPS.find((item) => item.id === groupId);
+  if (!group) return state.boards;
+  const platforms = new Set(group.platforms);
+  return state.boards.filter((board) => platforms.has(board.platform));
+}
+
+function getSelectedGroupLabel() {
+  return state.selectedGroup === "all" ? "全部分类" : PLATFORM_GROUPS.find((group) => group.id === state.selectedGroup)?.label || "全部分类";
+}
+
+function getSelectedPlatformLabel() {
+  if (state.selectedPlatform === "all") return "全部平台";
+  return state.boards.find((board) => board.platform === state.selectedPlatform)?.platformLabel || "全部平台";
+}
+
+function countItems(boards) {
+  return boards.reduce((sum, board) => sum + board.items.length, 0);
+}
+
+function hasActiveFilters() {
+  return state.selectedGroup !== "all" || state.selectedPlatform !== "all" || state.query.trim();
+}
+
+function formatRank(value) {
+  const rank = Number(value);
+  return Number.isFinite(rank) && rank > 0 ? String(rank).padStart(2, "0") : "--";
+}
+
+function formatNumber(value) {
+  return numberFormatter.format(Number(value) || 0);
+}
+
+function resolveAssetUrl(value) {
+  const url = String(value || "");
+  if (/^(https?:)?\/\//.test(url) || url.startsWith("data:")) return url;
+  return `${import.meta.env.BASE_URL}data/${url.replace(/^\/+/, "")}`;
 }
 
 function formatDate(value) {
@@ -213,4 +441,3 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 }
-
