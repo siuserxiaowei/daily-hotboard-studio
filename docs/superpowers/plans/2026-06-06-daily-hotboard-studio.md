@@ -47,10 +47,10 @@
 - Create: `.github/workflows/pages.yml`
 - Create: `.github/workflows/update-hotboard.yml`
 
-- [ ] Improve deterministic voiceover output with 30-second, 60-second, and bullet-outline variants.
-- [ ] Document local development, data refresh, GitHub Pages setup, and optional UAPI API key.
-- [ ] Add GitHub Actions for scheduled data refresh and Pages deployment.
-- [ ] Run `npm test` and `npm run build`.
+- [x] Improve deterministic voiceover output with 30-second, 60-second, and bullet-outline variants.
+- [x] Document local development, data refresh, GitHub Pages setup, and optional UAPI API key.
+- [x] Add GitHub Actions for scheduled data refresh and Pages deployment.
+- [x] Run `npm test` and `npm run build`.
 
 ### Task 4: Integration And Verification
 
