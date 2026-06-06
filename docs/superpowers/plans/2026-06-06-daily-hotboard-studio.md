@@ -20,11 +20,11 @@
 - Modify: `data/snapshot.json`
 - Modify: `data/archive/index.json`
 
-- [ ] Expand supported platform metadata and default fetch list.
-- [ ] Harden UAPI fetch with retry, timeout, partial failure capture, and provenance fields.
-- [ ] Add archive retention and de-duplication so repeated runs do not balloon the same timestamp.
-- [ ] Add tests for retry-independent pure functions and snapshot shape.
-- [ ] Run `npm test`.
+- [x] Expand supported platform metadata and default fetch list.
+- [x] Harden UAPI fetch with retry, timeout, partial failure capture, and provenance fields.
+- [x] Add archive retention and de-duplication so repeated runs do not balloon the same timestamp.
+- [x] Add tests for retry-independent pure functions and snapshot shape.
+- [x] Run `npm test`.
 
 ### Task 2: Frontend Workbench
 
@@ -62,4 +62,3 @@
 - [ ] Use Playwright to verify desktop and mobile views.
 - [ ] Initialize GitHub repository, push code, and enable Pages workflow.
 - [ ] Confirm repository URL and local preview URL.
-

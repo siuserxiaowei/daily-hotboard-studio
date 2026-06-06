@@ -87,11 +87,12 @@ export const DEFAULT_PLATFORMS = [
   "douyin",
   "baidu",
   "toutiao",
+  "thepaper",
   "ithome",
   "36kr",
+  "huxiu",
   "sspai",
   "v2ex",
   "weread",
   "hellogithub"
 ];
-
