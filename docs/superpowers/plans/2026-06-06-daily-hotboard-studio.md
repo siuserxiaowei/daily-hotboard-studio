@@ -57,8 +57,12 @@
 **Files:**
 - Modify as needed after review.
 
-- [ ] Merge task branches or worktrees into the main implementation branch.
-- [ ] Run `npm install`, `npm test`, `npm run fetch`, and `npm run build`.
-- [ ] Use Playwright to verify desktop and mobile views.
-- [ ] Initialize GitHub repository, push code, and enable Pages workflow.
-- [ ] Confirm repository URL and local preview URL.
+- [x] Merge task branches or worktrees into the main implementation branch.
+- [x] Run `npm install`, `npm test`, `npm run fetch`, and `npm run build`.
+- [x] Use Playwright to verify desktop and mobile views.
+- [x] Initialize GitHub repository, push code, and enable Pages workflow.
+- [x] Confirm repository URL and local preview URL.
+
+Repository: https://github.com/siuserxiaowei/daily-hotboard-studio
+
+Pages: https://siuserxiaowei.github.io/daily-hotboard-studio/
