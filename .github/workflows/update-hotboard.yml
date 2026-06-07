@@ -26,6 +26,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     env:
       UAPI_API_KEY: ${{ secrets.UAPI_API_KEY }}
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

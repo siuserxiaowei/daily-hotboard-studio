@@ -1,5 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
 import {
   AI_KEYWORDS,
   buildSnapshot,
@@ -13,6 +16,7 @@ import {
   parsePlatformList,
   parseRetryAfterMs,
   retryDelayMs,
+  runFetchHotboard,
   updateArchiveIndex,
   upsertArchiveSnapshot
 } from "../scripts/fetch-hotboard.mjs";
@@ -53,6 +57,8 @@ test("builds snapshot counts and board provenance fields", () => {
     "generatedAt",
     "topic",
     "filter",
+    "sourceStats",
+    "aiSources",
     "platforms",
     "okCount",
     "errorCount",
@@ -64,14 +70,59 @@ test("builds snapshot counts and board provenance fields", () => {
   assert.equal(snapshot.okCount, 1);
   assert.equal(snapshot.errorCount, 1);
   assert.equal(snapshot.itemCount, 1);
+  assert.deepEqual(snapshot.sourceStats, {
+    totalBoards: 2,
+    totalItems: 1,
+    byKind: {
+      "uapi-hotboard": {
+        boards: 2,
+        ok: 1,
+        errors: 1,
+        items: 1
+      }
+    }
+  });
+  assert.deepEqual(snapshot.aiSources, []);
   assert.equal(snapshot.boards[0].fetched_at, fetchedAt);
   assert.deepEqual(snapshot.boards[1], {
     type: "zhihu",
+    source_kind: "uapi-hotboard",
     update_time: "",
     list: [],
     error: "HTTP 429 Too Many Requests",
     fetched_at: fetchedAt
   });
+});
+
+test("runFetchHotboard records only actually fetched AI sources", async () => {
+  const dataDir = await mkdtemp(join(tmpdir(), "hotboard-fetch-test-"));
+  try {
+    const snapshot = await runFetchHotboard({
+      generatedAt: fetchedAt,
+      platforms: ["weibo"],
+      includeAiSources: false,
+      delayMs: 0,
+      dataDir,
+      fetchImpl: async () =>
+        new Response(
+          JSON.stringify({
+            type: "weibo",
+            update_time: "now",
+            list: [{ index: 1, title: "OpenAI 发布新模型", hot_value: "100万热度" }]
+          }),
+          { status: 200 }
+        ),
+      sleep: async () => {}
+    });
+    const persisted = JSON.parse(await readFile(join(dataDir, "snapshot.json"), "utf8"));
+
+    assert.deepEqual(snapshot.aiSources, []);
+    assert.deepEqual(persisted.aiSources, []);
+    assert.equal(snapshot.sourceStats.byKind["uapi-hotboard"].items, 1);
+    assert.equal(snapshot.sourceStats.byKind["ai-source"], undefined);
+  } finally {
+    await rm(dataDir, { recursive: true, force: true });
+  }
 });
 
 test("filters boards to AI-matching hotboard items with board summary", () => {
@@ -269,6 +320,7 @@ test("fetchBoard records one platform error instead of throwing", async () => {
   assert.deepEqual(waits, [100, 200]);
   assert.deepEqual(board, {
     type: "zhihu",
+    source_kind: "uapi-hotboard",
     update_time: "",
     list: [],
     error: "network down",

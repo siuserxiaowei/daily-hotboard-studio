@@ -1,8 +1,22 @@
 import { PLATFORM_META } from "./platforms.js";
 
-const HOOK_ORIENTED_PLATFORMS = new Set(["douyin", "kuaishou", "bilibili", "acfun", "weibo", "zhihu", "tieba", "hupu", "douban-group"]);
-const TECH_PRODUCT_PLATFORMS = new Set(["ithome", "36kr", "huxiu", "hellogithub", "v2ex", "juejin", "csdn", "sspai", "ifanr"]);
-const NEWS_PLATFORMS = new Set(["baidu", "toutiao", "thepaper", "qq-news", "sina-news", "netease-news"]);
+const HOOK_ORIENTED_PLATFORMS = new Set(["douyin", "kuaishou", "bilibili", "acfun", "weibo", "zhihu", "tieba", "hupu", "douban-group", "hn-ai"]);
+const TECH_PRODUCT_PLATFORMS = new Set([
+  "ithome",
+  "36kr",
+  "huxiu",
+  "hellogithub",
+  "v2ex",
+  "juejin",
+  "csdn",
+  "sspai",
+  "ifanr",
+  "hf-models",
+  "hf-datasets",
+  "hf-spaces",
+  "github-ai"
+]);
+const NEWS_PLATFORMS = new Set(["baidu", "toutiao", "thepaper", "qq-news", "sina-news", "netease-news", "openai-news", "deepmind-news", "hf-blog"]);
 const AI_SIGNAL_PATTERN = /AI|人工智能|大模型|模型|OpenAI|Claude|Gemini|GPT|AIGC|LLM|Agent|RAG|Token|机器人|芯片|算力|推理|自动化/i;
 
 export function parseHeat(value) {
@@ -33,6 +47,7 @@ export function normalizeItem(item, platform, updateTime) {
     hotScore: parseHeat(item.hot_value),
     description: String(extra.desc || extra.description || "").trim(),
     matchedKeywords: Array.isArray(extra.aiMatchedKeywords) ? extra.aiMatchedKeywords : [],
+    sourceLabel: String(extra.sourceLabel || "").trim(),
     cover,
     updateTime
   };
@@ -45,6 +60,7 @@ export function normalizeBoard(board) {
   return {
     platform,
     platformLabel: PLATFORM_META[platform]?.label || platform,
+    sourceKind: board.source_kind || "unknown",
     updateTime,
     aiFilterSummary: normalizeAiFilterSummary(board.ai_filter_summary),
     items: list.map((item) => normalizeItem(item, platform, updateTime)).filter((item) => item.title)

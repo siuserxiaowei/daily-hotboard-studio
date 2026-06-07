@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { DEFAULT_PLATFORMS } from "../src/platforms.js";
+import { DEFAULT_AI_SOURCE_IDS, dedupeBoardsByIdentity, fetchAiSourceBoards, parseAiSourceList } from "./ai-sources.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 
@@ -115,6 +116,8 @@ export async function runFetchHotboard(options = {}) {
   const apiKey = options.apiKey ?? process.env.UAPI_API_KEY ?? "";
   const topic = options.topic || process.env.HOTBOARD_TOPIC || DEFAULT_TOPIC;
   const keywords = parseKeywordList(process.env.HOTBOARD_AI_KEYWORDS, options.keywords || AI_KEYWORDS);
+  const includeAiSources = options.includeAiSources ?? parseBooleanEnv(process.env.HOTBOARD_INCLUDE_AI_SOURCES, true);
+  const aiSourceIds = options.aiSourceIds || parseAiSourceList(process.env.HOTBOARD_AI_SOURCES, DEFAULT_AI_SOURCE_IDS);
 
   if (typeof fetchImpl !== "function") {
     throw new TypeError("fetch is not available in this Node runtime");
@@ -139,7 +142,27 @@ export async function runFetchHotboard(options = {}) {
   }
 
   const filteredBoards = topic === "ai" ? filterBoardsForAi(boards, keywords) : boards;
-  const snapshot = buildSnapshot({ source, generatedAt, platforms, boards: filteredBoards, topic, keywords });
+  const aiSourceBoards =
+    topic === "ai" && includeAiSources && aiSourceIds.length
+      ? await fetchAiSourceBoards({
+          generatedAt,
+          sourceIds: aiSourceIds,
+          timeoutMs,
+          fetchImpl,
+          githubToken: options.githubToken ?? process.env.GITHUB_TOKEN ?? "",
+          sleep: sleepImpl
+        })
+      : [];
+  const combinedBoards = dedupeBoardsByIdentity([...filteredBoards, ...aiSourceBoards]);
+  const snapshot = buildSnapshot({
+    source,
+    generatedAt,
+    platforms: combinedBoards.map((board) => board.type),
+    boards: combinedBoards,
+    topic,
+    keywords,
+    aiSources: aiSourceBoards.map((board) => board.type)
+  });
   await writeJson(join(dataDir, "snapshot.json"), snapshot);
   await writeArchive(snapshot, { dataDir });
   return snapshot;
@@ -203,7 +226,15 @@ export function parseKeywordList(value, fallback = AI_KEYWORDS) {
   return keywords.length ? [...new Set(keywords)] : [...fallback];
 }
 
-export function buildSnapshot({ source = HOTBOARD_SOURCE, generatedAt, platforms, boards, topic = DEFAULT_TOPIC, keywords = AI_KEYWORDS }) {
+export function buildSnapshot({
+  source = HOTBOARD_SOURCE,
+  generatedAt,
+  platforms,
+  boards,
+  topic = DEFAULT_TOPIC,
+  keywords = AI_KEYWORDS,
+  aiSources = []
+}) {
   const okCount = boards.filter((board) => !board.error).length;
   const itemCount = boards.reduce((sum, board) => sum + (Array.isArray(board.list) ? board.list.length : 0), 0);
   return {
@@ -214,11 +245,34 @@ export function buildSnapshot({ source = HOTBOARD_SOURCE, generatedAt, platforms
       mode: topic === "ai" ? "ai-keyword-match" : "none",
       keywords
     },
+    sourceStats: summarizeSources(boards),
+    aiSources: [...aiSources],
     platforms: [...platforms],
     okCount,
     errorCount: boards.length - okCount,
     itemCount,
     boards
+  };
+}
+
+function summarizeSources(boards) {
+  const byKind = {};
+  let totalItems = 0;
+  for (const board of boards) {
+    const kind = board.source_kind || "unknown";
+    const itemCount = Array.isArray(board.list) ? board.list.length : 0;
+    const existing = byKind[kind] || { boards: 0, ok: 0, errors: 0, items: 0 };
+    existing.boards += 1;
+    existing.ok += board.error ? 0 : 1;
+    existing.errors += board.error ? 1 : 0;
+    existing.items += itemCount;
+    totalItems += itemCount;
+    byKind[kind] = existing;
+  }
+  return {
+    totalBoards: boards.length,
+    totalItems,
+    byKind
   };
 }
 
@@ -229,6 +283,7 @@ export function normalizeSuccessBoard(payload, platform, fetchedAt) {
   return {
     ...payload,
     type: String(payload.type || platform),
+    source_kind: "uapi-hotboard",
     update_time: String(payload.update_time || ""),
     list: Array.isArray(payload.list) ? payload.list : [],
     fetched_at: fetchedAt
@@ -238,6 +293,7 @@ export function normalizeSuccessBoard(payload, platform, fetchedAt) {
 export function failedBoard(platform, message, fetchedAt) {
   return {
     type: platform,
+    source_kind: "uapi-hotboard",
     update_time: "",
     list: [],
     error: message,
@@ -420,6 +476,14 @@ function normalizePositiveInteger(value, fallback) {
 function normalizeNonNegativeInteger(value, fallback) {
   const number = Number(value);
   return Number.isFinite(number) && number >= 0 ? Math.round(number) : fallback;
+}
+
+function parseBooleanEnv(value, fallback) {
+  if (value === undefined || value === null || value === "") return fallback;
+  const normalized = String(value).trim().toLowerCase();
+  if (["1", "true", "yes", "on"].includes(normalized)) return true;
+  if (["0", "false", "no", "off"].includes(normalized)) return false;
+  return fallback;
 }
 
 async function readJson(path, fallback) {

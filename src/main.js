@@ -38,6 +38,7 @@ function render() {
   const voiceover = buildVoiceover(digest, state.snapshot.generatedAt);
   const filterProvenance = getFilterProvenance(state.snapshot);
   const publishingAssets = normalizePublishingAssets(voiceover.assets);
+  const sourceStats = getSourceStats(state.snapshot);
   const totalTopics = countItems(state.boards);
   const visibleTopics = countItems(boards);
   const activeDescriptionCount = boards.flatMap((board) => board.items).filter((item) => item.description).length;
@@ -78,6 +79,10 @@ function render() {
             <span>AI 热点</span>
             <strong>${formatNumber(totalTopics)}</strong>
           </div>
+          <div>
+            <span>专门源</span>
+            <strong>${formatNumber(sourceStats.aiSourceItems)}</strong>
+          </div>
         </section>
       </aside>
 
@@ -88,14 +93,14 @@ function render() {
             <h1>AI 热榜工作台</h1>
             <div class="scope-line">
               <span class="filter-provenance">${escapeHtml(filterProvenance.mode)} · ${escapeHtml(filterProvenance.keywordLabel)}</span>
-              <span>抖音/社交平台随 UAPI 可用性展示</span>
+              <span>AI 专门源 ${formatNumber(sourceStats.aiSourceBoards)} 个</span>
               <span>${escapeHtml(getSelectedGroupLabel())}</span>
               <span>${escapeHtml(getSelectedPlatformLabel())}</span>
               ${state.query ? `<span>搜索：${escapeHtml(state.query)}</span>` : "<span>未输入关键词</span>"}
             </div>
           </div>
           <div class="stats" aria-label="筛选统计">
-            ${statCard("平台", groupBoards.length, "当前分类")}
+            ${statCard("数据源", sourceStats.totalBoards, "UAPI + AI 专门源")}
             ${statCard("匹配", visibleTopics, "筛选后 AI 热点")}
             ${statCard("描述", activeDescriptionCount, "可展开条目")}
             ${statCard("最高信号", digest[0]?.signalScore || 0, "AI 重点")}
@@ -231,7 +236,7 @@ function renderPublishingPanel(assets) {
       </div>
       <p class="panel-note">
         ${escapeHtml(
-          "Publishing material is generated only from AI-filtered topics. Douyin/social platform extraction appears when UAPI data and rate limits allow those boards."
+          "发布素材只基于 AI 过滤后的条目生成；新增 Hugging Face、arXiv、GitHub、Hacker News 和官方 RSS 等 AI 专门源后，泛热榜当天没有 AI 话题也不会空窗。"
         )}
       </p>
       ${
@@ -330,6 +335,7 @@ function renderBoard(board) {
 function renderBoardItem(item) {
   const description = item.description || "该 AI 条目没有提供描述，当前保留原始标题、排名、热度和来源链接。";
   const cover = item.cover ? `<img class="topic-cover" src="${escapeHtml(resolveAssetUrl(item.cover))}" alt="" loading="lazy" data-fallback />` : "";
+  const sourceLabel = item.sourceLabel || item.platformLabel;
   return `
     <li class="topic-row">
       <details>
@@ -337,7 +343,7 @@ function renderBoardItem(item) {
           <span class="mini-rank">${formatRank(item.rank)}</span>
           <span class="topic-main">
             <span class="topic">${escapeHtml(item.title)}</span>
-            <span class="topic-flags">${item.description ? "有描述" : "无描述"} · ${item.hotValue ? `热度 ${escapeHtml(item.hotValue)}` : "热度未提供"}</span>
+            <span class="topic-flags">${escapeHtml(sourceLabel)} · ${item.description ? "有描述" : "无描述"} · ${item.hotValue ? `热度 ${escapeHtml(item.hotValue)}` : "热度未提供"}</span>
           </span>
           <span class="heat">${item.hotValue ? escapeHtml(item.hotValue) : "无热度"}</span>
           <span class="detail-cue" aria-hidden="true">详情</span>
@@ -348,6 +354,7 @@ function renderBoardItem(item) {
             <p>${escapeHtml(description)}</p>
             <dl class="detail-metrics">
               <div><dt>平台</dt><dd>${escapeHtml(item.platformLabel)}</dd></div>
+              <div><dt>来源</dt><dd>${escapeHtml(sourceLabel)}</dd></div>
               <div><dt>排名</dt><dd>${formatRank(item.rank)}</dd></div>
               <div><dt>热度</dt><dd>${item.hotValue ? escapeHtml(item.hotValue) : "未提供"}</dd></div>
               <div><dt>AI 命中</dt><dd>${item.matchedKeywords?.length ? escapeHtml(item.matchedKeywords.slice(0, 3).join(" / ")) : "AI"}</dd></div>
@@ -534,6 +541,17 @@ function formatFilterMode(mode) {
   const normalized = String(mode || "").trim();
   if (normalized === "ai-keyword-match") return "AI-only 关键词过滤";
   return normalized ? `${normalized.replace(/[-_]+/g, " ")} 过滤` : "AI-only 关键词过滤";
+}
+
+function getSourceStats(snapshot) {
+  const stats = snapshot?.sourceStats || {};
+  const byKind = stats.byKind || {};
+  const aiSource = byKind["ai-source"] || {};
+  return {
+    totalBoards: Number(stats.totalBoards || state.boards.length || 0),
+    aiSourceBoards: Number(aiSource.boards || 0),
+    aiSourceItems: Number(aiSource.items || 0)
+  };
 }
 
 function normalizePublishingAssets(assets) {

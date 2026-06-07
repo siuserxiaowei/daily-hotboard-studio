@@ -1,5 +1,36 @@
 export const PLATFORM_GROUPS = [
   {
+    id: "ai-source",
+    label: "AI 专门源",
+    platforms: [
+      "hf-daily-papers",
+      "arxiv-ai",
+      "hf-models",
+      "hf-datasets",
+      "hf-spaces",
+      "github-ai",
+      "hn-ai",
+      "openai-news",
+      "deepmind-news",
+      "hf-blog"
+    ]
+  },
+  {
+    id: "research",
+    label: "研究论文",
+    platforms: ["hf-daily-papers", "arxiv-ai"]
+  },
+  {
+    id: "open-source",
+    label: "开源生态",
+    platforms: ["hf-models", "hf-datasets", "hf-spaces", "github-ai", "hellogithub"]
+  },
+  {
+    id: "official",
+    label: "官方发布",
+    platforms: ["openai-news", "deepmind-news", "hf-blog"]
+  },
+  {
     id: "social",
     label: "社交舆论",
     platforms: ["weibo", "zhihu", "douyin", "kuaishou", "tieba", "hupu", "douban-group"]
@@ -77,7 +108,17 @@ export const PLATFORM_META = {
   weread: { label: "微信读书", accent: "#22c55e" },
   weatheralarm: { label: "天气预警", accent: "#f97316" },
   earthquake: { label: "地震速报", accent: "#ef4444" },
-  history: { label: "历史上的今天", accent: "#7c3aed" }
+  history: { label: "历史上的今天", accent: "#7c3aed" },
+  "hf-daily-papers": { label: "HF 每日论文", accent: "#f59e0b" },
+  "arxiv-ai": { label: "arXiv AI", accent: "#b31b1b" },
+  "hf-models": { label: "HF 模型", accent: "#ffcc4d" },
+  "hf-datasets": { label: "HF 数据集", accent: "#f97316" },
+  "hf-spaces": { label: "HF Spaces", accent: "#16a34a" },
+  "github-ai": { label: "GitHub AI", accent: "#24292f" },
+  "hn-ai": { label: "HN AI", accent: "#ff6600" },
+  "openai-news": { label: "OpenAI 官方", accent: "#10a37f" },
+  "deepmind-news": { label: "DeepMind 官方", accent: "#4285f4" },
+  "hf-blog": { label: "HF Blog", accent: "#ffcc4d" }
 };
 
 export const DEFAULT_PLATFORMS = [

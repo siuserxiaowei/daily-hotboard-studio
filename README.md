@@ -12,6 +12,15 @@ AI Daily Hotboard Studio is a static workbench for tracking AI-related Chinese h
 
 The app is AI-only: broad UAPI hotboard responses are filtered by AI keywords before they reach the dashboard, digest, voiceover script, or publishing-material panel. Douyin is included through UAPI when rate limits allow it, and Xiaohongshu is not enabled by default because tested UAPI hotboard types `xiaohongshu` and `xhs` currently return `invalid hotboard type`.
 
+UAPI is now complemented by AI-specialized public sources, so the snapshot is not limited to broad Chinese hotboards:
+
+- Research: Hugging Face Daily Papers and arXiv AI/ML/CL/CV Atom feeds.
+- Open source: Hugging Face models, datasets, Spaces, and GitHub AI repositories.
+- Technical discussion: Hacker News Algolia stories matching recent AI discussion.
+- Official publishing: OpenAI News, Google DeepMind blog, and Hugging Face Blog RSS feeds.
+
+Every source is normalized into the same board/list shape and marked with `source_kind`. Source failures are isolated to one board, so a temporary RSS, API, or rate-limit issue does not fail the whole snapshot.
+
 ## Features
 
 - AI-only multi-platform hotboard snapshot rendered as a dense editorial dashboard.
@@ -71,7 +80,16 @@ Override AI keywords when needed:
 HOTBOARD_AI_KEYWORDS="OpenAI,Claude,DeepSeek,AI搜索,智能体" npm run fetch
 ```
 
+Limit or disable the AI-specialized sources when debugging:
+
+```bash
+HOTBOARD_AI_SOURCES="hf-daily-papers,arxiv-ai,github-ai" npm run fetch
+HOTBOARD_INCLUDE_AI_SOURCES=false npm run fetch
+```
+
 `UAPI_API_KEY` is optional. The current public endpoint can run without it, but the GitHub Actions workflow passes `${{ secrets.UAPI_API_KEY }}` into the environment so a future authenticated UAPI setup can use the same workflow without changing repository settings.
+
+`GITHUB_TOKEN` is also optional locally. The scheduled GitHub Actions workflow passes the built-in `${{ github.token }}` to improve GitHub Search API rate limits for the `github-ai` source.
 
 ## GitHub Pages
 
