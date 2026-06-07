@@ -1,6 +1,6 @@
 {
   "source": "https://uapis.cn/api/v1/misc/hotboard",
-  "generatedAt": "2026-06-07T01:58:36.877Z",
+  "generatedAt": "2026-06-07T04:56:18.874Z",
   "topic": "ai",
   "filter": {
     "mode": "ai-keyword-match",
@@ -88,13 +88,13 @@
   },
   "sourceStats": {
     "totalBoards": 24,
-    "totalItems": 460,
+    "totalItems": 461,
     "byKind": {
       "uapi-hotboard": {
         "boards": 14,
         "ok": 14,
         "errors": 0,
-        "items": 33
+        "items": 34
       },
       "ai-source": {
         "boards": 10,
@@ -144,89 +144,89 @@
   ],
   "okCount": 24,
   "errorCount": 0,
-  "itemCount": 460,
+  "itemCount": 461,
   "boards": [
     {
       "type": "weibo",
-      "update_time": "2026-06-07 09:53:23",
+      "update_time": "2026-06-07 12:48:58",
       "list": [
         {
-          "index": 20,
-          "title": "高考新增AI监考员",
-          "url": "https://s.weibo.com/weibo?q=%23%E9%AB%98%E8%80%83%E6%96%B0%E5%A2%9EAI%E7%9B%91%E8%80%83%E5%91%98%23",
-          "hot_value": "241982",
+          "index": 12,
+          "title": "高考 豆包",
+          "url": "https://s.weibo.com/weibo?q=%23%E9%AB%98%E8%80%83+%E8%B1%86%E5%8C%85%23",
+          "hot_value": "427078",
           "extra": {
             "aiMatchedKeywords": [
-              "AI"
+              "豆包"
             ]
           }
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 50,
       "total_after_filter": 1,
       "ai_filter_summary": {
         "matched": 1,
         "total": 50,
         "keywords": [
-          "AI"
+          "豆包"
         ]
       }
     },
     {
       "type": "zhihu",
-      "update_time": "2026-06-07 09:52:01",
+      "update_time": "2026-06-07 12:47:05",
       "list": [
         {
-          "index": 12,
-          "title": "为什么现在 AI 生成到了人人喊打的境遇？大量劣质一眼假的东西泛滥成灾？",
-          "url": "https://www.zhihu.com/question/2044941270087463980",
-          "hot_value": "107 万热度",
-          "extra": {
-            "desc": "前两年（2024 年）AI 初兴时期，各个赛道领域的媒体创作者争先恐后一句 AI 加持自己的创作 例如： 历史博主用 AI 让老照片变成动态视频…实在不堪入目，看着尴尬癌犯了，还不如静态照片本身有价值",
-            "image": "short-lived/2026/06/zhihu/b6a5f4c50c28d4af175e5372cb5154e3.webp",
-            "aiMatchedKeywords": [
-              "AI"
-            ]
-          }
-        },
-        {
-          "index": 18,
+          "index": 11,
           "title": "AI 让个人效率涨 10 倍，为什么公司却没赚更多的钱？",
           "url": "https://www.zhihu.com/question/2025012000539846038",
-          "hot_value": "74 万热度",
+          "hot_value": "123 万热度",
           "extra": {
             "image": "short-lived/2026/06/zhihu/4739781889c9dcb46a876496c4df8d9f.webp",
-            "label": "新",
             "aiMatchedKeywords": [
               "AI"
             ]
           }
         },
         {
-          "index": 22,
+          "index": 29,
           "title": "AI 有可能代替人类从事数学研究吗？",
           "url": "https://www.zhihu.com/question/41212111",
-          "hot_value": "70 万热度",
+          "hot_value": "56 万热度",
           "extra": {
             "desc": "数学是建立在公理上的，那有没有这种可能，即有一天我们让 AI 理解了公理，然后在此基础上，AI 不断推理自己发展出了数学体系，甚至超越人类目前现有的知识和智力水平？ === 没有权限评论只能修改问题了",
-            "label": "新",
+            "image": "short-lived/2026/06/zhihu/5e9a22abae506bc283846461b47b911a.png",
             "aiMatchedKeywords": [
               "AI"
+            ]
+          }
+        },
+        {
+          "index": 30,
+          "title": "大模型为什么可以调用工具？",
+          "url": "https://www.zhihu.com/question/1903404570018837046",
+          "hot_value": "55 万热度",
+          "extra": {
+            "desc": "所有大模型都可以调用工具吗？为什么像 Qwen3 这样的模型可以调用工具呢？",
+            "image": "short-lived/2026/06/zhihu/a22eafb48339635c41a6b60324ac014c.webp",
+            "aiMatchedKeywords": [
+              "大模型"
             ]
           }
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 30,
       "total_after_filter": 3,
       "ai_filter_summary": {
         "matched": 3,
         "total": 30,
         "keywords": [
-          "AI"
+          "AI",
+          "大模型"
         ]
       }
     },
@@ -372,7 +372,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 100,
       "total_after_filter": 4,
       "ai_filter_summary": {
@@ -389,7 +389,7 @@
       "update_time": "2026-06-06T18:49:05.408Z",
       "list": [],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 50,
       "total_after_filter": 0,
       "ai_filter_summary": {
@@ -418,7 +418,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 51,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -431,31 +431,41 @@
     },
     {
       "type": "toutiao",
-      "update_time": "2026-06-07 09:50:37",
+      "update_time": "2026-06-07 12:49:36",
       "list": [
         {
-          "index": 43,
-          "title": "全球首款全尺寸超仿生人形机器人来了",
-          "url": "https://www.toutiao.com/trending/7647117592154882091/",
+          "index": 17,
+          "title": "交警机器人与考生碰拳送祝福",
+          "url": "https://www.toutiao.com/trending/7647783223574118427/",
           "hot_value": "",
           "extra": {
             "aiMatchedKeywords": [
-              "机器人",
-              "人形机器人"
+              "机器人"
+            ]
+          }
+        },
+        {
+          "index": 28,
+          "title": "AI写的高考作文你打几分",
+          "url": "https://webcast-open.douyin.com/open/media_live/52488725619",
+          "hot_value": "",
+          "extra": {
+            "aiMatchedKeywords": [
+              "AI"
             ]
           }
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 50,
-      "total_after_filter": 1,
+      "total_after_filter": 2,
       "ai_filter_summary": {
-        "matched": 1,
+        "matched": 2,
         "total": 50,
         "keywords": [
           "机器人",
-          "人形机器人"
+          "AI"
         ]
       }
     },
@@ -495,7 +505,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 45,
       "total_after_filter": 2,
       "ai_filter_summary": {
@@ -525,7 +535,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 12,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -622,7 +632,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 30,
       "total_after_filter": 7,
       "ai_filter_summary": {
@@ -684,7 +694,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 15,
       "total_after_filter": 2,
       "ai_filter_summary": {
@@ -717,7 +727,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 10,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -748,7 +758,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 10,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -764,7 +774,7 @@
       "update_time": "2026-06-06T18:46:16.521Z",
       "list": [],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 20,
       "total_after_filter": 0,
       "ai_filter_summary": {
@@ -775,13 +785,13 @@
     },
     {
       "type": "hellogithub",
-      "update_time": "2026-06-07 09:54:28",
+      "update_time": "2026-06-07 12:56:40",
       "list": [
         {
           "index": 2,
           "title": "帮你找到本地能跑的最佳大模型",
           "url": "https://github.com/Andyyyy64/whichllm",
-          "hot_value": "2252",
+          "hot_value": "2282",
           "extra": {
             "author": "Andyyyy64",
             "full_name": "Andyyyy64/whichllm",
@@ -798,7 +808,7 @@
           "index": 3,
           "title": "从零开始学习 AI 工程",
           "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-          "hot_value": "1901",
+          "hot_value": "1928",
           "extra": {
             "author": "rohitg00",
             "full_name": "rohitg00/ai-engineering-from-scratch",
@@ -815,7 +825,7 @@
           "index": 6,
           "title": "所有 AI 编程工具用量一目了然",
           "url": "https://github.com/steipete/CodexBar",
-          "hot_value": "1715",
+          "hot_value": "1729",
           "extra": {
             "author": "steipete",
             "full_name": "steipete/CodexBar",
@@ -833,7 +843,7 @@
           "index": 11,
           "title": "让 AI 编程工具告别瞎写的技能包",
           "url": "https://github.com/mattpocock/skills",
-          "hot_value": "1277",
+          "hot_value": "1289",
           "extra": {
             "author": "mattpocock",
             "full_name": "mattpocock/skills",
@@ -851,7 +861,7 @@
           "index": 12,
           "title": "Redis 作者写的 DeepSeek 专用推理引擎",
           "url": "https://github.com/antirez/ds4",
-          "hot_value": "1030",
+          "hot_value": "1040",
           "extra": {
             "author": "antirez",
             "full_name": "antirez/ds4",
@@ -868,7 +878,7 @@
           "index": 13,
           "title": "AI 大模型价格速查表",
           "url": "https://github.com/anomalyco/models.dev",
-          "hot_value": "1092",
+          "hot_value": "1100",
           "extra": {
             "author": "anomalyco",
             "full_name": "anomalyco/models.dev",
@@ -886,7 +896,7 @@
           "index": 15,
           "title": "Claude Design 的开源替代品",
           "url": "https://github.com/nexu-io/open-design",
-          "hot_value": "664",
+          "hot_value": "669",
           "extra": {
             "author": "nexu-io",
             "full_name": "nexu-io/open-design",
@@ -903,7 +913,7 @@
           "index": 17,
           "title": "让 AI 生成的文档值得被打印出来",
           "url": "https://github.com/tw93/Kami",
-          "hot_value": "831",
+          "hot_value": "837",
           "extra": {
             "author": "tw93",
             "full_name": "tw93/Kami",
@@ -920,7 +930,7 @@
           "index": 18,
           "title": "AI 编程助手跨会话记忆系统",
           "url": "https://github.com/rohitg00/agentmemory",
-          "hot_value": "496",
+          "hot_value": "501",
           "extra": {
             "author": "rohitg00",
             "full_name": "rohitg00/agentmemory",
@@ -936,7 +946,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 20,
       "total_after_filter": 9,
       "ai_filter_summary": {
@@ -954,7 +964,7 @@
     {
       "type": "hf-daily-papers",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
@@ -1038,7 +1048,7 @@
           "index": 4,
           "title": "MAOAM: Unified Object and Material Selection with Vision-Language Models",
           "url": "https://huggingface.co/papers/2606.04880",
-          "hot_value": "2 讨论 / 8 upvotes",
+          "hot_value": "2 讨论 / 9 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.04880.png",
           "extra": {
             "desc": "A unified vision-language model framework enables precise object and material selection through text or click interactions, supporting diverse editing workflows with improved robustness.",
@@ -1967,7 +1977,7 @@
           "index": 40,
           "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis",
           "url": "https://huggingface.co/papers/2606.05979",
-          "hot_value": "1 讨论 / 5 upvotes",
+          "hot_value": "1 讨论 / 6 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.05979.png",
           "extra": {
             "desc": "World-language-action models combine textual instruction processing with robot state prediction through an autoregressive transformer backbone, enabling efficient long-horizon task execution and cross-embodiment learning.",
@@ -2250,7 +2260,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 50,
       "total_after_filter": 50,
       "ai_filter_summary": {
@@ -2275,7 +2285,7 @@
     {
       "type": "arxiv-ai",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
@@ -3077,7 +3087,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -3102,10 +3112,31 @@
     {
       "type": "hf-models",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
+          "title": "Monibee-Fudgekins/mya-llm",
+          "url": "https://huggingface.co/Monibee-Fudgekins/mya-llm",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "模型更新；标签：safetensors、gemma4、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "大模型",
+              "Hugging Face",
+              "safetensors",
+              "gemma4",
+              "region:us"
+            ],
+            "source": "hf-models",
+            "sourceLabel": "HF Models",
+            "publishedAt": "2026-06-07T04:37:32.000Z"
+          }
+        },
+        {
+          "index": 2,
           "title": "Ranjit89/assamese-llm-checkpoints",
           "url": "https://huggingface.co/Ranjit89/assamese-llm-checkpoints",
           "hot_value": "0 likes / 0 downloads",
@@ -3121,11 +3152,54 @@
             ],
             "source": "hf-models",
             "sourceLabel": "HF Models",
-            "publishedAt": "2026-06-07T01:38:42.000Z"
+            "publishedAt": "2026-06-07T04:27:22.000Z"
           }
         },
         {
-          "index": 2,
+          "index": 3,
+          "title": "diansm/finetuned-llm",
+          "url": "https://huggingface.co/diansm/finetuned-llm",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "模型更新；任务：text-generation；库：transformers；标签：transformers、safetensors、llama、text-generation、text-generation-inference、unsloth",
+            "aiMatchedKeywords": [
+              "AI",
+              "大模型",
+              "Hugging Face",
+              "transformers",
+              "safetensors",
+              "llama",
+              "text-generation",
+              "text-generation-inference",
+              "unsloth"
+            ],
+            "source": "hf-models",
+            "sourceLabel": "HF Models",
+            "publishedAt": "2026-06-07T03:22:04.000Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "PsyDuck21/LLM-IEBP",
+          "url": "https://huggingface.co/PsyDuck21/LLM-IEBP",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "模型更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "大模型",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-models",
+            "sourceLabel": "HF Models",
+            "publishedAt": "2026-06-07T02:42:45.000Z"
+          }
+        },
+        {
+          "index": 5,
           "title": "LLM-OS-Models/LFM2.5-8B-A1B-Harness1-LoRA-SFT-R32-Reloadable",
           "url": "https://huggingface.co/LLM-OS-Models/LFM2.5-8B-A1B-Harness1-LoRA-SFT-R32-Reloadable",
           "hot_value": "0 likes / 0 downloads",
@@ -3149,7 +3223,7 @@
           }
         },
         {
-          "index": 3,
+          "index": 6,
           "title": "croqaz/vintage-LLM-340m-v1-base",
           "url": "https://huggingface.co/croqaz/vintage-LLM-340m-v1-base",
           "hot_value": "0 likes / 85 downloads",
@@ -3173,7 +3247,7 @@
           }
         },
         {
-          "index": 4,
+          "index": 7,
           "title": "lapa-llm/lapa-v0.1.3-instruct",
           "url": "https://huggingface.co/lapa-llm/lapa-v0.1.3-instruct",
           "hot_value": "0 likes / 255 downloads",
@@ -3197,7 +3271,7 @@
           }
         },
         {
-          "index": 5,
+          "index": 8,
           "title": "humana-ai/humana-llm-nano-v1.4",
           "url": "https://huggingface.co/humana-ai/humana-llm-nano-v1.4",
           "hot_value": "0 likes / 0 downloads",
@@ -3221,7 +3295,7 @@
           }
         },
         {
-          "index": 6,
+          "index": 9,
           "title": "humana-ai/humana-llm-full-v1.4",
           "url": "https://huggingface.co/humana-ai/humana-llm-full-v1.4",
           "hot_value": "0 likes / 0 downloads",
@@ -3245,7 +3319,7 @@
           }
         },
         {
-          "index": 7,
+          "index": 10,
           "title": "cs-552-2026-llmfao/multilingual_model",
           "url": "https://huggingface.co/cs-552-2026-llmfao/multilingual_model",
           "hot_value": "1 likes / 404 downloads",
@@ -3266,7 +3340,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 11,
           "title": "rishieee/OTel-LLM-1B-IT-Q4_K_M-GGUF",
           "url": "https://huggingface.co/rishieee/OTel-LLM-1B-IT-Q4_K_M-GGUF",
           "hot_value": "0 likes / 0 downloads",
@@ -3290,7 +3364,7 @@
           }
         },
         {
-          "index": 9,
+          "index": 12,
           "title": "Worrawatsoda/LLM-DUMMY",
           "url": "https://huggingface.co/Worrawatsoda/LLM-DUMMY",
           "hot_value": "0 likes / 0 downloads",
@@ -3310,7 +3384,7 @@
           }
         },
         {
-          "index": 10,
+          "index": 13,
           "title": "diansm/llm-finetuned-pgabl",
           "url": "https://huggingface.co/diansm/llm-finetuned-pgabl",
           "hot_value": "0 likes / 0 downloads",
@@ -3334,7 +3408,7 @@
           }
         },
         {
-          "index": 11,
+          "index": 14,
           "title": "NithinAI12/NithinX-Omni-LLM-v1",
           "url": "https://huggingface.co/NithinAI12/NithinX-Omni-LLM-v1",
           "hot_value": "0 likes / 0 downloads",
@@ -3358,7 +3432,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 15,
           "title": "Saadi01/llm-werewolf-models",
           "url": "https://huggingface.co/Saadi01/llm-werewolf-models",
           "hot_value": "0 likes / 0 downloads",
@@ -3378,7 +3452,7 @@
           }
         },
         {
-          "index": 13,
+          "index": 16,
           "title": "LLM-OS-Models/KoHRM-Text-1.4B",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B",
           "hot_value": "2 likes / 2085 downloads",
@@ -3402,7 +3476,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 17,
           "title": "LLM-OS-Models/KoHRM-Text-1.4B-FullSFT-LFM25-Terminal-ToolBench-Epoch3",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-FullSFT-LFM25-Terminal-ToolBench-Epoch3",
           "hot_value": "0 likes / 0 downloads",
@@ -3426,7 +3500,7 @@
           }
         },
         {
-          "index": 15,
+          "index": 18,
           "title": "1Xinyaozxy/LLM-Scorer",
           "url": "https://huggingface.co/1Xinyaozxy/LLM-Scorer",
           "hot_value": "0 likes / 0 downloads",
@@ -3448,7 +3522,7 @@
           }
         },
         {
-          "index": 16,
+          "index": 19,
           "title": "rcmorano/llmfan46-MiniMax-M2.7-ultra-uncensored-heretic-ROCMFP",
           "url": "https://huggingface.co/rcmorano/llmfan46-MiniMax-M2.7-ultra-uncensored-heretic-ROCMFP",
           "hot_value": "0 likes / 0 downloads",
@@ -3470,7 +3544,7 @@
           }
         },
         {
-          "index": 17,
+          "index": 20,
           "title": "hyongok2/sdi-xcs-llm",
           "url": "https://huggingface.co/hyongok2/sdi-xcs-llm",
           "hot_value": "0 likes / 0 downloads",
@@ -3489,7 +3563,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 21,
           "title": "say89/Lumina-M9-llm",
           "url": "https://huggingface.co/say89/Lumina-M9-llm",
           "hot_value": "0 likes / 0 downloads",
@@ -3513,7 +3587,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 22,
           "title": "user55442/Vilnius-Bus-Stop-LLM",
           "url": "https://huggingface.co/user55442/Vilnius-Bus-Stop-LLM",
           "hot_value": "0 likes / 0 downloads",
@@ -3537,7 +3611,7 @@
           }
         },
         {
-          "index": 20,
+          "index": 23,
           "title": "aasyhadi/legal-llm-pgabl",
           "url": "https://huggingface.co/aasyhadi/legal-llm-pgabl",
           "hot_value": "0 likes / 0 downloads",
@@ -3561,7 +3635,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 24,
           "title": "2009YU/TMCRA-TokenGraph-LLM",
           "url": "https://huggingface.co/2009YU/TMCRA-TokenGraph-LLM",
           "hot_value": "0 likes / 0 downloads",
@@ -3585,7 +3659,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 25,
           "title": "AmanT420/career-coach-llm",
           "url": "https://huggingface.co/AmanT420/career-coach-llm",
           "hot_value": "0 likes / 0 downloads",
@@ -3608,7 +3682,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 26,
           "title": "LLM-OS-Models/KoHRM-Text-1.4B-FullSFT-LFM25-Terminal-ToolBench-Epoch2",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-FullSFT-LFM25-Terminal-ToolBench-Epoch2",
           "hot_value": "1 likes / 0 downloads",
@@ -3632,7 +3706,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 27,
           "title": "prav-974/Frontier-Space-LLM-250M",
           "url": "https://huggingface.co/prav-974/Frontier-Space-LLM-250M",
           "hot_value": "0 likes / 0 downloads",
@@ -3651,7 +3725,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 28,
           "title": "ZahidHussain-1007/llm-prop-bandgap-model",
           "url": "https://huggingface.co/ZahidHussain-1007/llm-prop-bandgap-model",
           "hot_value": "0 likes / 0 downloads",
@@ -3671,7 +3745,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 29,
           "title": "ziywang50/omniASR-LLM-7B",
           "url": "https://huggingface.co/ziywang50/omniASR-LLM-7B",
           "hot_value": "0 likes / 0 downloads",
@@ -3693,7 +3767,7 @@
           }
         },
         {
-          "index": 27,
+          "index": 30,
           "title": "ziywang50/omniASR-LLM-3B",
           "url": "https://huggingface.co/ziywang50/omniASR-LLM-3B",
           "hot_value": "0 likes / 0 downloads",
@@ -3715,7 +3789,7 @@
           }
         },
         {
-          "index": 28,
+          "index": 31,
           "title": "anasali4151/tiny-hf-llm-backup",
           "url": "https://huggingface.co/anasali4151/tiny-hf-llm-backup",
           "hot_value": "0 likes / 0 downloads",
@@ -3734,7 +3808,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 32,
           "title": "LLM-OS-Models/KoHRM-Text-1.4B-FullSFT-LFM25-Terminal-ToolBench-Epoch1",
           "url": "https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-FullSFT-LFM25-Terminal-ToolBench-Epoch1",
           "hot_value": "0 likes / 27 downloads",
@@ -3758,7 +3832,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 33,
           "title": "pragadeeshv23/1.58-bit-LLM-250M",
           "url": "https://huggingface.co/pragadeeshv23/1.58-bit-LLM-250M",
           "hot_value": "0 likes / 0 downloads",
@@ -3777,7 +3851,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 34,
           "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_thinking_s0",
           "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_thinking_s0",
           "hot_value": "0 likes / 9 downloads",
@@ -3801,7 +3875,7 @@
           }
         },
         {
-          "index": 32,
+          "index": 35,
           "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_thinking_p75_tf4_z2",
           "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_thinking_p75_tf4_z2",
           "hot_value": "0 likes / 14 downloads",
@@ -3825,7 +3899,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 36,
           "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_tf4_z3",
           "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_tf4_z3",
           "hot_value": "0 likes / 17 downloads",
@@ -3849,7 +3923,7 @@
           }
         },
         {
-          "index": 34,
+          "index": 37,
           "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_tf4_z2",
           "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_tf4_z2",
           "hot_value": "0 likes / 15 downloads",
@@ -3873,7 +3947,7 @@
           }
         },
         {
-          "index": 35,
+          "index": 38,
           "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_s0_z3",
           "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_s0_z3",
           "hot_value": "0 likes / 12 downloads",
@@ -3897,7 +3971,7 @@
           }
         },
         {
-          "index": 36,
+          "index": 39,
           "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_s0_e2",
           "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_s0_e2",
           "hot_value": "0 likes / 0 downloads",
@@ -3917,7 +3991,7 @@
           }
         },
         {
-          "index": 37,
+          "index": 40,
           "title": "cs-552-2026-llmfao/safety_model",
           "url": "https://huggingface.co/cs-552-2026-llmfao/safety_model",
           "hot_value": "0 likes / 204 downloads",
@@ -3936,81 +4010,9 @@
             "sourceLabel": "HF Models",
             "publishedAt": "2026-06-05T21:30:57.000Z"
           }
-        },
-        {
-          "index": 38,
-          "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_s0",
-          "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_s0",
-          "hot_value": "0 likes / 13 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "模型更新；任务：text-generation；库：transformers；标签：transformers、safetensors、qwen3、text-generation、llama-factory、full",
-            "aiMatchedKeywords": [
-              "AI",
-              "大模型",
-              "Hugging Face",
-              "transformers",
-              "safetensors",
-              "qwen3",
-              "text-generation",
-              "llama-factory",
-              "full"
-            ],
-            "source": "hf-models",
-            "sourceLabel": "HF Models",
-            "publishedAt": "2026-06-05T21:29:28.000Z"
-          }
-        },
-        {
-          "index": 39,
-          "title": "Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_p75_tf4_z2",
-          "url": "https://huggingface.co/Senlimulin/2026UCSDIntern_SFT_llm4cov_instruct_p75_tf4_z2",
-          "hot_value": "0 likes / 15 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "模型更新；任务：text-generation；库：transformers；标签：transformers、safetensors、qwen3、text-generation、llama-factory、full",
-            "aiMatchedKeywords": [
-              "AI",
-              "大模型",
-              "Hugging Face",
-              "transformers",
-              "safetensors",
-              "qwen3",
-              "text-generation",
-              "llama-factory",
-              "full"
-            ],
-            "source": "hf-models",
-            "sourceLabel": "HF Models",
-            "publishedAt": "2026-06-05T21:27:14.000Z"
-          }
-        },
-        {
-          "index": 40,
-          "title": "cs-552-2026-llmfao/general_knowledge_model",
-          "url": "https://huggingface.co/cs-552-2026-llmfao/general_knowledge_model",
-          "hot_value": "0 likes / 196 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "模型更新；任务：text-generation；库：transformers；标签：transformers、safetensors、qwen3、text-generation、generated_from_trainer、sft",
-            "aiMatchedKeywords": [
-              "AI",
-              "大模型",
-              "Hugging Face",
-              "transformers",
-              "safetensors",
-              "qwen3",
-              "text-generation",
-              "generated_from_trainer",
-              "sft"
-            ],
-            "source": "hf-models",
-            "sourceLabel": "HF Models",
-            "publishedAt": "2026-06-05T16:58:25.000Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -4021,43 +4023,24 @@
           "大模型",
           "Hugging Face",
           "safetensors",
+          "gemma4",
           "region:us",
           "transformers",
-          "terminal",
-          "sft",
-          "vllm",
-          "tb2-lite",
           "llama",
-          "text-generation"
+          "text-generation",
+          "text-generation-inference",
+          "unsloth",
+          "terminal"
         ]
       }
     },
     {
       "type": "hf-datasets",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
-          "title": "KissTheHabit/IDA_AI",
-          "url": "https://huggingface.co/datasets/KissTheHabit/IDA_AI",
-          "hot_value": "0 likes / 63 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:59:24.000Z"
-          }
-        },
-        {
-          "index": 2,
           "title": "Shanmuk4622/ai-image-detection-dataset",
           "url": "https://huggingface.co/datasets/Shanmuk4622/ai-image-detection-dataset",
           "hot_value": "1 likes / 970 downloads",
@@ -4077,14 +4060,14 @@
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:58:37.000Z"
+            "publishedAt": "2026-06-07T04:55:49.000Z"
           }
         },
         {
-          "index": 3,
-          "title": "Aisha-AI-Official/lora_test",
-          "url": "https://huggingface.co/datasets/Aisha-AI-Official/lora_test",
-          "hot_value": "2 likes / 8471 downloads",
+          "index": 2,
+          "title": "AE-Talk-bot/log-no-ai",
+          "url": "https://huggingface.co/datasets/AE-Talk-bot/log-no-ai",
+          "hot_value": "0 likes / 278 downloads",
           "cover": "",
           "extra": {
             "desc": "数据集更新；标签：region:us",
@@ -4096,11 +4079,11 @@
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:57:34.000Z"
+            "publishedAt": "2026-06-07T04:55:01.000Z"
           }
         },
         {
-          "index": 4,
+          "index": 3,
           "title": "GGSheng/ai-backup",
           "url": "https://huggingface.co/datasets/GGSheng/ai-backup",
           "hot_value": "3 likes / 23805 downloads",
@@ -4115,126 +4098,11 @@
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:57:17.000Z"
+            "publishedAt": "2026-06-07T04:47:20.000Z"
           }
         },
         {
-          "index": 5,
-          "title": "coordinated-flaw-disclosures/ai-flaw-reports",
-          "url": "https://huggingface.co/datasets/coordinated-flaw-disclosures/ai-flaw-reports",
-          "hot_value": "1 likes / 139 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：size_categories:n<1K、format:parquet、modality:image、modality:text、library:datasets、library:pandas",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "size_categories:n<1K",
-              "format:parquet",
-              "modality:image",
-              "modality:text",
-              "library:datasets",
-              "library:pandas"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:52:43.000Z"
-          }
-        },
-        {
-          "index": 6,
-          "title": "Aisha-AI-Official/flux-2-klein-models",
-          "url": "https://huggingface.co/datasets/Aisha-AI-Official/flux-2-klein-models",
-          "hot_value": "4 likes / 2527 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:42:11.000Z"
-          }
-        },
-        {
-          "index": 7,
-          "title": "aip9105/claw_data",
-          "url": "https://huggingface.co/datasets/aip9105/claw_data",
-          "hot_value": "0 likes / 647 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：size_categories:n<1K、format:webdataset、modality:text、library:datasets、library:webdataset、library:mlcroissant",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "size_categories:n<1K",
-              "format:webdataset",
-              "modality:text",
-              "library:datasets",
-              "library:webdataset",
-              "library:mlcroissant"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T01:29:16.000Z"
-          }
-        },
-        {
-          "index": 8,
-          "title": "alphabot2/Aibot2_combined_pick_object_datasets_updatad_2026_06_07_15fps",
-          "url": "https://huggingface.co/datasets/alphabot2/Aibot2_combined_pick_object_datasets_updatad_2026_06_07_15fps",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:robotics、license:apache-2.0、size_categories:100K<n<1M、format:parquet、modality:tabular、modality:timeseries",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:robotics",
-              "license:apache-2.0",
-              "size_categories:100K<n<1M",
-              "format:parquet",
-              "modality:tabular",
-              "modality:timeseries"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T00:49:07.000Z"
-          }
-        },
-        {
-          "index": 9,
-          "title": "Chris2035/chris-meniw-ai-governance",
-          "url": "https://huggingface.co/datasets/Chris2035/chris-meniw-ai-governance",
-          "hot_value": "0 likes / 71 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：language:en、language:es、language:pt、language:fr、language:ru、language:zh",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "language:en",
-              "language:es",
-              "language:pt",
-              "language:fr",
-              "language:ru",
-              "language:zh"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T00:35:41.000Z"
-          }
-        },
-        {
-          "index": 10,
+          "index": 4,
           "title": "manikandan18ramalingam/agentic-ai-options-results",
           "url": "https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results",
           "hot_value": "1 likes / 1527 downloads",
@@ -4254,11 +4122,307 @@
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-07T00:33:17.000Z"
+            "publishedAt": "2026-06-07T04:35:40.000Z"
+          }
+        },
+        {
+          "index": 5,
+          "title": "aip9105/claw_data",
+          "url": "https://huggingface.co/datasets/aip9105/claw_data",
+          "hot_value": "0 likes / 647 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：size_categories:n<1K、format:webdataset、modality:text、library:datasets、library:webdataset、library:mlcroissant",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "size_categories:n<1K",
+              "format:webdataset",
+              "modality:text",
+              "library:datasets",
+              "library:webdataset",
+              "library:mlcroissant"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:29:23.000Z"
+          }
+        },
+        {
+          "index": 6,
+          "title": "Aisha-AI-Official/flux-2-klein-models",
+          "url": "https://huggingface.co/datasets/Aisha-AI-Official/flux-2-klein-models",
+          "hot_value": "4 likes / 2527 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:29:16.000Z"
+          }
+        },
+        {
+          "index": 7,
+          "title": "Aisha-AI-Official/lora_test",
+          "url": "https://huggingface.co/datasets/Aisha-AI-Official/lora_test",
+          "hot_value": "2 likes / 8471 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:25:08.000Z"
+          }
+        },
+        {
+          "index": 8,
+          "title": "Abhiram1009/ai-generated-chat-dataset",
+          "url": "https://huggingface.co/datasets/Abhiram1009/ai-generated-chat-dataset",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：task_categories:text-generation、language:en、license:other、size_categories:1K<n<10K、format:parquet、modality:text",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "task_categories:text-generation",
+              "language:en",
+              "license:other",
+              "size_categories:1K<n<10K",
+              "format:parquet",
+              "modality:text"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:10:21.000Z"
+          }
+        },
+        {
+          "index": 9,
+          "title": "aitf-its-tim3-dfk/aitf-dfk3-vlm-dataset-jsonl",
+          "url": "https://huggingface.co/datasets/aitf-its-tim3-dfk/aitf-dfk3-vlm-dataset-jsonl",
+          "hot_value": "0 likes / 41 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：language:id、license:mit、size_categories:10K<n<100K、modality:image、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "language:id",
+              "license:mit",
+              "size_categories:10K<n<100K",
+              "modality:image",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:03:29.000Z"
+          }
+        },
+        {
+          "index": 10,
+          "title": "Chris2035/chris-meniw-ai-governance",
+          "url": "https://huggingface.co/datasets/Chris2035/chris-meniw-ai-governance",
+          "hot_value": "0 likes / 71 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：language:en、language:es、language:pt、language:fr、language:ru、language:zh",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "language:en",
+              "language:es",
+              "language:pt",
+              "language:fr",
+              "language:ru",
+              "language:zh"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:00:58.000Z"
           }
         },
         {
           "index": 11,
+          "title": "KissTheHabit/IDA_AI",
+          "url": "https://huggingface.co/datasets/KissTheHabit/IDA_AI",
+          "hot_value": "0 likes / 63 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T04:00:24.000Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "TheDocent/epistemic-justice-ai-carbon",
+          "url": "https://huggingface.co/datasets/TheDocent/epistemic-justice-ai-carbon",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：language:en、license:mit、size_categories:n<1K、region:us、ai-safety、ethics",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "language:en",
+              "license:mit",
+              "size_categories:n<1K",
+              "region:us",
+              "ai-safety",
+              "ethics"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T03:31:07.000Z"
+          }
+        },
+        {
+          "index": 13,
+          "title": "Vigil-ai/governance-bench-v1",
+          "url": "https://huggingface.co/datasets/Vigil-ai/governance-bench-v1",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：task_categories:text-classification、language:en、license:cc-by-4.0、size_categories:n<1K、format:json、modality:text",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "task_categories:text-classification",
+              "language:en",
+              "license:cc-by-4.0",
+              "size_categories:n<1K",
+              "format:json",
+              "modality:text"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T03:21:36.000Z"
+          }
+        },
+        {
+          "index": 14,
+          "title": "coordinated-flaw-disclosures/ai-flaw-reports",
+          "url": "https://huggingface.co/datasets/coordinated-flaw-disclosures/ai-flaw-reports",
+          "hot_value": "1 likes / 139 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：size_categories:n<1K、format:parquet、modality:image、modality:text、library:datasets、library:pandas",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "size_categories:n<1K",
+              "format:parquet",
+              "modality:image",
+              "modality:text",
+              "library:datasets",
+              "library:pandas"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T03:02:06.000Z"
+          }
+        },
+        {
+          "index": 15,
+          "title": "datapizza-ai-lab/salaries",
+          "url": "https://huggingface.co/datasets/datapizza-ai-lab/salaries",
+          "hot_value": "80 likes / 118 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：language:it、license:cc-by-nc-4.0、size_categories:10K<n<100K、format:json、modality:tabular、modality:text",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "language:it",
+              "license:cc-by-nc-4.0",
+              "size_categories:10K<n<100K",
+              "format:json",
+              "modality:tabular",
+              "modality:text"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T03:00:29.000Z"
+          }
+        },
+        {
+          "index": 16,
+          "title": "PegasusJEsus/AI_Que_Ans",
+          "url": "https://huggingface.co/datasets/PegasusJEsus/AI_Que_Ans",
+          "hot_value": "0 likes / 93 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：license:unknown、size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "license:unknown",
+              "size_categories:n<1K",
+              "format:json",
+              "modality:text",
+              "library:datasets",
+              "library:pandas"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T02:49:21.000Z"
+          }
+        },
+        {
+          "index": 17,
+          "title": "alphabot2/Aibot2_combined_pick_object_datasets_updatad_2026_06_07_15fps",
+          "url": "https://huggingface.co/datasets/alphabot2/Aibot2_combined_pick_object_datasets_updatad_2026_06_07_15fps",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：task_categories:robotics、license:apache-2.0、size_categories:100K<n<1M、format:parquet、modality:tabular、modality:timeseries",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "task_categories:robotics",
+              "license:apache-2.0",
+              "size_categories:100K<n<1M",
+              "format:parquet",
+              "modality:tabular",
+              "modality:timeseries"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-07T02:14:05.000Z"
+          }
+        },
+        {
+          "index": 18,
           "title": "HoangVuSnape-AI/qwen2.5-3b-direction-g-sil-data",
           "url": "https://huggingface.co/datasets/HoangVuSnape-AI/qwen2.5-3b-direction-g-sil-data",
           "hot_value": "0 likes / 0 downloads",
@@ -4277,7 +4441,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 19,
           "title": "AISDataPortal/DB",
           "url": "https://huggingface.co/datasets/AISDataPortal/DB",
           "hot_value": "0 likes / 764 downloads",
@@ -4297,7 +4461,7 @@
           }
         },
         {
-          "index": 13,
+          "index": 20,
           "title": "Sarko717227/Ai_SMART",
           "url": "https://huggingface.co/datasets/Sarko717227/Ai_SMART",
           "hot_value": "0 likes / 4973 downloads",
@@ -4320,7 +4484,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 21,
           "title": "Sachin21112004/carrerflow-ai",
           "url": "https://huggingface.co/datasets/Sachin21112004/carrerflow-ai",
           "hot_value": "1 likes / 1071 downloads",
@@ -4342,26 +4506,7 @@
           }
         },
         {
-          "index": 15,
-          "title": "AE-Talk-bot/log-no-ai",
-          "url": "https://huggingface.co/datasets/AE-Talk-bot/log-no-ai",
-          "hot_value": "0 likes / 278 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T22:58:53.000Z"
-          }
-        },
-        {
-          "index": 16,
+          "index": 22,
           "title": "SPAISS6F1/spai-ss6-corpus-thai-medical-care-aiotx",
           "url": "https://huggingface.co/datasets/SPAISS6F1/spai-ss6-corpus-thai-medical-care-aiotx",
           "hot_value": "0 likes / 0 downloads",
@@ -4385,7 +4530,7 @@
           }
         },
         {
-          "index": 17,
+          "index": 23,
           "title": "AitorConS/dream-museum-gallery",
           "url": "https://huggingface.co/datasets/AitorConS/dream-museum-gallery",
           "hot_value": "0 likes / 56 downloads",
@@ -4409,7 +4554,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 24,
           "title": "lennart-finke/ai-company-stories",
           "url": "https://huggingface.co/datasets/lennart-finke/ai-company-stories",
           "hot_value": "0 likes / 0 downloads",
@@ -4433,7 +4578,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 25,
           "title": "XiaoPanPanKevinPan/aicapstone_group7_cutlery_v2_replay_3",
           "url": "https://huggingface.co/datasets/XiaoPanPanKevinPan/aicapstone_group7_cutlery_v2_replay_3",
           "hot_value": "0 likes / 7 downloads",
@@ -4457,7 +4602,7 @@
           }
         },
         {
-          "index": 20,
+          "index": 26,
           "title": "airkingbd/Nemotron-code-tokenized",
           "url": "https://huggingface.co/datasets/airkingbd/Nemotron-code-tokenized",
           "hot_value": "0 likes / 0 downloads",
@@ -4480,7 +4625,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 27,
           "title": "humana-ai/humana-ai-llm-v1.4",
           "url": "https://huggingface.co/datasets/humana-ai/humana-ai-llm-v1.4",
           "hot_value": "0 likes / 0 downloads",
@@ -4504,7 +4649,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 28,
           "title": "airkingbd/Nemotron-math-notool-tokenized",
           "url": "https://huggingface.co/datasets/airkingbd/Nemotron-math-notool-tokenized",
           "hot_value": "0 likes / 0 downloads",
@@ -4527,7 +4672,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 29,
           "title": "ainativestudio/locomo-finetune-data",
           "url": "https://huggingface.co/datasets/ainativestudio/locomo-finetune-data",
           "hot_value": "0 likes / 0 downloads",
@@ -4551,7 +4696,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 30,
           "title": "DCAgent3/aider_polyglot_Qwen3_32B_31600_sera_46_47000_converted_20260606_084901",
           "url": "https://huggingface.co/datasets/DCAgent3/aider_polyglot_Qwen3_32B_31600_sera_46_47000_converted_20260606_084901",
           "hot_value": "0 likes / 0 downloads",
@@ -4575,7 +4720,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 31,
           "title": "adaptive-classifier/ai-detector-data",
           "url": "https://huggingface.co/datasets/adaptive-classifier/ai-detector-data",
           "hot_value": "2 likes / 746 downloads",
@@ -4599,7 +4744,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 32,
           "title": "MidoriChou/ai_final_7",
           "url": "https://huggingface.co/datasets/MidoriChou/ai_final_7",
           "hot_value": "0 likes / 0 downloads",
@@ -4623,31 +4768,7 @@
           }
         },
         {
-          "index": 27,
-          "title": "PegasusJEsus/AI_Que_Ans",
-          "url": "https://huggingface.co/datasets/PegasusJEsus/AI_Que_Ans",
-          "hot_value": "0 likes / 93 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：license:unknown、size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "license:unknown",
-              "size_categories:n<1K",
-              "format:json",
-              "modality:text",
-              "library:datasets",
-              "library:pandas"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T17:28:04.000Z"
-          }
-        },
-        {
-          "index": 28,
+          "index": 33,
           "title": "aisbergpublicorganization/telegram-news-ua-dataset",
           "url": "https://huggingface.co/datasets/aisbergpublicorganization/telegram-news-ua-dataset",
           "hot_value": "1 likes / 8 downloads",
@@ -4671,7 +4792,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 34,
           "title": "Sediba-AI/eduintel-faiss",
           "url": "https://huggingface.co/datasets/Sediba-AI/eduintel-faiss",
           "hot_value": "0 likes / 0 downloads",
@@ -4695,7 +4816,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 35,
           "title": "jpaulpoliquit/ph-sft-ai-authored-v1",
           "url": "https://huggingface.co/datasets/jpaulpoliquit/ph-sft-ai-authored-v1",
           "hot_value": "0 likes / 0 downloads",
@@ -4719,7 +4840,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 36,
           "title": "DCAgent3/aider_polyglot_a3_rl_DCAgent_exp_rpt_pymethods2test_v3_10_8B_20260606_091808",
           "url": "https://huggingface.co/datasets/DCAgent3/aider_polyglot_a3_rl_DCAgent_exp_rpt_pymethods2test_v3_10_8B_20260606_091808",
           "hot_value": "0 likes / 0 downloads",
@@ -4743,7 +4864,7 @@
           }
         },
         {
-          "index": 32,
+          "index": 37,
           "title": "duongve/Practive_AI",
           "url": "https://huggingface.co/datasets/duongve/Practive_AI",
           "hot_value": "0 likes / 22 downloads",
@@ -4767,7 +4888,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 38,
           "title": "aimbuilt/aim-built-assets",
           "url": "https://huggingface.co/datasets/aimbuilt/aim-built-assets",
           "hot_value": "0 likes / 981 downloads",
@@ -4791,7 +4912,7 @@
           }
         },
         {
-          "index": 34,
+          "index": 39,
           "title": "sailboat-ai/wikipedia_en_top_nopic_faiss",
           "url": "https://huggingface.co/datasets/sailboat-ai/wikipedia_en_top_nopic_faiss",
           "hot_value": "0 likes / 77 downloads",
@@ -4811,7 +4932,7 @@
           }
         },
         {
-          "index": 35,
+          "index": 40,
           "title": "iamvikas009/novel_ai",
           "url": "https://huggingface.co/datasets/iamvikas009/novel_ai",
           "hot_value": "0 likes / 0 downloads",
@@ -4828,109 +4949,9 @@
             "sourceLabel": "HF Datasets",
             "publishedAt": "2026-06-06T15:14:41.000Z"
           }
-        },
-        {
-          "index": 36,
-          "title": "sdasdawq234/ai-gateway",
-          "url": "https://huggingface.co/datasets/sdasdawq234/ai-gateway",
-          "hot_value": "0 likes / 607 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T14:57:39.000Z"
-          }
-        },
-        {
-          "index": 37,
-          "title": "sdasdawq234/aig-services",
-          "url": "https://huggingface.co/datasets/sdasdawq234/aig-services",
-          "hot_value": "1 likes / 277 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T14:57:38.000Z"
-          }
-        },
-        {
-          "index": 38,
-          "title": "sdasdawq234/aig-dashboard",
-          "url": "https://huggingface.co/datasets/sdasdawq234/aig-dashboard",
-          "hot_value": "0 likes / 314 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T14:57:36.000Z"
-          }
-        },
-        {
-          "index": 39,
-          "title": "typewriter-ai/historical-lm-v2-1938",
-          "url": "https://huggingface.co/datasets/typewriter-ai/historical-lm-v2-1938",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T14:56:10.000Z"
-          }
-        },
-        {
-          "index": 40,
-          "title": "ai4bharat/Rasa",
-          "url": "https://huggingface.co/datasets/ai4bharat/Rasa",
-          "hot_value": "37 likes / 2983 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:text-to-speech、language:as、language:bn、language:kn、language:ml、language:mr",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:text-to-speech",
-              "language:as",
-              "language:bn",
-              "language:kn",
-              "language:ml",
-              "language:mr"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-06T14:50:25.000Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -4940,25 +4961,333 @@
           "AI",
           "数据集",
           "Hugging Face",
-          "region:us",
           "size_categories:100K<n<1M",
           "format:parquet",
           "modality:text",
           "library:datasets",
           "library:dask",
           "library:polars",
-          "size_categories:n<1K",
-          "modality:image"
+          "region:us",
+          "license:apache-2.0",
+          "size_categories:n<1K"
         ]
       }
     },
     {
       "type": "hf-spaces",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
+          "title": "Agentic-fee/hermes-wa-agent",
+          "url": "https://huggingface.co/spaces/Agentic-fee/hermes-wa-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T04:56:18.000Z"
+          }
+        },
+        {
+          "index": 2,
+          "title": "fikri0o0/indo-financial-agent",
+          "url": "https://huggingface.co/spaces/fikri0o0/indo-financial-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T04:53:30.000Z"
+          }
+        },
+        {
+          "index": 3,
+          "title": "sweeet1/stock-agent",
+          "url": "https://huggingface.co/spaces/sweeet1/stock-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T04:40:46.000Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "Pax217/Agente-News",
+          "url": "https://huggingface.co/spaces/Pax217/Agente-News",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T04:32:37.000Z"
+          }
+        },
+        {
+          "index": 5,
+          "title": "varun-stark/pinterset-design-agent",
+          "url": "https://huggingface.co/spaces/varun-stark/pinterset-design-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:50:24.000Z"
+          }
+        },
+        {
+          "index": 6,
+          "title": "Rossiny/Hermes-agent",
+          "url": "https://huggingface.co/spaces/Rossiny/Hermes-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:41:42.000Z"
+          }
+        },
+        {
+          "index": 7,
+          "title": "muhammadibrar66/Multi-Step-Research-Orchestrator-agent",
+          "url": "https://huggingface.co/spaces/muhammadibrar66/Multi-Step-Research-Orchestrator-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：streamlit、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "streamlit",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:39:33.000Z"
+          }
+        },
+        {
+          "index": 8,
+          "title": "ipiniella/First_agent_template",
+          "url": "https://huggingface.co/spaces/ipiniella/First_agent_template",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、smolagents、agent、smolagent、tool、agent-course",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "smolagents",
+              "agent",
+              "smolagent",
+              "tool",
+              "agent-course"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:36:30.000Z"
+          }
+        },
+        {
+          "index": 9,
+          "title": "Msk7000/LLM_Agent_Interaction_Dashboard",
+          "url": "https://huggingface.co/spaces/Msk7000/LLM_Agent_Interaction_Dashboard",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:31:41.000Z"
+          }
+        },
+        {
+          "index": 10,
+          "title": "build-small-hackathon/agent-swarm-workbench",
+          "url": "https://huggingface.co/spaces/build-small-hackathon/agent-swarm-workbench",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、build-small-hackathon、backyard-ai、agents、small-language-model、demo-builder",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "build-small-hackathon",
+              "backyard-ai",
+              "agents",
+              "small-language-model",
+              "demo-builder"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:30:33.000Z"
+          }
+        },
+        {
+          "index": 11,
+          "title": "petervartanian/no-agents-land",
+          "url": "https://huggingface.co/spaces/petervartanian/no-agents-land",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：static、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "static",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:27:33.000Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "SoritonLab/tokenomics-quantum-design-agent",
+          "url": "https://huggingface.co/spaces/SoritonLab/tokenomics-quantum-design-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:27:24.000Z"
+          }
+        },
+        {
+          "index": 13,
+          "title": "SzematPro/ai-agent-eval-harness-healthtech",
+          "url": "https://huggingface.co/spaces/SzematPro/ai-agent-eval-harness-healthtech",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T03:02:40.000Z"
+          }
+        },
+        {
+          "index": 14,
+          "title": "theyadavvivek/multimodal-agent-api",
+          "url": "https://huggingface.co/spaces/theyadavvivek/multimodal-agent-api",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T02:41:57.000Z"
+          }
+        },
+        {
+          "index": 15,
+          "title": "PanicGecko/personal_career_agent",
+          "url": "https://huggingface.co/spaces/PanicGecko/personal_career_agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T02:34:58.000Z"
+          }
+        },
+        {
+          "index": 16,
           "title": "Hayam-mostafa/ai-knowledge-agent",
           "url": "https://huggingface.co/spaces/Hayam-mostafa/ai-knowledge-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -4974,11 +5303,35 @@
             ],
             "source": "hf-spaces",
             "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-07T01:45:15.000Z"
+            "publishedAt": "2026-06-07T02:31:44.000Z"
           }
         },
         {
-          "index": 2,
+          "index": 17,
+          "title": "HarithaP/First_agent_template",
+          "url": "https://huggingface.co/spaces/HarithaP/First_agent_template",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、smolagents、agent、smolagent、tool、agent-course",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "smolagents",
+              "agent",
+              "smolagent",
+              "tool",
+              "agent-course"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-07T02:19:58.000Z"
+          }
+        },
+        {
+          "index": 18,
           "title": "saad-com/agentic-alpha",
           "url": "https://huggingface.co/spaces/saad-com/agentic-alpha",
           "hot_value": "0 likes / 0 downloads",
@@ -4997,7 +5350,7 @@
           }
         },
         {
-          "index": 3,
+          "index": 19,
           "title": "Coastline6/transcript-agent-v2",
           "url": "https://huggingface.co/spaces/Coastline6/transcript-agent-v2",
           "hot_value": "0 likes / 0 downloads",
@@ -5017,7 +5370,7 @@
           }
         },
         {
-          "index": 4,
+          "index": 20,
           "title": "Emanueldev016/agente-imc-nutricional",
           "url": "https://huggingface.co/spaces/Emanueldev016/agente-imc-nutricional",
           "hot_value": "0 likes / 0 downloads",
@@ -5038,47 +5391,7 @@
           }
         },
         {
-          "index": 5,
-          "title": "Pax217/Agente-News",
-          "url": "https://huggingface.co/spaces/Pax217/Agente-News",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-07T01:25:55.000Z"
-          }
-        },
-        {
-          "index": 6,
-          "title": "SoritonLab/tokenomics-quantum-design-agent",
-          "url": "https://huggingface.co/spaces/SoritonLab/tokenomics-quantum-design-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-07T01:18:05.000Z"
-          }
-        },
-        {
-          "index": 7,
+          "index": 21,
           "title": "Emanueldev016/agente-imc-nutricao",
           "url": "https://huggingface.co/spaces/Emanueldev016/agente-imc-nutricao",
           "hot_value": "0 likes / 0 downloads",
@@ -5099,7 +5412,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 22,
           "title": "Gouklkrishan/job-agent",
           "url": "https://huggingface.co/spaces/Gouklkrishan/job-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5119,7 +5432,7 @@
           }
         },
         {
-          "index": 9,
+          "index": 23,
           "title": "ashkanreisi/First_agent_template",
           "url": "https://huggingface.co/spaces/ashkanreisi/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5143,7 +5456,7 @@
           }
         },
         {
-          "index": 10,
+          "index": 24,
           "title": "VakeesanM/Research-Assistant-Agent",
           "url": "https://huggingface.co/spaces/VakeesanM/Research-Assistant-Agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5164,7 +5477,7 @@
           }
         },
         {
-          "index": 11,
+          "index": 25,
           "title": "yassinelahssini/visaflow-agent",
           "url": "https://huggingface.co/spaces/yassinelahssini/visaflow-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5184,7 +5497,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 26,
           "title": "pajaro91/ai-job-search-agent",
           "url": "https://huggingface.co/spaces/pajaro91/ai-job-search-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5204,7 +5517,7 @@
           }
         },
         {
-          "index": 13,
+          "index": 27,
           "title": "Felipe-2026/ai-agent-demo",
           "url": "https://huggingface.co/spaces/Felipe-2026/ai-agent-demo",
           "hot_value": "1 likes / 0 downloads",
@@ -5224,7 +5537,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 28,
           "title": "seanpedrickcase/agentic_document_redaction",
           "url": "https://huggingface.co/spaces/seanpedrickcase/agentic_document_redaction",
           "hot_value": "0 likes / 0 downloads",
@@ -5244,27 +5557,7 @@
           }
         },
         {
-          "index": 15,
-          "title": "SzematPro/ai-agent-eval-harness-healthtech",
-          "url": "https://huggingface.co/spaces/SzematPro/ai-agent-eval-harness-healthtech",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T22:09:43.000Z"
-          }
-        },
-        {
-          "index": 16,
+          "index": 29,
           "title": "williampepple1/cron-agent",
           "url": "https://huggingface.co/spaces/williampepple1/cron-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5284,7 +5577,7 @@
           }
         },
         {
-          "index": 17,
+          "index": 30,
           "title": "pkraman06/Multi-Agent-Sandbox",
           "url": "https://huggingface.co/spaces/pkraman06/Multi-Agent-Sandbox",
           "hot_value": "0 likes / 0 downloads",
@@ -5304,7 +5597,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 31,
           "title": "vinaykumarkv/Medical_Rag_Agent",
           "url": "https://huggingface.co/spaces/vinaykumarkv/Medical_Rag_Agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5324,7 +5617,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 32,
           "title": "Padmanav/ai-code-review-agent",
           "url": "https://huggingface.co/spaces/Padmanav/ai-code-review-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5344,27 +5637,7 @@
           }
         },
         {
-          "index": 20,
-          "title": "petervartanian/no-agents-land",
-          "url": "https://huggingface.co/spaces/petervartanian/no-agents-land",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：static、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "static",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T21:26:27.000Z"
-          }
-        },
-        {
-          "index": 21,
+          "index": 33,
           "title": "chouaib232/pi_agent_rust2",
           "url": "https://huggingface.co/spaces/chouaib232/pi_agent_rust2",
           "hot_value": "1 likes / 0 downloads",
@@ -5384,7 +5657,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 34,
           "title": "chouaib232/pi_agent_rust",
           "url": "https://huggingface.co/spaces/chouaib232/pi_agent_rust",
           "hot_value": "0 likes / 0 downloads",
@@ -5404,7 +5677,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 35,
           "title": "Shoubhit004/First_agent_template",
           "url": "https://huggingface.co/spaces/Shoubhit004/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5428,7 +5701,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 36,
           "title": "Aimen20/QA_Agent",
           "url": "https://huggingface.co/spaces/Aimen20/QA_Agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5448,7 +5721,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 37,
           "title": "VeloD/n8n-ai-automation-agent",
           "url": "https://huggingface.co/spaces/VeloD/n8n-ai-automation-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5468,7 +5741,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 38,
           "title": "JesusOlv05/Sistema-de-Agentes-para-el-Diagnostico-de-Obsolescencia-y-Ciclo-de-Vida",
           "url": "https://huggingface.co/spaces/JesusOlv05/Sistema-de-Agentes-para-el-Diagnostico-de-Obsolescencia-y-Ciclo-de-Vida",
           "hot_value": "0 likes / 0 downloads",
@@ -5488,7 +5761,7 @@
           }
         },
         {
-          "index": 27,
+          "index": 39,
           "title": "bruhkruk/hermes-agent",
           "url": "https://huggingface.co/spaces/bruhkruk/hermes-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5508,7 +5781,7 @@
           }
         },
         {
-          "index": 28,
+          "index": 40,
           "title": "FlyingNunchucks/03-memory-augmented-agent",
           "url": "https://huggingface.co/spaces/FlyingNunchucks/03-memory-augmented-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5526,257 +5799,9 @@
             "sourceLabel": "HF Spaces",
             "publishedAt": "2026-06-06T20:18:48.000Z"
           }
-        },
-        {
-          "index": 29,
-          "title": "chandan9t8/First_agent_template",
-          "url": "https://huggingface.co/spaces/chandan9t8/First_agent_template",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、smolagents、agent、smolagent、tool、agent-course",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "smolagents",
-              "agent",
-              "smolagent",
-              "tool",
-              "agent-course"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T19:38:54.000Z"
-          }
-        },
-        {
-          "index": 30,
-          "title": "shantanucoder/vmartretail-intelligence-ai-agent",
-          "url": "https://huggingface.co/spaces/shantanucoder/vmartretail-intelligence-ai-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T19:19:06.000Z"
-          }
-        },
-        {
-          "index": 31,
-          "title": "nuxotetotmailsvoboden/Tomiris-Agents",
-          "url": "https://huggingface.co/spaces/nuxotetotmailsvoboden/Tomiris-Agents",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T18:42:51.000Z"
-          }
-        },
-        {
-          "index": 32,
-          "title": "eeshanyaj/tcs_campaign_agent_space",
-          "url": "https://huggingface.co/spaces/eeshanyaj/tcs_campaign_agent_space",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T18:05:12.000Z"
-          }
-        },
-        {
-          "index": 33,
-          "title": "Umaima-Mughal/Hackathon_AI_social_media_agent",
-          "url": "https://huggingface.co/spaces/Umaima-Mughal/Hackathon_AI_social_media_agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：streamlit、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "streamlit",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T18:01:41.000Z"
-          }
-        },
-        {
-          "index": 34,
-          "title": "RuchirKadam1729/bertopic-agentic-ai",
-          "url": "https://huggingface.co/spaces/RuchirKadam1729/bertopic-agentic-ai",
-          "hot_value": "1 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T17:53:10.000Z"
-          }
-        },
-        {
-          "index": 35,
-          "title": "AgentizedSolutions/webhook-bridge",
-          "url": "https://huggingface.co/spaces/AgentizedSolutions/webhook-bridge",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T17:49:50.000Z"
-          }
-        },
-        {
-          "index": 36,
-          "title": "VectorV17/Intelli_Agent",
-          "url": "https://huggingface.co/spaces/VectorV17/Intelli_Agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T16:44:41.000Z"
-          }
-        },
-        {
-          "index": 37,
-          "title": "varun-stark/pinterset-design-agent",
-          "url": "https://huggingface.co/spaces/varun-stark/pinterset-design-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T16:41:30.000Z"
-          }
-        },
-        {
-          "index": 38,
-          "title": "sukhrobnurali/observable-agent",
-          "url": "https://huggingface.co/spaces/sukhrobnurali/observable-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T16:25:12.000Z"
-          }
-        },
-        {
-          "index": 39,
-          "title": "build-small-hackathon/AI-agent-Evaluation-pipeline",
-          "url": "https://huggingface.co/spaces/build-small-hackathon/AI-agent-Evaluation-pipeline",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、evaluation、agents、llm、observability、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "evaluation",
-              "agents",
-              "llm",
-              "observability",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T16:22:19.000Z"
-          }
-        },
-        {
-          "index": 40,
-          "title": "roskosmos19/Agent",
-          "url": "https://huggingface.co/spaces/roskosmos19/Agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：streamlit、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "streamlit",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-06T16:16:33.000Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -5788,8 +5813,8 @@
           "Hugging Face",
           "docker",
           "region:us",
-          "streamlit",
           "gradio",
+          "streamlit",
           "smolagents",
           "agent",
           "smolagent",
@@ -5801,106 +5826,106 @@
     {
       "type": "github-ai",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
-          "title": "felladrin/MiniSearch",
-          "url": "https://github.com/felladrin/MiniSearch",
-          "hot_value": "570 stars / 59 forks",
+          "title": "JSONbored/awesome-claude",
+          "url": "https://github.com/JSONbored/awesome-claude",
+          "hot_value": "261 stars / 69 forks",
           "cover": "",
           "extra": {
-            "desc": "Minimalist web-searching platform with an AI assistant that runs directly from your browser. Demo: https://felladrin-minisearch.hf.space",
+            "desc": "HeyClaude is a curated registry and distribution surface for Claude and AI-workflow assets: agents, MCP servers, skills, commands, hooks, rules, guides, tools, jobs, Raycast feeds, static data exports, and an npm MCP package.",
             "aiMatchedKeywords": [
               "AI",
               "GitHub",
               "开源项目",
-              "ai",
-              "ai-search-engine",
+              "agent-skills",
+              "ai-agents",
+              "ai-directory",
+              "ai-tools",
+              "anthropic",
               "artificial-intelligence",
-              "generative-ai",
-              "gpu-accelerated",
-              "information-retrieval",
-              "TypeScript"
+              "MDX"
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:59:15Z"
+            "publishedAt": "2026-06-07T04:53:28Z"
           }
         },
         {
           "index": 2,
-          "title": "CodeWithCJ/SparkyFitness",
-          "url": "https://github.com/CodeWithCJ/SparkyFitness",
-          "hot_value": "4157 stars / 205 forks",
+          "title": "l33tdawg/sage",
+          "url": "https://github.com/l33tdawg/sage",
+          "hot_value": "229 stars / 22 forks",
           "cover": "",
           "extra": {
-            "desc": "SparkyFitness: Built for Families. Powered by AI. Track food, fitness, water, and health — together.",
+            "desc": "(S)AGE - (Sovereign) Agent Governed Experience",
             "aiMatchedKeywords": [
               "AI",
               "GitHub",
               "开源项目",
-              "ai",
+              "agentic-ai",
               "artificial-intelligence",
-              "fitness",
-              "fitness-app",
-              "fitness-tracker",
-              "health",
-              "TypeScript"
+              "bft-consensus",
+              "bft-network",
+              "distributed-systems",
+              "governance",
+              "Go"
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:55:15Z"
+            "publishedAt": "2026-06-07T04:51:03Z"
           }
         },
         {
           "index": 3,
-          "title": "OpenHUTB/hutb",
-          "url": "https://github.com/OpenHUTB/hutb",
-          "hot_value": "499 stars / 416 forks",
+          "title": "spiceai/spiceai",
+          "url": "https://github.com/spiceai/spiceai",
+          "hot_value": "2950 stars / 198 forks",
           "cover": "",
           "extra": {
-            "desc": "人车模拟器",
+            "desc": "A portable accelerated SQL query, search, and LLM-inference engine, written in Rust, for data-grounded AI apps and agents.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "data",
+              "data-federation",
+              "developers",
+              "full-text-search",
+              "infrastructure",
+              "Rust"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T04:53:25Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "f/prompts.chat",
+          "url": "https://github.com/f/prompts.chat",
+          "hot_value": "163393 stars / 21228 forks",
+          "cover": "",
+          "extra": {
+            "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
             "aiMatchedKeywords": [
               "AI",
               "GitHub",
               "开源项目",
               "ai",
-              "aircraft",
               "artificial-intelligence",
-              "autonomous-driving",
-              "bridge",
-              "deep-learning",
-              "C++"
+              "awesome-list",
+              "chatgpt",
+              "chatgpt-prompts",
+              "claude",
+              "HTML"
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:49:53Z"
-          }
-        },
-        {
-          "index": 4,
-          "title": "VIAME/VIAME",
-          "url": "https://github.com/VIAME/VIAME",
-          "hot_value": "336 stars / 86 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Video and Image Analytics for Multiple Environments",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "annotation-framework",
-              "artificial-intelligence",
-              "computer-vision",
-              "conservation",
-              "deep-learning",
-              "ecology",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:48:48Z"
+            "publishedAt": "2026-06-07T04:35:19Z"
           }
         },
         {
@@ -5925,39 +5950,238 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:54:15Z"
+            "publishedAt": "2026-06-07T04:20:23Z"
           }
         },
         {
           "index": 6,
-          "title": "spiceai/spiceai",
-          "url": "https://github.com/spiceai/spiceai",
-          "hot_value": "2949 stars / 197 forks",
+          "title": "ai-collection/ai-collection",
+          "url": "https://github.com/ai-collection/ai-collection",
+          "hot_value": "8980 stars / 985 forks",
           "cover": "",
           "extra": {
-            "desc": "A portable accelerated SQL query, search, and LLM-inference engine, written in Rust, for data-grounded AI apps and agents.",
+            "desc": "The Generative AI Landscape - A Collection of Awesome Generative AI Applications",
             "aiMatchedKeywords": [
               "AI",
               "GitHub",
               "开源项目",
+              "ai",
               "artificial-intelligence",
-              "data",
-              "data-federation",
-              "developers",
-              "full-text-search",
-              "infrastructure",
-              "Rust"
+              "assistant-chat-bots",
+              "assistive-technology",
+              "awesome",
+              "awesome-list"
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:56:37Z"
+            "publishedAt": "2026-06-07T04:00:37Z"
           }
         },
         {
           "index": 7,
+          "title": "nautechsystems/nautilus_trader",
+          "url": "https://github.com/nautechsystems/nautilus_trader",
+          "hot_value": "23341 stars / 2945 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "algorithmic-trading-engine",
+              "artificial-intelligence",
+              "crypto-trading",
+              "equity-trading",
+              "forex",
+              "futures-trading",
+              "Rust"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T04:00:22Z"
+          }
+        },
+        {
+          "index": 8,
+          "title": "mars-sim/mars-sim",
+          "url": "https://github.com/mars-sim/mars-sim",
+          "hot_value": "164 stars / 43 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Mars Simulation Project Official Codebase",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agent-based-modeling",
+              "agent-based-simulation",
+              "artificial-intelligence",
+              "colonization",
+              "colony",
+              "colony-management",
+              "Java"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T03:15:57Z"
+          }
+        },
+        {
+          "index": 9,
+          "title": "rishabhops/CipherElite",
+          "url": "https://github.com/rishabhops/CipherElite",
+          "hot_value": "170 stars / 320 forks",
+          "cover": "",
+          "extra": {
+            "desc": "CipherElite: A new era Telegram Userbot featuring advanced AI plugins. Built with Python & Telethon to automate tasks, manage groups, and generate AI responses. Supports Heroku, VPS, & Termux.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "advance-userbot",
+              "ai-plugins",
+              "artificial-intelligence",
+              "automation",
+              "chatgpt-integration",
+              "cipherelite",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T02:59:27Z"
+          }
+        },
+        {
+          "index": 10,
+          "title": "alvinreal/awesome-opensource-ai",
+          "url": "https://github.com/alvinreal/awesome-opensource-ai",
+          "hot_value": "3780 stars / 429 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Curated list of the best truly open-source AI projects, models, tools, and infrastructure.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agents",
+              "ai",
+              "artificial-intelligence",
+              "awesome",
+              "awesome-list",
+              "generative-ai",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T02:05:49Z"
+          }
+        },
+        {
+          "index": 11,
+          "title": "felladrin/MiniSearch",
+          "url": "https://github.com/felladrin/MiniSearch",
+          "hot_value": "570 stars / 59 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Minimalist web-searching platform with an AI assistant that runs directly from your browser. Demo: https://felladrin-minisearch.hf.space",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "ai-search-engine",
+              "artificial-intelligence",
+              "generative-ai",
+              "gpu-accelerated",
+              "information-retrieval",
+              "TypeScript"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T01:59:15Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "CodeWithCJ/SparkyFitness",
+          "url": "https://github.com/CodeWithCJ/SparkyFitness",
+          "hot_value": "4158 stars / 205 forks",
+          "cover": "",
+          "extra": {
+            "desc": "SparkyFitness: Built for Families. Powered by AI. Track food, fitness, water, and health — together.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "artificial-intelligence",
+              "fitness",
+              "fitness-app",
+              "fitness-tracker",
+              "health",
+              "TypeScript"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T01:55:15Z"
+          }
+        },
+        {
+          "index": 13,
+          "title": "OpenHUTB/hutb",
+          "url": "https://github.com/OpenHUTB/hutb",
+          "hot_value": "499 stars / 416 forks",
+          "cover": "",
+          "extra": {
+            "desc": "人车模拟器",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "aircraft",
+              "artificial-intelligence",
+              "autonomous-driving",
+              "bridge",
+              "deep-learning",
+              "C++"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T01:49:53Z"
+          }
+        },
+        {
+          "index": 14,
+          "title": "VIAME/VIAME",
+          "url": "https://github.com/VIAME/VIAME",
+          "hot_value": "336 stars / 86 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Video and Image Analytics for Multiple Environments",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "annotation-framework",
+              "artificial-intelligence",
+              "computer-vision",
+              "conservation",
+              "deep-learning",
+              "ecology",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-07T01:48:48Z"
+          }
+        },
+        {
+          "index": 15,
           "title": "simstudioai/sim",
           "url": "https://github.com/simstudioai/sim",
-          "hot_value": "28712 stars / 3650 forks",
+          "hot_value": "28714 stars / 3651 forks",
           "cover": "",
           "extra": {
             "desc": "Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce.",
@@ -5979,7 +6203,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 16,
           "title": "agentjido/jido",
           "url": "https://github.com/agentjido/jido",
           "hot_value": "1728 stars / 105 forks",
@@ -6004,10 +6228,10 @@
           }
         },
         {
-          "index": 9,
+          "index": 17,
           "title": "invoke-ai/InvokeAI",
           "url": "https://github.com/invoke-ai/InvokeAI",
-          "hot_value": "27374 stars / 2871 forks",
+          "hot_value": "27378 stars / 2871 forks",
           "cover": "",
           "extra": {
             "desc": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.",
@@ -6029,10 +6253,10 @@
           }
         },
         {
-          "index": 10,
+          "index": 18,
           "title": "ccfddl/ccf-deadlines",
           "url": "https://github.com/ccfddl/ccf-deadlines",
-          "hot_value": "9066 stars / 604 forks",
+          "hot_value": "9067 stars / 604 forks",
           "cover": "",
           "extra": {
             "desc": "⏰ Agenticly track worldwide conference deadlines (Website, Python Cli, Wechat Applet)",
@@ -6054,56 +6278,7 @@
           }
         },
         {
-          "index": 11,
-          "title": "ai-collection/ai-collection",
-          "url": "https://github.com/ai-collection/ai-collection",
-          "hot_value": "8979 stars / 985 forks",
-          "cover": "",
-          "extra": {
-            "desc": "The Generative AI Landscape - A Collection of Awesome Generative AI Applications",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "ai",
-              "artificial-intelligence",
-              "assistant-chat-bots",
-              "assistive-technology",
-              "awesome",
-              "awesome-list"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T01:00:38Z"
-          }
-        },
-        {
-          "index": 12,
-          "title": "l33tdawg/sage",
-          "url": "https://github.com/l33tdawg/sage",
-          "hot_value": "229 stars / 22 forks",
-          "cover": "",
-          "extra": {
-            "desc": "(S)AGE - (Sovereign) Agent Governed Experience",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agentic-ai",
-              "artificial-intelligence",
-              "bft-consensus",
-              "bft-network",
-              "distributed-systems",
-              "governance",
-              "Go"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T00:44:07Z"
-          }
-        },
-        {
-          "index": 13,
+          "index": 19,
           "title": "steven2358/awesome-generative-ai",
           "url": "https://github.com/steven2358/awesome-generative-ai",
           "hot_value": "12118 stars / 1703 forks",
@@ -6127,7 +6302,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 20,
           "title": "activeloopai/hivemind",
           "url": "https://github.com/activeloopai/hivemind",
           "hot_value": "380 stars / 21 forks",
@@ -6148,11 +6323,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-07T00:19:34Z"
+            "publishedAt": "2026-06-07T03:28:18Z"
           }
         },
         {
-          "index": 15,
+          "index": 21,
           "title": "PaulDuvall/ai-development-patterns",
           "url": "https://github.com/PaulDuvall/ai-development-patterns",
           "hot_value": "461 stars / 33 forks",
@@ -6177,10 +6352,10 @@
           }
         },
         {
-          "index": 16,
+          "index": 22,
           "title": "Significant-Gravitas/AutoGPT",
           "url": "https://github.com/Significant-Gravitas/AutoGPT",
-          "hot_value": "184801 stars / 46187 forks",
+          "hot_value": "184803 stars / 46187 forks",
           "cover": "",
           "extra": {
             "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
@@ -6202,7 +6377,32 @@
           }
         },
         {
-          "index": 17,
+          "index": 23,
+          "title": "ls1intum/Artemis",
+          "url": "https://github.com/ls1intum/Artemis",
+          "hot_value": "771 stars / 369 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Artemis - Interactive Learning with Automated Feedback",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "apollon",
+              "artificial-intelligence",
+              "assessment",
+              "autograding",
+              "automatic-feedback",
+              "computer-science",
+              "Java"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-06T23:42:31Z"
+          }
+        },
+        {
+          "index": 24,
           "title": "hotosm/fAIr",
           "url": "https://github.com/hotosm/fAIr",
           "hot_value": "136 stars / 79 forks",
@@ -6227,7 +6427,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 25,
           "title": "langchain-ai/langgraphjs",
           "url": "https://github.com/langchain-ai/langgraphjs",
           "hot_value": "2985 stars / 498 forks",
@@ -6252,7 +6452,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 26,
           "title": "dafthunk-com/dafthunk",
           "url": "https://github.com/dafthunk-com/dafthunk",
           "hot_value": "85 stars / 10 forks",
@@ -6277,7 +6477,7 @@
           }
         },
         {
-          "index": 20,
+          "index": 27,
           "title": "frontman-ai/frontman",
           "url": "https://github.com/frontman-ai/frontman",
           "hot_value": "576 stars / 30 forks",
@@ -6302,10 +6502,10 @@
           }
         },
         {
-          "index": 21,
+          "index": 28,
           "title": "huggingface/datasets",
           "url": "https://github.com/huggingface/datasets",
-          "hot_value": "21587 stars / 3237 forks",
+          "hot_value": "21588 stars / 3238 forks",
           "cover": "",
           "extra": {
             "desc": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
@@ -6327,57 +6527,7 @@
           }
         },
         {
-          "index": 22,
-          "title": "mars-sim/mars-sim",
-          "url": "https://github.com/mars-sim/mars-sim",
-          "hot_value": "164 stars / 43 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Mars Simulation Project Official Codebase",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agent-based-modeling",
-              "agent-based-simulation",
-              "artificial-intelligence",
-              "colonization",
-              "colony",
-              "colony-management",
-              "Java"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T21:40:34Z"
-          }
-        },
-        {
-          "index": 23,
-          "title": "JSONbored/awesome-claude",
-          "url": "https://github.com/JSONbored/awesome-claude",
-          "hot_value": "261 stars / 69 forks",
-          "cover": "",
-          "extra": {
-            "desc": "HeyClaude is a curated registry and distribution surface for Claude and AI-workflow assets: agents, MCP servers, skills, commands, hooks, rules, guides, tools, jobs, Raycast feeds, static data exports, and an npm MCP package.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agent-skills",
-              "ai-agents",
-              "ai-directory",
-              "ai-tools",
-              "anthropic",
-              "artificial-intelligence",
-              "MDX"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T21:39:23Z"
-          }
-        },
-        {
-          "index": 24,
+          "index": 29,
           "title": "WasmEdge/WasmEdge",
           "url": "https://github.com/WasmEdge/WasmEdge",
           "hot_value": "10622 stars / 1067 forks",
@@ -6398,61 +6548,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T20:45:01Z"
+            "publishedAt": "2026-06-07T02:49:39Z"
           }
         },
         {
-          "index": 25,
-          "title": "ls1intum/Artemis",
-          "url": "https://github.com/ls1intum/Artemis",
-          "hot_value": "770 stars / 369 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Artemis - Interactive Learning with Automated Feedback",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "apollon",
-              "artificial-intelligence",
-              "assessment",
-              "autograding",
-              "automatic-feedback",
-              "computer-science",
-              "Java"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T23:42:31Z"
-          }
-        },
-        {
-          "index": 26,
-          "title": "alvinreal/awesome-opensource-ai",
-          "url": "https://github.com/alvinreal/awesome-opensource-ai",
-          "hot_value": "3774 stars / 429 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Curated list of the best truly open-source AI projects, models, tools, and infrastructure.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agents",
-              "ai",
-              "artificial-intelligence",
-              "awesome",
-              "awesome-list",
-              "generative-ai",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T20:31:42Z"
-          }
-        },
-        {
-          "index": 27,
+          "index": 30,
           "title": "JasperZhang121/Vaults",
           "url": "https://github.com/JasperZhang121/Vaults",
           "hot_value": "89 stars / 13 forks",
@@ -6476,7 +6576,7 @@
           }
         },
         {
-          "index": 28,
+          "index": 31,
           "title": "Eventual-Inc/Daft",
           "url": "https://github.com/Eventual-Inc/Daft",
           "hot_value": "5551 stars / 484 forks",
@@ -6501,7 +6601,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 32,
           "title": "Kong/kong",
           "url": "https://github.com/Kong/kong",
           "hot_value": "43533 stars / 5142 forks",
@@ -6526,7 +6626,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 33,
           "title": "lucidrains/slot-attention",
           "url": "https://github.com/lucidrains/slot-attention",
           "hot_value": "487 stars / 33 forks",
@@ -6549,7 +6649,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 34,
           "title": "tphakala/birdnet-go",
           "url": "https://github.com/tphakala/birdnet-go",
           "hot_value": "1244 stars / 116 forks",
@@ -6574,32 +6674,7 @@
           }
         },
         {
-          "index": 32,
-          "title": "nautechsystems/nautilus_trader",
-          "url": "https://github.com/nautechsystems/nautilus_trader",
-          "hot_value": "23334 stars / 2944 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "algorithmic-trading-engine",
-              "artificial-intelligence",
-              "crypto-trading",
-              "equity-trading",
-              "forex",
-              "futures-trading",
-              "Rust"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T19:25:59Z"
-          }
-        },
-        {
-          "index": 33,
+          "index": 35,
           "title": "cool-japan/oxirs",
           "url": "https://github.com/cool-japan/oxirs",
           "hot_value": "64 stars / 7 forks",
@@ -6624,10 +6699,10 @@
           }
         },
         {
-          "index": 34,
+          "index": 36,
           "title": "yamadashy/repomix",
           "url": "https://github.com/yamadashy/repomix",
-          "hot_value": "26049 stars / 1348 forks",
+          "hot_value": "26051 stars / 1349 forks",
           "cover": "",
           "extra": {
             "desc": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
@@ -6649,7 +6724,7 @@
           }
         },
         {
-          "index": 35,
+          "index": 37,
           "title": "carla-simulator/carla",
           "url": "https://github.com/carla-simulator/carla",
           "hot_value": "14038 stars / 4588 forks",
@@ -6674,7 +6749,7 @@
           }
         },
         {
-          "index": 36,
+          "index": 38,
           "title": "askimo-ai/askimo",
           "url": "https://github.com/askimo-ai/askimo",
           "hot_value": "130 stars / 18 forks",
@@ -6695,14 +6770,14 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T23:28:29Z"
+            "publishedAt": "2026-06-07T04:51:53Z"
           }
         },
         {
-          "index": 37,
+          "index": 39,
           "title": "OpenHands/OpenHands",
           "url": "https://github.com/OpenHands/OpenHands",
-          "hot_value": "76042 stars / 9650 forks",
+          "hot_value": "76049 stars / 9652 forks",
           "cover": "",
           "extra": {
             "desc": "🙌 OpenHands: AI-Driven Development",
@@ -6724,7 +6799,7 @@
           }
         },
         {
-          "index": 38,
+          "index": 40,
           "title": "Cloud-CV/EvalAI",
           "url": "https://github.com/Cloud-CV/EvalAI",
           "hot_value": "2020 stars / 983 forks",
@@ -6749,7 +6824,7 @@
           }
         },
         {
-          "index": 39,
+          "index": 41,
           "title": "intelligencedev/manifold",
           "url": "https://github.com/intelligencedev/manifold",
           "hot_value": "496 stars / 29 forks",
@@ -6774,7 +6849,7 @@
           }
         },
         {
-          "index": 40,
+          "index": 42,
           "title": "KindaBrazy/LynxHub",
           "url": "https://github.com/KindaBrazy/LynxHub",
           "hot_value": "412 stars / 16 forks",
@@ -6799,7 +6874,7 @@
           }
         },
         {
-          "index": 41,
+          "index": 43,
           "title": "xlang-ai/OSWorld",
           "url": "https://github.com/xlang-ai/OSWorld",
           "hot_value": "2911 stars / 469 forks",
@@ -6824,7 +6899,7 @@
           }
         },
         {
-          "index": 42,
+          "index": 44,
           "title": "santosomar/AI-agents-for-cybersecurity",
           "url": "https://github.com/santosomar/AI-agents-for-cybersecurity",
           "hot_value": "195 stars / 79 forks",
@@ -6849,10 +6924,10 @@
           }
         },
         {
-          "index": 43,
+          "index": 45,
           "title": "xorbitsai/inference",
           "url": "https://github.com/xorbitsai/inference",
-          "hot_value": "9343 stars / 834 forks",
+          "hot_value": "9344 stars / 834 forks",
           "cover": "",
           "extra": {
             "desc": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop — all through one unified, production-ready inference API.",
@@ -6874,7 +6949,7 @@
           }
         },
         {
-          "index": 44,
+          "index": 46,
           "title": "Hazrat-Ali9/AI-ML-Core-Foundations",
           "url": "https://github.com/Hazrat-Ali9/AI-ML-Core-Foundations",
           "hot_value": "51 stars / 0 forks",
@@ -6899,7 +6974,7 @@
           }
         },
         {
-          "index": 45,
+          "index": 47,
           "title": "shasankp000/AI-Player",
           "url": "https://github.com/shasankp000/AI-Player",
           "hot_value": "125 stars / 20 forks",
@@ -6924,10 +6999,10 @@
           }
         },
         {
-          "index": 46,
+          "index": 48,
           "title": "darkdevil3610/100-AI-Machine-learning-Deep-learning-Computer-vision-NLP",
           "url": "https://github.com/darkdevil3610/100-AI-Machine-learning-Deep-learning-Computer-vision-NLP",
-          "hot_value": "237 stars / 18 forks",
+          "hot_value": "238 stars / 19 forks",
           "cover": "",
           "extra": {
             "desc": "100+ AI Machine learning Deep learning Computer vision NLP Projects with code",
@@ -6948,7 +7023,7 @@
           }
         },
         {
-          "index": 47,
+          "index": 49,
           "title": "theexperiencecompany/gaia",
           "url": "https://github.com/theexperiencecompany/gaia",
           "hot_value": "203 stars / 28 forks",
@@ -6973,10 +7048,10 @@
           }
         },
         {
-          "index": 48,
+          "index": 50,
           "title": "zjunlp/LightMem",
           "url": "https://github.com/zjunlp/LightMem",
-          "hot_value": "908 stars / 86 forks",
+          "hot_value": "909 stars / 86 forks",
           "cover": "",
           "extra": {
             "desc": "[ICLR 2026] LightMem: Lightweight and Efficient Memory-Augmented Generation",
@@ -6996,59 +7071,9 @@
             "sourceLabel": "GitHub AI",
             "publishedAt": "2026-06-06T16:01:03Z"
           }
-        },
-        {
-          "index": 49,
-          "title": "SyntheticAutonomicMind/CLIO",
-          "url": "https://github.com/SyntheticAutonomicMind/CLIO",
-          "hot_value": "159 stars / 8 forks",
-          "cover": "",
-          "extra": {
-            "desc": "An AI-assisted coding agent that runs in your terminal and supports many providers and models.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agentic-ai-development",
-              "ai",
-              "apple",
-              "artificial-intelligence",
-              "autonomous-agents",
-              "chat",
-              "Perl"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T15:38:52Z"
-          }
-        },
-        {
-          "index": 50,
-          "title": "harvard-edge/cs249r_book",
-          "url": "https://github.com/harvard-edge/cs249r_book",
-          "hot_value": "24722 stars / 2973 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Machine Learning Systems",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "cloud-ml",
-              "computer-systems",
-              "courseware",
-              "deep-learning",
-              "edge-machine-learning",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-06T15:31:23Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 50,
       "total_after_filter": 50,
       "ai_filter_summary": {
@@ -7058,28 +7083,154 @@
           "AI",
           "GitHub",
           "开源项目",
-          "ai",
-          "ai-search-engine",
+          "agent-skills",
+          "ai-agents",
+          "ai-directory",
+          "ai-tools",
+          "anthropic",
           "artificial-intelligence",
-          "generative-ai",
-          "gpu-accelerated",
-          "information-retrieval",
-          "TypeScript",
-          "fitness",
-          "fitness-app"
+          "MDX",
+          "agentic-ai",
+          "bft-consensus"
         ]
       }
     },
     {
       "type": "hn-ai",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
+          "title": "ETLs in the Era of AI and Sandboxes",
+          "url": "https://zozo123.github.io/agentic-airbyte/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · lol-lol-lol-2 · 2026-06-07T04:43:32Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T04:43:32Z"
+          }
+        },
+        {
+          "index": 2,
+          "title": "Software developers admit that AI is rotting their brains",
+          "url": "https://www.msn.com/en-us/news/technology/software-developers-admit-that-ai-is-rotting-their-brains/ar-AA237htp",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · galaxyLogic · 2026-06-07T04:33:43Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T04:33:43Z"
+          }
+        },
+        {
+          "index": 3,
+          "title": "Memories of the Past, Cyberpunk Nostalgia, and AI Slop",
+          "url": "https://medium.com/@vektormemory/memories-of-the-past-cyberpunk-nostalgia-and-ai-slop-dff4a61e1435",
+          "hot_value": "1 points / 1 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · vektormemory · 2026-06-07T04:27:06Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T04:27:06Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "Show HN: Markdown Editor and Reader for Mac",
+          "url": "https://www.kitemarkdown.com/",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · antonynjoro · 2026-06-07T04:00:25Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T04:00:25Z"
+          }
+        },
+        {
+          "index": 5,
+          "title": "Declank – Remove AI Watermarks from Images",
+          "url": "https://declank.skeptrune.com/",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · skeptrune · 2026-06-07T03:56:44Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T03:56:44Z"
+          }
+        },
+        {
+          "index": 6,
+          "title": "Substack CEO dismisses popular open letter about platform drift as 'AI slop'",
+          "url": "https://substack.com/@cb/note/c-271417569",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · navs · 2026-06-07T03:44:01Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T03:44:01Z"
+          }
+        },
+        {
+          "index": 7,
+          "title": "How to tame AI's voracious appetite for energy",
+          "url": "https://knowablemagazine.org/content/article/technology/2026/lowering-energy-use-artificial-intelligence-datacenters",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · anujbans · 2026-06-07T03:29:48Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-07T03:29:48Z"
+          }
+        },
+        {
+          "index": 8,
           "title": "Ask HN: Where do you get the latest updates about AI?",
           "url": "https://news.ycombinator.com/item?id=48430864",
-          "hot_value": "2 points / 1 评论",
+          "hot_value": "4 points / 1 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · d0able · 2026-06-07T01:24:55Z",
@@ -7094,7 +7245,7 @@
           }
         },
         {
-          "index": 2,
+          "index": 9,
           "title": "When Can Amazon Block an Agentic AI Service?–Amazon vs. Perplexity",
           "url": "https://blog.ericgoldman.org/archives/2026/06/when-can-amazon-block-an-agentic-ai-service-amazon-v-perplexity-guest-blog-post.htm",
           "hot_value": "3 points / 0 评论",
@@ -7112,10 +7263,10 @@
           }
         },
         {
-          "index": 3,
+          "index": 10,
           "title": "AI Criticism",
           "url": "https://dennisforbes.ca/blog/microblog/2026/06/on_ai_criticism/",
-          "hot_value": "2 points / 0 评论",
+          "hot_value": "3 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · llm_nerd · 2026-06-07T00:57:01Z",
@@ -7130,10 +7281,10 @@
           }
         },
         {
-          "index": 4,
+          "index": 11,
           "title": "Show HN: Persist – an AI agent that follows up accrued channels till they reply",
           "url": "https://persist.chat",
-          "hot_value": "3 points / 1 评论",
+          "hot_value": "3 points / 3 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · Robelk1 · 2026-06-07T00:35:01Z",
@@ -7148,10 +7299,10 @@
           }
         },
         {
-          "index": 5,
+          "index": 12,
           "title": "Is AI Anxiety Causing the Vibecession? An Investigation",
           "url": "https://kevinonthemargin.com/is-ai-anxiety-causing-the-vibecession-an-investigation/",
-          "hot_value": "2 points / 0 评论",
+          "hot_value": "3 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · m-hodges · 2026-06-07T00:32:04Z",
@@ -7166,10 +7317,10 @@
           }
         },
         {
-          "index": 6,
+          "index": 13,
           "title": "Up-to-Date Evidence Reviews of Health and Longevity Interventions",
           "url": "https://evipedia.ai/",
-          "hot_value": "2 points / 0 评论",
+          "hot_value": "3 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · negura · 2026-06-07T00:26:05Z",
@@ -7184,10 +7335,10 @@
           }
         },
         {
-          "index": 7,
+          "index": 14,
           "title": "AI is the greatest money-wasting scheme humanity has ever invented",
           "url": "https://www.telegraph.co.uk/news/2026/06/04/ai-is-the-greatest-money-wasting-scheme-humanity-has-ever-i/",
-          "hot_value": "6 points / 0 评论",
+          "hot_value": "10 points / 3 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · HotGarbage · 2026-06-07T00:08:50Z",
@@ -7202,7 +7353,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 15,
           "title": "AI Can now control your desktop",
           "url": "https://clawdcursor.com",
           "hot_value": "3 points / 0 评论",
@@ -7220,7 +7371,7 @@
           }
         },
         {
-          "index": 9,
+          "index": 16,
           "title": "Show HN: Note management app that sorts and files stuff for the user",
           "url": "https://notaru.ai",
           "hot_value": "4 points / 0 评论",
@@ -7238,10 +7389,10 @@
           }
         },
         {
-          "index": 10,
+          "index": 17,
           "title": "Why Aren't We Measuring How AI Affects Humans?",
           "url": "https://spectrum.ieee.org/measuring-ai-societal-impact-khan",
-          "hot_value": "4 points / 0 评论",
+          "hot_value": "6 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · pseudolus · 2026-06-06T22:54:58Z",
@@ -7256,10 +7407,10 @@
           }
         },
         {
-          "index": 11,
+          "index": 18,
           "title": "Trump Signs Executive Order for AI Testing Prior to Frontier Model Releases",
           "url": "https://thezvi.substack.com/p/trump-signs-executive-order-for-ai",
-          "hot_value": "5 points / 1 评论",
+          "hot_value": "5 points / 2 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · paulpauper · 2026-06-06T22:42:28Z",
@@ -7274,10 +7425,10 @@
           }
         },
         {
-          "index": 12,
+          "index": 19,
           "title": "Show HN: A beautiful and local-first PDF reader for studying dense things",
           "url": "https://www.tryquincy.live",
-          "hot_value": "3 points / 0 评论",
+          "hot_value": "4 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · oleksg · 2026-06-06T22:38:29Z",
@@ -7292,7 +7443,7 @@
           }
         },
         {
-          "index": 13,
+          "index": 20,
           "title": "Experts and superforecasters update their AI timelines",
           "url": "https://forecastingresearch.substack.com/p/leap-wave-8-ai-timelines",
           "hot_value": "2 points / 0 评论",
@@ -7310,7 +7461,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 21,
           "title": "Hong Kong Develops \" First\" Nasal Spray for Rapid Stroke Aid [video]",
           "url": "https://www.youtube.com/watch?v=WyourYqtIOA",
           "hot_value": "4 points / 0 评论",
@@ -7328,7 +7479,7 @@
           }
         },
         {
-          "index": 15,
+          "index": 22,
           "title": "We are in the golden age of Open Source",
           "url": "https://kerkour.com/open-source-golden-age-ai",
           "hot_value": "3 points / 0 评论",
@@ -7346,7 +7497,7 @@
           }
         },
         {
-          "index": 16,
+          "index": 23,
           "title": "2026 Methods for Free Compute and AI Credits",
           "url": "https://www.dropbox.com/scl/fi/bvi5v0i94ifnk3mfstewq/SAIRC-Free-Compute.pdf?dl=0&e=1&noscript=1&rlkey=854auw5xt7l0jknei6q9hxusa&st=pfq6hgc1",
           "hot_value": "3 points / 0 评论",
@@ -7364,7 +7515,7 @@
           }
         },
         {
-          "index": 17,
+          "index": 24,
           "title": "AI could drive advances that solve problems it brings, scientist suggests",
           "url": "https://www.rnz.co.nz/news/science-and-technology/597458/ai-could-drive-advances-that-solve-the-problems-it-brings-computer-scientist-suggests",
           "hot_value": "4 points / 0 评论",
@@ -7382,10 +7533,10 @@
           }
         },
         {
-          "index": 18,
+          "index": 25,
           "title": "A USB-connected speaker can infect a PC without ever being touched",
           "url": "https://arstechnica.com/security/2026/06/highly-reviewed-speaker-can-be-hacked-over-the-air-to-infect-connected-devices/",
-          "hot_value": "5 points / 2 评论",
+          "hot_value": "6 points / 2 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · leecoursey · 2026-06-06T20:39:26Z",
@@ -7400,10 +7551,10 @@
           }
         },
         {
-          "index": 19,
+          "index": 26,
           "title": "AI Enthusiasts Race Against Time, Skeptics Race Against Entropy",
           "url": "https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against",
-          "hot_value": "9 points / 0 评论",
+          "hot_value": "10 points / 1 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · birdculture · 2026-06-06T19:48:15Z",
@@ -7418,10 +7569,10 @@
           }
         },
         {
-          "index": 20,
+          "index": 27,
           "title": "McDonald's Just Announced a Big Change to Its Drive-Thrus",
           "url": "https://www.allrecipes.com/mcdonalds-ai-drive-thru-change-11991109",
-          "hot_value": "4 points / 2 评论",
+          "hot_value": "5 points / 2 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · mikhael · 2026-06-06T19:42:21Z",
@@ -7436,7 +7587,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 28,
           "title": "Recent Thoughts on AI Use",
           "url": "https://blog.jsweeting.me/recent-thoughts-on-ai-use",
           "hot_value": "3 points / 0 评论",
@@ -7454,7 +7605,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 29,
           "title": "Mass Layoffs Caused by AI",
           "url": "https://olegdubovoi.com/thoughts/2026-06-04-mass-layoffs-caused-by-ai/",
           "hot_value": "4 points / 0 评论",
@@ -7472,7 +7623,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 30,
           "title": "Hermes – Community Web UI with Agent",
           "url": "https://get-hermes.ai/",
           "hot_value": "2 points / 0 评论",
@@ -7490,7 +7641,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 31,
           "title": "AI Memory Proves Inefficient: Tenure Project Detects 95% Error Rate",
           "url": "https://zamin.uz/en/technology/205592-ai-memory-proves-inefficient-tenure-project-detects-95-error-rate.html",
           "hot_value": "5 points / 0 评论",
@@ -7508,10 +7659,10 @@
           }
         },
         {
-          "index": 25,
+          "index": 32,
           "title": "Leaks reveal US authorities concerned about the rise of 'anti-tech extremists'",
           "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/leaks-reveal-us-authorities-concerned-about-the-rise-of-anti-tech-extremists-as-ai-data-center-issues-become-increasingly-contentious-critics-say-this-could-lead-to-surveillance-criminalization-of-peaceful-opposition",
-          "hot_value": "6 points / 3 评论",
+          "hot_value": "7 points / 3 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · rolph · 2026-06-06T19:01:19Z",
@@ -7526,7 +7677,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 33,
           "title": "HIPAA Compliance – Shieldra.ai is live",
           "url": "https://www.shieldra.ai/",
           "hot_value": "2 points / 0 评论",
@@ -7544,7 +7695,7 @@
           }
         },
         {
-          "index": 27,
+          "index": 34,
           "title": "YC is helping Rick Rubin find an AI guru",
           "url": "https://events.ycombinator.com/qSAodVvxK",
           "hot_value": "4 points / 1 评论",
@@ -7562,10 +7713,10 @@
           }
         },
         {
-          "index": 28,
+          "index": 35,
           "title": "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
           "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
-          "hot_value": "434 points / 152 评论",
+          "hot_value": "498 points / 180 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · speckx · 2026-06-06T18:35:27Z",
@@ -7580,7 +7731,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 36,
           "title": "Fires reverse progress toward ozone air quality standards in the United States",
           "url": "https://www.science.org/doi/10.1126/science.aed3197",
           "hot_value": "4 points / 0 评论",
@@ -7598,10 +7749,10 @@
           }
         },
         {
-          "index": 30,
+          "index": 37,
           "title": "Law Professors Prefer AI over Peer Answers",
           "url": "https://law.stanford.edu/publications/law-professors-prefer-ai-over-peer-answers/",
-          "hot_value": "11 points / 1 评论",
+          "hot_value": "14 points / 4 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · davidbarker · 2026-06-06T18:29:06Z",
@@ -7616,10 +7767,10 @@
           }
         },
         {
-          "index": 31,
+          "index": 38,
           "title": "AI Is Rewriting the Economics of Outsourcing",
           "url": "https://hbr.org/2026/06/ai-is-rewriting-the-economics-of-outsourcing",
-          "hot_value": "1 points / 0 评论",
+          "hot_value": "2 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · fallinditch · 2026-06-06T18:13:05Z",
@@ -7634,7 +7785,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 40,
           "title": "Interactive explorer for cybersecurity vulnerability trends",
           "url": "https://epoch.ai/data/cve",
           "hot_value": "2 points / 0 评论",
@@ -7652,7 +7803,7 @@
           }
         },
         {
-          "index": 34,
+          "index": 41,
           "title": "AI-designed universal coronavirus vaccine passes first human trial",
           "url": "https://www.sciencedaily.com/releases/2026/06/260605023357.htm",
           "hot_value": "4 points / 0 评论",
@@ -7670,10 +7821,10 @@
           }
         },
         {
-          "index": 36,
+          "index": 43,
           "title": "NotifyMe, a self-hosted beeper app for AI agents and service updates",
           "url": "https://github.com/lbj96347/notifyme",
-          "hot_value": "2 points / 0 评论",
+          "hot_value": "3 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · lbj96347 · 2026-06-06T17:39:45Z",
@@ -7688,7 +7839,7 @@
           }
         },
         {
-          "index": 37,
+          "index": 44,
           "title": "That's enough about AI replacing users in user research [pdf]",
           "url": "https://ianarawjo.com/docs/Thats_Enough_About_AI_Replacing_Users_in_User_Research__Arawjo.pdf",
           "hot_value": "2 points / 0 评论",
@@ -7706,7 +7857,7 @@
           }
         },
         {
-          "index": 39,
+          "index": 46,
           "title": "Watch These Judges Rip into Lawyers for Citing Cases That Don't Exist",
           "url": "https://www.404media.co/new-york-court-ai-citations-landberg-case/",
           "hot_value": "3 points / 0 评论",
@@ -7724,7 +7875,7 @@
           }
         },
         {
-          "index": 40,
+          "index": 47,
           "title": "A Citizen Science Organization Aims to Preserve the Places It Brings Touris",
           "url": "https://www.wired.com/story/preserving-the-places-tourists-go-to-study/",
           "hot_value": "2 points / 0 评论",
@@ -7742,7 +7893,7 @@
           }
         },
         {
-          "index": 41,
+          "index": 48,
           "title": "'More Harmful Than Helpful': Young People Sour on AI",
           "url": "https://www.ft.com/content/73fc962e-ce68-4521-9c5d-841a666eed10",
           "hot_value": "10 points / 1 评论",
@@ -7760,7 +7911,7 @@
           }
         },
         {
-          "index": 42,
+          "index": 49,
           "title": "How much value is AI creating?",
           "url": "https://www.ft.com/content/8e9ae7a4-7209-4e2c-aa36-f3af77d6ce1f",
           "hot_value": "6 points / 0 评论",
@@ -7778,7 +7929,7 @@
           }
         },
         {
-          "index": 43,
+          "index": 50,
           "title": "Slopper GitHub Action: Fighting AI Slop Contributions on Open Source Projects",
           "url": "https://github.com/malvads/Slopper",
           "hot_value": "5 points / 0 评论",
@@ -7794,135 +7945,9 @@
             "sourceLabel": "Hacker News AI",
             "publishedAt": "2026-06-06T15:58:07Z"
           }
-        },
-        {
-          "index": 44,
-          "title": "The fourth law (on AI-generated supercustomized email marketing)",
-          "url": "https://www.robinsloan.com/lab/fourth-law/",
-          "hot_value": "3 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · brandur · 2026-06-06T15:55:39Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:55:39Z"
-          }
-        },
-        {
-          "index": 45,
-          "title": "The mayor of Shelbyville, IN says only 'shitty houses' oppose data center",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
-          "hot_value": "22 points / 3 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · timpera · 2026-06-06T15:51:46Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:51:46Z"
-          }
-        },
-        {
-          "index": 46,
-          "title": "Every AI Agent Feature Is a Cache Invalidation Surface",
-          "url": "https://www.openclacky.com/engineering/cache-invalidation-surface",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · gemHunter · 2026-06-06T15:38:12Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:38:12Z"
-          }
-        },
-        {
-          "index": 47,
-          "title": "From State to Foresight: Adding a Predictive World Model to an LLM Assistant",
-          "url": "https://zenfox.ai/research/world-model-llm-assistant",
-          "hot_value": "3 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · zenfoxai · 2026-06-06T15:36:47Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:36:47Z"
-          }
-        },
-        {
-          "index": 48,
-          "title": "The last astronomers: astrophysicists left questioning the soul of their field",
-          "url": "https://www.science.org/content/article/amid-flood-ai-advances-astrophysicists-are-questioning-soul-their-field",
-          "hot_value": "5 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · creamyhorror · 2026-06-06T15:35:53Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:35:53Z"
-          }
-        },
-        {
-          "index": 49,
-          "title": "Police in England and Wales told to halt AI use in court statements",
-          "url": "https://www.ft.com/content/229e5949-3ebc-4151-8a86-a01b5e259241",
-          "hot_value": "144 points / 45 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · nmstoker · 2026-06-06T15:35:49Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:35:49Z"
-          }
-        },
-        {
-          "index": 50,
-          "title": "AI didn't break the web. The dotcons did – AI just turned up the volume",
-          "url": "https://hamishcampbell.com/ai-didnt-break-the-web-the-dotcons-did-ai-just-turned-up-the-volume/",
-          "hot_value": "18 points / 8 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · speckx · 2026-06-06T15:30:13Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-06T15:30:13Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 50,
       "total_after_filter": 47,
       "ai_filter_summary": {
@@ -7938,7 +7963,7 @@
     {
       "type": "openai-news",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
@@ -8661,7 +8686,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -8677,7 +8702,7 @@
     {
       "type": "deepmind-news",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
@@ -9400,7 +9425,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -9416,7 +9441,7 @@
     {
       "type": "hf-blog",
       "source_kind": "ai-source",
-      "update_time": "2026-06-07T01:58:36.877Z",
+      "update_time": "2026-06-07T04:56:18.874Z",
       "list": [
         {
           "index": 1,
@@ -10139,7 +10164,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-07T01:58:36.877Z",
+      "fetched_at": "2026-06-07T04:56:18.874Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
