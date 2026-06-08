@@ -1,6 +1,6 @@
 {
   "source": "https://uapis.cn/api/v1/misc/hotboard",
-  "generatedAt": "2026-06-08T15:01:36.076Z",
+  "generatedAt": "2026-06-08T16:20:29.207Z",
   "topic": "ai",
   "filter": {
     "mode": "ai-keyword-match",
@@ -88,7 +88,7 @@
   },
   "sourceStats": {
     "totalBoards": 24,
-    "totalItems": 456,
+    "totalItems": 460,
     "byKind": {
       "uapi-hotboard": {
         "boards": 14,
@@ -100,7 +100,7 @@
         "boards": 10,
         "ok": 10,
         "errors": 0,
-        "items": 424
+        "items": 428
       }
     }
   },
@@ -144,45 +144,45 @@
   ],
   "okCount": 24,
   "errorCount": 0,
-  "itemCount": 456,
+  "itemCount": 460,
   "boards": [
     {
       "type": "weibo",
-      "update_time": "2026-06-08 22:54:13",
+      "update_time": "2026-06-09 00:11:59",
       "list": [
         {
-          "index": 17,
-          "title": "DeepSeek完成首轮外部融资",
-          "url": "https://s.weibo.com/weibo?q=%23DeepSeek%E5%AE%8C%E6%88%90%E9%A6%96%E8%BD%AE%E5%A4%96%E9%83%A8%E8%9E%8D%E8%B5%84%23",
-          "hot_value": "431760",
+          "index": 8,
+          "title": "豆包崩了",
+          "url": "https://s.weibo.com/weibo?q=%23%E8%B1%86%E5%8C%85%E5%B4%A9%E4%BA%86%23",
+          "hot_value": "352189",
           "extra": {
             "aiMatchedKeywords": [
-              "DeepSeek"
+              "豆包"
             ]
           }
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 50,
       "total_after_filter": 1,
       "ai_filter_summary": {
         "matched": 1,
         "total": 50,
         "keywords": [
-          "DeepSeek"
+          "豆包"
         ]
       }
     },
     {
       "type": "zhihu",
-      "update_time": "2026-06-08 22:53:23",
+      "update_time": "2026-06-09 00:12:01",
       "list": [
         {
           "index": 2,
           "title": "不少程序员为完成工作自费购买 AI Token 、变相付费上班，这算不算职场隐形降薪？",
           "url": "https://www.zhihu.com/question/2047267736485631665",
-          "hot_value": "302 万热度",
+          "hot_value": "199 万热度",
           "extra": {
             "desc": "AI 的「大火」一来，Token 作为计算燃料，正变得和石油一样珍贵。然而 AI 繁荣下，一种抽象的景象正在程序员间发生：大厂员工 Token 用不完，网上求问「如何能快速大量消耗」；小公司程序员却在",
             "image": "short-lived/2026/06/zhihu/bbb4af0eba1dc5f5e9575e1752b05407.webp",
@@ -196,7 +196,7 @@
           "index": 26,
           "title": "黄仁勋自嘲「被亚洲父母带大一辈子要做心理治疗」，他说的是普遍现象吗？你有共鸣吗？",
           "url": "https://www.zhihu.com/question/2047259926754325436",
-          "hot_value": "67 万热度",
+          "hot_value": "70 万热度",
           "extra": {
             "desc": "[视频]",
             "image": "short-lived/2026/06/zhihu/449d4911cc0a9e88b1490111cb1ddcf6.jpg",
@@ -207,7 +207,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 30,
       "total_after_filter": 2,
       "ai_filter_summary": {
@@ -328,7 +328,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 100,
       "total_after_filter": 3,
       "ai_filter_summary": {
@@ -345,7 +345,7 @@
       "update_time": "2026-06-06T18:49:05.408Z",
       "list": [],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 50,
       "total_after_filter": 0,
       "ai_filter_summary": {
@@ -374,7 +374,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 51,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -387,10 +387,10 @@
     },
     {
       "type": "toutiao",
-      "update_time": "2026-06-08 22:58:29",
+      "update_time": "2026-06-09 00:12:25",
       "list": [
         {
-          "index": 49,
+          "index": 34,
           "title": "全球AI狂欢到还债时刻了吗",
           "url": "https://www.toutiao.com/trending/7648992098707836425/",
           "hot_value": "",
@@ -402,7 +402,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 50,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -449,7 +449,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 45,
       "total_after_filter": 2,
       "ai_filter_summary": {
@@ -479,7 +479,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 12,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -576,7 +576,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 30,
       "total_after_filter": 7,
       "ai_filter_summary": {
@@ -638,7 +638,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 15,
       "total_after_filter": 2,
       "ai_filter_summary": {
@@ -671,7 +671,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 10,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -702,7 +702,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 10,
       "total_after_filter": 1,
       "ai_filter_summary": {
@@ -718,7 +718,7 @@
       "update_time": "2026-06-06T18:46:16.521Z",
       "list": [],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 20,
       "total_after_filter": 0,
       "ai_filter_summary": {
@@ -729,13 +729,13 @@
     },
     {
       "type": "hellogithub",
-      "update_time": "2026-06-08 22:56:46",
+      "update_time": "2026-06-09 00:16:55",
       "list": [
         {
           "index": 2,
           "title": "帮你找到本地能跑的最佳大模型",
           "url": "https://github.com/Andyyyy64/whichllm",
-          "hot_value": "2566",
+          "hot_value": "2571",
           "extra": {
             "author": "Andyyyy64",
             "full_name": "Andyyyy64/whichllm",
@@ -752,7 +752,7 @@
           "index": 3,
           "title": "从零开始学习 AI 工程",
           "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-          "hot_value": "2224",
+          "hot_value": "2230",
           "extra": {
             "author": "rohitg00",
             "full_name": "rohitg00/ai-engineering-from-scratch",
@@ -769,7 +769,7 @@
           "index": 6,
           "title": "所有 AI 编程工具用量一目了然",
           "url": "https://github.com/steipete/CodexBar",
-          "hot_value": "1931",
+          "hot_value": "1938",
           "extra": {
             "author": "steipete",
             "full_name": "steipete/CodexBar",
@@ -784,10 +784,10 @@
           }
         },
         {
-          "index": 10,
+          "index": 11,
           "title": "你的专属 AI 新闻雷达工具",
           "url": "https://github.com/Thysrael/Horizon",
-          "hot_value": "9985",
+          "hot_value": "9990",
           "extra": {
             "author": "Thysrael",
             "full_name": "Thysrael/Horizon",
@@ -804,7 +804,7 @@
           "index": 12,
           "title": "让 AI 编程工具告别瞎写的技能包",
           "url": "https://github.com/mattpocock/skills",
-          "hot_value": "1428",
+          "hot_value": "1432",
           "extra": {
             "author": "mattpocock",
             "full_name": "mattpocock/skills",
@@ -822,7 +822,7 @@
           "index": 13,
           "title": "Claude Design 的开源替代品",
           "url": "https://github.com/nexu-io/open-design",
-          "hot_value": "772",
+          "hot_value": "775",
           "extra": {
             "author": "nexu-io",
             "full_name": "nexu-io/open-design",
@@ -875,7 +875,7 @@
           "index": 17,
           "title": "Redis 作者写的 DeepSeek 专用推理引擎",
           "url": "https://github.com/antirez/ds4",
-          "hot_value": "1144",
+          "hot_value": "1146",
           "extra": {
             "author": "antirez",
             "full_name": "antirez/ds4",
@@ -892,7 +892,7 @@
           "index": 19,
           "title": "让 AI 生成的文档值得被打印出来",
           "url": "https://github.com/tw93/Kami",
-          "hot_value": "911",
+          "hot_value": "912",
           "extra": {
             "author": "tw93",
             "full_name": "tw93/Kami",
@@ -907,7 +907,7 @@
         }
       ],
       "source_kind": "uapi-hotboard",
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 20,
       "total_after_filter": 10,
       "ai_filter_summary": {
@@ -925,10 +925,88 @@
     {
       "type": "hf-daily-papers",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
+          "title": "Measuring Model Robustness via Fisher Information: Spectral Bounds, Theoretical Guarantees, and Practical Algorithms",
+          "url": "https://huggingface.co/papers/2606.04767",
+          "hot_value": "1 讨论 / 1 upvotes",
+          "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.04767.png",
+          "extra": {
+            "desc": "A novel attack-agnostic robustness metric based on Fisher Information Matrix spectral norm is proposed, providing theoretical bounds and scalable evaluation methods for deep neural network robustness assessment.",
+            "aiMatchedKeywords": [
+              "AI",
+              "论文",
+              "Hugging Face",
+              "Fisher Information Matrix",
+              "spectral norm",
+              "adversarial vulnerability",
+              "input Jacobian",
+              "power iteration",
+              "Hutchinson-based estimation",
+              "VGG",
+              "ResNet"
+            ],
+            "source": "hf-daily-papers",
+            "sourceLabel": "HF Daily Papers",
+            "publishedAt": "2026-06-02T20:00:00.000Z"
+          }
+        },
+        {
+          "index": 2,
+          "title": "Reinforcement Learning from Rich Feedback with Distributional DAgger",
+          "url": "https://huggingface.co/papers/2606.05152",
+          "hot_value": "1 讨论 / 0 upvotes",
+          "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.05152.png",
+          "extra": {
+            "desc": "Forward cross-entropy objective with distributional imitation learning enables monotonic policy improvement and better performance in reasoning tasks compared to traditional reinforcement learning methods.",
+            "aiMatchedKeywords": [
+              "AI",
+              "论文",
+              "Hugging Face",
+              "reinforcement learning from verifiable rewards",
+              "DAgger",
+              "imitation learning",
+              "cross-entropy objective",
+              "policy improvement",
+              "regret bounds",
+              "teacher-weighted likelihood",
+              "Pass@N"
+            ],
+            "source": "hf-daily-papers",
+            "sourceLabel": "HF Daily Papers",
+            "publishedAt": "2026-06-02T20:00:00.000Z"
+          }
+        },
+        {
+          "index": 3,
+          "title": "SPACENUM: Revisiting Spatial Numerical Understanding in VLMs",
+          "url": "https://huggingface.co/papers/2605.23898",
+          "hot_value": "1 讨论 / 5 upvotes",
+          "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2605.23898.png",
+          "extra": {
+            "desc": "Vision-language models struggle to genuinely understand spatial numerical concepts, relying instead on shallow visual cues rather than developing robust coordinate-aware representations.",
+            "aiMatchedKeywords": [
+              "AI",
+              "论文",
+              "Hugging Face",
+              "Vision-Language Models",
+              "spatial numerical understanding",
+              "SpaceNum",
+              "Num2Space",
+              "Space2Num",
+              "bidirectional tasks",
+              "coordinate-aware representations",
+              "spatial reasoning"
+            ],
+            "source": "hf-daily-papers",
+            "sourceLabel": "HF Daily Papers",
+            "publishedAt": "2026-05-21T20:00:00.000Z"
+          }
+        },
+        {
+          "index": 4,
           "title": "Augmenting Attention with Exponentially Decaying Memory Improves Query-Aware KV Sparsity",
           "url": "https://huggingface.co/papers/2605.28640",
           "hot_value": "1 讨论 / 0 upvotes",
@@ -954,7 +1032,7 @@
           }
         },
         {
-          "index": 2,
+          "index": 5,
           "title": "Towards Retrieving Interaction Spaces for Agentic Search",
           "url": "https://huggingface.co/papers/2606.06880",
           "hot_value": "1 讨论 / 1 upvotes",
@@ -980,7 +1058,7 @@
           }
         },
         {
-          "index": 3,
+          "index": 6,
           "title": "LayerRoute: Input-Conditioned Adaptive Layer Skipping via LoRA Fine-Tuning for Agentic Language Models",
           "url": "https://huggingface.co/papers/2606.01838",
           "hot_value": "1 讨论 / 2 upvotes",
@@ -1006,7 +1084,7 @@
           }
         },
         {
-          "index": 4,
+          "index": 7,
           "title": "Towards Human-Like Interactive Speech Recognition With Agentic Correction and Semantic Evaluation",
           "url": "https://huggingface.co/papers/2605.29430",
           "hot_value": "1 讨论 / 1 upvotes",
@@ -1032,10 +1110,10 @@
           }
         },
         {
-          "index": 5,
+          "index": 8,
           "title": "GENEB: Why Genomic Models Are Hard to Compare",
           "url": "https://huggingface.co/papers/2606.04525",
-          "hot_value": "1 讨论 / 19 upvotes",
+          "hot_value": "1 讨论 / 31 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.04525.png",
           "extra": {
             "desc": "GENEB presents a comprehensive benchmark for evaluating genomic foundation models across diverse tasks and architectures under a unified protocol.",
@@ -1058,7 +1136,7 @@
           }
         },
         {
-          "index": 6,
+          "index": 9,
           "title": "Compress-Distill: Reasoning Trace Compression for Efficient Knowledge Distillation",
           "url": "https://huggingface.co/papers/2606.05988",
           "hot_value": "1 讨论 / 1 upvotes",
@@ -1081,10 +1159,10 @@
           }
         },
         {
-          "index": 7,
+          "index": 10,
           "title": "Robots Need More than VLA and World Models",
           "url": "https://huggingface.co/papers/2606.06556",
-          "hot_value": "1 讨论 / 14 upvotes",
+          "hot_value": "1 讨论 / 17 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.06556.png",
           "extra": {
             "desc": "Robot intelligence advancement requires integrating unstructured behavioral data through specialized interfaces for labeling, embodiment mapping, world modeling, and reward inference rather than relying solely on policy scaling.",
@@ -1107,7 +1185,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 11,
           "title": "How Far Can Chord-Symbol Time-Series Adaptation Carry Genre Identity? Capabilities and Boundaries in Multi-Genre Chord-Symbol Modeling",
           "url": "https://huggingface.co/papers/2606.07334",
           "hot_value": "1 讨论 / 0 upvotes",
@@ -1133,7 +1211,7 @@
           }
         },
         {
-          "index": 9,
+          "index": 12,
           "title": "Physics in 2-Steps: Locking Motion Priors Before Visual Refinement Erases Them",
           "url": "https://huggingface.co/papers/2606.06361",
           "hot_value": "1 讨论 / 11 upvotes",
@@ -1159,7 +1237,7 @@
           }
         },
         {
-          "index": 10,
+          "index": 13,
           "title": "HarnessForge: Joint Harness and Policy Evolution for Adaptive Agent Systems",
           "url": "https://huggingface.co/papers/2606.01779",
           "hot_value": "1 讨论 / 4 upvotes",
@@ -1184,7 +1262,7 @@
           }
         },
         {
-          "index": 11,
+          "index": 14,
           "title": "Entropy as a Structural Prior: How a Log-Barrier on DiT Belief Space Drives Musical Diversity and Development",
           "url": "https://huggingface.co/papers/2606.07207",
           "hot_value": "1 讨论 / 2 upvotes",
@@ -1210,7 +1288,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 15,
           "title": "SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations",
           "url": "https://huggingface.co/papers/2606.05563",
           "hot_value": "2 讨论 / 41 upvotes",
@@ -1235,10 +1313,10 @@
           }
         },
         {
-          "index": 13,
+          "index": 16,
           "title": "Direct 3D-Aware Object Insertion via Decomposed Visual Proxies",
           "url": "https://huggingface.co/papers/2606.06601",
-          "hot_value": "2 讨论 / 21 upvotes",
+          "hot_value": "2 讨论 / 22 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.06601.png",
           "extra": {
             "desc": "DIFFUSION-BASED OBJECT INSERTION FRAMEWORK WITH POSE CONTROL THROUGH DECOMPOSED GUIDANCE COMPONENTS",
@@ -1261,7 +1339,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 17,
           "title": "LLM Explainability with Counterfactual Chains and Causal Graphs",
           "url": "https://huggingface.co/papers/2606.05972",
           "hot_value": "1 讨论 / 10 upvotes",
@@ -1287,10 +1365,10 @@
           }
         },
         {
-          "index": 15,
+          "index": 18,
           "title": "SIA: Self Improving AI with Harness & Weight Updates",
           "url": "https://huggingface.co/papers/2605.27276",
-          "hot_value": "1 讨论 / 6 upvotes",
+          "hot_value": "1 讨论 / 8 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2605.27276.png",
           "extra": {
             "desc": "A self-improving AI framework simultaneously updates both model weights and task-specific agent architecture through a language-model feedback agent across legal classification, GPU optimization, and biological data denoising tasks.",
@@ -1313,7 +1391,7 @@
           }
         },
         {
-          "index": 16,
+          "index": 19,
           "title": "Streaming Video Generation with Streaming Force Control",
           "url": "https://huggingface.co/papers/2606.07508",
           "hot_value": "0 讨论 / 0 upvotes",
@@ -1336,10 +1414,10 @@
           }
         },
         {
-          "index": 17,
+          "index": 20,
           "title": "AnchorWorld: Embodied Egocentric World Simulation with View-based Evolution Customization",
           "url": "https://huggingface.co/papers/2606.07326",
-          "hot_value": "1 讨论 / 23 upvotes",
+          "hot_value": "1 讨论 / 24 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.07326.png",
           "extra": {
             "desc": "AnchorWorld advances egocentric simulation through enhanced interaction integrity and flexible world customization using 3D human motion and anchor view definitions.",
@@ -1362,7 +1440,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 21,
           "title": "MMAE: A Massive Multitask Audio Editing Benchmark",
           "url": "https://huggingface.co/papers/2606.07229",
           "hot_value": "2 讨论 / 38 upvotes",
@@ -1388,7 +1466,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 22,
           "title": "Critic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback",
           "url": "https://huggingface.co/papers/2606.00590",
           "hot_value": "1 讨论 / 0 upvotes",
@@ -1414,10 +1492,10 @@
           }
         },
         {
-          "index": 20,
+          "index": 23,
           "title": "Stream3D-VLM: Online 3D Spatial Understanding with Incremental Geometry Priors",
           "url": "https://huggingface.co/papers/2606.06891",
-          "hot_value": "1 讨论 / 3 upvotes",
+          "hot_value": "1 讨论 / 4 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.06891.png",
           "extra": {
             "desc": "An online 3D vision-language model enables real-time spatial understanding from streaming video using autoregressive control modeling and efficient visual token compression.",
@@ -1438,7 +1516,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 24,
           "title": "LIMMT: Less is More for Motion Tracking",
           "url": "https://huggingface.co/papers/2606.06953",
           "hot_value": "1 讨论 / 12 upvotes",
@@ -1464,10 +1542,10 @@
           }
         },
         {
-          "index": 22,
+          "index": 25,
           "title": "Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings",
           "url": "https://huggingface.co/papers/2606.07502",
-          "hot_value": "3 讨论 / 62 upvotes",
+          "hot_value": "3 讨论 / 69 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.07502.png",
           "extra": {
             "desc": "Text embeddings from large language models are enhanced by EmbedFilter, a linear transformation that reduces the influence of high-frequency tokens and improves semantic representations while enabling dimensionality reduction.",
@@ -1490,7 +1568,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 26,
           "title": "Thinking with Imagination: Agentic Visual Spatial Reasoning with World Simulators",
           "url": "https://huggingface.co/papers/2606.06476",
           "hot_value": "1 讨论 / 12 upvotes",
@@ -1516,7 +1594,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 27,
           "title": "Parametric Social Identity Injection and Diversification in Public Opinion Simulation",
           "url": "https://huggingface.co/papers/2603.16142",
           "hot_value": "1 讨论 / 0 upvotes",
@@ -1542,7 +1620,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 28,
           "title": "PaperFlow: Profiling, Recommending, and Adapting Across Daily Paper Streams",
           "url": "https://huggingface.co/papers/2606.07454",
           "hot_value": "1 讨论 / 8 upvotes",
@@ -1568,7 +1646,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 29,
           "title": "Watch, Remember, Reason: Human-View Video Understanding with MLLMs",
           "url": "https://huggingface.co/papers/2606.07433",
           "hot_value": "1 讨论 / 12 upvotes",
@@ -1594,7 +1672,7 @@
           }
         },
         {
-          "index": 27,
+          "index": 30,
           "title": "SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents",
           "url": "https://huggingface.co/papers/2606.05761",
           "hot_value": "1 讨论 / 16 upvotes",
@@ -1620,7 +1698,7 @@
           }
         },
         {
-          "index": 28,
+          "index": 31,
           "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents",
           "url": "https://huggingface.co/papers/2606.05806",
           "hot_value": "1 讨论 / 17 upvotes",
@@ -1646,7 +1724,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 32,
           "title": "When Gradients Collide: Failure Modes of Multi-Objective Prompt Optimization for LLM Judges",
           "url": "https://huggingface.co/papers/2605.26046",
           "hot_value": "1 讨论 / 3 upvotes",
@@ -1672,7 +1750,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 33,
           "title": "UniSHARP: Universal Sharp Monocular View Synthesis",
           "url": "https://huggingface.co/papers/2606.07514",
           "hot_value": "1 讨论 / 13 upvotes",
@@ -1697,7 +1775,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 34,
           "title": "WorldBench: A Challenging and Visually Diverse Multimodal Reasoning Benchmark",
           "url": "https://huggingface.co/papers/2606.06538",
           "hot_value": "1 讨论 / 0 upvotes",
@@ -1720,7 +1798,7 @@
           }
         },
         {
-          "index": 32,
+          "index": 35,
           "title": "OpenSkill: Open-World Self-Evolution for LLM Agents",
           "url": "https://huggingface.co/papers/2606.06741",
           "hot_value": "1 讨论 / 15 upvotes",
@@ -1746,7 +1824,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 36,
           "title": "Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills",
           "url": "https://huggingface.co/papers/2606.07412",
           "hot_value": "1 讨论 / 7 upvotes",
@@ -1772,7 +1850,7 @@
           }
         },
         {
-          "index": 34,
+          "index": 37,
           "title": "dots.tts Technical Report",
           "url": "https://huggingface.co/papers/2606.07080",
           "hot_value": "1 讨论 / 12 upvotes",
@@ -1798,7 +1876,7 @@
           }
         },
         {
-          "index": 35,
+          "index": 38,
           "title": "BRepCLIP: Contrastive Multimodal Pretraining on BRep Primitives for CAD Understanding",
           "url": "https://huggingface.co/papers/2606.05515",
           "hot_value": "2 讨论 / 2 upvotes",
@@ -1824,7 +1902,7 @@
           }
         },
         {
-          "index": 36,
+          "index": 39,
           "title": "Regret Minimization with Adaptive Opponents in Repeated Games",
           "url": "https://huggingface.co/papers/2606.06486",
           "hot_value": "2 讨论 / 1 upvotes",
@@ -1850,7 +1928,7 @@
           }
         },
         {
-          "index": 37,
+          "index": 40,
           "title": "The Road Ahead in Autonomous Driving: The KITScenes Multimodal Dataset",
           "url": "https://huggingface.co/papers/2606.02956",
           "hot_value": "3 讨论 / 15 upvotes",
@@ -1876,7 +1954,7 @@
           }
         },
         {
-          "index": 38,
+          "index": 41,
           "title": "MAOAM: Unified Object and Material Selection with Vision-Language Models",
           "url": "https://huggingface.co/papers/2606.04880",
           "hot_value": "2 讨论 / 9 upvotes",
@@ -1902,7 +1980,7 @@
           }
         },
         {
-          "index": 39,
+          "index": 42,
           "title": "Trust Region Q Adjoint Matching",
           "url": "https://huggingface.co/papers/2605.27079",
           "hot_value": "3 讨论 / 3 upvotes",
@@ -1928,7 +2006,7 @@
           }
         },
         {
-          "index": 40,
+          "index": 43,
           "title": "LLM Anonymization Against Agentic Re-Identification",
           "url": "https://huggingface.co/papers/2605.30848",
           "hot_value": "3 讨论 / 1 upvotes",
@@ -1954,7 +2032,7 @@
           }
         },
         {
-          "index": 41,
+          "index": 44,
           "title": "SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces",
           "url": "https://huggingface.co/papers/2606.01317",
           "hot_value": "3 讨论 / 0 upvotes",
@@ -1980,7 +2058,7 @@
           }
         },
         {
-          "index": 42,
+          "index": 45,
           "title": "Learning Geometric Representations from Videos for Spatial Intelligent Multimodal Large Language Models",
           "url": "https://huggingface.co/papers/2606.05833",
           "hot_value": "3 讨论 / 3 upvotes",
@@ -2006,7 +2084,7 @@
           }
         },
         {
-          "index": 43,
+          "index": 46,
           "title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding",
           "url": "https://huggingface.co/papers/2606.06155",
           "hot_value": "3 讨论 / 10 upvotes",
@@ -2032,10 +2110,10 @@
           }
         },
         {
-          "index": 44,
+          "index": 47,
           "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
           "url": "https://huggingface.co/papers/2606.06492",
-          "hot_value": "3 讨论 / 75 upvotes",
+          "hot_value": "3 讨论 / 76 upvotes",
           "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.06492.png",
           "extra": {
             "desc": "Code2LoRA is a hypernetwork framework that generates repository-specific LoRA adapters for code language models, supporting both static and evolving codebases with efficient parameter-efficient fine-tuning.",
@@ -2058,7 +2136,7 @@
           }
         },
         {
-          "index": 45,
+          "index": 48,
           "title": "AURA: Intent-Directed Probing for Implicit-Need Surfacing in Situated LLM Agents",
           "url": "https://huggingface.co/papers/2606.05557",
           "hot_value": "2 讨论 / 1 upvotes",
@@ -2084,7 +2162,7 @@
           }
         },
         {
-          "index": 46,
+          "index": 49,
           "title": "The Shape of Addition: Geometric Structures of Arithmetic in Large Language Models",
           "url": "https://huggingface.co/papers/2606.03645",
           "hot_value": "2 讨论 / 4 upvotes",
@@ -2110,7 +2188,7 @@
           }
         },
         {
-          "index": 47,
+          "index": 50,
           "title": "Benchmark Everything Everywhere All at Once",
           "url": "https://huggingface.co/papers/2606.06462",
           "hot_value": "2 讨论 / 2 upvotes",
@@ -2134,85 +2212,9 @@
             "sourceLabel": "HF Daily Papers",
             "publishedAt": "2026-06-03T20:00:00.000Z"
           }
-        },
-        {
-          "index": 48,
-          "title": "Revising Context, Shifting Simulated Stance: Auditing LLM-Based Stance Simulation in Online Discussions",
-          "url": "https://huggingface.co/papers/2606.06443",
-          "hot_value": "3 讨论 / 2 upvotes",
-          "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.06443.png",
-          "extra": {
-            "desc": "LLM-based stance simulation exhibits context sensitivity when subjected to counterfactual revisions, with both text-only and multimodal approaches showing robust stance transitions across different polarization mechanisms.",
-            "aiMatchedKeywords": [
-              "AI",
-              "论文",
-              "Hugging Face",
-              "large language models",
-              "stance simulation",
-              "counterfactual context revision",
-              "conversational context",
-              "multimodal approach",
-              "polarization-preference mechanisms",
-              "stance transition rate"
-            ],
-            "source": "hf-daily-papers",
-            "sourceLabel": "HF Daily Papers",
-            "publishedAt": "2026-06-03T20:00:00.000Z"
-          }
-        },
-        {
-          "index": 49,
-          "title": "ForeSci: Evaluating LLM Agents for Forward-Looking AI Research Judgment",
-          "url": "https://huggingface.co/papers/2606.00644",
-          "hot_value": "2 讨论 / 0 upvotes",
-          "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.00644.png",
-          "extra": {
-            "desc": "ForeSci is a temporally controlled benchmark that evaluates LLM agents' ability to make forward-looking research decisions from historical evidence across fast-moving AI domains.",
-            "aiMatchedKeywords": [
-              "AI",
-              "论文",
-              "Hugging Face",
-              "LLM agents",
-              "forward-looking research judgments",
-              "temporal control",
-              "benchmark evaluation",
-              "hybrid RAG",
-              "research-agent adaptations",
-              "decision-making systems"
-            ],
-            "source": "hf-daily-papers",
-            "sourceLabel": "HF Daily Papers",
-            "publishedAt": "2026-06-03T20:00:00.000Z"
-          }
-        },
-        {
-          "index": 50,
-          "title": "Absorbing Complexity: An Interaction-Native Knowledge Harness for Financial LLM Agents",
-          "url": "https://huggingface.co/papers/2606.01886",
-          "hot_value": "3 讨论 / 4 upvotes",
-          "cover": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2606.01886.png",
-          "extra": {
-            "desc": "Financial AI agents struggle with user complexity, but a new architecture called InKH addresses this by embedding complexity into the system through structured knowledge management and temporal memory mechanisms.",
-            "aiMatchedKeywords": [
-              "AI",
-              "论文",
-              "Hugging Face",
-              "financial LLM agents",
-              "knowledge harness",
-              "passive knowledge injection",
-              "temporal graph memory",
-              "wiki audit surface",
-              "background extraction",
-              "maturity",
-              "decay"
-            ],
-            "source": "hf-daily-papers",
-            "sourceLabel": "HF Daily Papers",
-            "publishedAt": "2026-05-31T20:00:00.000Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 50,
       "total_after_filter": 50,
       "ai_filter_summary": {
@@ -2222,22 +2224,22 @@
           "AI",
           "论文",
           "Hugging Face",
-          "RAT+",
-          "attention computation",
-          "KV-cache",
-          "dilated attention",
-          "sparse inference",
-          "Quest",
-          "MoBA",
-          "SnapKV",
-          "retrieval"
+          "Fisher Information Matrix",
+          "spectral norm",
+          "adversarial vulnerability",
+          "input Jacobian",
+          "power iteration",
+          "Hutchinson-based estimation",
+          "VGG",
+          "ResNet",
+          "reinforcement learning from verifiable rewards"
         ]
       }
     },
     {
       "type": "arxiv-ai",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
@@ -3039,7 +3041,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -3064,7 +3066,7 @@
     {
       "type": "hf-models",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
@@ -3087,7 +3089,7 @@
             ],
             "source": "hf-models",
             "sourceLabel": "HF Models",
-            "publishedAt": "2026-06-08T14:50:46.000Z"
+            "publishedAt": "2026-06-08T16:19:45.000Z"
           }
         },
         {
@@ -3972,7 +3974,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -3997,91 +3999,32 @@
     {
       "type": "hf-datasets",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
-          "title": "aip9105/claw_data",
-          "url": "https://huggingface.co/datasets/aip9105/claw_data",
-          "hot_value": "0 likes / 662 downloads",
+          "title": "Sachin21112004/carrerflow-ai",
+          "url": "https://huggingface.co/datasets/Sachin21112004/carrerflow-ai",
+          "hot_value": "1 likes / 1027 downloads",
           "cover": "",
           "extra": {
-            "desc": "数据集更新；标签：region:us",
+            "desc": "数据集更新；标签：task_categories:question-answering、language:en、license:mit、region:us",
             "aiMatchedKeywords": [
               "AI",
               "数据集",
               "Hugging Face",
+              "task_categories:question-answering",
+              "language:en",
+              "license:mit",
               "region:us"
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T15:02:29.000Z"
+            "publishedAt": "2026-06-08T16:19:52.000Z"
           }
         },
         {
           "index": 2,
-          "title": "GGSheng/ai-backup",
-          "url": "https://huggingface.co/datasets/GGSheng/ai-backup",
-          "hot_value": "3 likes / 23932 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:58:25.000Z"
-          }
-        },
-        {
-          "index": 3,
-          "title": "ai4data/data-use-jdc-annotation-app-data",
-          "url": "https://huggingface.co/datasets/ai4data/data-use-jdc-annotation-app-data",
-          "hot_value": "0 likes / 1331 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "region:us"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:58:08.000Z"
-          }
-        },
-        {
-          "index": 4,
-          "title": "aimbuilt/aim-built-assets",
-          "url": "https://huggingface.co/datasets/aimbuilt/aim-built-assets",
-          "hot_value": "0 likes / 1053 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：size_categories:n<1K、format:imagefolder、modality:3d、modality:image、library:datasets、library:mlcroissant",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "size_categories:n<1K",
-              "format:imagefolder",
-              "modality:3d",
-              "modality:image",
-              "library:datasets",
-              "library:mlcroissant"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:51:19.000Z"
-          }
-        },
-        {
-          "index": 5,
           "title": "wisent-ai/activations",
           "url": "https://huggingface.co/datasets/wisent-ai/activations",
           "hot_value": "6 likes / 40463 downloads",
@@ -4096,79 +4039,126 @@
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:45:03.000Z"
+            "publishedAt": "2026-06-08T16:19:30.000Z"
+          }
+        },
+        {
+          "index": 3,
+          "title": "aimbuilt/aim-built-assets",
+          "url": "https://huggingface.co/datasets/aimbuilt/aim-built-assets",
+          "hot_value": "0 likes / 1053 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T16:19:25.000Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "GGSheng/ai-backup",
+          "url": "https://huggingface.co/datasets/GGSheng/ai-backup",
+          "hot_value": "3 likes / 23932 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T16:13:39.000Z"
+          }
+        },
+        {
+          "index": 5,
+          "title": "ai4data/data-use-jdc-annotation-app-data",
+          "url": "https://huggingface.co/datasets/ai4data/data-use-jdc-annotation-app-data",
+          "hot_value": "0 likes / 1331 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T16:11:09.000Z"
           }
         },
         {
           "index": 6,
-          "title": "manikandan18ramalingam/agentic-ai-options-results",
-          "url": "https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results",
-          "hot_value": "1 likes / 1509 downloads",
+          "title": "KissTheHabit/IDA_AI",
+          "url": "https://huggingface.co/datasets/KissTheHabit/IDA_AI",
+          "hot_value": "0 likes / 158 downloads",
           "cover": "",
           "extra": {
-            "desc": "数据集更新；标签：license:apache-2.0、size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas",
+            "desc": "数据集更新；标签：region:us",
             "aiMatchedKeywords": [
               "AI",
               "数据集",
               "Hugging Face",
-              "license:apache-2.0",
-              "size_categories:n<1K",
-              "format:json",
-              "modality:text",
-              "library:datasets",
-              "library:pandas"
+              "region:us"
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:40:27.000Z"
+            "publishedAt": "2026-06-08T16:06:58.000Z"
           }
         },
         {
           "index": 7,
-          "title": "electricsheepafrica/africa-owid-long-run-air-pollution",
-          "url": "https://huggingface.co/datasets/electricsheepafrica/africa-owid-long-run-air-pollution",
-          "hot_value": "0 likes / 0 downloads",
+          "title": "PegasusJEsus/AI_Que_Ans",
+          "url": "https://huggingface.co/datasets/PegasusJEsus/AI_Que_Ans",
+          "hot_value": "0 likes / 122 downloads",
           "cover": "",
           "extra": {
-            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
+            "desc": "数据集更新；标签：license:unknown、size_categories:10K<n<100K、format:json、modality:text、library:datasets、library:dask",
             "aiMatchedKeywords": [
               "AI",
               "数据集",
               "Hugging Face",
-              "task_categories:tabular-classification",
-              "task_categories:tabular-regression",
-              "task_categories:time-series-forecasting",
-              "multilinguality:monolingual",
-              "language:en",
-              "license:cc-by-4.0"
+              "license:unknown",
+              "size_categories:10K<n<100K",
+              "format:json",
+              "modality:text",
+              "library:datasets",
+              "library:dask"
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:36:38.000Z"
+            "publishedAt": "2026-06-08T16:03:30.000Z"
           }
         },
         {
           "index": 8,
-          "title": "AI4Pathology/ImmunoBench-image-features",
-          "url": "https://huggingface.co/datasets/AI4Pathology/ImmunoBench-image-features",
-          "hot_value": "2 likes / 2704 downloads",
+          "title": "aip9105/claw_data",
+          "url": "https://huggingface.co/datasets/aip9105/claw_data",
+          "hot_value": "0 likes / 662 downloads",
           "cover": "",
           "extra": {
-            "desc": "数据集更新；标签：task_categories:feature-extraction、language:en、license:apache-2.0、region:us、medical-imaging、computational-pathology",
+            "desc": "数据集更新；标签：region:us",
             "aiMatchedKeywords": [
               "AI",
               "数据集",
               "Hugging Face",
-              "task_categories:feature-extraction",
-              "language:en",
-              "license:apache-2.0",
-              "region:us",
-              "medical-imaging",
-              "computational-pathology"
+              "region:us"
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:33:21.000Z"
+            "publishedAt": "2026-06-08T16:02:31.000Z"
           }
         },
         {
@@ -4192,11 +4182,141 @@
             ],
             "source": "hf-datasets",
             "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:28:18.000Z"
+            "publishedAt": "2026-06-08T15:51:33.000Z"
           }
         },
         {
           "index": 10,
+          "title": "aigc-x/Annoy-PyEdu-Rs-Raw",
+          "url": "https://huggingface.co/datasets/aigc-x/Annoy-PyEdu-Rs-Raw",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T15:44:53.000Z"
+          }
+        },
+        {
+          "index": 11,
+          "title": "aigc-x/Annoy-PyEdu-Rs",
+          "url": "https://huggingface.co/datasets/aigc-x/Annoy-PyEdu-Rs",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T15:44:52.000Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "MidoriChou/ai_final_9",
+          "url": "https://huggingface.co/datasets/MidoriChou/ai_final_9",
+          "hot_value": "0 likes / 5 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：modality:image、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "modality:image",
+              "region:us"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T15:41:29.000Z"
+          }
+        },
+        {
+          "index": 13,
+          "title": "manikandan18ramalingam/agentic-ai-options-results",
+          "url": "https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results",
+          "hot_value": "1 likes / 1509 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：license:apache-2.0、size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "license:apache-2.0",
+              "size_categories:n<1K",
+              "format:json",
+              "modality:text",
+              "library:datasets",
+              "library:pandas"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T14:40:27.000Z"
+          }
+        },
+        {
+          "index": 14,
+          "title": "electricsheepafrica/africa-owid-long-run-air-pollution",
+          "url": "https://huggingface.co/datasets/electricsheepafrica/africa-owid-long-run-air-pollution",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "task_categories:tabular-classification",
+              "task_categories:tabular-regression",
+              "task_categories:time-series-forecasting",
+              "multilinguality:monolingual",
+              "language:en",
+              "license:cc-by-4.0"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T14:36:38.000Z"
+          }
+        },
+        {
+          "index": 15,
+          "title": "AI4Pathology/ImmunoBench-image-features",
+          "url": "https://huggingface.co/datasets/AI4Pathology/ImmunoBench-image-features",
+          "hot_value": "2 likes / 2704 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "数据集更新；标签：task_categories:feature-extraction、language:en、license:apache-2.0、region:us、medical-imaging、computational-pathology",
+            "aiMatchedKeywords": [
+              "AI",
+              "数据集",
+              "Hugging Face",
+              "task_categories:feature-extraction",
+              "language:en",
+              "license:apache-2.0",
+              "region:us",
+              "medical-imaging",
+              "computational-pathology"
+            ],
+            "source": "hf-datasets",
+            "sourceLabel": "HF Datasets",
+            "publishedAt": "2026-06-08T14:33:21.000Z"
+          }
+        },
+        {
+          "index": 16,
           "title": "AI-Final/rollouts",
           "url": "https://huggingface.co/datasets/AI-Final/rollouts",
           "hot_value": "0 likes / 0 downloads",
@@ -4219,7 +4339,7 @@
           }
         },
         {
-          "index": 11,
+          "index": 17,
           "title": "electricsheepasia/asia-owid-foreign-aid-received-as-a-share-of-national-income-net",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-received-as-a-share-of-national-income-net",
           "hot_value": "0 likes / 0 downloads",
@@ -4243,7 +4363,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 18,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-to-least-developed-countries-as-a-share-of-donors-national-income",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-to-least-developed-countries-as-a-share-of-donors-national-income",
           "hot_value": "0 likes / 0 downloads",
@@ -4267,7 +4387,7 @@
           }
         },
         {
-          "index": 13,
+          "index": 19,
           "title": "electricsheepeurope/europe-owid-foreign-aid-received-per-capita-vs-gdp-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-received-per-capita-vs-gdp-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4291,7 +4411,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 20,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-to-donor-countries-share",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-to-donor-countries-share",
           "hot_value": "0 likes / 0 downloads",
@@ -4315,7 +4435,7 @@
           }
         },
         {
-          "index": 15,
+          "index": 21,
           "title": "electricsheepeurope/europe-owid-foreign-aid-received-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-received-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4339,7 +4459,7 @@
           }
         },
         {
-          "index": 16,
+          "index": 22,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-to-donor-countries",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-to-donor-countries",
           "hot_value": "0 likes / 0 downloads",
@@ -4363,7 +4483,7 @@
           }
         },
         {
-          "index": 17,
+          "index": 23,
           "title": "electricsheepeurope/europe-owid-foreign-aid-received-net",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-received-net",
           "hot_value": "0 likes / 0 downloads",
@@ -4387,7 +4507,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 24,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-per-capita-vs-gdp-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-per-capita-vs-gdp-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4411,7 +4531,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 25,
           "title": "electricsheepeurope/europe-owid-foreign-aid-received-by-income-group",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-received-by-income-group",
           "hot_value": "0 likes / 0 downloads",
@@ -4435,7 +4555,7 @@
           }
         },
         {
-          "index": 20,
+          "index": 26,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4459,7 +4579,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 27,
           "title": "electricsheepeurope/europe-owid-foreign-aid-received-as-grants-and-concessional-loans",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-received-as-grants-and-concessional-loans",
           "hot_value": "0 likes / 0 downloads",
@@ -4483,7 +4603,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 28,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-net-flows-vs-grant-equivalents-line",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-net-flows-vs-grant-equivalents-line",
           "hot_value": "0 likes / 0 downloads",
@@ -4507,7 +4627,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 29,
           "title": "electricsheepeurope/europe-owid-foreign-aid-received-as-a-share-of-national-income-net",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-received-as-a-share-of-national-income-net",
           "hot_value": "0 likes / 0 downloads",
@@ -4531,7 +4651,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 30,
           "title": "electricsheepeurope/europe-owid-foreign-aid-given-to-least-developed-countries-as-a-share-of-donors-national-income",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-to-least-developed-countries-as-a-share-of-donors-national-income",
           "hot_value": "0 likes / 0 downloads",
@@ -4555,7 +4675,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 31,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-net",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-net",
           "hot_value": "0 likes / 0 downloads",
@@ -4579,7 +4699,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 32,
           "title": "electricsheepeurope/europe-owid-foreign-aid-given-to-donor-countries-share",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-to-donor-countries-share",
           "hot_value": "0 likes / 0 downloads",
@@ -4603,7 +4723,7 @@
           }
         },
         {
-          "index": 27,
+          "index": 33,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-grant-equivalents",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-grant-equivalents",
           "hot_value": "0 likes / 0 downloads",
@@ -4627,7 +4747,7 @@
           }
         },
         {
-          "index": 28,
+          "index": 34,
           "title": "electricsheepeurope/europe-owid-foreign-aid-given-to-donor-countries",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-to-donor-countries",
           "hot_value": "0 likes / 0 downloads",
@@ -4651,7 +4771,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 35,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-for-social-infrastructure-and-services-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-for-social-infrastructure-and-services-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4675,7 +4795,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 36,
           "title": "electricsheepeurope/europe-owid-foreign-aid-given-per-capita-vs-gdp-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-per-capita-vs-gdp-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4699,7 +4819,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 37,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-for-social-infrastructure-and-services",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-for-social-infrastructure-and-services",
           "hot_value": "0 likes / 0 downloads",
@@ -4723,7 +4843,7 @@
           }
         },
         {
-          "index": 32,
+          "index": 38,
           "title": "electricsheepeurope/europe-owid-foreign-aid-given-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4747,7 +4867,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 39,
           "title": "electricsheepasia/asia-owid-foreign-aid-given-for-emergencies-and-longer-term-development-per-capita",
           "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-for-emergencies-and-longer-term-development-per-capita",
           "hot_value": "0 likes / 0 downloads",
@@ -4771,7 +4891,7 @@
           }
         },
         {
-          "index": 34,
+          "index": 40,
           "title": "electricsheepeurope/europe-owid-foreign-aid-given-net-flows-vs-grant-equivalents-line",
           "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-net-flows-vs-grant-equivalents-line",
           "hot_value": "0 likes / 0 downloads",
@@ -4793,153 +4913,9 @@
             "sourceLabel": "HF Datasets",
             "publishedAt": "2026-06-08T14:15:06.000Z"
           }
-        },
-        {
-          "index": 35,
-          "title": "electricsheepasia/asia-owid-foreign-aid-given-for-emergencies-and-longer-term-development",
-          "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-for-emergencies-and-longer-term-development",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:tabular-classification",
-              "task_categories:tabular-regression",
-              "task_categories:time-series-forecasting",
-              "multilinguality:monolingual",
-              "language:en",
-              "license:cc-by-4.0"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:15:03.000Z"
-          }
-        },
-        {
-          "index": 36,
-          "title": "electricsheepeurope/europe-owid-foreign-aid-given-net",
-          "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-net",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:tabular-classification",
-              "task_categories:tabular-regression",
-              "task_categories:time-series-forecasting",
-              "multilinguality:monolingual",
-              "language:en",
-              "license:cc-by-4.0"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:14:57.000Z"
-          }
-        },
-        {
-          "index": 37,
-          "title": "agentic-learning-ai-lab/daily-oracle",
-          "url": "https://huggingface.co/datasets/agentic-learning-ai-lab/daily-oracle",
-          "hot_value": "3 likes / 591 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:question-answering、language:en、license:cc-by-4.0、size_categories:10K<n<100K、format:csv、modality:text",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:question-answering",
-              "language:en",
-              "license:cc-by-4.0",
-              "size_categories:10K<n<100K",
-              "format:csv",
-              "modality:text"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:14:55.000Z"
-          }
-        },
-        {
-          "index": 38,
-          "title": "electricsheepasia/asia-owid-foreign-aid-given-by-sector-per-capita",
-          "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-by-sector-per-capita",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:tabular-classification",
-              "task_categories:tabular-regression",
-              "task_categories:time-series-forecasting",
-              "multilinguality:monolingual",
-              "language:en",
-              "license:cc-by-4.0"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:14:53.000Z"
-          }
-        },
-        {
-          "index": 39,
-          "title": "electricsheepeurope/europe-owid-foreign-aid-given-grant-equivalents",
-          "url": "https://huggingface.co/datasets/electricsheepeurope/europe-owid-foreign-aid-given-grant-equivalents",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:tabular-classification",
-              "task_categories:tabular-regression",
-              "task_categories:time-series-forecasting",
-              "multilinguality:monolingual",
-              "language:en",
-              "license:cc-by-4.0"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:14:47.000Z"
-          }
-        },
-        {
-          "index": 40,
-          "title": "electricsheepasia/asia-owid-foreign-aid-given-as-grants-and-concessional-loans",
-          "url": "https://huggingface.co/datasets/electricsheepasia/asia-owid-foreign-aid-given-as-grants-and-concessional-loans",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "数据集更新；标签：task_categories:tabular-classification、task_categories:tabular-regression、task_categories:time-series-forecasting、multilinguality:monolingual、language:en、license:cc-by-4.0",
-            "aiMatchedKeywords": [
-              "AI",
-              "数据集",
-              "Hugging Face",
-              "task_categories:tabular-classification",
-              "task_categories:tabular-regression",
-              "task_categories:time-series-forecasting",
-              "multilinguality:monolingual",
-              "language:en",
-              "license:cc-by-4.0"
-            ],
-            "source": "hf-datasets",
-            "sourceLabel": "HF Datasets",
-            "publishedAt": "2026-06-08T14:14:42.000Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -4949,51 +4925,27 @@
           "AI",
           "数据集",
           "Hugging Face",
+          "task_categories:question-answering",
+          "language:en",
+          "license:mit",
           "region:us",
-          "size_categories:n<1K",
-          "format:imagefolder",
-          "modality:3d",
-          "modality:image",
-          "library:datasets",
-          "library:mlcroissant",
-          "license:apache-2.0",
-          "format:json"
+          "license:unknown",
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets"
         ]
       }
     },
     {
       "type": "hf-spaces",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
-          "title": "gds9/aict-it-ops-agent",
-          "url": "https://huggingface.co/spaces/gds9/aict-it-ops-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、smolagents、agent、servicenow、it-operations、aict-demo",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "smolagents",
-              "agent",
-              "servicenow",
-              "it-operations",
-              "aict-demo"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T15:02:09.000Z"
-          }
-        },
-        {
-          "index": 2,
-          "title": "Anjanaj167/Clinical_trial_agent",
-          "url": "https://huggingface.co/spaces/Anjanaj167/Clinical_trial_agent",
+          "title": "Padmanav/ai-code-review-agent",
+          "url": "https://huggingface.co/spaces/Padmanav/ai-code-review-agent",
           "hot_value": "0 likes / 0 downloads",
           "cover": "",
           "extra": {
@@ -5007,13 +4959,33 @@
             ],
             "source": "hf-spaces",
             "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T14:58:30.000Z"
+            "publishedAt": "2026-06-08T16:18:53.000Z"
+          }
+        },
+        {
+          "index": 2,
+          "title": "santheesh24/Agent-Ghost",
+          "url": "https://huggingface.co/spaces/santheesh24/Agent-Ghost",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T16:18:18.000Z"
           }
         },
         {
           "index": 3,
-          "title": "jafhaponiuk/final_agent",
-          "url": "https://huggingface.co/spaces/jafhaponiuk/final_agent",
+          "title": "VectorV17/Intelli_Agent",
+          "url": "https://huggingface.co/spaces/VectorV17/Intelli_Agent",
           "hot_value": "0 likes / 0 downloads",
           "cover": "",
           "extra": {
@@ -5027,13 +4999,13 @@
             ],
             "source": "hf-spaces",
             "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T14:55:34.000Z"
+            "publishedAt": "2026-06-08T16:11:31.000Z"
           }
         },
         {
           "index": 4,
-          "title": "Pepguy/agentq_demo",
-          "url": "https://huggingface.co/spaces/Pepguy/agentq_demo",
+          "title": "Coki3/personal-ai-agent",
+          "url": "https://huggingface.co/spaces/Coki3/personal-ai-agent",
           "hot_value": "0 likes / 0 downloads",
           "cover": "",
           "extra": {
@@ -5047,7 +5019,7 @@
             ],
             "source": "hf-spaces",
             "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T14:52:14.000Z"
+            "publishedAt": "2026-06-08T16:11:05.000Z"
           }
         },
         {
@@ -5067,11 +5039,167 @@
             ],
             "source": "hf-spaces",
             "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T14:47:54.000Z"
+            "publishedAt": "2026-06-08T16:01:53.000Z"
           }
         },
         {
           "index": 6,
+          "title": "gds9/aict-it-ops-agent",
+          "url": "https://huggingface.co/spaces/gds9/aict-it-ops-agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、smolagents、agent、servicenow、it-operations、aict-demo",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "smolagents",
+              "agent",
+              "servicenow",
+              "it-operations",
+              "aict-demo"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T15:58:06.000Z"
+          }
+        },
+        {
+          "index": 7,
+          "title": "zuraDeez/First_agent_template",
+          "url": "https://huggingface.co/spaces/zuraDeez/First_agent_template",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、smolagents、agent、smolagent、tool、agent-course",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "smolagents",
+              "agent",
+              "smolagent",
+              "tool",
+              "agent-course"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T15:41:40.000Z"
+          }
+        },
+        {
+          "index": 8,
+          "title": "Pepguy/agentq_demo",
+          "url": "https://huggingface.co/spaces/Pepguy/agentq_demo",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T15:34:11.000Z"
+          }
+        },
+        {
+          "index": 9,
+          "title": "ishukr007/First_agent_template",
+          "url": "https://huggingface.co/spaces/ishukr007/First_agent_template",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、smolagents、agent、smolagent、tool、agent-course",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "smolagents",
+              "agent",
+              "smolagent",
+              "tool",
+              "agent-course"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T15:31:51.000Z"
+          }
+        },
+        {
+          "index": 10,
+          "title": "Anjanaj167/Clinical_trial_agent",
+          "url": "https://huggingface.co/spaces/Anjanaj167/Clinical_trial_agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：docker、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "docker",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T15:31:16.000Z"
+          }
+        },
+        {
+          "index": 11,
+          "title": "codeManS-machineLearning/First_agent_template",
+          "url": "https://huggingface.co/spaces/codeManS-machineLearning/First_agent_template",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、smolagents、agent、smolagent、tool、agent-course",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "smolagents",
+              "agent",
+              "smolagent",
+              "tool",
+              "agent-course"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T15:07:58.000Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "jafhaponiuk/final_agent",
+          "url": "https://huggingface.co/spaces/jafhaponiuk/final_agent",
+          "hot_value": "0 likes / 0 downloads",
+          "cover": "",
+          "extra": {
+            "desc": "Space更新；标签：gradio、region:us",
+            "aiMatchedKeywords": [
+              "AI",
+              "Agent",
+              "Hugging Face",
+              "gradio",
+              "region:us"
+            ],
+            "source": "hf-spaces",
+            "sourceLabel": "HF Spaces",
+            "publishedAt": "2026-06-08T14:55:34.000Z"
+          }
+        },
+        {
+          "index": 13,
           "title": "iamseungpil/agentness-arena",
           "url": "https://huggingface.co/spaces/iamseungpil/agentness-arena",
           "hot_value": "0 likes / 0 downloads",
@@ -5091,7 +5219,7 @@
           }
         },
         {
-          "index": 7,
+          "index": 14,
           "title": "Eujin0407/First_agent_template",
           "url": "https://huggingface.co/spaces/Eujin0407/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5115,7 +5243,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 15,
           "title": "Meetezri/Ezri-AI-Agent",
           "url": "https://huggingface.co/spaces/Meetezri/Ezri-AI-Agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5135,27 +5263,7 @@
           }
         },
         {
-          "index": 9,
-          "title": "VectorV17/Intelli_Agent",
-          "url": "https://huggingface.co/spaces/VectorV17/Intelli_Agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T14:28:45.000Z"
-          }
-        },
-        {
-          "index": 10,
+          "index": 16,
           "title": "KseniaDI/voice-agent-checklist-backend",
           "url": "https://huggingface.co/spaces/KseniaDI/voice-agent-checklist-backend",
           "hot_value": "0 likes / 0 downloads",
@@ -5175,7 +5283,7 @@
           }
         },
         {
-          "index": 11,
+          "index": 17,
           "title": "ykhong/First_agent_template",
           "url": "https://huggingface.co/spaces/ykhong/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5199,7 +5307,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 18,
           "title": "shreyas1206/First_agent_template",
           "url": "https://huggingface.co/spaces/shreyas1206/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5223,7 +5331,7 @@
           }
         },
         {
-          "index": 13,
+          "index": 19,
           "title": "sweeet1/stock-agent",
           "url": "https://huggingface.co/spaces/sweeet1/stock-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5243,7 +5351,7 @@
           }
         },
         {
-          "index": 14,
+          "index": 20,
           "title": "seanpedrickcase/agentic_document_redaction",
           "url": "https://huggingface.co/spaces/seanpedrickcase/agentic_document_redaction",
           "hot_value": "0 likes / 0 downloads",
@@ -5263,7 +5371,7 @@
           }
         },
         {
-          "index": 15,
+          "index": 21,
           "title": "nour-yasser/agent-lab-api",
           "url": "https://huggingface.co/spaces/nour-yasser/agent-lab-api",
           "hot_value": "0 likes / 0 downloads",
@@ -5283,7 +5391,7 @@
           }
         },
         {
-          "index": 16,
+          "index": 22,
           "title": "schoon/agentic-rag",
           "url": "https://huggingface.co/spaces/schoon/agentic-rag",
           "hot_value": "0 likes / 0 downloads",
@@ -5303,7 +5411,7 @@
           }
         },
         {
-          "index": 17,
+          "index": 23,
           "title": "Ravi8084/agent11",
           "url": "https://huggingface.co/spaces/Ravi8084/agent11",
           "hot_value": "0 likes / 0 downloads",
@@ -5323,7 +5431,7 @@
           }
         },
         {
-          "index": 18,
+          "index": 24,
           "title": "10Vamshi/ai-swe-agent",
           "url": "https://huggingface.co/spaces/10Vamshi/ai-swe-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5343,7 +5451,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 25,
           "title": "Jnnnnnn/academic-research-agent",
           "url": "https://huggingface.co/spaces/Jnnnnnn/academic-research-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5363,7 +5471,7 @@
           }
         },
         {
-          "index": 20,
+          "index": 26,
           "title": "aotemanyy/First_agent_template",
           "url": "https://huggingface.co/spaces/aotemanyy/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5387,7 +5495,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 27,
           "title": "tensei2003/idm-ultra-agent",
           "url": "https://huggingface.co/spaces/tensei2003/idm-ultra-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5407,7 +5515,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 28,
           "title": "bruhkruk/hermes-agent",
           "url": "https://huggingface.co/spaces/bruhkruk/hermes-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5427,7 +5535,7 @@
           }
         },
         {
-          "index": 23,
+          "index": 29,
           "title": "jinglinzeng/First_agent_template",
           "url": "https://huggingface.co/spaces/jinglinzeng/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5451,7 +5559,7 @@
           }
         },
         {
-          "index": 24,
+          "index": 30,
           "title": "visvig1/qic-ir-agent",
           "url": "https://huggingface.co/spaces/visvig1/qic-ir-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5471,7 +5579,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 31,
           "title": "YashMAHINDROO/voice-agent-prototype",
           "url": "https://huggingface.co/spaces/YashMAHINDROO/voice-agent-prototype",
           "hot_value": "0 likes / 0 downloads",
@@ -5491,7 +5599,7 @@
           }
         },
         {
-          "index": 26,
+          "index": 32,
           "title": "Princecodeit/First_agent_template",
           "url": "https://huggingface.co/spaces/Princecodeit/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5515,7 +5623,7 @@
           }
         },
         {
-          "index": 27,
+          "index": 33,
           "title": "Kramika/agentforce",
           "url": "https://huggingface.co/spaces/Kramika/agentforce",
           "hot_value": "0 likes / 0 downloads",
@@ -5535,7 +5643,7 @@
           }
         },
         {
-          "index": 28,
+          "index": 34,
           "title": "HagarGhazi/Agent_Template",
           "url": "https://huggingface.co/spaces/HagarGhazi/Agent_Template",
           "hot_value": "0 likes / 0 downloads",
@@ -5559,7 +5667,7 @@
           }
         },
         {
-          "index": 29,
+          "index": 35,
           "title": "Samabe1109/SWE-bench-SWE-agent-LM-32B",
           "url": "https://huggingface.co/spaces/Samabe1109/SWE-bench-SWE-agent-LM-32B",
           "hot_value": "0 likes / 0 downloads",
@@ -5579,7 +5687,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 36,
           "title": "le7lum/agentic_framework",
           "url": "https://huggingface.co/spaces/le7lum/agentic_framework",
           "hot_value": "0 likes / 0 downloads",
@@ -5599,7 +5707,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 37,
           "title": "FACN/First_agent_template",
           "url": "https://huggingface.co/spaces/FACN/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5623,7 +5731,7 @@
           }
         },
         {
-          "index": 32,
+          "index": 38,
           "title": "Anoush12/agentic-job-scheduler",
           "url": "https://huggingface.co/spaces/Anoush12/agentic-job-scheduler",
           "hot_value": "0 likes / 0 downloads",
@@ -5643,7 +5751,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 39,
           "title": "pymite6941/hermes-agent",
           "url": "https://huggingface.co/spaces/pymite6941/hermes-agent",
           "hot_value": "0 likes / 0 downloads",
@@ -5663,7 +5771,7 @@
           }
         },
         {
-          "index": 34,
+          "index": 40,
           "title": "yinyin926/First_agent_template",
           "url": "https://huggingface.co/spaces/yinyin926/First_agent_template",
           "hot_value": "0 likes / 0 downloads",
@@ -5685,131 +5793,9 @@
             "sourceLabel": "HF Spaces",
             "publishedAt": "2026-06-08T10:52:02.000Z"
           }
-        },
-        {
-          "index": 35,
-          "title": "maimd/Agentic-Dr-Inference",
-          "url": "https://huggingface.co/spaces/maimd/Agentic-Dr-Inference",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T10:49:07.000Z"
-          }
-        },
-        {
-          "index": 36,
-          "title": "josefdom/First_agent_template",
-          "url": "https://huggingface.co/spaces/josefdom/First_agent_template",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、smolagents、agent、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "smolagents",
-              "agent",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T10:32:20.000Z"
-          }
-        },
-        {
-          "index": 37,
-          "title": "jhalak99/final-agent",
-          "url": "https://huggingface.co/spaces/jhalak99/final-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T10:17:05.000Z"
-          }
-        },
-        {
-          "index": 38,
-          "title": "SebastianChM/deepresearch-agent",
-          "url": "https://huggingface.co/spaces/SebastianChM/deepresearch-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T10:02:42.000Z"
-          }
-        },
-        {
-          "index": 39,
-          "title": "IcsGroupDev/ics-financial-analyzer-agent",
-          "url": "https://huggingface.co/spaces/IcsGroupDev/ics-financial-analyzer-agent",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：docker、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "docker",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T09:56:43.000Z"
-          }
-        },
-        {
-          "index": 40,
-          "title": "Xiielain/gaia-agent-eval",
-          "url": "https://huggingface.co/spaces/Xiielain/gaia-agent-eval",
-          "hot_value": "0 likes / 0 downloads",
-          "cover": "",
-          "extra": {
-            "desc": "Space更新；标签：gradio、region:us",
-            "aiMatchedKeywords": [
-              "AI",
-              "Agent",
-              "Hugging Face",
-              "gradio",
-              "region:us"
-            ],
-            "source": "hf-spaces",
-            "sourceLabel": "HF Spaces",
-            "publishedAt": "2026-06-08T09:37:49.000Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -5819,25 +5805,174 @@
           "AI",
           "Agent",
           "Hugging Face",
+          "docker",
+          "region:us",
           "gradio",
+          "streamlit",
           "smolagents",
           "agent",
           "servicenow",
           "it-operations",
-          "aict-demo",
-          "docker",
-          "region:us",
-          "streamlit"
+          "aict-demo"
         ]
       }
     },
     {
       "type": "github-ai",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
+          "title": "Genesis1231/Eva01",
+          "url": "https://github.com/Genesis1231/Eva01",
+          "hot_value": "202 stars / 7 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Eva01 is NOT an assistant. She is an AI being with her own mind, feelings, and intrinsic drives. Supports both terminal and API, Multimodal, Modular design. Built-in voice & face recognition. Plug'n play tools. Compatible with ChatGPT, Claude, Deepseek, Gemini, Grok, and Ollama. Explore the possibilities of Human-AI Interaction.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agent",
+              "agentic-ai",
+              "ai-agent",
+              "ai-consciousness",
+              "ai-personality",
+              "anthropic",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:19:04Z"
+          }
+        },
+        {
+          "index": 2,
+          "title": "OpenHands/OpenHands",
+          "url": "https://github.com/OpenHands/OpenHands",
+          "hot_value": "76253 stars / 9691 forks",
+          "cover": "",
+          "extra": {
+            "desc": "🙌 OpenHands: AI-Driven Development",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agent",
+              "artificial-intelligence",
+              "chatgpt",
+              "claude-ai",
+              "cli",
+              "developer-tools",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:16:30Z"
+          }
+        },
+        {
+          "index": 3,
+          "title": "jupyter-naas/abi",
+          "url": "https://github.com/jupyter-naas/abi",
+          "hot_value": "126 stars / 38 forks",
+          "cover": "",
+          "extra": {
+            "desc": "AI Operating System - Build your own AI using ontologies as the unifying field connecting data, models, workflows, and systems.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "abi",
+              "ai",
+              "aiagentic",
+              "aiagentsframework",
+              "analytics",
+              "artificial-intelligence",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:15:49Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "Oxen-AI/Oxen",
+          "url": "https://github.com/Oxen-AI/Oxen",
+          "hot_value": "1153 stars / 29 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Lightning fast data version control system for structured and unstructured machine learning datasets. We aim to make versioning datasets as easy as versioning code.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "data-science",
+              "machine-learning",
+              "python",
+              "rust",
+              "version-control",
+              "Rust"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:13:55Z"
+          }
+        },
+        {
+          "index": 5,
+          "title": "canyongbs/advisingapp",
+          "url": "https://github.com/canyongbs/advisingapp",
+          "hot_value": "327 stars / 76 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Advising App by Canyon GBS is an AI-powered conversational assistant for staff, student success platform, and recruitment CRM designed specifically for colleges and universities to enhance student engagement and drive institutional success.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "conversational-ai",
+              "crm",
+              "edtech",
+              "higher-education",
+              "recruitment-crm",
+              "PHP"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:12:49Z"
+          }
+        },
+        {
+          "index": 6,
+          "title": "speedyapply/2026-AI-College-Jobs",
+          "url": "https://github.com/speedyapply/2026-AI-College-Jobs",
+          "hot_value": "5403 stars / 215 forks",
+          "cover": "",
+          "extra": {
+            "desc": "2026 AI/ML internship & new graduate job list updated daily",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "applications",
+              "artificial-intelligence",
+              "college",
+              "data",
+              "data-science"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:04:08Z"
+          }
+        },
+        {
+          "index": 7,
           "title": "ai-collection/ai-collection",
           "url": "https://github.com/ai-collection/ai-collection",
           "hot_value": "8982 stars / 985 forks",
@@ -5857,14 +5992,334 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T15:01:12Z"
+            "publishedAt": "2026-06-08T16:00:47Z"
           }
         },
         {
-          "index": 2,
+          "index": 8,
+          "title": "Significant-Gravitas/AutoGPT",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "hot_value": "184849 stars / 46186 forks",
+          "cover": "",
+          "extra": {
+            "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agentic-ai",
+              "agents",
+              "ai",
+              "artificial-intelligence",
+              "autonomous-agents",
+              "claude",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:57:21Z"
+          }
+        },
+        {
+          "index": 9,
+          "title": "spiceai/spiceai",
+          "url": "https://github.com/spiceai/spiceai",
+          "hot_value": "2950 stars / 199 forks",
+          "cover": "",
+          "extra": {
+            "desc": "A portable accelerated SQL query, search, and LLM-inference engine, written in Rust, for data-grounded AI apps and agents.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "data",
+              "data-federation",
+              "developers",
+              "full-text-search",
+              "infrastructure",
+              "Rust"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:48:26Z"
+          }
+        },
+        {
+          "index": 10,
+          "title": "wanaku-ai/wanaku",
+          "url": "https://github.com/wanaku-ai/wanaku",
+          "hot_value": "120 stars / 44 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Wanaku MCP Router",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agentic",
+              "agentic-ai",
+              "agents",
+              "artificial-intelligence",
+              "mcp",
+              "mcp-server",
+              "Java"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:05:58Z"
+          }
+        },
+        {
+          "index": 11,
+          "title": "SeriousOldMan/Simulator-Controller",
+          "url": "https://github.com/SeriousOldMan/Simulator-Controller",
+          "hot_value": "413 stars / 39 forks",
+          "cover": "",
+          "extra": {
+            "desc": "A virtual AI-based pit crew for Sim Racing. Use the latest GPT technology to create a real life like experience when out on the track.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agent",
+              "artificial-intelligence",
+              "assistant",
+              "autohotkey",
+              "automation",
+              "chatbot",
+              "AutoHotkey"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:41:30Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "darkdevil3610/100-AI-Machine-learning-Deep-learning-Computer-vision-NLP",
+          "url": "https://github.com/darkdevil3610/100-AI-Machine-learning-Deep-learning-Computer-vision-NLP",
+          "hot_value": "243 stars / 20 forks",
+          "cover": "",
+          "extra": {
+            "desc": "100+ AI Machine learning Deep learning Computer vision NLP Projects with code",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "artificial-intelligence-projects",
+              "awesome",
+              "collageproject",
+              "compuer-vision-project",
+              "computer-vision"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:41:09Z"
+          }
+        },
+        {
+          "index": 13,
+          "title": "marimo-team/marimo",
+          "url": "https://github.com/marimo-team/marimo",
+          "hot_value": "21350 stars / 1132 forks",
+          "cover": "",
+          "extra": {
+            "desc": "A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "dag",
+              "data-science",
+              "data-visualization",
+              "dataflow",
+              "developer-tools",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:35:44Z"
+          }
+        },
+        {
+          "index": 14,
+          "title": "flwrlabs/flower",
+          "url": "https://github.com/flwrlabs/flower",
+          "hot_value": "6931 stars / 1200 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Flower: A Friendly Federated AI Framework",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "android",
+              "artificial-intelligence",
+              "cpp",
+              "deep-learning",
+              "federated-analytics",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:47:50Z"
+          }
+        },
+        {
+          "index": 15,
+          "title": "bodo-ai/Bodo",
+          "url": "https://github.com/bodo-ai/Bodo",
+          "hot_value": "370 stars / 16 forks",
+          "cover": "",
+          "extra": {
+            "desc": "High Performance Data Processing in Python",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "artificial-intelligence",
+              "big-data",
+              "data-science",
+              "distributed",
+              "machine-learning",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T16:09:05Z"
+          }
+        },
+        {
+          "index": 16,
+          "title": "spring-projects/spring-ai",
+          "url": "https://github.com/spring-projects/spring-ai",
+          "hot_value": "8890 stars / 2623 forks",
+          "cover": "",
+          "extra": {
+            "desc": "An Application Framework for AI Engineering",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "java",
+              "spring-ai",
+              "Java"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:29:28Z"
+          }
+        },
+        {
+          "index": 17,
+          "title": "TuringLang/Turing.jl",
+          "url": "https://github.com/TuringLang/Turing.jl",
+          "hot_value": "2242 stars / 239 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Bayesian inference with probabilistic programming.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "bayesian-inference",
+              "bayesian-neural-networks",
+              "bayesian-statistics",
+              "hamiltonian-monte-carlo",
+              "hmc",
+              "Julia"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:33:00Z"
+          }
+        },
+        {
+          "index": 18,
+          "title": "askimo-ai/askimo",
+          "url": "https://github.com/askimo-ai/askimo",
+          "hot_value": "134 stars / 19 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Chat, RAG search, multi-step Plans workflows, MCP tools, and Agents integration. Supports OpenAI, Claude, Gemini, Grok, Ollama, LM Studio and more",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "agentic-workflow",
+              "ai",
+              "ai-assistant",
+              "artificial-intelligence",
+              "chatgpt",
+              "claude",
+              "Kotlin"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:26:57Z"
+          }
+        },
+        {
+          "index": 19,
+          "title": "MakazhanAlpamys/Soup",
+          "url": "https://github.com/MakazhanAlpamys/Soup",
+          "hot_value": "68 stars / 16 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Soup turns the pain of LLM fine-tuning into a simple workflow. One config, one command, done.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "artificial-intelligence",
+              "cli",
+              "dpo",
+              "fine-tuning",
+              "finetuning",
+              "gguf",
+              "Python"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:32:06Z"
+          }
+        },
+        {
+          "index": 20,
+          "title": "GetStream/awesome-ai-news",
+          "url": "https://github.com/GetStream/awesome-ai-news",
+          "hot_value": "74 stars / 3 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Keep track of what has happened in AI this month. Discover the best AI/LLM resources and news for this month.",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "ai",
+              "ai-news",
+              "aimodels",
+              "anthropic",
+              "artificial-intelligence",
+              "chatgpt"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T15:07:11Z"
+          }
+        },
+        {
+          "index": 21,
           "title": "ImFeH2/flowent",
           "url": "https://github.com/ImFeH2/flowent",
-          "hot_value": "95 stars / 3 forks",
+          "hot_value": "96 stars / 3 forks",
           "cover": "",
           "extra": {
             "desc": "A workflow orchestration platform for multi-agent collaboration",
@@ -5886,7 +6341,7 @@
           }
         },
         {
-          "index": 3,
+          "index": 22,
           "title": "dualverse-ai/station",
           "url": "https://github.com/dualverse-ai/station",
           "hot_value": "115 stars / 5 forks",
@@ -5911,7 +6366,7 @@
           }
         },
         {
-          "index": 4,
+          "index": 23,
           "title": "RevEngAI/plugin-ghidra",
           "url": "https://github.com/RevEngAI/plugin-ghidra",
           "hot_value": "175 stars / 17 forks",
@@ -5936,10 +6391,10 @@
           }
         },
         {
-          "index": 5,
+          "index": 24,
           "title": "vercel/ai",
           "url": "https://github.com/vercel/ai",
-          "hot_value": "24730 stars / 4551 forks",
+          "hot_value": "24731 stars / 4551 forks",
           "cover": "",
           "extra": {
             "desc": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents",
@@ -5961,57 +6416,32 @@
           }
         },
         {
-          "index": 6,
-          "title": "OpenHands/OpenHands",
-          "url": "https://github.com/OpenHands/OpenHands",
-          "hot_value": "76244 stars / 9689 forks",
+          "index": 25,
+          "title": "lakehq/sail",
+          "url": "https://github.com/lakehq/sail",
+          "hot_value": "2873 stars / 166 forks",
           "cover": "",
           "extra": {
-            "desc": "🙌 OpenHands: AI-Driven Development",
+            "desc": "Drop-in Apache Spark replacement written in Rust, unifying batch processing, stream processing, and compute-intensive AI workloads.",
             "aiMatchedKeywords": [
               "AI",
               "GitHub",
               "开源项目",
-              "agent",
+              "apache-iceberg",
+              "apache-spark",
+              "arrow",
               "artificial-intelligence",
-              "chatgpt",
-              "claude-ai",
-              "cli",
-              "developer-tools",
-              "Python"
+              "big-data",
+              "data-engineering",
+              "Rust"
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:45:53Z"
+            "publishedAt": "2026-06-08T16:07:26Z"
           }
         },
         {
-          "index": 7,
-          "title": "flwrlabs/flower",
-          "url": "https://github.com/flwrlabs/flower",
-          "hot_value": "6931 stars / 1200 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Flower: A Friendly Federated AI Framework",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "ai",
-              "android",
-              "artificial-intelligence",
-              "cpp",
-              "deep-learning",
-              "federated-analytics",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:59:18Z"
-          }
-        },
-        {
-          "index": 8,
+          "index": 26,
           "title": "light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
           "url": "https://github.com/light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
           "hot_value": "128 stars / 9 forks",
@@ -6036,7 +6466,32 @@
           }
         },
         {
-          "index": 9,
+          "index": 27,
+          "title": "nautechsystems/nautilus_trader",
+          "url": "https://github.com/nautechsystems/nautilus_trader",
+          "hot_value": "23376 stars / 2956 forks",
+          "cover": "",
+          "extra": {
+            "desc": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+            "aiMatchedKeywords": [
+              "AI",
+              "GitHub",
+              "开源项目",
+              "algorithmic-trading-engine",
+              "artificial-intelligence",
+              "crypto-trading",
+              "equity-trading",
+              "forex",
+              "futures-trading",
+              "Rust"
+            ],
+            "source": "github-ai",
+            "sourceLabel": "GitHub AI",
+            "publishedAt": "2026-06-08T14:42:56Z"
+          }
+        },
+        {
+          "index": 28,
           "title": "voxel51/fiftyone",
           "url": "https://github.com/voxel51/fiftyone",
           "hot_value": "10765 stars / 766 forks",
@@ -6057,11 +6512,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:52:44Z"
+            "publishedAt": "2026-06-08T15:52:20Z"
           }
         },
         {
-          "index": 10,
+          "index": 29,
           "title": "hexabot-ai/Hexabot",
           "url": "https://github.com/hexabot-ai/Hexabot",
           "hot_value": "969 stars / 217 forks",
@@ -6086,32 +6541,7 @@
           }
         },
         {
-          "index": 11,
-          "title": "marimo-team/marimo",
-          "url": "https://github.com/marimo-team/marimo",
-          "hot_value": "21349 stars / 1132 forks",
-          "cover": "",
-          "extra": {
-            "desc": "A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "dag",
-              "data-science",
-              "data-visualization",
-              "dataflow",
-              "developer-tools",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:26:50Z"
-          }
-        },
-        {
-          "index": 12,
+          "index": 30,
           "title": "sylvaticus/BetaML.jl",
           "url": "https://github.com/sylvaticus/BetaML.jl",
           "hot_value": "106 stars / 14 forks",
@@ -6136,59 +6566,33 @@
           }
         },
         {
-          "index": 13,
-          "title": "wanaku-ai/wanaku",
-          "url": "https://github.com/wanaku-ai/wanaku",
-          "hot_value": "120 stars / 44 forks",
+          "index": 31,
+          "title": "unicity-sphere/sphere-sdk",
+          "url": "https://github.com/unicity-sphere/sphere-sdk",
+          "hot_value": "5448 stars / 99 forks",
           "cover": "",
           "extra": {
-            "desc": "Wanaku MCP Router",
+            "desc": "The SDK for autonomous economic agents. Give an agent an identity, a wallet, and the ability to find, negotiate with, and settle with other agents - peer-to-peer, with perfect privacy and ultra-fast finality",
             "aiMatchedKeywords": [
               "AI",
               "GitHub",
               "开源项目",
-              "agentic",
-              "agentic-ai",
-              "agents",
+              "ai-agents",
               "artificial-intelligence",
-              "mcp",
-              "mcp-server",
-              "Java"
+              "blockchain",
+              "commerce",
+              "TypeScript"
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T15:02:34Z"
+            "publishedAt": "2026-06-08T16:00:12Z"
           }
         },
         {
-          "index": 14,
-          "title": "GetStream/awesome-ai-news",
-          "url": "https://github.com/GetStream/awesome-ai-news",
-          "hot_value": "74 stars / 3 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Keep track of what has happened in AI this month. Discover the best AI/LLM resources and news for this month.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "ai",
-              "ai-news",
-              "aimodels",
-              "anthropic",
-              "artificial-intelligence",
-              "chatgpt"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:15:35Z"
-          }
-        },
-        {
-          "index": 15,
+          "index": 32,
           "title": "analyticalrohit/llms-from-scratch",
           "url": "https://github.com/analyticalrohit/llms-from-scratch",
-          "hot_value": "271 stars / 50 forks",
+          "hot_value": "273 stars / 51 forks",
           "cover": "",
           "extra": {
             "desc": "Build a ChatGPT like LLM from scratch in PyTorch, explained step by step.",
@@ -6210,57 +6614,7 @@
           }
         },
         {
-          "index": 16,
-          "title": "SeriousOldMan/Simulator-Controller",
-          "url": "https://github.com/SeriousOldMan/Simulator-Controller",
-          "hot_value": "413 stars / 39 forks",
-          "cover": "",
-          "extra": {
-            "desc": "A virtual AI-based pit crew for Sim Racing. Use the latest GPT technology to create a real life like experience when out on the track.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agent",
-              "artificial-intelligence",
-              "assistant",
-              "autohotkey",
-              "automation",
-              "chatbot",
-              "AutoHotkey"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T13:59:58Z"
-          }
-        },
-        {
-          "index": 17,
-          "title": "Significant-Gravitas/AutoGPT",
-          "url": "https://github.com/Significant-Gravitas/AutoGPT",
-          "hot_value": "184845 stars / 46187 forks",
-          "cover": "",
-          "extra": {
-            "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agentic-ai",
-              "agents",
-              "ai",
-              "artificial-intelligence",
-              "autonomous-agents",
-              "claude",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:49:52Z"
-          }
-        },
-        {
-          "index": 18,
+          "index": 33,
           "title": "WasmEdge/WasmEdge",
           "url": "https://github.com/WasmEdge/WasmEdge",
           "hot_value": "10623 stars / 1069 forks",
@@ -6281,11 +6635,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:09:30Z"
+            "publishedAt": "2026-06-08T15:22:32Z"
           }
         },
         {
-          "index": 19,
+          "index": 34,
           "title": "JeffDeCola/my-cheat-sheets",
           "url": "https://github.com/JeffDeCola/my-cheat-sheets",
           "hot_value": "129 stars / 42 forks",
@@ -6310,30 +6664,7 @@
           }
         },
         {
-          "index": 20,
-          "title": "unicity-sphere/sphere-sdk",
-          "url": "https://github.com/unicity-sphere/sphere-sdk",
-          "hot_value": "5449 stars / 99 forks",
-          "cover": "",
-          "extra": {
-            "desc": "The SDK for autonomous economic agents. Give an agent an identity, a wallet, and the ability to find, negotiate with, and settle with other agents - peer-to-peer, with perfect privacy and ultra-fast finality",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "ai-agents",
-              "artificial-intelligence",
-              "blockchain",
-              "commerce",
-              "TypeScript"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:17:49Z"
-          }
-        },
-        {
-          "index": 21,
+          "index": 35,
           "title": "KudoAI/chatgpt.js",
           "url": "https://github.com/KudoAI/chatgpt.js",
           "hot_value": "2036 stars / 171 forks",
@@ -6358,7 +6689,7 @@
           }
         },
         {
-          "index": 22,
+          "index": 36,
           "title": "eeemoon/perchance",
           "url": "https://github.com/eeemoon/perchance",
           "hot_value": "63 stars / 13 forks",
@@ -6383,35 +6714,10 @@
           }
         },
         {
-          "index": 23,
-          "title": "spiceai/spiceai",
-          "url": "https://github.com/spiceai/spiceai",
-          "hot_value": "2950 stars / 199 forks",
-          "cover": "",
-          "extra": {
-            "desc": "A portable accelerated SQL query, search, and LLM-inference engine, written in Rust, for data-grounded AI apps and agents.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "data",
-              "data-federation",
-              "developers",
-              "full-text-search",
-              "infrastructure",
-              "Rust"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:22:01Z"
-          }
-        },
-        {
-          "index": 24,
+          "index": 37,
           "title": "kserve/kserve",
           "url": "https://github.com/kserve/kserve",
-          "hot_value": "5553 stars / 1517 forks",
+          "hot_value": "5554 stars / 1517 forks",
           "cover": "",
           "extra": {
             "desc": "Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes",
@@ -6433,7 +6739,7 @@
           }
         },
         {
-          "index": 25,
+          "index": 38,
           "title": "ls1intum/Artemis",
           "url": "https://github.com/ls1intum/Artemis",
           "hot_value": "771 stars / 369 forks",
@@ -6454,11 +6760,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:58:27Z"
+            "publishedAt": "2026-06-08T16:05:54Z"
           }
         },
         {
-          "index": 26,
+          "index": 39,
           "title": "xorbitsai/inference",
           "url": "https://github.com/xorbitsai/inference",
           "hot_value": "9349 stars / 837 forks",
@@ -6483,35 +6789,10 @@
           }
         },
         {
-          "index": 27,
-          "title": "canyongbs/advisingapp",
-          "url": "https://github.com/canyongbs/advisingapp",
-          "hot_value": "327 stars / 76 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Advising App by Canyon GBS is an AI-powered conversational assistant for staff, student success platform, and recruitment CRM designed specifically for colleges and universities to enhance student engagement and drive institutional success.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "conversational-ai",
-              "crm",
-              "edtech",
-              "higher-education",
-              "recruitment-crm",
-              "PHP"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:54:00Z"
-          }
-        },
-        {
-          "index": 28,
+          "index": 40,
           "title": "elevenlabs/elevenlabs-python",
           "url": "https://github.com/elevenlabs/elevenlabs-python",
-          "hot_value": "2997 stars / 420 forks",
+          "hot_value": "2998 stars / 420 forks",
           "cover": "",
           "extra": {
             "desc": "The official Python SDK for the ElevenLabs API.",
@@ -6530,10 +6811,10 @@
           }
         },
         {
-          "index": 29,
+          "index": 41,
           "title": "elevenlabs/elevenlabs-js",
           "url": "https://github.com/elevenlabs/elevenlabs-js",
-          "hot_value": "428 stars / 76 forks",
+          "hot_value": "429 stars / 76 forks",
           "cover": "",
           "extra": {
             "desc": "The official JavaScript (Node) library for the ElevenLabs API.",
@@ -6555,7 +6836,7 @@
           }
         },
         {
-          "index": 30,
+          "index": 42,
           "title": "TalEliyahu/Awesome-AI-Security",
           "url": "https://github.com/TalEliyahu/Awesome-AI-Security",
           "hot_value": "724 stars / 151 forks",
@@ -6575,7 +6856,7 @@
           }
         },
         {
-          "index": 31,
+          "index": 43,
           "title": "yasserfarouk/negmas",
           "url": "https://github.com/yasserfarouk/negmas",
           "hot_value": "92 stars / 25 forks",
@@ -6595,11 +6876,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T13:08:21Z"
+            "publishedAt": "2026-06-08T16:11:23Z"
           }
         },
         {
-          "index": 32,
+          "index": 44,
           "title": "intelligencedev/manifold",
           "url": "https://github.com/intelligencedev/manifold",
           "hot_value": "496 stars / 29 forks",
@@ -6624,7 +6905,7 @@
           }
         },
         {
-          "index": 33,
+          "index": 45,
           "title": "hotosm/fAIr",
           "url": "https://github.com/hotosm/fAIr",
           "hot_value": "137 stars / 79 forks",
@@ -6649,10 +6930,10 @@
           }
         },
         {
-          "index": 34,
+          "index": 46,
           "title": "e-m-b-a/emba",
           "url": "https://github.com/e-m-b-a/emba",
-          "hot_value": "3490 stars / 307 forks",
+          "hot_value": "3490 stars / 306 forks",
           "cover": "",
           "extra": {
             "desc": "EMBA - The firmware security analyzer",
@@ -6674,29 +6955,7 @@
           }
         },
         {
-          "index": 35,
-          "title": "spring-projects/spring-ai",
-          "url": "https://github.com/spring-projects/spring-ai",
-          "hot_value": "8889 stars / 2622 forks",
-          "cover": "",
-          "extra": {
-            "desc": "An Application Framework for AI Engineering",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "java",
-              "spring-ai",
-              "Java"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T12:46:50Z"
-          }
-        },
-        {
-          "index": 36,
+          "index": 47,
           "title": "adamlui/chatgpt-infinity",
           "url": "https://github.com/adamlui/chatgpt-infinity",
           "hot_value": "351 stars / 34 forks",
@@ -6721,7 +6980,7 @@
           }
         },
         {
-          "index": 37,
+          "index": 48,
           "title": "lucidrains/rectified-flow-pytorch",
           "url": "https://github.com/lucidrains/rectified-flow-pytorch",
           "hot_value": "466 stars / 32 forks",
@@ -6744,7 +7003,7 @@
           }
         },
         {
-          "index": 38,
+          "index": 49,
           "title": "sonos/tract",
           "url": "https://github.com/sonos/tract",
           "hot_value": "2944 stars / 260 forks",
@@ -6765,11 +7024,11 @@
             ],
             "source": "github-ai",
             "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T12:32:34Z"
+            "publishedAt": "2026-06-08T16:17:46Z"
           }
         },
         {
-          "index": 39,
+          "index": 50,
           "title": "Lightning-AI/LitServe",
           "url": "https://github.com/Lightning-AI/LitServe",
           "hot_value": "3889 stars / 292 forks",
@@ -6792,284 +7051,9 @@
             "sourceLabel": "GitHub AI",
             "publishedAt": "2026-06-08T12:30:42Z"
           }
-        },
-        {
-          "index": 40,
-          "title": "awslabs/fullstack-solution-template-for-agentcore",
-          "url": "https://github.com/awslabs/fullstack-solution-template-for-agentcore",
-          "hot_value": "512 stars / 148 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Flexible Fullstack solution template for production-ready deployments of any use case on Amazon Bedrock AgentCore.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agent",
-              "agentcore",
-              "agentic-ai",
-              "ai",
-              "artificial-intelligence",
-              "aws",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T12:29:44Z"
-          }
-        },
-        {
-          "index": 41,
-          "title": "lucidrains/dreamer4",
-          "url": "https://github.com/lucidrains/dreamer4",
-          "hot_value": "191 stars / 18 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Implementation of Danijar's latest iteration for his Dreamer line of work",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "attention",
-              "deep-learning",
-              "model-based-reinforcement-learning",
-              "transformers",
-              "world-models",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T12:27:23Z"
-          }
-        },
-        {
-          "index": 42,
-          "title": "jegly/Box",
-          "url": "https://github.com/jegly/Box",
-          "hot_value": "554 stars / 29 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Private on-device AI suite for Android. Fork of Google AI Edge Gallery with llama.cpp, whisper.cpp, stable-diffusion.cpp, GGUF import, voice chat, vision AI, on-device image generation, biometric lock, encrypted history, and CPU/NPU/GPU acceleration.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "android",
-              "android-ai-app",
-              "artificial-intelligence",
-              "box",
-              "gguf",
-              "linux",
-              "Kotlin"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T11:55:29Z"
-          }
-        },
-        {
-          "index": 43,
-          "title": "frontman-ai/frontman",
-          "url": "https://github.com/frontman-ai/frontman",
-          "hot_value": "578 stars / 30 forks",
-          "cover": "",
-          "extra": {
-            "desc": "The AI agent that lives in your framework/browser",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agent",
-              "ai",
-              "ai-agent",
-              "ai-coding",
-              "artificial-intelligence",
-              "astro",
-              "ReScript"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:39:54Z"
-          }
-        },
-        {
-          "index": 44,
-          "title": "deepnote/deepnote",
-          "url": "https://github.com/deepnote/deepnote",
-          "hot_value": "2918 stars / 195 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Deepnote is a drop-in replacement for Jupyter with an AI-first design, sleek UI, new blocks, and native data integrations. Use Python, R, and SQL locally in your favorite IDE, then scale to Deepnote cloud for real-time collaboration, Deepnote agent, and deployable data apps. https://deepnote.com/",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "data",
-              "data-analysis",
-              "data-science",
-              "data-visualization",
-              "deepnote",
-              "TypeScript"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T11:33:46Z"
-          }
-        },
-        {
-          "index": 45,
-          "title": "fairlearn/fairlearn",
-          "url": "https://github.com/fairlearn/fairlearn",
-          "hot_value": "2247 stars / 502 forks",
-          "cover": "",
-          "extra": {
-            "desc": "A Python package to assess and improve fairness of machine learning models.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "ai",
-              "ai-systems",
-              "artificial-intelligence",
-              "fairness",
-              "fairness-ai",
-              "fairness-assessment",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T11:59:56Z"
-          }
-        },
-        {
-          "index": 46,
-          "title": "potpie-ai/potpie",
-          "url": "https://github.com/potpie-ai/potpie",
-          "hot_value": "5445 stars / 634 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Spec-driven development for large codebases",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agents",
-              "ai-agents",
-              "ai-agents-framework",
-              "artificial-intelligence",
-              "developer-tools",
-              "devtools",
-              "Python"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T13:37:00Z"
-          }
-        },
-        {
-          "index": 47,
-          "title": "Nixtla/nixtla",
-          "url": "https://github.com/Nixtla/nixtla",
-          "hot_value": "3897 stars / 323 forks",
-          "cover": "",
-          "extra": {
-            "desc": "TimeGPT-1: production ready pre-trained Time Series Foundation Model for forecasting and anomaly detection. Generative pretrained transformer for time series trained on over 100B data points. It's capable of accurately predicting various domains such as retail, electricity, finance, and IoT with just a few lines of code 🚀.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "agent",
-              "agentic-ai",
-              "anomaly-detection",
-              "artificial-intelligence",
-              "deep-learning",
-              "forecasting",
-              "Jupyter Notebook"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T10:46:16Z"
-          }
-        },
-        {
-          "index": 48,
-          "title": "tphakala/birdnet-go",
-          "url": "https://github.com/tphakala/birdnet-go",
-          "hot_value": "1251 stars / 117 forks",
-          "cover": "",
-          "extra": {
-            "desc": "Self-hosted realtime soundscape analyser for birds, bats and other wildlife. Multi-model local AI inference, runs 24/7 on a Raspberry Pi.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "audio",
-              "bats",
-              "bioacoustics",
-              "birdnet",
-              "birdnet-pi",
-              "Go"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T14:58:18Z"
-          }
-        },
-        {
-          "index": 49,
-          "title": "chigwell/llm7.io",
-          "url": "https://github.com/chigwell/llm7.io",
-          "hot_value": "158 stars / 4 forks",
-          "cover": "",
-          "extra": {
-            "desc": "LLM7.io offers a single API gateway that connects you to a wide array of leading AI models from various providers.",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "ai",
-              "api",
-              "artificial-intelligence",
-              "inference",
-              "large-language-models",
-              "llm",
-              "TypeScript"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T10:28:52Z"
-          }
-        },
-        {
-          "index": 50,
-          "title": "awesome-mlss/awesome-mlss",
-          "url": "https://github.com/awesome-mlss/awesome-mlss",
-          "hot_value": "3010 stars / 323 forks",
-          "cover": "",
-          "extra": {
-            "desc": "🤖 Machine Learning Summer School Guide",
-            "aiMatchedKeywords": [
-              "AI",
-              "GitHub",
-              "开源项目",
-              "artificial-intelligence",
-              "deep-learning",
-              "machine-learning",
-              "reinforcement-learning",
-              "summer-school",
-              "summer-schools",
-              "HTML"
-            ],
-            "source": "github-ai",
-            "sourceLabel": "GitHub AI",
-            "publishedAt": "2026-06-08T10:23:50Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 50,
       "total_after_filter": 50,
       "ai_filter_summary": {
@@ -7079,25 +7063,547 @@
           "AI",
           "GitHub",
           "开源项目",
-          "ai",
+          "agent",
+          "agentic-ai",
+          "ai-agent",
+          "ai-consciousness",
+          "ai-personality",
+          "anthropic",
+          "Python",
           "artificial-intelligence",
-          "assistant-chat-bots",
-          "assistive-technology",
-          "awesome",
-          "awesome-list",
-          "ai-agents",
-          "assistant",
-          "code-generation"
+          "chatgpt"
         ]
       }
     },
     {
       "type": "hn-ai",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
+          "title": "Rewrite AI-generated text to read naturally, reducing AI-detector flags",
+          "url": "https://bingbangboom-dolus-rewrite.hf.space/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · halleyscomet · 2026-06-08T16:19:31Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:19:31Z"
+          }
+        },
+        {
+          "index": 2,
+          "title": "AI in Software Development. Boosting or Slowing Your Productivity",
+          "url": "https://olegdubovoi.com/publications/ai-in-software-development-boosting-or-slowing-your-productivity/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · empiree · 2026-06-08T16:11:49Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:11:49Z"
+          }
+        },
+        {
+          "index": 3,
+          "title": "The difference in perspectives between superpowers is shaping the race for AI",
+          "url": "https://www.nytimes.com/2026/05/14/opinion/china-trump-ai-xi.html",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · yogthos · 2026-06-08T16:10:11Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:10:11Z"
+          }
+        },
+        {
+          "index": 4,
+          "title": "Show HN: A Slack like interface where you can run a company of AI employees",
+          "url": "https://www.tryguildly.com/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · spiken23 · 2026-06-08T16:09:02Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:09:02Z"
+          }
+        },
+        {
+          "index": 5,
+          "title": "The AI vibe shift is real: Why the backlash is growing",
+          "url": "https://mashable.com/tech/ai-backlash-vibe-shift",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · cdrnsf · 2026-06-08T16:07:41Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:07:41Z"
+          }
+        },
+        {
+          "index": 6,
+          "title": "Slop, productivity, and why the AI-fueled world is going nowhere mighty fast",
+          "url": "https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai",
+          "hot_value": "3 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · flail · 2026-06-08T16:05:30Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:05:30Z"
+          }
+        },
+        {
+          "index": 7,
+          "title": "Unlock.domains – AI domain generator with real-time RDAP availability",
+          "url": "https://unlock.domains",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · vishr · 2026-06-08T16:03:15Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:03:15Z"
+          }
+        },
+        {
+          "index": 8,
+          "title": "Show HN: Battlemat, a small and fast virtual tabletop",
+          "url": "https://battlemat.app/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · milancurcic · 2026-06-08T16:03:13Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:03:13Z"
+          }
+        },
+        {
+          "index": 9,
+          "title": "Majority of US's new AI datacenters to be built on drought-hit land",
+          "url": "https://www.theguardian.com/us-news/2026/jun/08/datacenter-ai-drought-water",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · Brajeshwar · 2026-06-08T16:02:56Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:02:56Z"
+          }
+        },
+        {
+          "index": 10,
+          "title": "ReARM: Governing AI Coding Agents Demo [video]",
+          "url": "https://www.youtube.com/watch?v=kzMzQK511JU",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · taleodor · 2026-06-08T16:00:08Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T16:00:08Z"
+          }
+        },
+        {
+          "index": 11,
+          "title": "Bloom Filter Trick Reduces 170 Object-Storage Reads to One (2.6s → 89ms)",
+          "url": "https://openobserve.ai/blog/openobserve-bloom-filter-2.6s-to-89ms/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · birdculture · 2026-06-08T15:55:47Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:55:47Z"
+          }
+        },
+        {
+          "index": 12,
+          "title": "Fine-tuning LLMs on 30M academic papers from ScholarAPI",
+          "url": "https://scholarapi.net/case_study/ai_training",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · mwojnars · 2026-06-08T15:49:25Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:49:25Z"
+          }
+        },
+        {
+          "index": 13,
+          "title": "Matching frontier performance through training and harness engineering",
+          "url": "https://fireworks.ai/blog/open-source-agents-frontier-advisors",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · makaimc · 2026-06-08T15:47:42Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:47:42Z"
+          }
+        },
+        {
+          "index": 14,
+          "title": "AI Is Slowing Down",
+          "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
+          "hot_value": "28 points / 9 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · crescit_eundo · 2026-06-08T15:46:37Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:46:37Z"
+          }
+        },
+        {
+          "index": 15,
+          "title": "New AI espionage powers trigger Putin camera scare",
+          "url": "https://www.ft.com/content/6f4d806c-eb22-4c32-8352-b82692d30e9f",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · Element_ · 2026-06-08T15:45:56Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:45:56Z"
+          }
+        },
+        {
+          "index": 16,
+          "title": "How Confident Are AI Classifiers About Their Own Confidence?",
+          "url": "https://gmcirco.github.io/blog/posts/ai-calibration/calibration.html",
+          "hot_value": "2 points / 1 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · apwheele · 2026-06-08T15:41:07Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:41:07Z"
+          }
+        },
+        {
+          "index": 17,
+          "title": "Show HN: A Highly Available Distributed Router for Global Realtime AI",
+          "url": "https://cerebrium.ai/blog/thalamus-our-highly-available-distributed-router-for-global-realtime-ai-workloads",
+          "hot_value": "6 points / 3 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · wesrobin · 2026-06-08T15:33:24Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:33:24Z"
+          }
+        },
+        {
+          "index": 18,
+          "title": "Terry Tao Became an Evangelist for AI in Math",
+          "url": "https://www.quantamagazine.org/how-terry-tao-became-an-evangelist-for-ai-in-math-20260608/",
+          "hot_value": "6 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · Tomte · 2026-06-08T15:30:09Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:30:09Z"
+          }
+        },
+        {
+          "index": 19,
+          "title": "AI and the invisible newcomer in open source",
+          "url": "https://blog.stdlib.io/ai-and-the-invisible-newcomer-in-open-source/",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · kgryte · 2026-06-08T15:20:57Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:20:57Z"
+          }
+        },
+        {
+          "index": 20,
+          "title": "Amid a flood of AI advances astrophysicists are questioning soul of their field",
+          "url": "https://www.science.org/content/article/amid-flood-ai-advances-astrophysicists-are-questioning-soul-their-field",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · bookofjoe · 2026-06-08T15:20:07Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:20:07Z"
+          }
+        },
+        {
+          "index": 21,
+          "title": "Ideogram 4.0",
+          "url": "https://ideogram.ai/models/4.0/",
+          "hot_value": "3 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · pentagrama · 2026-06-08T15:20:04Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:20:04Z"
+          }
+        },
+        {
+          "index": 22,
+          "title": "Show HN: OceanEye – an open-source interactive 3D atlas of ocean life",
+          "url": "https://oceaneye.woodydesign.io/en/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · woodydesign · 2026-06-08T15:19:04Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:19:04Z"
+          }
+        },
+        {
+          "index": 23,
+          "title": "Meta AI Instagram Hack Wasn't About Authentication. It Was About Authorization",
+          "url": "https://www.cybersecurity-insiders.com/the-meta-ai-instagram-hack-wasnt-about-authentication-it-was-about-authorization/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · mooreds · 2026-06-08T15:17:00Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:17:00Z"
+          }
+        },
+        {
+          "index": 24,
+          "title": "\"a game of court intrigue where AI simulates the various courtiers\"",
+          "url": "https://substack.com/@alicemaz/note/c-265000587",
+          "hot_value": "3 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · pavel_lishin · 2026-06-08T15:11:46Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:11:46Z"
+          }
+        },
+        {
+          "index": 25,
+          "title": "\"Chat is dead\": OpenAI preps overhaul of ChatGPT",
+          "url": "https://arstechnica.com/ai/2026/06/chat-is-dead-openai-preps-overhaul-of-chatgpt/",
+          "hot_value": "1 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · kylemaxwell · 2026-06-08T15:09:38Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:09:38Z"
+          }
+        },
+        {
+          "index": 26,
+          "title": "AI costs are rising, but proving value is still a challenge",
+          "url": "https://mattcasmith.net/2026/06/07/ai-costs-value",
+          "hot_value": "3 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · yakkomajuri · 2026-06-08T15:05:27Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:05:27Z"
+          }
+        },
+        {
+          "index": 27,
+          "title": "There should have been an op-ed here but you filed AI slop",
+          "url": "https://www.cityam.com/there-should-have-been-an-op-ed-here-but-you-filed-ai-slop/",
+          "hot_value": "8 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · AnodicElegy · 2026-06-08T15:04:04Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:04:04Z"
+          }
+        },
+        {
+          "index": 28,
+          "title": "Aitken Acceleration Before Aitken",
+          "url": "https://www.johndcook.com/blog/2026/06/07/aitkin-acceleration-kepler/",
+          "hot_value": "3 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · ibobev · 2026-06-08T15:03:29Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:03:29Z"
+          }
+        },
+        {
+          "index": 29,
+          "title": "AI \"content creators\" are getting harder to spot",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/943187/ai-content-creators",
+          "hot_value": "2 points / 0 评论",
+          "cover": "",
+          "extra": {
+            "desc": "HN 讨论 · randomint64 · 2026-06-08T15:03:18Z",
+            "aiMatchedKeywords": [
+              "AI",
+              "Hacker News",
+              "技术讨论"
+            ],
+            "source": "hn-ai",
+            "sourceLabel": "Hacker News AI",
+            "publishedAt": "2026-06-08T15:03:18Z"
+          }
+        },
+        {
+          "index": 30,
           "title": "How AI is reshaping discovery in maths and physics",
           "url": "https://www.nature.com/articles/d41586-026-01820-1",
           "hot_value": "1 points / 0 评论",
@@ -7115,7 +7621,7 @@
           }
         },
         {
-          "index": 2,
+          "index": 31,
           "title": "Show HN: RiskKernel – a kill switch and budgets for runaway AI agents",
           "url": "https://github.com/prashar32/riskkernel",
           "hot_value": "1 points / 0 评论",
@@ -7133,7 +7639,7 @@
           }
         },
         {
-          "index": 3,
+          "index": 32,
           "title": "OpenEvidence: An AI Copilot for Doctors",
           "url": "https://www.openevidence.com/",
           "hot_value": "1 points / 0 评论",
@@ -7151,10 +7657,10 @@
           }
         },
         {
-          "index": 4,
+          "index": 33,
           "title": "AI is masking America's \"post-literate\" workforce",
           "url": "https://www.axios.com/2026/06/08/ai-america-literacy",
-          "hot_value": "1 points / 0 评论",
+          "hot_value": "2 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · 1vuio0pswjnm7 · 2026-06-08T14:43:52Z",
@@ -7169,7 +7675,7 @@
           }
         },
         {
-          "index": 5,
+          "index": 34,
           "title": "AI CostGuard – Local-first runtime safety layer for AI agents",
           "url": "https://github.com/salimassili62-afk/ai-costguard",
           "hot_value": "2 points / 0 评论",
@@ -7187,7 +7693,7 @@
           }
         },
         {
-          "index": 6,
+          "index": 35,
           "title": "A USB-connected speaker can infect a PC without ever being touched",
           "url": "https://arstechnica.com/security/2026/06/highly-reviewed-speaker-can-be-hacked-over-the-air-to-infect-connected-devices/",
           "hot_value": "1 points / 0 评论",
@@ -7205,7 +7711,7 @@
           }
         },
         {
-          "index": 7,
+          "index": 36,
           "title": "AI Can Reverse-Engineer Hardware. I Can't Turn Off My Own Alarm",
           "url": "https://www.sudomoin.com/p/ai-can-reverse-engineer-hardware-i-can-t-turn-off-my-own-alarm",
           "hot_value": "2 points / 0 评论",
@@ -7223,7 +7729,7 @@
           }
         },
         {
-          "index": 8,
+          "index": 37,
           "title": "Ask HN: Grand and Tax Credit Tracker",
           "url": "https://news.ycombinator.com/item?id=48445920",
           "hot_value": "1 points / 0 评论",
@@ -7241,7 +7747,7 @@
           }
         },
         {
-          "index": 10,
+          "index": 39,
           "title": "Artists`re making antislop to rebel against AI:It's been rammed down our throats",
           "url": "https://www.theguardian.com/technology/2026/jun/08/anti-slop-ai-art",
           "hot_value": "3 points / 0 评论",
@@ -7259,7 +7765,7 @@
           }
         },
         {
-          "index": 11,
+          "index": 40,
           "title": "Who Runs Your Rust Future? Hands-On Intro to Async Rust",
           "url": "https://aibodh.com/posts/async-rust-chapter-1-hands-on-intro-to-async-rust/",
           "hot_value": "1 points / 0 评论",
@@ -7277,7 +7783,7 @@
           }
         },
         {
-          "index": 12,
+          "index": 41,
           "title": "Show HN: GitHub Copilot port of Anthropic's AI vulnerability discovery harness",
           "url": "https://github.com/davidreis97/defending-code-reference-harness-copilot",
           "hot_value": "1 points / 0 评论",
@@ -7295,10 +7801,10 @@
           }
         },
         {
-          "index": 13,
+          "index": 42,
           "title": "Letting OpenClaw run wild in Simulation",
           "url": "https://veris.ai/blog/let-openclaw-run-wild-in-simulation",
-          "hot_value": "5 points / 0 评论",
+          "hot_value": "6 points / 0 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · jrm-veris · 2026-06-08T14:04:50Z",
@@ -7313,10 +7819,10 @@
           }
         },
         {
-          "index": 14,
+          "index": 43,
           "title": "SoulsOnly.tff – A font for humans not AI and keyboard firmware to type in it",
           "url": "https://github.com/convictional/souls-only",
-          "hot_value": "4 points / 2 评论",
+          "hot_value": "22 points / 12 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · billtarbell · 2026-06-08T14:00:22Z",
@@ -7331,7 +7837,7 @@
           }
         },
         {
-          "index": 15,
+          "index": 44,
           "title": "Multica: Orchestrating business agents like a real leadership team",
           "url": "https://multica.ai/",
           "hot_value": "1 points / 0 评论",
@@ -7349,7 +7855,7 @@
           }
         },
         {
-          "index": 16,
+          "index": 45,
           "title": "AgentTrust ID – Runtime authorization for AI agents (open-source SDKs)",
           "url": "https://agenttrust.id/blog/agenttrust-id-is-live",
           "hot_value": "1 points / 0 评论",
@@ -7367,10 +7873,10 @@
           }
         },
         {
-          "index": 17,
+          "index": 46,
           "title": "Launch HN: Intuned (YC S22) – Build and run reliable browser automations as code",
           "url": "https://intunedhq.com",
-          "hot_value": "47 points / 10 评论",
+          "hot_value": "69 points / 17 评论",
           "cover": "",
           "extra": {
             "desc": "HN 讨论 · fkilaiwi · 2026-06-08T13:35:27Z",
@@ -7385,7 +7891,7 @@
           }
         },
         {
-          "index": 19,
+          "index": 48,
           "title": "CRDTs are not enough when your coworker is an agent",
           "url": "https://productnow.ai/blogs/crdts-are-not-enough",
           "hot_value": "1 points / 0 评论",
@@ -7403,7 +7909,7 @@
           }
         },
         {
-          "index": 20,
+          "index": 49,
           "title": "The lawsuits that could give AI its 'Big Tobacco' moment",
           "url": "https://www.politico.com/news/2026/06/06/the-lawsuits-that-could-give-ai-its-big-tobacco-moment-00951764",
           "hot_value": "2 points / 0 评论",
@@ -7421,7 +7927,7 @@
           }
         },
         {
-          "index": 21,
+          "index": 50,
           "title": "Local AI model claim to beat GPT 5.5 and Opus 4.7",
           "url": "https://old.reddit.com/r/Hugston/comments/1u04e3p/local_ai_model_claim_to_beat_gpt_55/",
           "hot_value": "2 points / 2 评论",
@@ -7437,463 +7943,13 @@
             "sourceLabel": "Hacker News AI",
             "publishedAt": "2026-06-08T13:04:42Z"
           }
-        },
-        {
-          "index": 22,
-          "title": "Show HN: Two Pillars Protocol – a maturity model for AI-era software engineering",
-          "url": "https://assess.rlabs.cl/",
-          "hot_value": "3 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · rlabbe · 2026-06-08T12:54:09Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:54:09Z"
-          }
-        },
-        {
-          "index": 23,
-          "title": "Two Brothers Are Trying to Put the Person Back into AI",
-          "url": "https://www.wearefounders.uk/how-two-brothers-are-trying-to-put-the-person-back-into-ai/",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · snoren · 2026-06-08T12:52:19Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:52:19Z"
-          }
-        },
-        {
-          "index": 24,
-          "title": "AI Notepad",
-          "url": "https://online-notepad.com/",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · ent101 · 2026-06-08T12:51:38Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:51:38Z"
-          }
-        },
-        {
-          "index": 25,
-          "title": "DeepSeek Made AI Cheap. Now It Needs Billions to Keep It Cheap",
-          "url": "https://chinacompany.substack.com/p/deepseek-made-ai-cheap-now-it-needs",
-          "hot_value": "2 points / 2 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · zacfire · 2026-06-08T12:36:17Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:36:17Z"
-          }
-        },
-        {
-          "index": 26,
-          "title": "Y Combinator: Paxel, understand how you build with AI",
-          "url": "https://paxel.ycombinator.com/",
-          "hot_value": "2 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · edweis · 2026-06-08T12:33:02Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:33:02Z"
-          }
-        },
-        {
-          "index": 27,
-          "title": "Show HN: Tech Team Agents – Famous Tech Teams as AI Agent Personas",
-          "url": "https://github.com/cliffano/tech-team-agents",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · cliffano · 2026-06-08T12:27:30Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:27:30Z"
-          }
-        },
-        {
-          "index": 28,
-          "title": "AI Doesn't Write Good Software: The Environment Does",
-          "url": "https://adrianferrera.dev/en/blog/ai-does-not-write-good-code",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · RyeCombinator · 2026-06-08T12:26:05Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:26:05Z"
-          }
-        },
-        {
-          "index": 29,
-          "title": "Nvidia partners with LG robotics to build humanoid robots in South Korea",
-          "url": "https://blogs.nvidia.com/blog/nvidia-and-lg-group-ai-factory/",
-          "hot_value": "37 points / 30 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · spwa4 · 2026-06-08T12:25:14Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:25:14Z"
-          }
-        },
-        {
-          "index": 30,
-          "title": "Build a Basic AI Agent from Scratch: Long Task Planning",
-          "url": "https://www.ruxu.dev/articles/ai/build-an-ai-agent-planning/",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · ruxudev · 2026-06-08T12:23:32Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:23:32Z"
-          }
-        },
-        {
-          "index": 31,
-          "title": "Democrats Unveil Flood of AI Proposals in Potential Challenge to Tech Giants",
-          "url": "https://www.wsj.com/tech/ai/democrats-unveil-flood-of-ai-proposals-in-potential-challenge-to-tech-giants-16819bfc",
-          "hot_value": "2 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · 1vuio0pswjnm7 · 2026-06-08T12:19:06Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:19:06Z"
-          }
-        },
-        {
-          "index": 32,
-          "title": "AI Agents Can't Help with Intent Debt",
-          "url": "https://addyosmani.com/blog/intent-debt/",
-          "hot_value": "3 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · moebrowne · 2026-06-08T12:17:15Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:17:15Z"
-          }
-        },
-        {
-          "index": 34,
-          "title": "Profitable AI UGC Ads for Meta and TikTok",
-          "url": "https://anivision.ai/",
-          "hot_value": "1 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · sgfgross · 2026-06-08T12:15:24Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:15:24Z"
-          }
-        },
-        {
-          "index": 35,
-          "title": "The Environmental Cost of AI: Carbon, Water, and Land Footprints",
-          "url": "https://unu.edu/inweh/collection/environmental-cost-of-AIs-Enrgy-Use-Carbon-water-and-land-footprints",
-          "hot_value": "3 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · _____k · 2026-06-08T12:07:35Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:07:35Z"
-          }
-        },
-        {
-          "index": 36,
-          "title": "Show HN: I made an ad-free game collection for my grandparents",
-          "url": "https://stiuvou.ch/grandpagames/",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · nahakiole · 2026-06-08T12:02:55Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T12:02:55Z"
-          }
-        },
-        {
-          "index": 37,
-          "title": "Show HN: RepoSignal scores GitHub repos for adoption risk. No AI, no servers",
-          "url": "https://github.com/udit-rawat/RepoSignal",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · udit-r · 2026-06-08T11:59:07Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:59:07Z"
-          }
-        },
-        {
-          "index": 38,
-          "title": "SpaceX ($SPCX): AI, Chips, Sats, Launches and Orbital Compute Under One Roof",
-          "url": "https://twitter.com/StockAnalystPro/status/2063675760725160211",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · bilsbie · 2026-06-08T11:53:28Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:53:28Z"
-          }
-        },
-        {
-          "index": 39,
-          "title": "Caddy Defender Plugin: return garbage responses for AI crawlers",
-          "url": "https://github.com/jasonlovesdoggo/caddy-defender",
-          "hot_value": "3 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · hamburgererror · 2026-06-08T11:52:07Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:52:07Z"
-          }
-        },
-        {
-          "index": 40,
-          "title": "Majority of US's new AI datacenters to be built on drought-hit land",
-          "url": "https://www.aol.com/news/majority-us-ai-datacenters-built-110023869.html",
-          "hot_value": "2 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · 1vuio0pswjnm7 · 2026-06-08T11:51:57Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:51:57Z"
-          }
-        },
-        {
-          "index": 41,
-          "title": "Apple's Meeting That Led It to Take AI Seriously",
-          "url": "https://www.bloomberg.com/news/newsletters/2026-06-07/wwdc-2026-apple-s-secret-meeting-that-led-it-to-take-ai-seriously-ios-27",
-          "hot_value": "1 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · shortlived · 2026-06-08T11:51:52Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:51:52Z"
-          }
-        },
-        {
-          "index": 42,
-          "title": "AI revives lean-forward UX",
-          "url": "https://jakobnielsenphd.substack.com/p/ux-roundup-20260608",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · andsoitis · 2026-06-08T11:45:04Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:45:04Z"
-          }
-        },
-        {
-          "index": 43,
-          "title": "Productivity Effects Across Generations of AI Coding Tools [pdf]",
-          "url": "https://www.nber.org/system/files/working_papers/w35275/w35275.pdf",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · robin_reala · 2026-06-08T11:37:09Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:37:09Z"
-          }
-        },
-        {
-          "index": 46,
-          "title": "Reality-mimicking AI fuels spike in scams, Visa cyberthreat finds",
-          "url": "https://www.nbcboston.com/video/on-air/as-seen-on/reality-mimicking-ai-fuels-spike-in-scams-visa-cyberthreat-finds/3957365/",
-          "hot_value": "1 points / 1 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · 1vuio0pswjnm7 · 2026-06-08T11:26:18Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:26:18Z"
-          }
-        },
-        {
-          "index": 47,
-          "title": "Show HN: OrchAPI – AI tools shaped by the use of the useless",
-          "url": "https://orchapi.com/",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · garrett_xu · 2026-06-08T11:25:09Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:25:09Z"
-          }
-        },
-        {
-          "index": 49,
-          "title": "Nex Playground: the family game-night gadget that revives the spirit of the Wii",
-          "url": "https://www.theguardian.com/games/2026/jun/01/nex-playground-it-outsells-xbox-and-aims-to-end-loneliness-is-this-a-family-game-night-saviour",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · andsoitis · 2026-06-08T11:10:13Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:10:13Z"
-          }
-        },
-        {
-          "index": 50,
-          "title": "You can dislike AI without it being for moral reasons",
-          "url": "https://schaudenfrau.de/you-can-dislike-ai-without-it-being-for-moral-reasons/",
-          "hot_value": "1 points / 0 评论",
-          "cover": "",
-          "extra": {
-            "desc": "HN 讨论 · dwedge · 2026-06-08T11:03:54Z",
-            "aiMatchedKeywords": [
-              "AI",
-              "Hacker News",
-              "技术讨论"
-            ],
-            "source": "hn-ai",
-            "sourceLabel": "Hacker News AI",
-            "publishedAt": "2026-06-08T11:03:54Z"
-          }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 50,
-      "total_after_filter": 44,
+      "total_after_filter": 48,
       "ai_filter_summary": {
-        "matched": 44,
+        "matched": 48,
         "total": 50,
         "keywords": [
           "AI",
@@ -7905,7 +7961,7 @@
     {
       "type": "openai-news",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
@@ -8628,7 +8684,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -8644,7 +8700,7 @@
     {
       "type": "deepmind-news",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
@@ -9367,7 +9423,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
@@ -9383,7 +9439,7 @@
     {
       "type": "hf-blog",
       "source_kind": "ai-source",
-      "update_time": "2026-06-08T15:01:36.076Z",
+      "update_time": "2026-06-08T16:20:29.207Z",
       "list": [
         {
           "index": 1,
@@ -10106,7 +10162,7 @@
           }
         }
       ],
-      "fetched_at": "2026-06-08T15:01:36.076Z",
+      "fetched_at": "2026-06-08T16:20:29.207Z",
       "total_before_filter": 40,
       "total_after_filter": 40,
       "ai_filter_summary": {
