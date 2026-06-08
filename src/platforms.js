@@ -10,6 +10,11 @@ export const PLATFORM_GROUPS = [
       "hf-spaces",
       "github-ai",
       "hn-ai",
+      "x-ai-search",
+      "justone-weixin-ai",
+      "justone-xiaohongshu-ai",
+      "justone-douyin-ai",
+      "douyin-open-search",
       "openai-news",
       "deepmind-news",
       "hf-blog"
@@ -33,12 +38,25 @@ export const PLATFORM_GROUPS = [
   {
     id: "social",
     label: "社交舆论",
-    platforms: ["weibo", "zhihu", "douyin", "kuaishou", "tieba", "hupu", "douban-group"]
+    platforms: [
+      "x-ai-search",
+      "justone-weixin-ai",
+      "justone-xiaohongshu-ai",
+      "justone-douyin-ai",
+      "douyin-open-search",
+      "weibo",
+      "zhihu",
+      "douyin",
+      "kuaishou",
+      "tieba",
+      "hupu",
+      "douban-group"
+    ]
   },
   {
     id: "video",
     label: "视频社区",
-    platforms: ["bilibili", "acfun"]
+    platforms: ["justone-douyin-ai", "douyin-open-search", "bilibili", "acfun"]
   },
   {
     id: "news",
@@ -116,6 +134,11 @@ export const PLATFORM_META = {
   "hf-spaces": { label: "HF Spaces", accent: "#16a34a" },
   "github-ai": { label: "GitHub AI", accent: "#24292f" },
   "hn-ai": { label: "HN AI", accent: "#ff6600" },
+  "x-ai-search": { label: "X / Twitter AI", accent: "#111111" },
+  "justone-weixin-ai": { label: "公众号 AI", accent: "#07c160" },
+  "justone-xiaohongshu-ai": { label: "小红书 AI", accent: "#ff2442" },
+  "justone-douyin-ai": { label: "抖音 AI 搜索", accent: "#111111" },
+  "douyin-open-search": { label: "抖音开放平台", accent: "#fe2c55" },
   "openai-news": { label: "OpenAI 官方", accent: "#10a37f" },
   "deepmind-news": { label: "DeepMind 官方", accent: "#4285f4" },
   "hf-blog": { label: "HF Blog", accent: "#ffcc4d" }

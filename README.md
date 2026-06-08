@@ -12,14 +12,15 @@ AI Daily Hotboard Studio is a static workbench for tracking AI-related Chinese h
 
 The app is AI-only: broad UAPI hotboard responses are filtered by AI keywords before they reach the dashboard, digest, voiceover script, or publishing-material panel. Douyin is included through UAPI when rate limits allow it, and Xiaohongshu is not enabled by default because tested UAPI hotboard types `xiaohongshu` and `xhs` currently return `invalid hotboard type`.
 
-UAPI is now complemented by AI-specialized public sources, so the snapshot is not limited to broad Chinese hotboards:
+UAPI is now complemented by AI-specialized sources, so the snapshot is not limited to broad Chinese hotboards:
 
 - Research: Hugging Face Daily Papers and arXiv AI/ML/CL/CV Atom feeds.
 - Open source: Hugging Face models, datasets, Spaces, and GitHub AI repositories.
 - Technical discussion: Hacker News Algolia stories matching recent AI discussion.
 - Official publishing: OpenAI News, Google DeepMind blog, and Hugging Face Blog RSS feeds.
+- Social signals: optional X/Twitter recent search, WeChat public-account search, Xiaohongshu search, and Douyin AI search.
 
-Every source is normalized into the same board/list shape and marked with `source_kind`. Source failures are isolated to one board, so a temporary RSS, API, or rate-limit issue does not fail the whole snapshot.
+Every source is normalized into the same board/list shape and marked with `source_kind`. Source failures are isolated to one board, so a temporary RSS, API, or rate-limit issue does not fail the whole snapshot. Token-gated social sources are skipped by default when their credentials are missing.
 
 ## Features
 
@@ -87,9 +88,35 @@ HOTBOARD_AI_SOURCES="hf-daily-papers,arxiv-ai,github-ai" npm run fetch
 HOTBOARD_INCLUDE_AI_SOURCES=false npm run fetch
 ```
 
+Enable social AI sources with API credentials:
+
+```bash
+X_BEARER_TOKEN="..." npm run fetch
+JUSTONE_API_TOKEN="..." npm run fetch
+DOUYIN_ACCESS_TOKEN="..." npm run fetch
+```
+
+The optional social source IDs are:
+
+- `x-ai-search`: X/Twitter recent search for AI terms, using `X_BEARER_TOKEN`.
+- `justone-weixin-ai`: WeChat public-account search through JustOne, using `JUSTONE_API_TOKEN`.
+- `justone-xiaohongshu-ai`: Xiaohongshu search through JustOne, using `JUSTONE_API_TOKEN`.
+- `justone-douyin-ai`: Douyin search through JustOne, using `JUSTONE_API_TOKEN`.
+- `douyin-open-search`: Douyin Open Platform video search, using `DOUYIN_ACCESS_TOKEN`.
+
+Tune social search terms without code changes:
+
+```bash
+HOTBOARD_X_QUERY='(AI OR OpenAI OR ChatGPT OR Claude OR DeepSeek OR LLM OR agent) -is:retweet -is:reply lang:en' npm run fetch
+HOTBOARD_SOCIAL_KEYWORDS="AI~OpenAI~ChatGPT~Claude~DeepSeek~大模型~智能体~AI工具" npm run fetch
+HOTBOARD_DOUYIN_KEYWORD="AI" npm run fetch
+```
+
 `UAPI_API_KEY` is optional. The current public endpoint can run without it, but the GitHub Actions workflow passes `${{ secrets.UAPI_API_KEY }}` into the environment so a future authenticated UAPI setup can use the same workflow without changing repository settings.
 
 `GITHUB_TOKEN` is also optional locally. The scheduled GitHub Actions workflow passes the built-in `${{ github.token }}` to improve GitHub Search API rate limits for the `github-ai` source.
+
+`X_BEARER_TOKEN`, `JUSTONE_API_TOKEN`, and `DOUYIN_ACCESS_TOKEN` are optional but required for the corresponding social sources. Add them as GitHub repository secrets if you want scheduled Pages updates to include X, WeChat public-account, Xiaohongshu, or Douyin search results. The project intentionally does not scrape logged-in social feeds.
 
 ## GitHub Pages
 

@@ -4,6 +4,7 @@ import {
   createAiSourceDefinitions,
   dedupeBoardsByIdentity,
   fetchAiSourceBoard,
+  fetchAiSourceBoards,
   normalizeSourceItems,
   parseAiSourceList
 } from "../scripts/ai-sources.mjs";
@@ -121,6 +122,145 @@ test("fetchAiSourceBoard limits large feeds before writing boards", async () => 
   assert.equal(board.list.length, 1);
   assert.equal(board.total_before_filter, 1);
   assert.deepEqual(board.list.map((item) => item.title), ["First AI story"]);
+});
+
+test("explicit social sources report missing credentials without fetching", async () => {
+  let fetched = false;
+  const boards = await fetchAiSourceBoards({
+    generatedAt,
+    sourceIds: ["x-ai-search"],
+    env: {},
+    delayMs: 0,
+    reportMissingRequiredEnv: true,
+    fetchImpl: async () => {
+      fetched = true;
+      return new Response("{}", { status: 200 });
+    },
+    sleep: async () => {}
+  });
+
+  assert.equal(fetched, false);
+  assert.equal(boards.length, 1);
+  assert.equal(boards[0].type, "x-ai-search");
+  assert.match(boards[0].error, /X_BEARER_TOKEN/);
+});
+
+test("default source list skips token-gated social sources when credentials are missing", async () => {
+  const boards = await fetchAiSourceBoards({
+    generatedAt,
+    env: {},
+    delayMs: 0,
+    fetchImpl: async (url) => {
+      const target = String(url);
+      if (target.includes("export.arxiv.org")) return new Response("<feed></feed>", { status: 200 });
+      if (target.includes("rss.xml") || target.includes("feed.xml")) return new Response("<rss><channel></channel></rss>", { status: 200 });
+      if (target.includes("api.github.com")) return new Response(JSON.stringify({ items: [] }), { status: 200 });
+      if (target.includes("algolia")) return new Response(JSON.stringify({ hits: [] }), { status: 200 });
+      return new Response(JSON.stringify([]), { status: 200 });
+    },
+    sleep: async () => {}
+  });
+
+  assert.equal(boards.some((board) => board.type === "x-ai-search"), false);
+  assert.equal(boards.some((board) => board.type === "justone-xiaohongshu-ai"), false);
+  assert.equal(boards.some((board) => board.error), false);
+});
+
+test("fetchAiSourceBoard sends X bearer token and normalizes recent search posts", async () => {
+  const source = createAiSourceDefinitions(new Date(generatedAt), { X_BEARER_TOKEN: "test-x-token" }).find(
+    (item) => item.id === "x-ai-search"
+  );
+  let observedHeaders;
+  const board = await fetchAiSourceBoard(source, {
+    generatedAt,
+    env: { X_BEARER_TOKEN: "test-x-token" },
+    fetchImpl: async (_url, init) => {
+      observedHeaders = init.headers;
+      return new Response(
+        JSON.stringify({
+          data: [
+            {
+              id: "123",
+              text: "OpenAI launches a new AI agent workflow",
+              author_id: "42",
+              created_at: generatedAt,
+              public_metrics: { like_count: 12, retweet_count: 3, reply_count: 2, quote_count: 1 }
+            }
+          ],
+          includes: { users: [{ id: "42", username: "ai_builder", name: "AI Builder" }] }
+        }),
+        { status: 200 }
+      );
+    }
+  });
+
+  assert.equal(observedHeaders.authorization, "Bearer test-x-token");
+  assert.equal(board.type, "x-ai-search");
+  assert.equal(board.list[0].title, "OpenAI launches a new AI agent workflow");
+  assert.equal(board.list[0].url, "https://x.com/ai_builder/status/123");
+  assert.match(board.list[0].hot_value, /12 likes/);
+});
+
+test("normalizes Just One cross-platform social search results", () => {
+  const source = createAiSourceDefinitions(new Date(generatedAt), { JUSTONE_API_TOKEN: "test-token" }).find(
+    (item) => item.id === "justone-xiaohongshu-ai"
+  );
+  const list = normalizeSourceItems(
+    source,
+    JSON.stringify({
+      code: 0,
+      data: {
+        list: [
+          {
+            title: "小红书爆款 AI 笔记模板",
+            desc: "AI 做图和自动化工作流正在变成小红书选题。",
+            url: "https://www.xiaohongshu.com/explore/test",
+            liked_count: 321,
+            comment_count: 45,
+            nickname: "AI运营研究员",
+            publish_time: "2026-06-08 09:00:00"
+          }
+        ]
+      }
+    })
+  );
+
+  assert.equal(list.length, 1);
+  assert.equal(list[0].title, "小红书爆款 AI 笔记模板");
+  assert.equal(list[0].url, "https://www.xiaohongshu.com/explore/test");
+  assert.match(list[0].hot_value, /321/);
+  assert.deepEqual(list[0].extra.aiMatchedKeywords.slice(0, 4), ["AI", "小红书", "社媒搜索", "Xiaohongshu"]);
+});
+
+test("normalizes official Douyin video search results", () => {
+  const source = createAiSourceDefinitions(new Date(generatedAt), { DOUYIN_ACCESS_TOKEN: "test-token" }).find(
+    (item) => item.id === "douyin-open-search"
+  );
+  const list = normalizeSourceItems(
+    source,
+    JSON.stringify({
+      err_no: 0,
+      data: {
+        data: {
+          video_list: [
+            {
+              item_id: "7471252140422401337",
+              title: "AI 视频模型工作流演示",
+              link: "https://www.douyin.com/video/7471252140422401337",
+              nickname: "AI工具箱",
+              create_time: 1770000000,
+              statistics: { digg_count: 9254 }
+            }
+          ]
+        }
+      }
+    })
+  );
+
+  assert.equal(list.length, 1);
+  assert.equal(list[0].title, "AI 视频模型工作流演示");
+  assert.equal(list[0].url, "https://www.douyin.com/video/7471252140422401337");
+  assert.equal(list[0].hot_value, "9254 likes");
 });
 
 test("dedupes boards by URL across sources and updates summaries", () => {

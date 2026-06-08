@@ -117,6 +117,7 @@ export async function runFetchHotboard(options = {}) {
   const topic = options.topic || process.env.HOTBOARD_TOPIC || DEFAULT_TOPIC;
   const keywords = parseKeywordList(process.env.HOTBOARD_AI_KEYWORDS, options.keywords || AI_KEYWORDS);
   const includeAiSources = options.includeAiSources ?? parseBooleanEnv(process.env.HOTBOARD_INCLUDE_AI_SOURCES, true);
+  const aiSourceOverride = typeof process.env.HOTBOARD_AI_SOURCES === "string" && process.env.HOTBOARD_AI_SOURCES.trim();
   const aiSourceIds = options.aiSourceIds || parseAiSourceList(process.env.HOTBOARD_AI_SOURCES, DEFAULT_AI_SOURCE_IDS);
 
   if (typeof fetchImpl !== "function") {
@@ -150,6 +151,7 @@ export async function runFetchHotboard(options = {}) {
           timeoutMs,
           fetchImpl,
           githubToken: options.githubToken ?? process.env.GITHUB_TOKEN ?? "",
+          reportMissingRequiredEnv: options.reportMissingRequiredEnv ?? Boolean(options.aiSourceIds || aiSourceOverride),
           sleep: sleepImpl
         })
       : [];
