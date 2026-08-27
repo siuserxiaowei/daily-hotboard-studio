@@ -115,11 +115,16 @@ test("runFetchHotboard records only actually fetched AI sources", async () => {
       sleep: async () => {}
     });
     const persisted = JSON.parse(await readFile(join(dataDir, "snapshot.json"), "utf8"));
+    const brief = JSON.parse(await readFile(join(dataDir, "change-brief.json"), "utf8"));
+    const rss = await readFile(join(dataDir, "change-brief.xml"), "utf8");
 
     assert.deepEqual(snapshot.aiSources, []);
     assert.deepEqual(persisted.aiSources, []);
     assert.equal(snapshot.sourceStats.byKind["uapi-hotboard"].items, 1);
     assert.equal(snapshot.sourceStats.byKind["ai-source"], undefined);
+    assert.equal(snapshot.changeBrief.decision, "HOLD");
+    assert.deepEqual(persisted.changeBrief, brief);
+    assert.match(rss, /AI讯息｜今天真的变了什么/);
   } finally {
     await rm(dataDir, { recursive: true, force: true });
   }

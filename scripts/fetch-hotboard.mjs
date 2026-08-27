@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { DEFAULT_PLATFORMS } from "../src/platforms.js";
+import { buildBriefRss, buildChangeBrief } from "../src/change-brief.js";
 import { DEFAULT_AI_SOURCE_IDS, dedupeBoardsByIdentity, fetchAiSourceBoards, parseAiSourceList } from "./ai-sources.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -111,6 +112,10 @@ export async function runFetchHotboard(options = {}) {
     DEFAULT_FETCH_TIMEOUT_MS
   );
   const dataDir = options.dataDir || process.env.HOTBOARD_DATA_DIR || join(root, "data");
+  const previousSnapshot =
+    options.previousSnapshot === undefined
+      ? await readJson(join(dataDir, "snapshot.json"), null)
+      : options.previousSnapshot;
   const fetchImpl = options.fetchImpl || globalThis.fetch;
   const sleepImpl = options.sleep || sleep;
   const apiKey = options.apiKey ?? process.env.UAPI_API_KEY ?? "";
@@ -165,7 +170,18 @@ export async function runFetchHotboard(options = {}) {
     keywords,
     aiSources: aiSourceBoards.map((board) => board.type)
   });
+  const changeBrief = buildChangeBrief(snapshot, previousSnapshot);
+  snapshot.changeBrief = changeBrief;
   await writeJson(join(dataDir, "snapshot.json"), snapshot);
+  await writeJson(join(dataDir, "change-brief.json"), changeBrief);
+  await writeFile(
+    join(dataDir, "change-brief.xml"),
+    buildBriefRss(changeBrief, {
+      siteUrl: options.siteUrl || process.env.HOTBOARD_SITE_URL,
+      feedUrl: options.feedUrl || process.env.HOTBOARD_FEED_URL
+    }),
+    "utf8"
+  );
   await writeArchive(snapshot, { dataDir });
   return snapshot;
 }

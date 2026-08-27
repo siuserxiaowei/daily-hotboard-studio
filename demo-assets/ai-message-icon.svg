@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="AI讯息图标">
+  <rect width="512" height="512" rx="112" fill="#151d19"/>
+  <path d="M96 96h320v320H96z" fill="#d94f28"/>
+  <path d="M96 416 416 96v320z" fill="#17705d"/>
+  <path d="m116 406 290-290" fill="none" stroke="#fffdfa" stroke-linecap="round" stroke-width="22" opacity=".78"/>
+  <rect x="96" y="96" width="320" height="320" rx="54" fill="none" stroke="#fffdfa" stroke-width="10" opacity=".72"/>
+</svg>

@@ -3,7 +3,8 @@ name: Update Hotboard Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 0,6,12 * * *"
+    # 08:30 Asia/Shanghai. GitHub Actions cron uses UTC.
+    - cron: "30 0 * * *"
 
 permissions:
   contents: write
@@ -30,6 +31,8 @@ jobs:
       X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
       JUSTONE_API_TOKEN: ${{ secrets.JUSTONE_API_TOKEN }}
       DOUYIN_ACCESS_TOKEN: ${{ secrets.DOUYIN_ACCESS_TOKEN }}
+      BRIEF_WEBHOOK_URL: ${{ secrets.BRIEF_WEBHOOK_URL }}
+      BRIEF_PUSH_ENABLED: ${{ secrets.BRIEF_PUSH_ENABLED }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,6 +54,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Deliver verified change brief
+        run: npm run publish:brief
 
       - name: Commit refreshed data
         run: |

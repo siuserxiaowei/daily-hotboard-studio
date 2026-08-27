@@ -298,6 +298,14 @@ a {
   padding: 18px 0;
 }
 
+.hero-deck {
+  max-width: 720px;
+  margin: -2px 0 15px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.62;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--soft);
@@ -435,6 +443,272 @@ h3 {
 
 .panel-head h2 {
   overflow-wrap: anywhere;
+}
+
+.change-panel {
+  min-height: 520px;
+}
+
+.receipt-list {
+  display: grid;
+  gap: 10px;
+}
+
+.receipt-card {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 16px;
+  min-width: 0;
+  padding: 16px 0;
+  border-top: 1px solid rgba(24, 33, 29, 0.1);
+}
+
+.receipt-card:first-child {
+  border-top: 0;
+}
+
+.receipt-rail {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 8px;
+}
+
+.receipt-number {
+  color: var(--soft);
+  font-size: 13px;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+.status-badge {
+  display: inline-flex;
+  min-height: 26px;
+  align-items: center;
+  padding: 4px 8px;
+  color: #fffdfa;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.status-corrected .status-badge {
+  background: var(--danger);
+}
+
+.status-changed .status-badge {
+  background: var(--gold);
+}
+
+.receipt-copy {
+  min-width: 0;
+}
+
+.receipt-title {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "PingFang SC", serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.28;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.receipt-title:hover {
+  color: var(--accent);
+}
+
+.receipt-copy > p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.58;
+  overflow-wrap: anywhere;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.receipt-copy > strong {
+  display: block;
+  color: var(--green);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.evidence-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 11px;
+}
+
+.evidence-links a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  min-height: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 5px 9px;
+  color: var(--muted);
+  font-size: 12px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+}
+
+.evidence-links a:hover {
+  color: var(--ink);
+  border-color: rgba(24, 33, 29, 0.28);
+}
+
+.evidence-links a span {
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.decision-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  color: var(--sidebar-text);
+  background:
+    radial-gradient(circle at 100% 0, rgba(217, 79, 40, 0.32), transparent 38%),
+    var(--sidebar);
+}
+
+.decision-panel::after {
+  position: absolute;
+  right: -52px;
+  bottom: -62px;
+  width: 180px;
+  height: 180px;
+  content: "";
+  border: 1px solid rgba(246, 248, 242, 0.12);
+  border-radius: 50%;
+}
+
+.decision-panel .eyebrow,
+.decision-panel .method-foot {
+  color: var(--sidebar-muted);
+}
+
+.decision-panel h2 {
+  max-width: 320px;
+  margin-top: 10px;
+  color: var(--sidebar-text);
+  font-family: Georgia, "Times New Roman", "PingFang SC", serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.decision-mark {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 8px 12px;
+  color: #fffdfa;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.decision-hold .decision-mark {
+  background: var(--gold);
+}
+
+.decision-quiet_day .decision-mark {
+  background: #59635d;
+}
+
+.method-list {
+  display: grid;
+  gap: 0;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.method-list li {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px;
+  padding: 13px 0;
+  border-top: 1px solid rgba(246, 248, 242, 0.12);
+}
+
+.method-list span {
+  color: #e78968;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.method-list p {
+  margin: 0;
+  color: rgba(246, 248, 242, 0.82);
+  font-size: 13px;
+  line-height: 1.58;
+}
+
+.pending-box {
+  position: relative;
+  z-index: 1;
+  padding: 12px;
+  border: 1px solid rgba(246, 248, 242, 0.14);
+  border-radius: 8px;
+  background: rgba(246, 248, 242, 0.07);
+}
+
+.pending-box > strong {
+  color: #f2c572;
+  font-size: 12px;
+}
+
+.pending-box p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 8px 0 0;
+  color: rgba(246, 248, 242, 0.7);
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.pending-box p span {
+  margin-right: 6px;
+  color: #f2c572;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.feed-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  margin-top: 18px;
+  color: #fffdfa;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.method-foot {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: 12px;
+  line-height: 1.55;
 }
 
 .ghost {
@@ -707,6 +981,13 @@ h3 {
 
 .board-tools h2 {
   margin: 0;
+}
+
+.board-note {
+  margin: 7px 0 0;
+  color: var(--soft);
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .platform-tabs {
@@ -1032,7 +1313,14 @@ h3 {
   }
 
   .group-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .group-list button {
+    flex: 0 0 156px;
   }
 
   .workspace {
@@ -1063,10 +1351,13 @@ h3 {
     padding: 16px;
   }
 
-  .group-list,
   .stats,
   .side-summary {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .side-summary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .stat-card {
@@ -1079,6 +1370,21 @@ h3 {
 
   .panel {
     padding: 15px;
+  }
+
+  .receipt-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .receipt-rail {
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .receipt-title {
+    font-size: 19px;
   }
 
   .material-lane header {
@@ -1137,9 +1443,7 @@ h3 {
     height: 36px;
   }
 
-  .group-list,
-  .stats,
-  .side-summary {
+  .stats {
     grid-template-columns: 1fr;
   }
 

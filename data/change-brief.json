@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-27T03:22:50.100Z",
+  "comparedWith": "2026-06-08T15:01:36.076Z",
+  "decision": "SEND",
+  "decisionLabel": "发送变化回执",
+  "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
+  "funnel": {
+    "signals": 425,
+    "events": 413,
+    "verified": 290,
+    "receipts": 3
+  },
+  "receipts": [
+    {
+      "id": "event-140ifcz",
+      "status": "NEW",
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+      "whyItMatters": "1 个一手来源确认这是上一期之后出现的新事件。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "label": "OpenAI News",
+          "sourceType": "openai-news",
+          "tier": "official",
+          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+          "publishedAt": "Wed, 26 Aug 2026 10:00:00 GMT",
+          "firstParty": true
+        }
+      ]
+    },
+    {
+      "id": "event-p84g5w",
+      "status": "NEW",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
+      "whyItMatters": "1 个一手来源确认这是上一期之后出现的新事件。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "Learning never stops: How AI makes learning continuous",
+          "label": "OpenAI News",
+          "sourceType": "openai-news",
+          "tier": "official",
+          "url": "https://openai.com/index/learning-never-stops",
+          "publishedAt": "Wed, 26 Aug 2026 10:00:00 GMT",
+          "firstParty": true
+        }
+      ]
+    },
+    {
+      "id": "event-18zq9ps",
+      "status": "NEW",
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
+      "whyItMatters": "1 个一手来源确认这是上一期之后出现的新事件。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "How loveholidays is making everyone a builder with Codex",
+          "label": "OpenAI News",
+          "sourceType": "openai-news",
+          "tier": "official",
+          "url": "https://openai.com/index/loveholidays",
+          "publishedAt": "Wed, 26 Aug 2026 00:00:00 GMT",
+          "firstParty": true
+        }
+      ]
+    }
+  ],
+  "unverified": [
+    {
+      "id": "event-1x4za26",
+      "status": "UNVERIFIED",
+      "title": "simstudioai/sim",
+      "summary": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders.",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "simstudioai/sim",
+          "label": "GitHub AI",
+          "sourceType": "github-ai",
+          "tier": "community",
+          "url": "https://github.com/simstudioai/sim",
+          "publishedAt": "2026-08-27T03:21:44Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-1tevw34",
+      "status": "UNVERIFIED",
+      "title": "《深入理解 AI Agent：设计原理与工程实践》",
+      "summary": "尚未找到足够的一手证据。",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "《深入理解 AI Agent：设计原理与工程实践》",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
+          "tier": "community",
+          "url": "https://github.com/bojieli/ai-agent-book",
+          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-bqxlgb",
+      "status": "UNVERIFIED",
+      "title": "把 AI 编程助手变成视频工作室",
+      "summary": "尚未找到足够的一手证据。",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "把 AI 编程助手变成视频工作室",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
+          "tier": "community",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-1kxrwcc",
+      "status": "UNVERIFIED",
+      "title": "给 Claude 装上 SEO 专家",
+      "summary": "尚未找到足够的一手证据。",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "给 Claude 装上 SEO 专家",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
+          "tier": "community",
+          "url": "https://github.com/AgriciDaniel/claude-seo",
+          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-f5n823",
+      "status": "UNVERIFIED",
+      "title": "拒绝 AI 味的网页设计技能",
+      "summary": "尚未找到足够的一手证据。",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "拒绝 AI 味的网页设计技能",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
+          "tier": "community",
+          "url": "https://github.com/Nutlope/hallmark",
+          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-lxyyn2",
+      "status": "UNVERIFIED",
+      "title": "开源的 AI 互动课堂平台",
+      "summary": "尚未找到足够的一手证据。",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "开源的 AI 互动课堂平台",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
+          "tier": "community",
+          "url": "https://github.com/THU-MAIC/OpenMAIC",
+          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "firstParty": false
+        }
+      ]
+    }
+  ],
+  "suppressed": 414,
+  "methodology": {
+    "comparison": "previous-snapshot",
+    "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
+    "statuses": [
+      "NEW",
+      "CHANGED",
+      "CORRECTED",
+      "UNVERIFIED"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI讯息｜今天真的变了什么</title>
+    <link>https://siuserxiaowei.github.io/daily-hotboard-studio/</link>
+    <description>只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。</description>
+    <lastBuildDate>Thu, 27 Aug 2026 03:22:50 GMT</lastBuildDate>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://siuserxiaowei.github.io/daily-hotboard-studio/data/change-brief.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bringing ChatGPT for Teachers to more U.S. school districts</title>
+      <link>https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts</link>
+      <guid isPermaLink="false">event-140ifcz</guid>
+      <pubDate>Thu, 27 Aug 2026 03:22:50 GMT</pubDate>
+      <description>NEW｜1 个一手来源确认这是上一期之后出现的新事件。</description>
+    </item>
+    <item>
+      <title>Learning never stops: How AI makes learning continuous</title>
+      <link>https://openai.com/index/learning-never-stops</link>
+      <guid isPermaLink="false">event-p84g5w</guid>
+      <pubDate>Thu, 27 Aug 2026 03:22:50 GMT</pubDate>
+      <description>NEW｜1 个一手来源确认这是上一期之后出现的新事件。</description>
+    </item>
+    <item>
+      <title>How loveholidays is making everyone a builder with Codex</title>
+      <link>https://openai.com/index/loveholidays</link>
+      <guid isPermaLink="false">event-18zq9ps</guid>
+      <pubDate>Thu, 27 Aug 2026 03:22:50 GMT</pubDate>
+      <description>NEW｜1 个一手来源确认这是上一期之后出现的新事件。</description>
+    </item>
+  </channel>
+</rss>

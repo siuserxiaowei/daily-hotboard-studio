@@ -1,6 +1,6 @@
 import "./styles.css";
 import { PLATFORM_GROUPS, PLATFORM_META } from "./platforms.js";
-import { buildDigest, buildVoiceover, normalizeBoard } from "./hotboard-core.js";
+import { normalizeBoard } from "./hotboard-core.js";
 
 const state = {
   snapshot: null,
@@ -34,28 +34,25 @@ async function init() {
 function render() {
   const groupBoards = getGroupBoards();
   const boards = filterBoards();
-  const digest = buildDigest(boards, 14);
-  const voiceover = buildVoiceover(digest, state.snapshot.generatedAt);
+  const brief = normalizeChangeBrief(state.snapshot.changeBrief, state.snapshot);
   const filterProvenance = getFilterProvenance(state.snapshot);
-  const publishingAssets = normalizePublishingAssets(voiceover.assets);
   const sourceStats = getSourceStats(state.snapshot);
   const totalTopics = countItems(state.boards);
   const visibleTopics = countItems(boards);
-  const activeDescriptionCount = boards.flatMap((board) => board.items).filter((item) => item.description).length;
 
   app.innerHTML = `
     <div class="shell">
-      <aside class="sidebar" aria-label="热榜筛选">
+      <aside class="sidebar" aria-label="证据池筛选">
         <div class="brand">
           <span class="mark" aria-hidden="true"></span>
           <div>
-            <strong>AI 每日热榜</strong>
-            <small>AI Hotboard Studio</small>
+            <strong>AI讯息</strong>
+            <small>Change Brief · 08:30</small>
           </div>
         </div>
 
         <label class="search">
-          <span class="field-label">搜索 AI 热点</span>
+          <span class="field-label">检索原始证据池</span>
           <input id="search-input" value="${escapeHtml(state.query)}" placeholder="模型 / 公司 / 产品 / 技术" autocomplete="off" />
         </label>
 
@@ -72,16 +69,16 @@ function render() {
 
         <section class="sidebar-block side-summary" aria-label="当前数据概览">
           <div>
-            <span>当前匹配</span>
-            <strong>${formatNumber(visibleTopics)}</strong>
+            <span>原始信号</span>
+            <strong>${formatNumber(brief.funnel.signals)}</strong>
           </div>
           <div>
-            <span>AI 热点</span>
-            <strong>${formatNumber(totalTopics)}</strong>
+            <span>变化候选</span>
+            <strong>${formatNumber(brief.funnel.events)}</strong>
           </div>
           <div>
-            <span>专门源</span>
-            <strong>${formatNumber(sourceStats.aiSourceItems)}</strong>
+            <span>今日回执</span>
+            <strong>${formatNumber(brief.funnel.receipts)}</strong>
           </div>
         </section>
       </aside>
@@ -90,59 +87,55 @@ function render() {
         <section class="top-strip" aria-label="工作台概览">
           <div class="top-copy">
             <p class="eyebrow">更新于 ${formatDate(state.snapshot.generatedAt)}</p>
-            <h1>AI 热榜工作台</h1>
+            <h1>今天真的变了什么？</h1>
+            <p class="hero-deck">每天 08:30，只把相较上一期真正发生变化、且有一手证据的 AI 事件递到你面前。</p>
             <div class="scope-line">
-              <span class="filter-provenance">${escapeHtml(filterProvenance.mode)} · ${escapeHtml(filterProvenance.keywordLabel)}</span>
-              <span>AI 专门源 ${formatNumber(sourceStats.aiSourceBoards)} 个</span>
-              <span>${escapeHtml(getSelectedGroupLabel())}</span>
-              <span>${escapeHtml(getSelectedPlatformLabel())}</span>
-              ${state.query ? `<span>搜索：${escapeHtml(state.query)}</span>` : "<span>未输入关键词</span>"}
+              <span class="filter-provenance">${escapeHtml(brief.decision)} · ${escapeHtml(brief.decisionLabel)}</span>
+              <span>最多 3 条</span>
+              <span>一手 / 原始来源优先</span>
+              <span>${brief.comparedWith ? `对比 ${escapeHtml(formatDate(brief.comparedWith))}` : "正在建立首个基线"}</span>
             </div>
           </div>
-          <div class="stats" aria-label="筛选统计">
-            ${statCard("数据源", sourceStats.totalBoards, "UAPI + AI 专门源")}
-            ${statCard("匹配", visibleTopics, "筛选后 AI 热点")}
-            ${statCard("描述", activeDescriptionCount, "可展开条目")}
-            ${statCard("最高信号", digest[0]?.signalScore || 0, "AI 重点")}
+          <div class="stats" aria-label="变化漏斗">
+            ${statCard("信号", brief.funnel.signals, "原始输入")}
+            ${statCard("候选", brief.funnel.events, "相较上期有变化")}
+            ${statCard("核验", brief.funnel.verified, "一手 / 原始证据")}
+            ${statCard("回执", brief.funnel.receipts, "今日实际发送")}
           </div>
         </section>
 
-        <section class="focus-grid" aria-label="今日重点和口播">
-          <article class="panel main-digest">
+        <section class="focus-grid change-focus" aria-label="今日 AI 变化回执">
+          <article class="panel change-panel">
             <div class="panel-head">
               <div>
-                <p class="eyebrow">AI 今日重点</p>
-                <h2>高信号 AI 热点</h2>
+                <p class="eyebrow">Today’s change receipts</p>
+                <h2>${escapeHtml(brief.decisionLabel)}</h2>
               </div>
-              <button class="ghost copy-action" id="copy-digest" type="button" data-default-label="复制摘要">复制摘要</button>
+              <button class="ghost copy-action" id="copy-brief" type="button" data-default-label="复制回执">复制回执</button>
             </div>
-            <div class="digest-list">
-              ${digest.length ? digest.slice(0, 8).map(renderDigestItem).join("") : renderEmptyState("没有匹配的 AI 重点", "当前搜索或筛选没有命中 AI 热点。清除条件后可恢复 AI 今日重点。")}
+            <p class="panel-note">${escapeHtml(brief.promise)}</p>
+            <div class="receipt-list">
+              ${
+                brief.receipts.length
+                  ? brief.receipts.map(renderReceipt).join("")
+                  : renderQuietEmptyState(
+                      brief.decision === "HOLD" ? "有信号，先不打扰" : "今天是静默日",
+                      brief.decision === "HOLD"
+                        ? "变化候选尚未获得足够的一手或原始证据，系统会继续等待，而不是把传闻包装成日报。"
+                        : "与上一期相比，没有经过核验的实质变化。没有变化，也是一种明确结果。"
+                    )
+              }
             </div>
           </article>
 
-          <article class="panel voice-card">
-            <div class="panel-head">
-              <div>
-                <p class="eyebrow">口播</p>
-                <h2>${escapeHtml(voiceover.title)}</h2>
-              </div>
-              <button class="ghost copy-action" id="copy-script" type="button" data-default-label="复制脚本">复制脚本</button>
-            </div>
-            ${
-              digest.length
-                ? `<p>${escapeHtml(voiceover.short)}</p><pre>${escapeHtml(voiceover.script)}</pre>`
-                : renderEmptyState("暂无 AI 口播素材", "没有可用 AI 热点时不会生成有效口播，请调整分类或关键词。")
-            }
-          </article>
+          ${renderDecisionPanel(brief)}
         </section>
 
-        ${renderPublishingPanel(publishingAssets)}
-
-        <section class="board-tools" aria-label="平台筛选">
+        <section class="board-tools" aria-label="证据来源筛选">
           <div>
-            <p class="eyebrow">平台卡片</p>
-            <h2>分平台 AI 热榜</h2>
+            <p class="eyebrow">Evidence pool</p>
+            <h2>查看原始证据，不参与跨源热度排名</h2>
+            <p class="board-note">当前显示 ${formatNumber(visibleTopics)} / ${formatNumber(totalTopics)} 条 · ${escapeHtml(filterProvenance.mode)} · ${formatNumber(sourceStats.aiSourceBoards)} 个 AI 专门源</p>
           </div>
           <div class="platform-tabs" role="list" aria-label="平台切换">
             ${platformTab("all", "全部", countItems(groupBoards))}
@@ -156,7 +149,7 @@ function render() {
       </main>
     </div>
   `;
-  bindEvents(voiceover, digest, publishingAssets);
+  bindEvents(brief);
 }
 
 function filterBoards() {
@@ -182,7 +175,7 @@ function getGroupPlatformSet() {
   return group ? new Set(group.platforms) : null;
 }
 
-function bindEvents(voiceover, digest, publishingAssets) {
+function bindEvents(brief) {
   document.querySelector("#search-input")?.addEventListener("input", (event) => {
     state.query = event.target.value;
     render();
@@ -212,15 +205,64 @@ function bindEvents(voiceover, digest, publishingAssets) {
     });
   });
 
-  document.querySelector("#copy-script")?.addEventListener("click", (event) => copyText(voiceover.script, event.currentTarget));
-  document.querySelector("#copy-digest")?.addEventListener("click", (event) => copyText(buildDigestCopy(digest), event.currentTarget));
-  document
-    .querySelector("#copy-assets")
-    ?.addEventListener("click", (event) => copyText(buildPublishingAssetsCopy(publishingAssets), event.currentTarget));
+  document.querySelector("#copy-brief")?.addEventListener("click", (event) => copyText(buildBriefCopy(brief), event.currentTarget));
 
   document.querySelectorAll("img[data-fallback]").forEach((image) => {
     image.addEventListener("error", () => image.remove());
   });
+}
+
+function renderReceipt(receipt, index) {
+  const lead = receipt.evidence.find((item) => item.firstParty) || receipt.evidence[0] || {};
+  return `
+    <article class="receipt-card status-${escapeHtml(receipt.status.toLowerCase())}">
+      <div class="receipt-rail">
+        <span class="receipt-number">${formatRank(index + 1)}</span>
+        <span class="status-badge">${escapeHtml(receipt.status)}</span>
+      </div>
+      <div class="receipt-copy">
+        ${renderExternalLink(lead.url, receipt.title, "receipt-title")}
+        <p>${escapeHtml(receipt.summary)}</p>
+        <strong>${escapeHtml(receipt.whyItMatters)}</strong>
+        <div class="evidence-links" aria-label="核验证据">
+          ${receipt.evidence
+            .slice(0, 4)
+            .map(
+              (evidence) =>
+                `<a href="${escapeHtml(evidence.url)}" target="_blank" rel="noopener"><span>${escapeHtml(
+                  evidence.tier === "official" ? "一手" : evidence.tier === "primary" ? "原始" : "社区"
+                )}</span>${escapeHtml(evidence.label)}</a>`
+            )
+            .join("")}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderDecisionPanel(brief) {
+  const pending = brief.unverified.slice(0, 3);
+  return `
+    <aside class="panel decision-panel decision-${escapeHtml(brief.decision.toLowerCase())}">
+      <p class="eyebrow">Delivery gate</p>
+      <div class="decision-mark">${escapeHtml(brief.decision)}</div>
+      <h2>${escapeHtml(brief.decisionLabel)}</h2>
+      <ol class="method-list">
+        <li><span>01</span><p>与上一期快照比差异，不重复播报旧闻。</p></li>
+        <li><span>02</span><p>同一事件跨来源合并，优先回到一手或原始证据。</p></li>
+        <li><span>03</span><p>最多发送 3 条；只有传闻就 HOLD，没有变化就静默。</p></li>
+      </ol>
+      ${
+        pending.length
+          ? `<div class="pending-box"><strong>等待核验 · ${formatNumber(brief.unverified.length)}</strong>${pending
+              .map((item) => `<p><span>UNVERIFIED</span>${escapeHtml(item.title)}</p>`)
+              .join("")}</div>`
+          : ""
+      }
+      <a class="feed-link" href="${import.meta.env.BASE_URL}data/change-brief.xml" target="_blank" rel="noopener">订阅 RSS 变化回执 →</a>
+      <small class="method-foot">排序只看变化类型与证据等级；不比较跨平台热度、Stars 或榜单名次。</small>
+    </aside>
+  `;
 }
 
 function renderPublishingPanel(assets) {
@@ -463,6 +505,21 @@ function showCopyFeedback(button, ok) {
   }, 1400);
 }
 
+function buildBriefCopy(brief) {
+  const lines = [`AI讯息｜今天真的变了什么`, `决策：${brief.decision} · ${brief.decisionLabel}`];
+  if (!brief.receipts.length) {
+    lines.push(brief.decision === "HOLD" ? "有变化信号，但一手证据不足，暂不发送。" : "相较上一期没有值得打扰你的实质变化。");
+  }
+  brief.receipts.forEach((receipt, index) => {
+    const evidence = receipt.evidence.find((item) => item.firstParty) || receipt.evidence[0];
+    lines.push(`${index + 1}. [${receipt.status}] ${receipt.title}`);
+    lines.push(`   ${receipt.whyItMatters}`);
+    if (evidence?.url) lines.push(`   证据：${evidence.url}`);
+  });
+  lines.push("只报变化，不做跨平台热度混排；每天最多 3 条。");
+  return lines.join("\n");
+}
+
 function buildDigestCopy(digest) {
   return digest
     .slice(0, 10)
@@ -534,6 +591,29 @@ function getFilterProvenance(snapshot) {
   return {
     mode,
     keywordLabel: keywordCount ? `${formatNumber(keywordCount)} 个关键词` : "关键词不可用"
+  };
+}
+
+function normalizeChangeBrief(value, snapshot) {
+  const source = value && typeof value === "object" ? value : {};
+  const funnel = source.funnel && typeof source.funnel === "object" ? source.funnel : {};
+  const decision = ["SEND", "HOLD", "QUIET_DAY"].includes(source.decision) ? source.decision : "HOLD";
+  return {
+    generatedAt: source.generatedAt || snapshot?.generatedAt || "",
+    comparedWith: source.comparedWith || null,
+    decision,
+    decisionLabel:
+      source.decisionLabel ||
+      (decision === "SEND" ? "发送变化回执" : decision === "QUIET_DAY" ? "静默日：没有值得打扰你的变化" : "暂缓：等待一手证据"),
+    promise: source.promise || "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
+    funnel: {
+      signals: Number(funnel.signals || snapshot?.itemCount || 0),
+      events: Number(funnel.events || 0),
+      verified: Number(funnel.verified || 0),
+      receipts: Number(funnel.receipts || 0)
+    },
+    receipts: Array.isArray(source.receipts) ? source.receipts : [],
+    unverified: Array.isArray(source.unverified) ? source.unverified : []
   };
 }
 
