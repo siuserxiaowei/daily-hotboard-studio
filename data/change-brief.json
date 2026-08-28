@@ -1,70 +1,70 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T03:22:50.100Z",
-  "comparedWith": "2026-06-08T15:01:36.076Z",
+  "generatedAt": "2026-08-28T11:36:31.101Z",
+  "comparedWith": "2026-08-27T03:22:50.100Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 425,
-    "events": 413,
-    "verified": 290,
+    "signals": 464,
+    "events": 327,
+    "verified": 222,
     "receipts": 3
   },
   "receipts": [
     {
-      "id": "event-140ifcz",
-      "status": "NEW",
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
-      "whyItMatters": "1 个一手来源确认这是上一期之后出现的新事件。",
+      "id": "event-1s2n20x",
+      "status": "CORRECTED",
+      "title": "VGI-Bench: Probing Visual Intelligence in Video Generation Models",
+      "summary": "VGI-bench evaluates visual reasoning in video generation models through 27 tasks, revealing limited reliability and self-correction capabilities.",
+      "whyItMatters": "1 个原始来源确认了纠错，旧结论需要立即停止传播。",
       "verified": true,
       "evidence": [
         {
-          "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-          "label": "OpenAI News",
-          "sourceType": "openai-news",
-          "tier": "official",
-          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-          "publishedAt": "Wed, 26 Aug 2026 10:00:00 GMT",
+          "title": "VGI-Bench: Probing Visual Intelligence in Video Generation Models",
+          "label": "HF Daily Papers",
+          "sourceType": "hf-daily-papers",
+          "tier": "primary",
+          "url": "https://huggingface.co/papers/2608.19583",
+          "publishedAt": "2026-08-25T20:00:00.000Z",
           "firstParty": true
         }
       ]
     },
     {
-      "id": "event-p84g5w",
-      "status": "NEW",
-      "title": "Learning never stops: How AI makes learning continuous",
-      "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
-      "whyItMatters": "1 个一手来源确认这是上一期之后出现的新事件。",
+      "id": "event-rxzxqx",
+      "status": "CHANGED",
+      "title": "Introducing Intelligence Age",
+      "summary": "Introducing Intelligence Age, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+      "whyItMatters": "1 个一手来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "Learning never stops: How AI makes learning continuous",
+          "title": "Introducing Intelligence Age",
           "label": "OpenAI News",
           "sourceType": "openai-news",
           "tier": "official",
-          "url": "https://openai.com/index/learning-never-stops",
-          "publishedAt": "Wed, 26 Aug 2026 10:00:00 GMT",
+          "url": "https://openai.com/index/introducing-intelligence-age",
+          "publishedAt": "Thu, 20 Aug 2026 07:00:00 GMT",
           "firstParty": true
         }
       ]
     },
     {
-      "id": "event-18zq9ps",
-      "status": "NEW",
-      "title": "How loveholidays is making everyone a builder with Codex",
-      "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
-      "whyItMatters": "1 个一手来源确认这是上一期之后出现的新事件。",
+      "id": "event-1mswzu6",
+      "status": "CHANGED",
+      "title": "Knowledge-aware-AI/GPTKB_v2_images",
+      "summary": "数据集更新；标签：license:cc-by-4.0、region:us",
+      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "How loveholidays is making everyone a builder with Codex",
-          "label": "OpenAI News",
-          "sourceType": "openai-news",
-          "tier": "official",
-          "url": "https://openai.com/index/loveholidays",
-          "publishedAt": "Wed, 26 Aug 2026 00:00:00 GMT",
+          "title": "Knowledge-aware-AI/GPTKB_v2_images",
+          "label": "HF Datasets",
+          "sourceType": "hf-datasets",
+          "tier": "primary",
+          "url": "https://huggingface.co/datasets/Knowledge-aware-AI/GPTKB_v2_images",
+          "publishedAt": "2026-08-28T09:59:11.000Z",
           "firstParty": true
         }
       ]
@@ -72,121 +72,121 @@
   ],
   "unverified": [
     {
-      "id": "event-1x4za26",
+      "id": "event-169qdq9",
       "status": "UNVERIFIED",
-      "title": "simstudioai/sim",
-      "summary": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders.",
+      "title": "如何评价腾讯混元 8 月 28 日发布并开源新一代大语言模型 Hy4 preview？实际体验如何？",
+      "summary": "今天，腾讯混元发布并开源新一代大语言模型 Hy4 preview 总参数 770B 、激活参数 49B，上下文长度突破 1M，在代码、办公、科学等真实生产力任务上展现出卓越能力。 Hy4 previe",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "simstudioai/sim",
+          "title": "如何评价腾讯混元 8 月 28 日发布并开源新一代大语言模型 Hy4 preview？实际体验如何？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2076674418479257365",
+          "publishedAt": "2026-08-28T11:35:35.869Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-100hq3p",
+      "status": "UNVERIFIED",
+      "title": "wanaku-ai/wanaku",
+      "summary": "Wanaku MCP Router",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "wanaku-ai/wanaku",
           "label": "GitHub AI",
           "sourceType": "github-ai",
           "tier": "community",
-          "url": "https://github.com/simstudioai/sim",
-          "publishedAt": "2026-08-27T03:21:44Z",
+          "url": "https://github.com/wanaku-ai/wanaku",
+          "publishedAt": "2026-08-28T11:34:27Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1tevw34",
+      "id": "event-p2arso",
       "status": "UNVERIFIED",
-      "title": "《深入理解 AI Agent：设计原理与工程实践》",
+      "title": "把 IDE 能力接入终端编程智能体",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "《深入理解 AI Agent：设计原理与工程实践》",
+          "title": "把 IDE 能力接入终端编程智能体",
           "label": "hellogithub",
           "sourceType": "hellogithub",
           "tier": "community",
-          "url": "https://github.com/bojieli/ai-agent-book",
-          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "publishedAt": "2026-08-28T11:33:27.445Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-bqxlgb",
+      "id": "event-1av16sr",
       "status": "UNVERIFIED",
-      "title": "把 AI 编程助手变成视频工作室",
+      "title": "把技术书变成智能体技能",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "把 AI 编程助手变成视频工作室",
+          "title": "把技术书变成智能体技能",
           "label": "hellogithub",
           "sourceType": "hellogithub",
           "tier": "community",
-          "url": "https://github.com/calesthio/OpenMontage",
-          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "url": "https://github.com/virgiliojr94/book-to-skill",
+          "publishedAt": "2026-08-28T11:33:27.445Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1kxrwcc",
+      "id": "event-19yo4jg",
       "status": "UNVERIFIED",
-      "title": "给 Claude 装上 SEO 专家",
+      "title": "仅需 4GB 显存就能跑 70B 大模型",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "给 Claude 装上 SEO 专家",
+          "title": "仅需 4GB 显存就能跑 70B 大模型",
           "label": "hellogithub",
           "sourceType": "hellogithub",
           "tier": "community",
-          "url": "https://github.com/AgriciDaniel/claude-seo",
-          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "url": "https://github.com/lyogavin/airllm",
+          "publishedAt": "2026-08-28T11:33:27.445Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-f5n823",
+      "id": "event-149ga81",
       "status": "UNVERIFIED",
-      "title": "拒绝 AI 味的网页设计技能",
+      "title": "清除 AI 水印的工具",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "拒绝 AI 味的网页设计技能",
+          "title": "清除 AI 水印的工具",
           "label": "hellogithub",
           "sourceType": "hellogithub",
           "tier": "community",
-          "url": "https://github.com/Nutlope/hallmark",
-          "publishedAt": "2026-08-27T03:21:28.868Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-lxyyn2",
-      "status": "UNVERIFIED",
-      "title": "开源的 AI 互动课堂平台",
-      "summary": "尚未找到足够的一手证据。",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "开源的 AI 互动课堂平台",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
-          "tier": "community",
-          "url": "https://github.com/THU-MAIC/OpenMAIC",
-          "publishedAt": "2026-08-27T03:21:28.868Z",
+          "url": "https://github.com/guillaumemeyer/watermarks-remover",
+          "publishedAt": "2026-08-28T11:33:27.445Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 414,
+  "suppressed": 448,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
