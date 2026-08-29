@@ -4,28 +4,28 @@
     <title>AI讯息｜今天真的变了什么</title>
     <link>https://siuserxiaowei.github.io/daily-hotboard-studio/</link>
     <description>只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。</description>
-    <lastBuildDate>Fri, 28 Aug 2026 11:36:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 07:14:51 GMT</lastBuildDate>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://siuserxiaowei.github.io/daily-hotboard-studio/data/change-brief.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>VGI-Bench: Probing Visual Intelligence in Video Generation Models</title>
-      <link>https://huggingface.co/papers/2608.19583</link>
-      <guid isPermaLink="false">event-1s2n20x</guid>
-      <pubDate>Fri, 28 Aug 2026 11:36:31 GMT</pubDate>
-      <description>CORRECTED｜1 个原始来源确认了纠错，旧结论需要立即停止传播。</description>
-    </item>
     <item>
       <title>Introducing Intelligence Age</title>
       <link>https://openai.com/index/introducing-intelligence-age</link>
       <guid isPermaLink="false">event-rxzxqx</guid>
-      <pubDate>Fri, 28 Aug 2026 11:36:31 GMT</pubDate>
+      <pubDate>Sat, 29 Aug 2026 07:14:51 GMT</pubDate>
       <description>CHANGED｜1 个一手来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
     <item>
-      <title>Knowledge-aware-AI/GPTKB_v2_images</title>
-      <link>https://huggingface.co/datasets/Knowledge-aware-AI/GPTKB_v2_images</link>
-      <guid isPermaLink="false">event-1mswzu6</guid>
-      <pubDate>Fri, 28 Aug 2026 11:36:31 GMT</pubDate>
+      <title>aiwithvarun7/theekkathir-text-dataset</title>
+      <link>https://huggingface.co/datasets/aiwithvarun7/theekkathir-text-dataset</link>
+      <guid isPermaLink="false">event-vbl2pk</guid>
+      <pubDate>Sat, 29 Aug 2026 07:14:51 GMT</pubDate>
       <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
+    </item>
+    <item>
+      <title>CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes</title>
+      <link>http://arxiv.org/abs/2608.27455v1</link>
+      <guid isPermaLink="false">event-qrq41l</guid>
+      <pubDate>Sat, 29 Aug 2026 07:14:51 GMT</pubDate>
+      <description>CHANGED｜2 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
   </channel>
 </rss>

@@ -1,36 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T11:36:31.101Z",
-  "comparedWith": "2026-08-27T03:22:50.100Z",
+  "generatedAt": "2026-08-29T07:14:51.069Z",
+  "comparedWith": "2026-08-28T11:36:31.101Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 464,
-    "events": 327,
-    "verified": 222,
+    "signals": 462,
+    "events": 159,
+    "verified": 68,
     "receipts": 3
   },
   "receipts": [
-    {
-      "id": "event-1s2n20x",
-      "status": "CORRECTED",
-      "title": "VGI-Bench: Probing Visual Intelligence in Video Generation Models",
-      "summary": "VGI-bench evaluates visual reasoning in video generation models through 27 tasks, revealing limited reliability and self-correction capabilities.",
-      "whyItMatters": "1 个原始来源确认了纠错，旧结论需要立即停止传播。",
-      "verified": true,
-      "evidence": [
-        {
-          "title": "VGI-Bench: Probing Visual Intelligence in Video Generation Models",
-          "label": "HF Daily Papers",
-          "sourceType": "hf-daily-papers",
-          "tier": "primary",
-          "url": "https://huggingface.co/papers/2608.19583",
-          "publishedAt": "2026-08-25T20:00:00.000Z",
-          "firstParty": true
-        }
-      ]
-    },
     {
       "id": "event-rxzxqx",
       "status": "CHANGED",
@@ -51,20 +32,48 @@
       ]
     },
     {
-      "id": "event-1mswzu6",
+      "id": "event-vbl2pk",
       "status": "CHANGED",
-      "title": "Knowledge-aware-AI/GPTKB_v2_images",
-      "summary": "数据集更新；标签：license:cc-by-4.0、region:us",
+      "title": "aiwithvarun7/theekkathir-text-dataset",
+      "summary": "数据集更新；标签：task_categories:text-generation、language:ta、license:cc-by-sa-4.0、size_categories:1K<n<10K、format:parquet、modality:text",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "Knowledge-aware-AI/GPTKB_v2_images",
+          "title": "aiwithvarun7/theekkathir-text-dataset",
           "label": "HF Datasets",
           "sourceType": "hf-datasets",
           "tier": "primary",
-          "url": "https://huggingface.co/datasets/Knowledge-aware-AI/GPTKB_v2_images",
-          "publishedAt": "2026-08-28T09:59:11.000Z",
+          "url": "https://huggingface.co/datasets/aiwithvarun7/theekkathir-text-dataset",
+          "publishedAt": "2026-08-29T07:13:13.000Z",
+          "firstParty": true
+        }
+      ]
+    },
+    {
+      "id": "event-qrq41l",
+      "status": "CHANGED",
+      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "summary": "Recent advances in inference-time scaling have significantly improved the reasoning performance of large language models (LLMs). However, these methods typically rely on repeated generation or external verification. To address this limitation, we introduce CritICL, a novel inference-time framework that improves reasoning while maintaining high efficiency. Ou",
+      "whyItMatters": "2 个原始来源确认事实已发生实质变化，值得更新原有判断。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+          "label": "arXiv AI",
+          "sourceType": "arxiv-ai",
+          "tier": "primary",
+          "url": "http://arxiv.org/abs/2608.27455v1",
+          "publishedAt": "2026-08-27T17:59:30Z",
+          "firstParty": true
+        },
+        {
+          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+          "label": "HF Daily Papers",
+          "sourceType": "hf-daily-papers",
+          "tier": "primary",
+          "url": "https://huggingface.co/papers/2608.27455",
+          "publishedAt": "2026-08-26T20:00:00.000Z",
           "firstParty": true
         }
       ]
@@ -72,121 +81,121 @@
   ],
   "unverified": [
     {
-      "id": "event-169qdq9",
+      "id": "event-i26eyh",
       "status": "UNVERIFIED",
-      "title": "如何评价腾讯混元 8 月 28 日发布并开源新一代大语言模型 Hy4 preview？实际体验如何？",
-      "summary": "今天，腾讯混元发布并开源新一代大语言模型 Hy4 preview 总参数 770B 、激活参数 49B，上下文长度突破 1M，在代码、办公、科学等真实生产力任务上展现出卓越能力。 Hy4 previe",
+      "title": "实时语音 AI 智能体的框架",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "如何评价腾讯混元 8 月 28 日发布并开源新一代大语言模型 Hy4 preview？实际体验如何？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "实时语音 AI 智能体的框架",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2076674418479257365",
-          "publishedAt": "2026-08-28T11:35:35.869Z",
+          "url": "https://github.com/pipecat-ai/pipecat",
+          "publishedAt": "2026-08-29T07:15:10.156Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-100hq3p",
+      "id": "event-txrosl",
       "status": "UNVERIFIED",
-      "title": "wanaku-ai/wanaku",
-      "summary": "Wanaku MCP Router",
+      "title": "Skirminiac – An AI-first deterministic abstract wargame",
+      "summary": "HN 讨论 · LouisSaifer · 2026-08-29T07:13:53Z",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "wanaku-ai/wanaku",
+          "title": "Skirminiac – An AI-first deterministic abstract wargame",
+          "label": "Hacker News AI",
+          "sourceType": "hn-ai",
+          "tier": "community",
+          "url": "https://www.skirminiac.com",
+          "publishedAt": "2026-08-29T07:13:53Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-j1vfk1",
+      "status": "UNVERIFIED",
+      "title": "jingyaogong/minimind",
+      "summary": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "jingyaogong/minimind",
           "label": "GitHub AI",
           "sourceType": "github-ai",
           "tier": "community",
-          "url": "https://github.com/wanaku-ai/wanaku",
-          "publishedAt": "2026-08-28T11:34:27Z",
+          "url": "https://github.com/jingyaogong/minimind",
+          "publishedAt": "2026-08-29T07:12:37Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-p2arso",
+      "id": "event-sorj0i",
       "status": "UNVERIFIED",
-      "title": "把 IDE 能力接入终端编程智能体",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "Impact of Google AI Overviews on Wikipedia Traffic",
+      "summary": "HN 讨论 · alexcos · 2026-08-29T07:12:19Z",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "把 IDE 能力接入终端编程智能体",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
+          "title": "Impact of Google AI Overviews on Wikipedia Traffic",
+          "label": "Hacker News AI",
+          "sourceType": "hn-ai",
           "tier": "community",
-          "url": "https://github.com/can1357/oh-my-pi",
-          "publishedAt": "2026-08-28T11:33:27.445Z",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164926&__cf_chl_tk=yAhL3EN950gYq8L72ow6o3fGC4Vgk0p7nSk5fxbPMb4-1787987288-1.0.1.1-s21BBbQvGf7cEBcb9O8i5M1skM7BOPAh3_iopC86zxg",
+          "publishedAt": "2026-08-29T07:12:19Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1av16sr",
+      "id": "event-1fhg4tx",
       "status": "UNVERIFIED",
-      "title": "把技术书变成智能体技能",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "从「莫逆之交」到「AI 知己」，折射出我们对友情的哪些渴望？",
+      "summary": "从古至今，我们好像都在期望有真正懂自己的人，随着时代发展，人类对友情的期待有什么变化又有什么一以贯之呢？",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "把技术书变成智能体技能",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
+          "title": "从「莫逆之交」到「AI 知己」，折射出我们对友情的哪些渴望？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://github.com/virgiliojr94/book-to-skill",
-          "publishedAt": "2026-08-28T11:33:27.445Z",
+          "url": "https://www.zhihu.com/question/2070938951087383026",
+          "publishedAt": "2026-08-29T07:10:47.099Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-19yo4jg",
+      "id": "event-z4ij2e",
       "status": "UNVERIFIED",
-      "title": "仅需 4GB 显存就能跑 70B 大模型",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "如何看待澳洲把蟑螂改造成赛博急救员，通过遥控系统给灾害废墟的受困者送药？灾难救援该用动物还是纯机器人？",
+      "summary": "2026 年 8 月 27 日昆士兰大学报道，研究人员将北昆士兰巨型穴居蟑螂改造为半机械救援生物，通过遥控系统和微型药物注射装置，可在救援人员无法进入的废墟缝隙中移动，并在 72% 的试验中成功将针头",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "仅需 4GB 显存就能跑 70B 大模型",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
+          "title": "如何看待澳洲把蟑螂改造成赛博急救员，通过遥控系统给灾害废墟的受困者送药？灾难救援该用动物还是纯机器人？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://github.com/lyogavin/airllm",
-          "publishedAt": "2026-08-28T11:33:27.445Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-149ga81",
-      "status": "UNVERIFIED",
-      "title": "清除 AI 水印的工具",
-      "summary": "尚未找到足够的一手证据。",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "清除 AI 水印的工具",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
-          "tier": "community",
-          "url": "https://github.com/guillaumemeyer/watermarks-remover",
-          "publishedAt": "2026-08-28T11:33:27.445Z",
+          "url": "https://www.zhihu.com/question/2076605797715424941",
+          "publishedAt": "2026-08-29T07:10:47.099Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 448,
+  "suppressed": 445,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
