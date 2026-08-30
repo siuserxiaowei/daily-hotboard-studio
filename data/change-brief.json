@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-29T07:14:51.069Z",
-  "comparedWith": "2026-08-28T11:36:31.101Z",
+  "generatedAt": "2026-08-30T05:37:30.136Z",
+  "comparedWith": "2026-08-29T07:14:51.069Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 462,
-    "events": 159,
-    "verified": 68,
+    "signals": 465,
+    "events": 178,
+    "verified": 91,
     "receipts": 3
   },
   "receipts": [
@@ -32,10 +32,29 @@
       ]
     },
     {
+      "id": "event-smyxhc",
+      "status": "CHANGED",
+      "title": "keenable-ai/needle-results",
+      "summary": "数据集更新；标签：license:mit、region:us",
+      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "keenable-ai/needle-results",
+          "label": "HF Datasets",
+          "sourceType": "hf-datasets",
+          "tier": "primary",
+          "url": "https://huggingface.co/datasets/keenable-ai/needle-results",
+          "publishedAt": "2026-08-30T05:37:00.000Z",
+          "firstParty": true
+        }
+      ]
+    },
+    {
       "id": "event-vbl2pk",
       "status": "CHANGED",
       "title": "aiwithvarun7/theekkathir-text-dataset",
-      "summary": "数据集更新；标签：task_categories:text-generation、language:ta、license:cc-by-sa-4.0、size_categories:1K<n<10K、format:parquet、modality:text",
+      "summary": "数据集更新；标签：task_categories:text-generation、language:ta、license:cc-by-sa-4.0、size_categories:100K<n<1M、region:us",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
@@ -45,35 +64,7 @@
           "sourceType": "hf-datasets",
           "tier": "primary",
           "url": "https://huggingface.co/datasets/aiwithvarun7/theekkathir-text-dataset",
-          "publishedAt": "2026-08-29T07:13:13.000Z",
-          "firstParty": true
-        }
-      ]
-    },
-    {
-      "id": "event-qrq41l",
-      "status": "CHANGED",
-      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-      "summary": "Recent advances in inference-time scaling have significantly improved the reasoning performance of large language models (LLMs). However, these methods typically rely on repeated generation or external verification. To address this limitation, we introduce CritICL, a novel inference-time framework that improves reasoning while maintaining high efficiency. Ou",
-      "whyItMatters": "2 个原始来源确认事实已发生实质变化，值得更新原有判断。",
-      "verified": true,
-      "evidence": [
-        {
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "label": "arXiv AI",
-          "sourceType": "arxiv-ai",
-          "tier": "primary",
-          "url": "http://arxiv.org/abs/2608.27455v1",
-          "publishedAt": "2026-08-27T17:59:30Z",
-          "firstParty": true
-        },
-        {
-          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-          "label": "HF Daily Papers",
-          "sourceType": "hf-daily-papers",
-          "tier": "primary",
-          "url": "https://huggingface.co/papers/2608.27455",
-          "publishedAt": "2026-08-26T20:00:00.000Z",
+          "publishedAt": "2026-08-30T05:35:18.000Z",
           "firstParty": true
         }
       ]
@@ -81,121 +72,121 @@
   ],
   "unverified": [
     {
-      "id": "event-i26eyh",
+      "id": "event-aid6lk",
       "status": "UNVERIFIED",
-      "title": "实时语音 AI 智能体的框架",
+      "title": "如何评价腾讯刚刚发布的 Hy4 preview？",
+      "summary": "官方报告：腾讯混元 Hy-4 预览版介绍 跑分已经全面碾压 DeepSeek-V4 Pro 0813，和 GLM-5.3 、 Kimi-K3 等不相上下 模型盲测体感已经略微比 K3 和 GLM-5.",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "如何评价腾讯刚刚发布的 Hy4 preview？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2076682200167216996",
+          "publishedAt": "2026-08-30T05:37:32.910Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-1eqamwa",
+      "status": "UNVERIFIED",
+      "title": "怎么看现在的 AI Benchmark 污染严重，不能表现出 AI 真实水平？",
+      "summary": "如图，用户发现在 DeepSWE 基准的 multipass ，GLM-5.3 Flash 和 Claude Fable 5 在 pass@1 时有差距明显（63.4% vs 69.7%），但是到了",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "怎么看现在的 AI Benchmark 污染严重，不能表现出 AI 真实水平？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2076672586570789160",
+          "publishedAt": "2026-08-30T05:37:32.910Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-1tddlqk",
+      "status": "UNVERIFIED",
+      "title": "首例AI自主入侵事件哪些细节令人不安",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "实时语音 AI 智能体的框架",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
+          "title": "首例AI自主入侵事件哪些细节令人不安",
+          "label": "toutiao",
+          "sourceType": "toutiao",
           "tier": "community",
-          "url": "https://github.com/pipecat-ai/pipecat",
-          "publishedAt": "2026-08-29T07:15:10.156Z",
+          "url": "https://www.toutiao.com/trending/7679455419990806058/",
+          "publishedAt": "2026-08-30T05:34:15.598Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-txrosl",
+      "id": "event-1synhgm",
       "status": "UNVERIFIED",
-      "title": "Skirminiac – An AI-first deterministic abstract wargame",
-      "summary": "HN 讨论 · LouisSaifer · 2026-08-29T07:13:53Z",
+      "title": "light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
+      "summary": "MCWW: Additional non-node based UI for ComfyUI focused on inference. Stable UI states; presets; and advanced queue. Based on Gradio",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "Skirminiac – An AI-first deterministic abstract wargame",
-          "label": "Hacker News AI",
-          "sourceType": "hn-ai",
-          "tier": "community",
-          "url": "https://www.skirminiac.com",
-          "publishedAt": "2026-08-29T07:13:53Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-j1vfk1",
-      "status": "UNVERIFIED",
-      "title": "jingyaogong/minimind",
-      "summary": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "jingyaogong/minimind",
+          "title": "light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
           "label": "GitHub AI",
           "sourceType": "github-ai",
           "tier": "community",
-          "url": "https://github.com/jingyaogong/minimind",
-          "publishedAt": "2026-08-29T07:12:37Z",
+          "url": "https://github.com/light-and-ray/Minimalistic-Comfy-Wrapper-WebUI",
+          "publishedAt": "2026-08-30T05:33:27Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-sorj0i",
+      "id": "event-fuxo5g",
       "status": "UNVERIFIED",
-      "title": "Impact of Google AI Overviews on Wikipedia Traffic",
-      "summary": "HN 讨论 · alexcos · 2026-08-29T07:12:19Z",
+      "title": "Veryfront Code – Full-Stack AI Apps and Agents with TypeScript and React",
+      "summary": "HN 讨论 · kojiwakayama · 2026-08-30T05:20:19Z",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "Impact of Google AI Overviews on Wikipedia Traffic",
+          "title": "Veryfront Code – Full-Stack AI Apps and Agents with TypeScript and React",
           "label": "Hacker News AI",
           "sourceType": "hn-ai",
           "tier": "community",
-          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164926&__cf_chl_tk=yAhL3EN950gYq8L72ow6o3fGC4Vgk0p7nSk5fxbPMb4-1787987288-1.0.1.1-s21BBbQvGf7cEBcb9O8i5M1skM7BOPAh3_iopC86zxg",
-          "publishedAt": "2026-08-29T07:12:19Z",
+          "url": "https://github.com/veryfront/veryfront-code",
+          "publishedAt": "2026-08-30T05:20:19Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1fhg4tx",
+      "id": "event-1mhc2bz",
       "status": "UNVERIFIED",
-      "title": "从「莫逆之交」到「AI 知己」，折射出我们对友情的哪些渴望？",
-      "summary": "从古至今，我们好像都在期望有真正懂自己的人，随着时代发展，人类对友情的期待有什么变化又有什么一以贯之呢？",
+      "title": "刚哥开发新的编程语言 TypePHP，周三放到 Github ， 3 天 star 就快 900 个了,https://github.com/swoole/typephp，大家用 AI 体验下编程",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "从「莫逆之交」到「AI 知己」，折射出我们对友情的哪些渴望？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "刚哥开发新的编程语言 TypePHP，周三放到 Github ， 3 天 star 就快 900 个了,https://github.com/swoole/typephp，大家用 AI 体验下编程",
+          "label": "v2ex",
+          "sourceType": "v2ex",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2070938951087383026",
-          "publishedAt": "2026-08-29T07:10:47.099Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-z4ij2e",
-      "status": "UNVERIFIED",
-      "title": "如何看待澳洲把蟑螂改造成赛博急救员，通过遥控系统给灾害废墟的受困者送药？灾难救援该用动物还是纯机器人？",
-      "summary": "2026 年 8 月 27 日昆士兰大学报道，研究人员将北昆士兰巨型穴居蟑螂改造为半机械救援生物，通过遥控系统和微型药物注射装置，可在救援人员无法进入的废墟缝隙中移动，并在 72% 的试验中成功将针头",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "如何看待澳洲把蟑螂改造成赛博急救员，通过遥控系统给灾害废墟的受困者送药？灾难救援该用动物还是纯机器人？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
-          "tier": "community",
-          "url": "https://www.zhihu.com/question/2076605797715424941",
-          "publishedAt": "2026-08-29T07:10:47.099Z",
+          "url": "https://www.v2ex.com/t/1238044",
+          "publishedAt": "2026-08-30T05:16:51.943Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 445,
+  "suppressed": 448,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
