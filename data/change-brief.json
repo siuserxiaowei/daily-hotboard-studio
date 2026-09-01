@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T05:52:33.034Z",
-  "comparedWith": "2026-08-30T05:37:30.136Z",
+  "generatedAt": "2026-09-01T05:25:18.123Z",
+  "comparedWith": "2026-08-31T05:52:33.034Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 455,
-    "events": 235,
-    "verified": 156,
+    "signals": 465,
+    "events": 260,
+    "verified": 177,
     "receipts": 3
   },
   "receipts": [
@@ -32,10 +32,29 @@
       ]
     },
     {
+      "id": "event-zrnkbk",
+      "status": "CHANGED",
+      "title": "steveo223/herb-ai-vault",
+      "summary": "数据集更新；标签：region:us",
+      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "steveo223/herb-ai-vault",
+          "label": "HF Datasets",
+          "sourceType": "hf-datasets",
+          "tier": "primary",
+          "url": "https://huggingface.co/datasets/steveo223/herb-ai-vault",
+          "publishedAt": "2026-09-01T05:25:08.000Z",
+          "firstParty": true
+        }
+      ]
+    },
+    {
       "id": "event-10tgj2e",
       "status": "CHANGED",
       "title": "manikandan18ramalingam/agentic-ai-options-results",
-      "summary": "数据集更新；标签：license:apache-2.0、region:us",
+      "summary": "数据集更新；标签：license:apache-2.0、size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
@@ -45,26 +64,7 @@
           "sourceType": "hf-datasets",
           "tier": "primary",
           "url": "https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results",
-          "publishedAt": "2026-08-31T05:36:55.000Z",
-          "firstParty": true
-        }
-      ]
-    },
-    {
-      "id": "event-esje5q",
-      "status": "CHANGED",
-      "title": "adaptive-classifier/ai-detector-data",
-      "summary": "数据集更新；标签：task_categories:text-classification、language:en、license:apache-2.0、size_categories:n<1K、region:us、ai-detection",
-      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
-      "verified": true,
-      "evidence": [
-        {
-          "title": "adaptive-classifier/ai-detector-data",
-          "label": "HF Datasets",
-          "sourceType": "hf-datasets",
-          "tier": "primary",
-          "url": "https://huggingface.co/datasets/adaptive-classifier/ai-detector-data",
-          "publishedAt": "2026-08-31T05:20:34.000Z",
+          "publishedAt": "2026-09-01T04:53:51.000Z",
           "firstParty": true
         }
       ]
@@ -72,121 +72,121 @@
   ],
   "unverified": [
     {
-      "id": "event-plv0nj",
+      "id": "event-1csez32",
       "status": "UNVERIFIED",
-      "title": "如何看待豆包推出独立的 AI 办公产品「豆包工作」？实际体验如何？",
-      "summary": "36 氪「智能涌现」独家获悉，字节跳动对旗下的办公 AI 产品完成了一轮团队整合：TRAE 、扣子（Coze）团队将整体并入豆包体系，其中 TRAE Work 、扣子将与豆包在工作场景的产品能力进行整",
+      "title": "yasserfarouk/negmas",
+      "summary": "Negotiation Multi-Agent System (A negotiation library designed for situated negotiations within business-like simulations)",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "如何看待豆包推出独立的 AI 办公产品「豆包工作」？实际体验如何？",
+          "title": "yasserfarouk/negmas",
+          "label": "GitHub AI",
+          "sourceType": "github-ai",
+          "tier": "community",
+          "url": "https://github.com/yasserfarouk/negmas",
+          "publishedAt": "2026-09-01T05:24:45Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-19ad3zc",
+      "status": "UNVERIFIED",
+      "title": "kornia/kornia",
+      "summary": "🐍 Geometric Computer Vision Library for Spatial AI",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "kornia/kornia",
+          "label": "GitHub AI",
+          "sourceType": "github-ai",
+          "tier": "community",
+          "url": "https://github.com/kornia/kornia",
+          "publishedAt": "2026-09-01T05:23:46Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-4tr65b",
+      "status": "UNVERIFIED",
+      "title": "国内首部 AIGC 长剧《后西游记》开播，登陆湖南卫视黄金档，好看吗？会对影视行业有怎样的影响？",
+      "summary": "芒果 TV AIGC 创新内容中心制作、伯璟文化承制的神话题材季播剧《后西游记》第一季「花果山篇」，将于 8 月 31 日起上线芒果 TV，并登陆湖南卫视黄金档。据悉，这是国内首部 AIGC 长剧。",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "国内首部 AIGC 长剧《后西游记》开播，登陆湖南卫视黄金档，好看吗？会对影视行业有怎样的影响？",
           "label": "zhihu",
           "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2075271438584567098",
-          "publishedAt": "2026-08-31T05:47:00.212Z",
+          "url": "https://www.zhihu.com/question/2077565922349413598",
+          "publishedAt": "2026-09-01T05:22:05.030Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1v5yk3w",
+      "id": "event-14z3ben",
       "status": "UNVERIFIED",
-      "title": "小伙按 AI 推荐的路线爬山散心，结果被困海拔 1300 米的无人开发区，AI 的推荐逻辑是怎样的？该如何辨别？",
-      "summary": "据媒体报道，8 月 12 日晚，浙江省杭州市临安区狼行公益应急救援队接到紧急警情通知：有人被困在海拔 1300 多米的浙西三尖之一的大山上。 接到救援任务后，7 名救援队员和两名民警、 3 名消防人员",
+      "title": "怎么看待麻省理工报告称人工智能现在可以合理完成几乎所有本科书面作业？",
+      "summary": "相关新闻：新闻里提到的报告：报告第三节「建议」提到： 人工智能—以大语言模型和其他生成式人工智能技术的形式——给麻省理工学院带来了深刻的挑战和诱人的机遇。 这些技术已经可以产生可靠的解决方案，并对本科",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "小伙按 AI 推荐的路线爬山散心，结果被困海拔 1300 米的无人开发区，AI 的推荐逻辑是怎样的？该如何辨别？",
+          "title": "怎么看待麻省理工报告称人工智能现在可以合理完成几乎所有本科书面作业？",
           "label": "zhihu",
           "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2072707321009124111",
-          "publishedAt": "2026-08-31T05:47:00.212Z",
+          "url": "https://www.zhihu.com/question/2077850860353279737",
+          "publishedAt": "2026-09-01T05:22:05.030Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-e880p6",
+      "id": "event-i26eyh",
       "status": "UNVERIFIED",
-      "title": "Reddie – Autonomous AI Red-Teaming and GitHub PR Patching DevTool",
-      "summary": "HN 讨论 · Irfadox · 2026-08-31T05:46:47Z",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "Reddie – Autonomous AI Red-Teaming and GitHub PR Patching DevTool",
-          "label": "Hacker News AI",
-          "sourceType": "hn-ai",
-          "tier": "community",
-          "url": "https://github.com/irfadox/reddie",
-          "publishedAt": "2026-08-31T05:46:47Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-1re3hf",
-      "status": "UNVERIFIED",
-      "title": "广州为何盯上餐饮机器人",
+      "title": "实时语音 AI 智能体的框架",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "广州为何盯上餐饮机器人",
-          "label": "toutiao",
-          "sourceType": "toutiao",
+          "title": "实时语音 AI 智能体的框架",
+          "label": "hellogithub",
+          "sourceType": "hellogithub",
           "tier": "community",
-          "url": "https://www.toutiao.com/trending/7679970429603921974/",
-          "publishedAt": "2026-08-31T05:46:05.352Z",
+          "url": "https://github.com/pipecat-ai/pipecat",
+          "publishedAt": "2026-09-01T05:20:34.014Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-ku192z",
+      "id": "event-1jsriev",
       "status": "UNVERIFIED",
-      "title": "Scaling Memory Safety: AI-Assisted Rewrites of C/C++ Dependencies to Rust",
-      "summary": "HN 讨论 · meerita · 2026-08-31T05:44:33Z",
+      "title": "Celeris-1 Magnus: Fast hybrid diffusion model for agentic work",
+      "summary": "HN 讨论 · mjshashank · 2026-09-01T05:20:08Z",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "Scaling Memory Safety: AI-Assisted Rewrites of C/C++ Dependencies to Rust",
+          "title": "Celeris-1 Magnus: Fast hybrid diffusion model for agentic work",
           "label": "Hacker News AI",
           "sourceType": "hn-ai",
           "tier": "community",
-          "url": "https://bughunters.google.com/blog/scaling-memory-safety",
-          "publishedAt": "2026-08-31T05:44:33Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-h1o9h",
-      "status": "UNVERIFIED",
-      "title": "国内首部 AIGC 长剧《后西游记》今日开播，首部“边审边播”剧集",
-      "summary": "尚未找到足够的一手证据。",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "国内首部 AIGC 长剧《后西游记》今日开播，首部“边审边播”剧集",
-          "label": "ithome",
-          "sourceType": "ithome",
-          "tier": "community",
-          "url": "https://www.ithome.com/0/996/265.htm",
-          "publishedAt": "2026-08-31T05:27:07.168Z",
+          "url": "https://celeris.ai/celeris-1-magnus",
+          "publishedAt": "2026-09-01T05:20:08Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 441,
+  "suppressed": 449,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",

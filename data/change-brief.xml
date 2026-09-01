@@ -4,27 +4,27 @@
     <title>AI讯息｜今天真的变了什么</title>
     <link>https://siuserxiaowei.github.io/daily-hotboard-studio/</link>
     <description>只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。</description>
-    <lastBuildDate>Mon, 31 Aug 2026 05:52:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 05:25:18 GMT</lastBuildDate>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://siuserxiaowei.github.io/daily-hotboard-studio/data/change-brief.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Introducing Intelligence Age</title>
       <link>https://openai.com/index/introducing-intelligence-age</link>
       <guid isPermaLink="false">event-rxzxqx</guid>
-      <pubDate>Mon, 31 Aug 2026 05:52:33 GMT</pubDate>
+      <pubDate>Tue, 01 Sep 2026 05:25:18 GMT</pubDate>
       <description>CHANGED｜1 个一手来源确认事实已发生实质变化，值得更新原有判断。</description>
+    </item>
+    <item>
+      <title>steveo223/herb-ai-vault</title>
+      <link>https://huggingface.co/datasets/steveo223/herb-ai-vault</link>
+      <guid isPermaLink="false">event-zrnkbk</guid>
+      <pubDate>Tue, 01 Sep 2026 05:25:18 GMT</pubDate>
+      <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
     <item>
       <title>manikandan18ramalingam/agentic-ai-options-results</title>
       <link>https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results</link>
       <guid isPermaLink="false">event-10tgj2e</guid>
-      <pubDate>Mon, 31 Aug 2026 05:52:33 GMT</pubDate>
-      <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
-    </item>
-    <item>
-      <title>adaptive-classifier/ai-detector-data</title>
-      <link>https://huggingface.co/datasets/adaptive-classifier/ai-detector-data</link>
-      <guid isPermaLink="false">event-esje5q</guid>
-      <pubDate>Mon, 31 Aug 2026 05:52:33 GMT</pubDate>
+      <pubDate>Tue, 01 Sep 2026 05:25:18 GMT</pubDate>
       <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
   </channel>
