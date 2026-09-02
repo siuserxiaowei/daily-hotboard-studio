@@ -1,51 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T05:25:18.123Z",
-  "comparedWith": "2026-08-31T05:52:33.034Z",
+  "generatedAt": "2026-09-02T04:52:18.103Z",
+  "comparedWith": "2026-09-01T05:25:18.123Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 465,
-    "events": 260,
-    "verified": 177,
+    "signals": 437,
+    "events": 255,
+    "verified": 182,
     "receipts": 3
   },
   "receipts": [
     {
-      "id": "event-rxzxqx",
+      "id": "event-1vndgtn",
       "status": "CHANGED",
-      "title": "Introducing Intelligence Age",
-      "summary": "Introducing Intelligence Age, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+      "title": "Piloting the first double-blind AI evaluations",
+      "summary": "HN 讨论 · williamtrask · 2026-09-02T02:55:52Z",
       "whyItMatters": "1 个一手来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "Introducing Intelligence Age",
-          "label": "OpenAI News",
-          "sourceType": "openai-news",
+          "title": "Piloting the first double-blind AI evaluations",
+          "label": "Hacker News AI",
+          "sourceType": "hn-ai",
           "tier": "official",
-          "url": "https://openai.com/index/introducing-intelligence-age",
-          "publishedAt": "Thu, 20 Aug 2026 07:00:00 GMT",
+          "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+          "publishedAt": "2026-09-02T02:55:52Z",
           "firstParty": true
         }
       ]
     },
     {
-      "id": "event-zrnkbk",
+      "id": "event-smyxhc",
       "status": "CHANGED",
-      "title": "steveo223/herb-ai-vault",
-      "summary": "数据集更新；标签：region:us",
+      "title": "keenable-ai/needle-results",
+      "summary": "数据集更新；标签：license:mit、region:us",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "steveo223/herb-ai-vault",
+          "title": "keenable-ai/needle-results",
           "label": "HF Datasets",
           "sourceType": "hf-datasets",
           "tier": "primary",
-          "url": "https://huggingface.co/datasets/steveo223/herb-ai-vault",
-          "publishedAt": "2026-09-01T05:25:08.000Z",
+          "url": "https://huggingface.co/datasets/keenable-ai/needle-results",
+          "publishedAt": "2026-09-02T04:42:48.000Z",
           "firstParty": true
         }
       ]
@@ -54,7 +54,7 @@
       "id": "event-10tgj2e",
       "status": "CHANGED",
       "title": "manikandan18ramalingam/agentic-ai-options-results",
-      "summary": "数据集更新；标签：license:apache-2.0、size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas",
+      "summary": "数据集更新；标签：license:apache-2.0、region:us",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
@@ -64,7 +64,7 @@
           "sourceType": "hf-datasets",
           "tier": "primary",
           "url": "https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results",
-          "publishedAt": "2026-09-01T04:53:51.000Z",
+          "publishedAt": "2026-09-02T04:27:06.000Z",
           "firstParty": true
         }
       ]
@@ -72,121 +72,121 @@
   ],
   "unverified": [
     {
-      "id": "event-1csez32",
+      "id": "event-10xr2ib",
       "status": "UNVERIFIED",
-      "title": "yasserfarouk/negmas",
-      "summary": "Negotiation Multi-Agent System (A negotiation library designed for situated negotiations within business-like simulations)",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "yasserfarouk/negmas",
-          "label": "GitHub AI",
-          "sourceType": "github-ai",
-          "tier": "community",
-          "url": "https://github.com/yasserfarouk/negmas",
-          "publishedAt": "2026-09-01T05:24:45Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-19ad3zc",
-      "status": "UNVERIFIED",
-      "title": "kornia/kornia",
-      "summary": "🐍 Geometric Computer Vision Library for Spatial AI",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "kornia/kornia",
-          "label": "GitHub AI",
-          "sourceType": "github-ai",
-          "tier": "community",
-          "url": "https://github.com/kornia/kornia",
-          "publishedAt": "2026-09-01T05:23:46Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-4tr65b",
-      "status": "UNVERIFIED",
-      "title": "国内首部 AIGC 长剧《后西游记》开播，登陆湖南卫视黄金档，好看吗？会对影视行业有怎样的影响？",
-      "summary": "芒果 TV AIGC 创新内容中心制作、伯璟文化承制的神话题材季播剧《后西游记》第一季「花果山篇」，将于 8 月 31 日起上线芒果 TV，并登陆湖南卫视黄金档。据悉，这是国内首部 AIGC 长剧。",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "国内首部 AIGC 长剧《后西游记》开播，登陆湖南卫视黄金档，好看吗？会对影视行业有怎样的影响？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
-          "tier": "community",
-          "url": "https://www.zhihu.com/question/2077565922349413598",
-          "publishedAt": "2026-09-01T05:22:05.030Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-14z3ben",
-      "status": "UNVERIFIED",
-      "title": "怎么看待麻省理工报告称人工智能现在可以合理完成几乎所有本科书面作业？",
-      "summary": "相关新闻：新闻里提到的报告：报告第三节「建议」提到： 人工智能—以大语言模型和其他生成式人工智能技术的形式——给麻省理工学院带来了深刻的挑战和诱人的机遇。 这些技术已经可以产生可靠的解决方案，并对本科",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "怎么看待麻省理工报告称人工智能现在可以合理完成几乎所有本科书面作业？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
-          "tier": "community",
-          "url": "https://www.zhihu.com/question/2077850860353279737",
-          "publishedAt": "2026-09-01T05:22:05.030Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-i26eyh",
-      "status": "UNVERIFIED",
-      "title": "实时语音 AI 智能体的框架",
+      "title": "青岛机器人乐队奏响科技新声",
       "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "实时语音 AI 智能体的框架",
-          "label": "hellogithub",
-          "sourceType": "hellogithub",
+          "title": "青岛机器人乐队奏响科技新声",
+          "label": "toutiao",
+          "sourceType": "toutiao",
           "tier": "community",
-          "url": "https://github.com/pipecat-ai/pipecat",
-          "publishedAt": "2026-09-01T05:20:34.014Z",
+          "url": "https://www.toutiao.com/trending/7680737707006689286/",
+          "publishedAt": "2026-09-02T04:53:37.009Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1jsriev",
+      "id": "event-kzca0n",
       "status": "UNVERIFIED",
-      "title": "Celeris-1 Magnus: Fast hybrid diffusion model for agentic work",
-      "summary": "HN 讨论 · mjshashank · 2026-09-01T05:20:08Z",
+      "title": "库克 9 月 1 日卸任苹果 CEO，由苹果硬件工程负责人特努斯接棒，苹果接下来将发生哪些变化？",
+      "summary": "当地时间 8 月 30 日，科技记者马克·古尔曼发文称，苹果硬件工程负责人约翰·特努斯将于 9 月 1 日正式接任首席执行官，人工智能将成为其任期内的首要任务。特努斯拥有 25 年硬件产品经验，曾负责",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "Celeris-1 Magnus: Fast hybrid diffusion model for agentic work",
-          "label": "Hacker News AI",
-          "sourceType": "hn-ai",
+          "title": "库克 9 月 1 日卸任苹果 CEO，由苹果硬件工程负责人特努斯接棒，苹果接下来将发生哪些变化？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://celeris.ai/celeris-1-magnus",
-          "publishedAt": "2026-09-01T05:20:08Z",
+          "url": "https://www.zhihu.com/question/2077705001892148802",
+          "publishedAt": "2026-09-02T04:50:01.169Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-6w26r7",
+      "status": "UNVERIFIED",
+      "title": "如何看待 Anthropic 全面开放 Claude Fable 5.1 和 Mythos 5.1？有哪些亮点？",
+      "summary": "Anthropic：Fable 5.1 已全面开放使用，而 Mythos 5.1 仅可通过我方可信访问计划获取。Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1：性",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "如何看待 Anthropic 全面开放 Claude Fable 5.1 和 Mythos 5.1？有哪些亮点？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2078320389617350247",
+          "publishedAt": "2026-09-02T04:50:01.169Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-ksrky5",
+      "status": "UNVERIFIED",
+      "title": "为什么我感觉 GPT 5.6sol 没有巅峰时期 GPT 5.5 好用呢? 是我的错觉吗?",
+      "summary": "rt",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "为什么我感觉 GPT 5.6sol 没有巅峰时期 GPT 5.5 好用呢? 是我的错觉吗?",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2062458887157052438",
+          "publishedAt": "2026-09-02T04:50:01.169Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-neudaq",
+      "status": "UNVERIFIED",
+      "title": "GPT-6 灰测 demo 刷屏，预计在周四发布，你对这款 AI 模型有哪些期待？",
+      "summary": "GPT-6 可能会在 9 月 3 日发布，你有哪些期待？gpt-6 灰测 demo 刷屏，周四发布在即",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "GPT-6 灰测 demo 刷屏，预计在周四发布，你对这款 AI 模型有哪些期待？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2077759364111386075",
+          "publishedAt": "2026-09-02T04:50:01.169Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-l47plb",
+      "status": "UNVERIFIED",
+      "title": "Hazrat-Ali9/AI-ML-Core-Foundations",
+      "summary": "🚂 AI ✈ ML 🛫 Core 🛳 Foundations 🚁 is a 🧸 comprehensive 🚋 that 🎁 provides 🚞 a solid 🚀 starting point 🛩 Artificial 🚟 Intelligence 🛸 and Machine 🚝 Learning 🚤 It covers 🏛 the ML 🏘 algorithms 🏬 mathematical 🕌 foundations 🏦 implementations 🏣 helping 🧱 learners 🚌 transition ⚽ from ⚾ theory to 🥎 hands on 🏀 projects 🏐 with 🏆 ease 🎳",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "Hazrat-Ali9/AI-ML-Core-Foundations",
+          "label": "GitHub AI",
+          "sourceType": "github-ai",
+          "tier": "community",
+          "url": "https://github.com/Hazrat-Ali9/AI-ML-Core-Foundations",
+          "publishedAt": "2026-09-02T04:49:37Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 449,
+  "suppressed": 423,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
