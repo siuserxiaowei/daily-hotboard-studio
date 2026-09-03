@@ -4,27 +4,27 @@
     <title>AI讯息｜今天真的变了什么</title>
     <link>https://siuserxiaowei.github.io/daily-hotboard-studio/</link>
     <description>只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。</description>
-    <lastBuildDate>Wed, 02 Sep 2026 04:52:18 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 04:50:44 GMT</lastBuildDate>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://siuserxiaowei.github.io/daily-hotboard-studio/data/change-brief.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Piloting the first double-blind AI evaluations</title>
+      <title>Introducing Gemini 3.5 Flash Cyber</title>
+      <link>https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/</link>
+      <guid isPermaLink="false">event-q1yxg0</guid>
+      <pubDate>Thu, 03 Sep 2026 04:50:44 GMT</pubDate>
+      <description>CHANGED｜4 个一手来源确认事实已发生实质变化，值得更新原有判断。</description>
+    </item>
+    <item>
+      <title>Piloting the world&apos;s first double-blind AI evaluations</title>
       <link>https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/</link>
       <guid isPermaLink="false">event-1vndgtn</guid>
-      <pubDate>Wed, 02 Sep 2026 04:52:18 GMT</pubDate>
+      <pubDate>Thu, 03 Sep 2026 04:50:44 GMT</pubDate>
       <description>CHANGED｜1 个一手来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
     <item>
-      <title>keenable-ai/needle-results</title>
-      <link>https://huggingface.co/datasets/keenable-ai/needle-results</link>
-      <guid isPermaLink="false">event-smyxhc</guid>
-      <pubDate>Wed, 02 Sep 2026 04:52:18 GMT</pubDate>
-      <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
-    </item>
-    <item>
-      <title>manikandan18ramalingam/agentic-ai-options-results</title>
-      <link>https://huggingface.co/datasets/manikandan18ramalingam/agentic-ai-options-results</link>
-      <guid isPermaLink="false">event-10tgj2e</guid>
-      <pubDate>Wed, 02 Sep 2026 04:52:18 GMT</pubDate>
+      <title>jojosang/AiApp</title>
+      <link>https://huggingface.co/datasets/jojosang/AiApp</link>
+      <guid isPermaLink="false">event-1gjwksw</guid>
+      <pubDate>Thu, 03 Sep 2026 04:50:44 GMT</pubDate>
       <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
   </channel>
