@@ -4,27 +4,27 @@
     <title>AI讯息｜今天真的变了什么</title>
     <link>https://siuserxiaowei.github.io/daily-hotboard-studio/</link>
     <description>只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。</description>
-    <lastBuildDate>Thu, 03 Sep 2026 04:50:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 04:55:49 GMT</lastBuildDate>
     <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://siuserxiaowei.github.io/daily-hotboard-studio/data/change-brief.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Introducing Gemini 3.5 Flash Cyber</title>
-      <link>https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/</link>
-      <guid isPermaLink="false">event-q1yxg0</guid>
-      <pubDate>Thu, 03 Sep 2026 04:50:44 GMT</pubDate>
-      <description>CHANGED｜4 个一手来源确认事实已发生实质变化，值得更新原有判断。</description>
+      <title>General-Medical-AI/SlideChat</title>
+      <link>https://huggingface.co/datasets/General-Medical-AI/SlideChat</link>
+      <guid isPermaLink="false">event-1j5uy72</guid>
+      <pubDate>Fri, 04 Sep 2026 04:55:49 GMT</pubDate>
+      <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
     <item>
-      <title>Piloting the world&apos;s first double-blind AI evaluations</title>
-      <link>https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/</link>
-      <guid isPermaLink="false">event-1vndgtn</guid>
-      <pubDate>Thu, 03 Sep 2026 04:50:44 GMT</pubDate>
-      <description>CHANGED｜1 个一手来源确认事实已发生实质变化，值得更新原有判断。</description>
+      <title>keenable-ai/needle-results</title>
+      <link>https://huggingface.co/datasets/keenable-ai/needle-results</link>
+      <guid isPermaLink="false">event-smyxhc</guid>
+      <pubDate>Fri, 04 Sep 2026 04:55:49 GMT</pubDate>
+      <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
     <item>
       <title>jojosang/AiApp</title>
       <link>https://huggingface.co/datasets/jojosang/AiApp</link>
       <guid isPermaLink="false">event-1gjwksw</guid>
-      <pubDate>Thu, 03 Sep 2026 04:50:44 GMT</pubDate>
+      <pubDate>Fri, 04 Sep 2026 04:55:49 GMT</pubDate>
       <description>CHANGED｜1 个原始来源确认事实已发生实质变化，值得更新原有判断。</description>
     </item>
   </channel>

@@ -1,78 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T04:50:44.483Z",
-  "comparedWith": "2026-09-02T04:52:18.103Z",
+  "generatedAt": "2026-09-04T04:55:49.735Z",
+  "comparedWith": "2026-09-03T04:50:44.483Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 467,
-    "events": 276,
-    "verified": 168,
+    "signals": 469,
+    "events": 265,
+    "verified": 176,
     "receipts": 3
   },
   "receipts": [
     {
-      "id": "event-q1yxg0",
+      "id": "event-1j5uy72",
       "status": "CHANGED",
-      "title": "Introducing Gemini 3.5 Flash Cyber",
-      "summary": "Google introduces Gemini 3.5 Flash Cyber, a lightweight cybersecurity model to find and patch vulnerabilities.",
-      "whyItMatters": "4 个一手来源确认事实已发生实质变化，值得更新原有判断。",
+      "title": "General-Medical-AI/SlideChat",
+      "summary": "数据集更新；标签：region:us",
+      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "Introducing Gemini 3.5 Flash Cyber",
-          "label": "DeepMind News",
-          "sourceType": "deepmind-news",
-          "tier": "official",
-          "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-          "publishedAt": "Fri, 17 Jul 2026 15:00:11 +0000",
-          "firstParty": true
-        },
-        {
-          "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
-          "label": "DeepMind News",
-          "sourceType": "deepmind-news",
-          "tier": "official",
-          "url": "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/",
-          "publishedAt": "Tue, 21 Jul 2026 15:16:30 +0000",
-          "firstParty": true
-        },
-        {
-          "title": "Introducing Gemini 3.7 Flash",
-          "label": "DeepMind News",
-          "sourceType": "deepmind-news",
-          "tier": "official",
-          "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-          "publishedAt": "Thu, 13 Aug 2026 17:04:18 +0000",
-          "firstParty": true
-        },
-        {
-          "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-          "label": "DeepMind News",
-          "sourceType": "deepmind-news",
-          "tier": "official",
-          "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-          "publishedAt": "Wed, 02 Sep 2026 16:18:31 +0000",
+          "title": "General-Medical-AI/SlideChat",
+          "label": "HF Datasets",
+          "sourceType": "hf-datasets",
+          "tier": "primary",
+          "url": "https://huggingface.co/datasets/General-Medical-AI/SlideChat",
+          "publishedAt": "2026-09-04T04:51:50.000Z",
           "firstParty": true
         }
       ]
     },
     {
-      "id": "event-1vndgtn",
+      "id": "event-smyxhc",
       "status": "CHANGED",
-      "title": "Piloting the world's first double-blind AI evaluations",
-      "summary": "Piloting the world's first double-blind AI evaluations",
-      "whyItMatters": "1 个一手来源确认事实已发生实质变化，值得更新原有判断。",
+      "title": "keenable-ai/needle-results",
+      "summary": "数据集更新；标签：license:mit、region:us",
+      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
         {
-          "title": "Piloting the world's first double-blind AI evaluations",
-          "label": "DeepMind News",
-          "sourceType": "deepmind-news",
-          "tier": "official",
-          "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
-          "publishedAt": "Thu, 27 Aug 2026 12:59:16 +0000",
+          "title": "keenable-ai/needle-results",
+          "label": "HF Datasets",
+          "sourceType": "hf-datasets",
+          "tier": "primary",
+          "url": "https://huggingface.co/datasets/keenable-ai/needle-results",
+          "publishedAt": "2026-09-04T04:40:29.000Z",
           "firstParty": true
         }
       ]
@@ -81,7 +54,7 @@
       "id": "event-1gjwksw",
       "status": "CHANGED",
       "title": "jojosang/AiApp",
-      "summary": "数据集更新；标签：region:us",
+      "summary": "数据集更新；标签：size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas、library:polars",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
@@ -91,7 +64,7 @@
           "sourceType": "hf-datasets",
           "tier": "primary",
           "url": "https://huggingface.co/datasets/jojosang/AiApp",
-          "publishedAt": "2026-09-03T04:20:49.000Z",
+          "publishedAt": "2026-09-04T04:25:35.000Z",
           "firstParty": true
         }
       ]
@@ -99,121 +72,121 @@
   ],
   "unverified": [
     {
-      "id": "event-1n7uvod",
+      "id": "event-pxxgsy",
       "status": "UNVERIFIED",
-      "title": "如何看待 WorkBuddy 开放 Agent 基座能力？这会怎样影响 Agent 的生态？",
-      "summary": "据报道，9 月 2 日，腾讯 WorkBuddy 宣布开放平台（open.WorkBuddy.cn）正式上线，首批引入 100 余家生态伙伴，面向智能硬件、行业应用与开发者等开放底层 Agent 能力",
+      "title": "AGI时代真的来了吗",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "如何看待 WorkBuddy 开放 Agent 基座能力？这会怎样影响 Agent 的生态？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "AGI时代真的来了吗",
+          "label": "toutiao",
+          "sourceType": "toutiao",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2078496761006355910",
-          "publishedAt": "2026-09-03T04:48:43.909Z",
+          "url": "https://www.toutiao.com/trending/7680850199102750758/",
+          "publishedAt": "2026-09-04T04:55:23.388Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-7hcmab",
+      "id": "event-rw6klv",
       "status": "UNVERIFIED",
-      "title": "如何评价 GPT-5.6 Sol 打破了大素数间隙保持八年的世界纪录？",
-      "summary": "8 月下旬，Jared Duker Lichtman 称 GPT-5.6 Sol 给出了一篇关于大素数间隙的新证明，将 2018 年 Ford 、 Green 、 Konyagin 、 Maynard",
+      "title": "Token经济要开始崩了吗",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "如何评价 GPT-5.6 Sol 打破了大素数间隙保持八年的世界纪录？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "Token经济要开始崩了吗",
+          "label": "toutiao",
+          "sourceType": "toutiao",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2077660569394586792",
-          "publishedAt": "2026-09-03T04:48:43.909Z",
+          "url": "https://www.toutiao.com/trending/7681315479033482798/",
+          "publishedAt": "2026-09-04T04:55:23.388Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-171yqzb",
+      "id": "event-z63wxn",
       "status": "UNVERIFIED",
-      "title": "搜狗输入法宣布重做，上线全新 AI 服务与更清爽键盘，如何评价这次升级？",
-      "summary": "搜狗输入法宣布重做：全新 ai 服务上线 键盘更清爽",
+      "title": "tinyhumansai/openhuman",
+      "summary": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "搜狗输入法宣布重做，上线全新 AI 服务与更清爽键盘，如何评价这次升级？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "tinyhumansai/openhuman",
+          "label": "GitHub AI",
+          "sourceType": "github-ai",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2077916947673629071",
-          "publishedAt": "2026-09-03T04:48:43.909Z",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "publishedAt": "2026-09-04T04:53:43Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-h98snw",
+      "id": "event-xd2301",
       "status": "UNVERIFIED",
-      "title": "为什么各大 AI 平台都不约而同使用「积分」、「百分比」来计算 AI 的消耗额度？",
-      "summary": "最近使用 ChatGPT 、 Claude 、 Gemini 、 GitHub Copilot 、各种 AI Coding Agent 等服务时，发现一个非常普遍的现象： 几乎所有 AI 平台都开始采",
+      "title": "OpenAI称AGI时代到来",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "为什么各大 AI 平台都不约而同使用「积分」、「百分比」来计算 AI 的消耗额度？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "OpenAI称AGI时代到来",
+          "label": "weibo",
+          "sourceType": "weibo",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2077098899299481558",
-          "publishedAt": "2026-09-03T04:48:43.909Z",
+          "url": "https://s.weibo.com/weibo?q=%23OpenAI%E7%A7%B0AGI%E6%97%B6%E4%BB%A3%E5%88%B0%E6%9D%A5%23",
+          "publishedAt": "2026-09-04T04:49:04.808Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-v122c6",
+      "id": "event-1fj5d5a",
       "status": "UNVERIFIED",
-      "title": "怎么看 OpenAI 的 Astra 报道称用了全新的 recurrent depth 型推理方法？",
-      "summary": "根据 The Information 独家报道，OpenAI 的 Astra AI 使用了一种名为 recurrent depth 的新型推理方法。 虽然它可以帮助模拟成本和性能，但研究人员担心它会掩",
+      "title": "博通定制AI芯片业务暴涨，为啥各大巨头要集体下场造芯片？",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "怎么看 OpenAI 的 Astra 报道称用了全新的 recurrent depth 型推理方法？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "博通定制AI芯片业务暴涨，为啥各大巨头要集体下场造芯片？",
+          "label": "huxiu",
+          "sourceType": "huxiu",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2078440102733337893",
-          "publishedAt": "2026-09-03T04:48:43.909Z",
+          "url": "https://www.huxiu.com/article/4888525.html",
+          "publishedAt": "2026-09-04T04:47:47.655Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1r5hkwn",
+      "id": "event-18euvzb",
       "status": "UNVERIFIED",
-      "title": "DeepSeek Harness 出来后，还会有人用 Workbuddy 或 Trae solo 吗？",
-      "summary": "最近看到 DeepSeek Harness 发布，功能似乎整合得很强，想聊聊这类工具格局会不会因此改变。",
+      "title": "AI 变成行业生产力，从一件能验收的事开始",
+      "summary": "尚未找到足够的一手证据。",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "DeepSeek Harness 出来后，还会有人用 Workbuddy 或 Trae solo 吗？",
-          "label": "zhihu",
-          "sourceType": "zhihu",
+          "title": "AI 变成行业生产力，从一件能验收的事开始",
+          "label": "huxiu",
+          "sourceType": "huxiu",
           "tier": "community",
-          "url": "https://www.zhihu.com/question/2068005931439462317",
-          "publishedAt": "2026-09-03T04:48:43.909Z",
+          "url": "https://www.huxiu.com/article/4888519.html",
+          "publishedAt": "2026-09-04T04:47:47.655Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 450,
+  "suppressed": 449,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
