@@ -1,60 +1,22 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T04:55:49.735Z",
-  "comparedWith": "2026-09-03T04:50:44.483Z",
+  "generatedAt": "2026-09-05T04:45:48.224Z",
+  "comparedWith": "2026-09-04T04:55:49.735Z",
   "decision": "SEND",
   "decisionLabel": "发送变化回执",
   "promise": "只推送经一手或原始来源核验、且相较上一期发生实质变化的 AI 事件；最多 3 条。",
   "funnel": {
-    "signals": 469,
-    "events": 265,
-    "verified": 176,
+    "signals": 461,
+    "events": 194,
+    "verified": 111,
     "receipts": 3
   },
   "receipts": [
     {
-      "id": "event-1j5uy72",
-      "status": "CHANGED",
-      "title": "General-Medical-AI/SlideChat",
-      "summary": "数据集更新；标签：region:us",
-      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
-      "verified": true,
-      "evidence": [
-        {
-          "title": "General-Medical-AI/SlideChat",
-          "label": "HF Datasets",
-          "sourceType": "hf-datasets",
-          "tier": "primary",
-          "url": "https://huggingface.co/datasets/General-Medical-AI/SlideChat",
-          "publishedAt": "2026-09-04T04:51:50.000Z",
-          "firstParty": true
-        }
-      ]
-    },
-    {
-      "id": "event-smyxhc",
-      "status": "CHANGED",
-      "title": "keenable-ai/needle-results",
-      "summary": "数据集更新；标签：license:mit、region:us",
-      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
-      "verified": true,
-      "evidence": [
-        {
-          "title": "keenable-ai/needle-results",
-          "label": "HF Datasets",
-          "sourceType": "hf-datasets",
-          "tier": "primary",
-          "url": "https://huggingface.co/datasets/keenable-ai/needle-results",
-          "publishedAt": "2026-09-04T04:40:29.000Z",
-          "firstParty": true
-        }
-      ]
-    },
-    {
       "id": "event-1gjwksw",
       "status": "CHANGED",
       "title": "jojosang/AiApp",
-      "summary": "数据集更新；标签：size_categories:n<1K、format:json、modality:text、library:datasets、library:pandas、library:polars",
+      "summary": "数据集更新；标签：region:us",
       "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
       "verified": true,
       "evidence": [
@@ -64,7 +26,54 @@
           "sourceType": "hf-datasets",
           "tier": "primary",
           "url": "https://huggingface.co/datasets/jojosang/AiApp",
-          "publishedAt": "2026-09-04T04:25:35.000Z",
+          "publishedAt": "2026-09-05T04:41:58.000Z",
+          "firstParty": true
+        }
+      ]
+    },
+    {
+      "id": "event-1j5uy72",
+      "status": "CHANGED",
+      "title": "General-Medical-AI/SlideChat",
+      "summary": "数据集更新；标签：size_categories:100K<n<1M、modality:text、region:us",
+      "whyItMatters": "1 个原始来源确认事实已发生实质变化，值得更新原有判断。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "General-Medical-AI/SlideChat",
+          "label": "HF Datasets",
+          "sourceType": "hf-datasets",
+          "tier": "primary",
+          "url": "https://huggingface.co/datasets/General-Medical-AI/SlideChat",
+          "publishedAt": "2026-09-05T04:16:34.000Z",
+          "firstParty": true
+        }
+      ]
+    },
+    {
+      "id": "event-1q669ck",
+      "status": "CHANGED",
+      "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+      "summary": "Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that per-frame depth remains stable throughout this failure. The bac",
+      "whyItMatters": "2 个原始来源确认事实已发生实质变化，值得更新原有判断。",
+      "verified": true,
+      "evidence": [
+        {
+          "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+          "label": "arXiv AI",
+          "sourceType": "arxiv-ai",
+          "tier": "primary",
+          "url": "http://arxiv.org/abs/2609.04201v1",
+          "publishedAt": "2026-09-03T17:59:53Z",
+          "firstParty": true
+        },
+        {
+          "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+          "label": "HF Daily Papers",
+          "sourceType": "hf-daily-papers",
+          "tier": "primary",
+          "url": "https://huggingface.co/papers/2609.04201",
+          "publishedAt": "2026-09-02T20:00:00.000Z",
           "firstParty": true
         }
       ]
@@ -72,121 +81,121 @@
   ],
   "unverified": [
     {
-      "id": "event-pxxgsy",
+      "id": "event-2hoiu9",
       "status": "UNVERIFIED",
-      "title": "AGI时代真的来了吗",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "agnt-gg/agnt",
+      "summary": "The local-first operating system for building, running, and improving AI agents, workflows, and autonomous goals.",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "AGI时代真的来了吗",
-          "label": "toutiao",
-          "sourceType": "toutiao",
-          "tier": "community",
-          "url": "https://www.toutiao.com/trending/7680850199102750758/",
-          "publishedAt": "2026-09-04T04:55:23.388Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-rw6klv",
-      "status": "UNVERIFIED",
-      "title": "Token经济要开始崩了吗",
-      "summary": "尚未找到足够的一手证据。",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "Token经济要开始崩了吗",
-          "label": "toutiao",
-          "sourceType": "toutiao",
-          "tier": "community",
-          "url": "https://www.toutiao.com/trending/7681315479033482798/",
-          "publishedAt": "2026-09-04T04:55:23.388Z",
-          "firstParty": false
-        }
-      ]
-    },
-    {
-      "id": "event-z63wxn",
-      "status": "UNVERIFIED",
-      "title": "tinyhumansai/openhuman",
-      "summary": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
-      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
-      "verified": false,
-      "evidence": [
-        {
-          "title": "tinyhumansai/openhuman",
+          "title": "agnt-gg/agnt",
           "label": "GitHub AI",
           "sourceType": "github-ai",
           "tier": "community",
-          "url": "https://github.com/tinyhumansai/openhuman",
-          "publishedAt": "2026-09-04T04:53:43Z",
+          "url": "https://github.com/agnt-gg/agnt",
+          "publishedAt": "2026-09-05T04:43:27Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-xd2301",
+      "id": "event-uc2hfs",
       "status": "UNVERIFIED",
-      "title": "OpenAI称AGI时代到来",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "程序员每天消耗几千万上亿的 Token，到底产出了什么？",
+      "summary": "我是个零基础的外行，没有做过什么相关工作。AI 基本是当搜索引擎用的，所以我很好奇，每天花这么多的 token，到底是解决什么疑难杂症，为什么 AI 出现好几年了，感觉 B 端没啥变化，效率提升都提升",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "OpenAI称AGI时代到来",
-          "label": "weibo",
-          "sourceType": "weibo",
+          "title": "程序员每天消耗几千万上亿的 Token，到底产出了什么？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://s.weibo.com/weibo?q=%23OpenAI%E7%A7%B0AGI%E6%97%B6%E4%BB%A3%E5%88%B0%E6%9D%A5%23",
-          "publishedAt": "2026-09-04T04:49:04.808Z",
+          "url": "https://www.zhihu.com/question/2078056911908365523",
+          "publishedAt": "2026-09-05T04:41:36.023Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-1fj5d5a",
+      "id": "event-qko6d7",
       "status": "UNVERIFIED",
-      "title": "博通定制AI芯片业务暴涨，为啥各大巨头要集体下场造芯片？",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "如何看待 Mostik 让 753B 大模型读题、 4B 小模型写答案，AI Agent 会走向隐空间通信吗？",
+      "summary": "Mostik 是一家由俄罗斯数学家创立的 AI 初创公司，它提出了一种让不同 AI 模型之间无需转换为自然语言、直接在潜空间进行通信的创新架构。 Mostik 在俄语中是「小桥」的意思，代表连接不同模",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "博通定制AI芯片业务暴涨，为啥各大巨头要集体下场造芯片？",
-          "label": "huxiu",
-          "sourceType": "huxiu",
+          "title": "如何看待 Mostik 让 753B 大模型读题、 4B 小模型写答案，AI Agent 会走向隐空间通信吗？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://www.huxiu.com/article/4888525.html",
-          "publishedAt": "2026-09-04T04:47:47.655Z",
+          "url": "https://www.zhihu.com/question/2078846094822347898",
+          "publishedAt": "2026-09-05T04:41:36.023Z",
           "firstParty": false
         }
       ]
     },
     {
-      "id": "event-18euvzb",
+      "id": "event-gjfh2k",
       "status": "UNVERIFIED",
-      "title": "AI 变成行业生产力，从一件能验收的事开始",
-      "summary": "尚未找到足够的一手证据。",
+      "title": "如何评价 GPT-6Astra，是目前智能程度最高的模型吗？",
+      "summary": "今天，人类正式进入 AGI 时代！ 就在刚刚，OpenAI 重磅官宣下一代旗舰模型 GPT-6 Astra。 官方将其定义为，「世界上最智能、对齐程度最高」的模型。 它在计算机使用、浏览、软件工程、网",
       "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
       "verified": false,
       "evidence": [
         {
-          "title": "AI 变成行业生产力，从一件能验收的事开始",
-          "label": "huxiu",
-          "sourceType": "huxiu",
+          "title": "如何评价 GPT-6Astra，是目前智能程度最高的模型吗？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
           "tier": "community",
-          "url": "https://www.huxiu.com/article/4888519.html",
-          "publishedAt": "2026-09-04T04:47:47.655Z",
+          "url": "https://www.zhihu.com/question/2079099260516184281",
+          "publishedAt": "2026-09-05T04:41:36.023Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-d1414m",
+      "status": "UNVERIFIED",
+      "title": "吴恩达称「AI 时代部分高校困在 22 年」，高校现在真和 AI 时代脱节了吗？学生又该如何跟上时代的步伐？",
+      "summary": "【斯坦福教授吴恩达：AI 原生一代强势崛起，许多高校困在 2022 年】斯坦福大学教授、 DeepLearning.AI 创始人吴恩达表示，部分高校尚未适配 AI 时代发展，快速调整课程体系，建议学生",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "吴恩达称「AI 时代部分高校困在 22 年」，高校现在真和 AI 时代脱节了吗？学生又该如何跟上时代的步伐？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2078276275073037981",
+          "publishedAt": "2026-09-05T04:41:36.023Z",
+          "firstParty": false
+        }
+      ]
+    },
+    {
+      "id": "event-1ublvt",
+      "status": "UNVERIFIED",
+      "title": "怎么看 GPT-6 Astra 在 AA 上评分指数不如 Muse Spark 1.3 ？",
+      "summary": "GPT-6 Astra 是真的不如 Meta 的 Muse Spark 1.3 ？还是 Artificial Analysis 的评分有问题？甚至部分评分都不如 Grok 4.6 ？",
+      "whyItMatters": "当前只有社区或热榜信号，暂不作为事实推送。",
+      "verified": false,
+      "evidence": [
+        {
+          "title": "怎么看 GPT-6 Astra 在 AA 上评分指数不如 Muse Spark 1.3 ？",
+          "label": "zhihu",
+          "sourceType": "zhihu",
+          "tier": "community",
+          "url": "https://www.zhihu.com/question/2079137904685748281",
+          "publishedAt": "2026-09-05T04:41:36.023Z",
           "firstParty": false
         }
       ]
     }
   ],
-  "suppressed": 449,
+  "suppressed": 438,
   "methodology": {
     "comparison": "previous-snapshot",
     "ranking": "correction-first, then evidence tier, source publication time and deterministic title; heat, Stars and ranks are never compared across sources",
